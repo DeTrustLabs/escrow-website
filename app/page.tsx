@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { LandingCards } from "@/components/landing-cards"
 import {
   ArrowRight,
   CheckCircle,
@@ -19,12 +17,39 @@ import {
   Wallet,
   Package,
   Zap,
+  Code,
+  Building,
 } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md">
+        <div className="container flex h-16 items-center justify-between">
+          <Link href="/" className="flex items-center space-x-2 group">
+            <Image
+              src="/images/logo-main.png"
+              alt="Escrow Protocol"
+              width={240}
+              height={54}
+              className="h-12 w-auto transition-transform group-hover:scale-105"
+            />
+          </Link>
+
+          <div className="flex items-center space-x-4">
+            <Link href="/support">
+              <Button variant="ghost" className="text-sm font-medium">
+                Support and Contact
+              </Button>
+            </Link>
+            <Link href="https://app.escrow-protocol.com/">
+              <Button size="sm">Start Escrow</Button>
+            </Link>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -51,10 +76,12 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-shadow">
-                Start Escrow
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-shadow">
+                  Start Escrow
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-transparent hover:bg-primary/5">
                 <Play className="mr-2 h-5 w-5" />
                 Watch Demo
@@ -93,7 +120,47 @@ export default function HomePage() {
               Discover how the protocol serves different use cases and integration needs.
             </p>
           </div>
-          <LandingCards />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <Link href="https://trade.escrow-protocol.com/" className="group">
+              <div className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="flex justify-center mb-6">
+                  <Globe className="h-16 w-16 text-teal-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Global Trade</h3>
+                <p className="text-gray-600">Secure international transactions</p>
+              </div>
+            </Link>
+
+            <Link href="https://freelancer.escrow-protocol.com/" className="group">
+              <div className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="flex justify-center mb-6">
+                  <Users className="h-16 w-16 text-teal-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Freelance</h3>
+                <p className="text-gray-600">Protected project payments</p>
+              </div>
+            </Link>
+
+            <Link href="https://integrations.escrow-protocol.com/" className="group">
+              <div className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="flex justify-center mb-6">
+                  <Code className="h-16 w-16 text-teal-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Integrators</h3>
+                <p className="text-gray-600">Build with the protocol</p>
+              </div>
+            </Link>
+
+            <Link href="https://community.escrow-protocol.com/" className="group">
+              <div className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow duration-300">
+                <div className="flex justify-center mb-6">
+                  <Building className="h-16 w-16 text-teal-500" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">Community</h3>
+                <p className="text-gray-600">Join the ecosystem</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -321,14 +388,16 @@ export default function HomePage() {
                 digital currencies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  Start Your First Escrow
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link href="https://app.escrow-protocol.com/">
+                  <Button
+                    size="lg"
+                    variant="secondary"
+                    className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-shadow"
+                  >
+                    Start Your First Escrow
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
                 <Button
                   size="lg"
                   variant="outline"

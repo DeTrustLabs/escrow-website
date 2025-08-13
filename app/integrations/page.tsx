@@ -1,16 +1,54 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Code, Layers, Globe, Shield, ArrowRight, CheckCircle, Building, CreditCard, FileText, Truck, Users, ShoppingCart, Database } from 'lucide-react'
+import {
+  Code,
+  Layers,
+  Globe,
+  Shield,
+  ArrowRight,
+  CheckCircle,
+  Building,
+  CreditCard,
+  FileText,
+  Truck,
+  Users,
+  ShoppingCart,
+  Database,
+} from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
 export default function IntegrationsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md">
+        <div className="container flex h-16 items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <Link href="https://escrow-protocol.com/">
+              <Image
+                src="/images/logo-main.png"
+                alt="Escrow Protocol"
+                width={180}
+                height={40}
+                className="h-8 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
+            <Badge variant="secondary">Integrations</Badge>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Link href="/support">
+              <Button variant="ghost" className="text-sm font-medium">
+                Support and Contact
+              </Button>
+            </Link>
+            <Link href="https://app.escrow-protocol.com/">
+              <Button size="sm">Start Escrow</Button>
+            </Link>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
@@ -23,13 +61,16 @@ export default function IntegrationsPage() {
               Build with the <span className="text-primary">Escrow Protocol</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Open ecosystem for everyone. Trade advisors, financial institutions, eCommerce platforms, traditional escrow service providers and developers can access and integrate the protocol in multiple ways.
+              Open ecosystem for everyone. Trade advisors, financial institutions, eCommerce platforms, traditional
+              escrow service providers and developers can access and integrate the protocol in multiple ways.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                Start Building
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" className="text-lg px-8">
+                  Start Building
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                 View Documentation
               </Button>
@@ -45,7 +86,7 @@ export default function IntegrationsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Open Ecosystem for Everyone</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                The protocol is designed to be permissionless and accessible to all types of businesses and developers. 
+                The protocol is designed to be permissionless and accessible to all types of businesses and developers.
                 Build on top of it, integrate with it, or use it as-is.
               </p>
             </div>
@@ -343,7 +384,7 @@ export default function IntegrationsPage() {
               today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/support">
+              <Link href="https://app.escrow-protocol.com/">
                 <Button size="lg" variant="secondary" className="text-lg px-8">
                   Start Integration
                   <ArrowRight className="ml-2 h-5 w-5" />

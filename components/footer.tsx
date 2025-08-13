@@ -28,18 +28,32 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Solutions */}
           <div className="space-y-4">
             <h4 className="font-semibold">Solutions</h4>
             <div className="space-y-2 text-sm">
-              <Link href="/global-trade" className="block text-muted-foreground hover:text-primary">
+              <Link
+                href="https://trade.escrow-protocol.com/"
+                className="block text-muted-foreground hover:text-primary"
+              >
                 Global Trade
               </Link>
-              <Link href="/freelancer" className="block text-muted-foreground hover:text-primary">
-                Freelancer Services
+              <Link
+                href="https://freelancer.escrow-protocol.com/"
+                className="block text-muted-foreground hover:text-primary"
+              >
+                Freelancer
               </Link>
-              <Link href="/integrations" className="block text-muted-foreground hover:text-primary">
+              <Link
+                href="https://integrations.escrow-protocol.com/"
+                className="block text-muted-foreground hover:text-primary"
+              >
                 Integrations
+              </Link>
+              <Link
+                href="https://community.escrow-protocol.com/"
+                className="block text-muted-foreground hover:text-primary"
+              >
+                Protocol & Community
               </Link>
             </div>
           </div>

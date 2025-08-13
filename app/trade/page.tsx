@@ -17,6 +17,7 @@ import {
   TrendingDown,
 } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function TradePage() {
   return (
@@ -25,10 +26,27 @@ export default function TradePage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center space-x-4">
-            <Image src="/images/logo-main.png" alt="Escrow Protocol" width={180} height={40} className="h-8 w-auto" />
+            <Link href="https://escrow-protocol.com/">
+              <Image
+                src="/images/logo-main.png"
+                alt="Escrow Protocol"
+                width={180}
+                height={40}
+                className="h-8 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
             <Badge variant="secondary">Global Trade</Badge>
           </div>
-          <Button size="sm">Start Trade Escrow</Button>
+          <div className="flex items-center space-x-4">
+            <Link href="/support">
+              <Button variant="ghost" className="text-sm font-medium">
+                Support and Contact
+              </Button>
+            </Link>
+            <Link href="https://app.escrow-protocol.com/">
+              <Button size="sm">Start Escrow</Button>
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -47,10 +65,12 @@ export default function TradePage() {
               delivered and verified, protecting both exporters and importers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                Start Global Trade Escrow
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" className="text-lg px-8">
+                  Start Global Trade Escrow
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                 See How It Works
               </Button>
@@ -476,21 +496,23 @@ export default function TradePage() {
       <section className="py-20">
         <div className="container">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Secure Your International Trade?</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Ready to Secure Your Global Trade?</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Join exporters and importers worldwide who are eliminating payment risks with digital escrow.
+              Join exporters and importers worldwide who never worry about payment risks again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
-                Start Your First Trade
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" variant="secondary" className="text-lg px-8">
+                  Start Your First Escrow
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button
                 size="lg"
                 variant="outline"
                 className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
               >
-                Contact Trade Specialist
+                Learn More
               </Button>
             </div>
           </div>

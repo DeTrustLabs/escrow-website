@@ -1,34 +1,74 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Users, Target, Shield, ArrowRight, CheckCircle, Briefcase, DollarSign, FileText, Play, TrendingDown, Globe } from 'lucide-react'
+import {
+  Users,
+  Target,
+  Shield,
+  ArrowRight,
+  CheckCircle,
+  Briefcase,
+  DollarSign,
+  FileText,
+  Play,
+  TrendingDown,
+  Globe,
+} from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function FreelancerPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur-md">
+        <div className="container flex h-16 items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <Link href="https://escrow-protocol.com/">
+              <Image
+                src="/images/logo-main.png"
+                alt="Escrow Protocol"
+                width={180}
+                height={40}
+                className="h-8 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            </Link>
+            <Badge variant="secondary">Freelance</Badge>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Link href="/support">
+              <Button variant="ghost" className="text-sm font-medium">
+                Support and Contact
+              </Button>
+            </Link>
+            <Link href="https://app.escrow-protocol.com/">
+              <Button size="sm">Start Escrow</Button>
+            </Link>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4">
-              Freelancer & Service Provider Solution
+              Freelancer Solution
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
-              Ensure Project Payments with <span className="text-primary">Freelance Escrow</span>
+              Get Paid <span className="text-primary">Every Time</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Perfect for global freelancing - clients deposit funds into escrow upfront, and you get paid automatically
-              when you complete the work.
+              Never worry about non-payment again. Digital escrow holds client funds securely and releases payment when
+              you complete the work.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
-                Secure Your Next Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" className="text-lg px-8">
+                  Secure Your Next Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 bg-transparent">
                 See How It Works
               </Button>
@@ -313,10 +353,12 @@ export default function FreelancerPage() {
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>Global client access without payment barriers</span>
                 </div>
-                <Button className="w-full mt-4">
-                  Start Escrow
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="https://app.escrow-protocol.com/">
+                  <Button className="w-full mt-4">
+                    Start Escrow
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -346,10 +388,12 @@ export default function FreelancerPage() {
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>Access to global talent pool</span>
                 </div>
-                <Button className="w-full mt-4">
-                  Start Escrow
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <Link href="https://app.escrow-protocol.com/">
+                  <Button className="w-full mt-4">
+                    Start Escrow
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           </div>
@@ -520,10 +564,12 @@ export default function FreelancerPage() {
               Join thousands of freelancers and service providers who never worry about getting paid again.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
-                Start Your First Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="https://app.escrow-protocol.com/">
+                <Button size="lg" variant="secondary" className="text-lg px-8">
+                  Start Your First Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button
                 size="lg"
                 variant="outline"
