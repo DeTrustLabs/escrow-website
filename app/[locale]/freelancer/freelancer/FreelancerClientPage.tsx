@@ -38,7 +38,7 @@ export default function FreelancerClientPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="px-4 py-2 mb-6">
               For Freelancers
@@ -81,7 +81,7 @@ export default function FreelancerClientPage() {
 
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -144,7 +144,7 @@ export default function FreelancerClientPage() {
 
       {/* Challenges Freelancers Face */}
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -306,7 +306,7 @@ export default function FreelancerClientPage() {
 
       {/* Why Freelancers Choose Digital Escrow */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               Why Freelancers Choose Digital Escrow
@@ -395,7 +395,7 @@ export default function FreelancerClientPage() {
 
       {/* Complete Protection for Freelancers */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               Complete Protection for Freelancers
@@ -459,7 +459,7 @@ export default function FreelancerClientPage() {
 
       {/* CTA */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Ready to Secure Your Freelance Payments?

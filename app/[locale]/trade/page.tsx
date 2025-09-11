@@ -71,7 +71,7 @@ export default async function HomePage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4">
               {t("hero.badge")}
@@ -107,7 +107,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               {t("solvesRisks.title")}
@@ -134,7 +134,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               {t("trustChanges.title")}
@@ -147,7 +147,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-16 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("dilemma.title")}
@@ -205,7 +205,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-12">
-        <div className="container">
+        <div className="container px-8">
           <Card className="border-primary/20 bg-primary/5 shadow-xl max-w-4xl mx-auto">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-black">
@@ -251,7 +251,7 @@ export default async function HomePage() {
 
       {/* What is a Digital Escrow Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("whatIs.title")}
@@ -276,7 +276,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("features.title")}
@@ -351,7 +351,7 @@ export default async function HomePage() {
       </section>
 
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("industries.title")}
@@ -608,7 +608,7 @@ export default async function HomePage() {
 
       {/* Choose Your Trade Role */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("chooseRole.title")}
@@ -674,7 +674,7 @@ export default async function HomePage() {
 
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("cta.title")}

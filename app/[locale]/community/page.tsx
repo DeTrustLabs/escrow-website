@@ -21,7 +21,6 @@ import {
   ExternalLink,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 
@@ -43,7 +42,7 @@ export default function CommunityPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4">
               {t("hero.badge")}
@@ -80,7 +79,7 @@ export default function CommunityPage() {
 
       {/* Community Resources */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("resources.title")}
@@ -150,7 +149,7 @@ export default function CommunityPage() {
 
       {/* Protocol Information */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("protocol.title")}
@@ -196,7 +195,7 @@ export default function CommunityPage() {
 
       {/* Getting Started */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("gettingStarted.title")}
@@ -262,7 +261,7 @@ export default function CommunityPage() {
 
       {/* CTA Section */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("cta.title")}

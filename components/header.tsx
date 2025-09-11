@@ -59,7 +59,7 @@ export function Header({ forceVariant }: NavigationProps) {
           : "bg-background/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container px-8 flex h-16 items-center justify-between">
         {/* Left: Logo (stable) */}
         <Link
           href={logoHref}
@@ -139,7 +139,7 @@ export function Header({ forceVariant }: NavigationProps) {
       {/* Mobile drawer */}
       {mobileOpen && (
         <div className="lg:hidden border-t bg-white shadow-md">
-          <div className="container py-4">
+          <div className="container px-8 py-4">
             <nav className="flex flex-col space-y-2">
               {mainLinks.map((item) => (
                 <Link

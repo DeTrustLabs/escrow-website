@@ -72,7 +72,7 @@ export function WorkflowClient() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center">
             <Badge variant="secondary" className="mb-4">
               {t("hero.badge")}
@@ -89,7 +89,7 @@ export function WorkflowClient() {
 
       {/* How a Digital Escrow Works */}
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("howItWorks.title")}
@@ -373,7 +373,7 @@ export function WorkflowClient() {
 
       {/* Flexible Release Mechanisms */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -451,7 +451,7 @@ export function WorkflowClient() {
 
       {/* Dispute Resolution Process */}
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -536,7 +536,7 @@ export function WorkflowClient() {
         className="py-20 bg-gray-50"
         aria-label="digital payments information"
       >
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -620,7 +620,7 @@ export function WorkflowClient() {
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               {t("cta.title")}

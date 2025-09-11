@@ -44,7 +44,7 @@ export function Hero({
 }: HeroProps) {
   return (
     <section className={`py-20 lg:py-32 ${className}`}>
-      <div className="container">
+      <div className="container px-8">
         <div className={`${maxWidth} mx-auto text-center`}>
           {badge && (
             <div className="flex items-center justify-center space-x-2 mb-6">

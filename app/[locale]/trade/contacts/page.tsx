@@ -88,7 +88,7 @@ export default function ContactsPage() {
   return (
     <div className="min-h-screen bg-background">
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">

@@ -16,10 +16,12 @@ export default async function NotFound() {
   return (
     <div className="min-h-screen bg-background">
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-2xl mx-auto text-center">
             <div className="mb-8">
-              <h1 className="text-6xl font-bold text-primary mb-4">{t("title")}</h1>
+              <h1 className="text-6xl font-bold text-primary mb-4">
+                {t("title")}
+              </h1>
               <h2 className="text-3xl font-bold mb-4">{t("heading")}</h2>
               <p className="text-xl text-muted-foreground mb-8">
                 {t("description")}
@@ -31,9 +33,7 @@ export default async function NotFound() {
                 <CardHeader>
                   <Home className="h-8 w-8 text-primary mx-auto mb-2" />
                   <CardTitle className="text-lg">{t("goHome.title")}</CardTitle>
-                  <CardDescription>
-                    {t("goHome.description")}
-                  </CardDescription>
+                  <CardDescription>{t("goHome.description")}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Link href="/home">
@@ -48,8 +48,12 @@ export default async function NotFound() {
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <HelpCircle className="h-8 w-8 text-primary mx-auto mb-2" />
-                  <CardTitle className="text-lg">{t("getSupport.title")}</CardTitle>
-                  <CardDescription>{t("getSupport.description")}</CardDescription>
+                  <CardTitle className="text-lg">
+                    {t("getSupport.title")}
+                  </CardTitle>
+                  <CardDescription>
+                    {t("getSupport.description")}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Link href="/contacts">

@@ -81,7 +81,7 @@ export default async function IntegrationsPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-4">
               {t("hero.badge")}
@@ -113,7 +113,7 @@ export default async function IntegrationsPage() {
 
       {/* Open Ecosystem Section */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -149,7 +149,7 @@ export default async function IntegrationsPage() {
 
       {/* Access Methods */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("access.title")}
@@ -195,7 +195,7 @@ export default async function IntegrationsPage() {
 
       {/* Integration Possibilities */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("possibilities.title")}
@@ -309,7 +309,7 @@ export default async function IntegrationsPage() {
 
       {/* Technical Resources */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("resources.title")}
@@ -372,7 +372,7 @@ export default async function IntegrationsPage() {
 
       {/* Use Cases for Integrators */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("beneficiaries.title")}
@@ -423,7 +423,7 @@ export default async function IntegrationsPage() {
 
       {/* CTA Section */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("cta.title")}

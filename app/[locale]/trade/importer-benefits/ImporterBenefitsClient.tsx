@@ -53,7 +53,7 @@ export default function ImporterBenefitsClient() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="px-4 py-2 mb-6">
               {t("hero.badge")}
@@ -91,7 +91,7 @@ export default function ImporterBenefitsClient() {
 
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -142,7 +142,7 @@ export default function ImporterBenefitsClient() {
 
       {/* Challenges Importers Face section with accordion */}
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -314,7 +314,7 @@ export default function ImporterBenefitsClient() {
 
       {/* Key Benefits */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("keyBenefits.title")}
@@ -398,7 +398,7 @@ export default function ImporterBenefitsClient() {
 
       {/* Complete Protection for Importers section */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               {t("protection.title")}
@@ -480,7 +480,7 @@ export default function ImporterBenefitsClient() {
 
       {/* Call-to-action section */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               {t("cta.title")}

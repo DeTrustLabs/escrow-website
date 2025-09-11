@@ -29,7 +29,7 @@ export default async function GuidesPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               {t("hero.title")}
@@ -43,7 +43,7 @@ export default async function GuidesPage() {
 
       {/* Featured Guide */}
       <section className="py-20">
-        <div className="container">
+        <div className="container px-8">
           <Card className="border-0 shadow-xl mb-16">
             <CardContent className="p-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -96,7 +96,7 @@ export default async function GuidesPage() {
 
       {/* CTA */}
       <section className="py-20 bg-primary">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               {t("cta.title")}

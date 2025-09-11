@@ -63,7 +63,7 @@ export default function FreelancerWorkflowPage() {
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="px-4 py-2 mb-6">
               Secure Freelance Workflow
@@ -99,7 +99,7 @@ export default function FreelancerWorkflowPage() {
 
       {/* 4 Steps of the Escrow */}
       <section className="py-20 bg-gray-50">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               4 Steps of the Freelance Escrow
@@ -167,7 +167,7 @@ export default function FreelancerWorkflowPage() {
 
       {/* How a Digital Escrow Works */}
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
               How Digital Escrow Works for Freelancers
@@ -558,7 +558,7 @@ export default function FreelancerWorkflowPage() {
         id="flexible-payment-release-options"
         className="py-20 bg-gray-50"
       >
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -622,7 +622,7 @@ export default function FreelancerWorkflowPage() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -735,7 +735,7 @@ export default function FreelancerWorkflowPage() {
         id="digital-payments-for-freelancers"
         className="py-20 bg-gray-50"
       >
-        <div className="container">
+        <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -857,7 +857,7 @@ export default function FreelancerWorkflowPage() {
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container">
+        <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
               Ready to Secure Your Freelance Projects?
