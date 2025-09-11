@@ -27,6 +27,7 @@ import {
   Settings,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -100,7 +101,7 @@ export function WorkflowClient() {
           </div>
 
           <div className="mb-12">
-            <img
+            <Image
               src="/escrow-process-illustration.png"
               alt="Digital Escrow Process Illustration"
               className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
@@ -554,7 +555,7 @@ export function WorkflowClient() {
                 aria-label="digital currencies explanation"
               >
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/stablecoins-overview.png"
                     alt="USD Stablecoins and Digital Currencies Overview"
                     className="w-full max-w-sm rounded-lg shadow-lg"
@@ -576,7 +577,7 @@ export function WorkflowClient() {
                 aria-label="digital wallet for secure trade"
               >
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/digital-wallet-interface.png"
                     alt="Digital Wallet Interface showing USDT, USDC, and other stablecoin balances"
                     className="w-full max-w-sm rounded-lg shadow-lg"
@@ -598,7 +599,7 @@ export function WorkflowClient() {
                 aria-label="converting fiat to stablecoins"
               >
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/fiat-conversion-process.png"
                     alt="FIAT to Digital Currency Conversion Process"
                     className="w-full max-w-sm rounded-lg shadow-lg"

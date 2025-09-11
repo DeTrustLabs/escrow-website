@@ -26,6 +26,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
+import Image from "next/image"
 
 export const metadata = {
   title:
@@ -179,7 +180,7 @@ export default function FreelancerWorkflowPage() {
           </div>
 
           <div className="mb-12">
-            <img
+            <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Escrw%20Freelance%20STP%203%20%284%29.png-2ogWHJ41ekTJ4oOHM9qAlUJOqeoUly.jpeg"
               alt="Digital Escrow Process Illustration for Freelance Projects"
               className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
@@ -261,7 +262,7 @@ export default function FreelancerWorkflowPage() {
                       advisor who can help prepare the escrow but has no access
                       to escrow funds. You also choose an arbitration service
                       from the start for any disputes—this service only gets
-                      involved if needed and can't see the transaction
+                      involved if needed and can&apos;t see the transaction
                       otherwise. This digital contract focuses specifically on
                       payment security and milestone completion. Both parties
                       digitally sign the escrow agreement, creating a binding
@@ -682,7 +683,7 @@ export default function FreelancerWorkflowPage() {
                   <p className="text-muted-foreground">
                     Parties have time to solve disputes themselves through
                     negotiation (such as work revisions, partial payments, or
-                    timeline extensions). If bilateral resolution isn't
+                    timeline extensions). If bilateral resolution isn’t
                     possible, the dispute can be escalated to a pre-defined
                     neutral arbitrator who reviews all project data to make
                     informed decisions.
@@ -751,7 +752,7 @@ export default function FreelancerWorkflowPage() {
               {/* What Are Digital Currencies */}
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/stablecoins-overview.png"
                     alt="USD Stablecoins and Digital Currencies Overview"
                     className="w-full max-w-sm rounded-lg shadow-lg"
@@ -781,7 +782,7 @@ export default function FreelancerWorkflowPage() {
               {/* What Is a Wallet */}
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/digital-wallet-interface.png"
                     alt="Digital Wallet Interface showing USDT, USDC, and other stablecoin balances"
                     className="w-full max-w-sm rounded-lg shadow-lg"
@@ -793,7 +794,7 @@ export default function FreelancerWorkflowPage() {
                   </h3>
                   <p className="text-lg leading-relaxed text-gray-700 mb-4">
                     A digital wallet is like a secure digital bank account that
-                    you control completely. It's an app on your phone or
+                    you control completely. It&apos;s an app on your phone or
                     computer where you can store, send, and receive digital
                     currencies like stablecoins. Think of it as your personal
                     digital safe - only you have the key (password), and no bank
@@ -810,7 +811,7 @@ export default function FreelancerWorkflowPage() {
               {/* How can I change FIAT into Stablecoins */}
               <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
                 <div className="lg:col-span-2 flex justify-center">
-                  <img
+                  <Image
                     src="/fiat-conversion-process.png"
                     alt="FIAT to Digital Currency Conversion Process"
                     className="w-full max-w-sm rounded-lg shadow-lg"

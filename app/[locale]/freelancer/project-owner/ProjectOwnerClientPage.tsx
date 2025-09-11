@@ -31,6 +31,7 @@ import {
   Eye,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ProjectOwnerClientPage() {
   return (
@@ -85,7 +86,7 @@ export default function ProjectOwnerClientPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <img
+                  <Image
                     src="/project-owner-testimonial-1.jpg"
                     alt="David Thompson"
                     className="w-20 h-20 rounded-full object-cover flex-shrink-0"
@@ -98,19 +99,20 @@ export default function ProjectOwnerClientPage() {
                   </div>
                 </div>
                 <blockquote className="text-lg leading-relaxed text-gray-700 italic">
-                  "I hired a developer to build our mobile app MVP. Paid $15,000
-                  upfront based on their portfolio and great communication.
-                  After two months of 'progress updates' and excuses, I realized
-                  they had barely started. When I demanded to see the work, they
-                  disappeared completely. Lost the money and three months of
-                  critical development time. Had to start over with a new
-                  developer while our competitors gained ground."
+                  &quot;I hired a developer to build our mobile app MVP. Paid
+                  $15,000 upfront based on their portfolio and great
+                  communication. After two months of &apos;progress
+                  updates&apos; and excuses, I realized they had barely started.
+                  When I demanded to see the work, they disappeared completely.
+                  Lost the money and three months of critical development time.
+                  Had to start over with a new developer while our competitors
+                  gained ground.&quot;
                 </blockquote>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <img
+                  <Image
                     src="/project-owner-testimonial-2.jpg"
                     alt="Lisa Park"
                     className="w-20 h-20 rounded-full object-cover flex-shrink-0"
@@ -125,13 +127,13 @@ export default function ProjectOwnerClientPage() {
                   </div>
                 </div>
                 <blockquote className="text-lg leading-relaxed text-gray-700 italic">
-                  "We hired a designer for our rebranding project. The initial
-                  concepts looked promising, but the final deliverables were
-                  completely different from what we agreed on. When we asked for
-                  revisions to match the original brief, they demanded
+                  &quot;We hired a designer for our rebranding project. The
+                  initial concepts looked promising, but the final deliverables
+                  were completely different from what we agreed on. When we
+                  asked for revisions to match the original brief, they demanded
                   additional payment. We were stuck—either pay more for work
                   that should have been done right the first time, or start
-                  over. Ended up paying twice for the same project."
+                  over. Ended up paying twice for the same project.&quot;
                 </blockquote>
               </div>
             </div>
@@ -191,7 +193,7 @@ export default function ProjectOwnerClientPage() {
                 </AccordionTrigger>
                 <AccordionContent className="pt-4 pb-2">
                   <p className="text-muted-foreground leading-relaxed">
-                    Receiving work that doesn't match specifications,
+                    Receiving work that doesn&apos;t match specifications,
                     requirements, or quality expectations is a common problem.
                     Project owners may end up with subpar deliverables that
                     require extensive revisions or complete rework. This often
@@ -241,10 +243,10 @@ export default function ProjectOwnerClientPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     Poor communication, lack of regular updates, and difficulty
                     reaching freelancers can make project management
-                    challenging. Without clear accountability measures, it's
-                    hard to track progress and ensure projects stay on track.
-                    This lack of transparency often leads to surprises and
-                    disappointments when deadlines approach.
+                    challenging. Without clear accountability measures,
+                    it&apos;s hard to track progress and ensure projects stay on
+                    track. This lack of transparency often leads to surprises
+                    and disappointments when deadlines approach.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -265,10 +267,10 @@ export default function ProjectOwnerClientPage() {
                   <p className="text-muted-foreground leading-relaxed">
                     Assessing freelancer reliability, skills, and work quality
                     before hiring is challenging. Portfolios can be misleading,
-                    reviews may be fake, and past performance doesn't guarantee
-                    future results. Project owners often struggle to make
-                    informed hiring decisions, leading to costly mistakes and
-                    project failures.
+                    reviews may be fake, and past performance doesn&apos;t
+                    guarantee future results. Project owners often struggle to
+                    make informed hiring decisions, leading to costly mistakes
+                    and project failures.
                   </p>
                 </AccordionContent>
               </AccordionItem>

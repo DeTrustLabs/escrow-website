@@ -32,6 +32,7 @@ import {
   Banknote,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function FreelancerClientPage() {
   return (
@@ -86,9 +87,11 @@ export default function FreelancerClientPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <img
+                  <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/freelancer-testimonial-1-lezkU49Y0BODjPBkDrjl6osUxdbhNK.jpg"
                     alt="Sarah Chen"
+                    width={80}
+                    height={80}
                     className="w-20 h-20 rounded-full object-cover flex-shrink-0"
                   />
                   <div>
@@ -99,22 +102,25 @@ export default function FreelancerClientPage() {
                   </div>
                 </div>
                 <blockquote className="text-lg leading-relaxed text-gray-700 italic">
-                  "I spent three months building a complete e-commerce platform
-                  for a startup. The project was complex—custom features,
-                  payment integration, the works. When I delivered everything
-                  perfectly, they kept asking for 'small changes' and delayed
-                  payment for weeks. Eventually, they disappeared completely.
-                  Three months of work, gone. That project failure nearly ended
-                  my freelance career. I had to take a part-time job just to pay
-                  rent while rebuilding my client base."
+                  &quot;I spent three months building a complete e-commerce
+                  platform for a startup. The project was complex—custom
+                  features, payment integration, the works. When I delivered
+                  everything perfectly, they kept asking for &apos;small
+                  changes&apos; and delayed payment for weeks. Eventually, they
+                  disappeared completely. Three months of work, gone. That
+                  project failure nearly ended my freelance career. I had to
+                  take a part-time job just to pay rent while rebuilding my
+                  client base.&quot;
                 </blockquote>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <img
+                  <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/freelancer-testimonial-2-ugDutz7sWj48uWIa6HfbAVPrmFUcOu.jpg"
                     alt="Marcus Rodriguez"
+                    width={80}
+                    height={80}
                     className="w-20 h-20 rounded-full object-cover flex-shrink-0"
                   />
                   <div>
@@ -127,14 +133,14 @@ export default function FreelancerClientPage() {
                   </div>
                 </div>
                 <blockquote className="text-lg leading-relaxed text-gray-700 italic">
-                  "I had been working with this marketing agency for two years.
-                  They were my biggest client—consistent work, good
+                  &quot;I had been working with this marketing agency for two
+                  years. They were my biggest client—consistent work, good
                   relationship, always paid on time. Then their main client
                   pulled out and they hit financial trouble. They owed me
                   $28,000 for completed projects when they went under. Even good
                   clients can become bad debts through no fault of their own.
                   That taught me that even trusted relationships need
-                  protection."
+                  protection.&quot;
                 </blockquote>
               </div>
             </div>

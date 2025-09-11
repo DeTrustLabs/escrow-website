@@ -19,6 +19,7 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -55,13 +56,17 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function FreelancerPage() {
   const t = await getTranslations("freelancer")
   const messages = await getMessages()
-  const root: any = (messages as any).freelancer || {}
+  const root =
+    ((messages as Record<string, unknown>).freelancer as Record<
+      string,
+      unknown
+    >) || {}
   const freelancerBenefits = getMessageArray(
-    root,
+    root as Record<string, string>,
     "perfectFor.freelancers.benefits"
   )
   const projectOwnerBenefits = getMessageArray(
-    root,
+    root as Record<string, string>,
     "perfectFor.projectOwners.benefits"
   )
   return (
@@ -226,11 +231,12 @@ export default async function FreelancerPage() {
               {t("whatIs.subtitle")}
             </p>
 
-            <div className="mb-8">
-              <img
+            <div className="mb-8 relative w-full max-w-3xl mx-auto aspect-video">
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Escrw%20Freelance%20STP%203%20%284%29.png-2ogWHJ41ekTJ4oOHM9qAlUJOqeoUly.jpeg"
                 alt={t("whatIs.imageAlt")}
-                className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+                fill
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
 
@@ -336,10 +342,11 @@ export default async function FreelancerPage() {
             {/* Row 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Web%20Development.jpg-G5rMJAglMKptzudBbL8GFjHTemTmtR.jpeg"
                   alt={t("categories.webDev.imageAlt")}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -356,10 +363,11 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Graphic%20Design.jpg-xVVlSyBRZ8HMkFsjUbKUkJIS04IrcB.jpeg"
                   alt={t("categories.graphicDesign.imageAlt")}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">

@@ -28,6 +28,7 @@ import {
   Scale,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 
@@ -94,34 +95,35 @@ export default function ImporterBenefitsClient() {
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
-                <div className="flex items-start space-x-4 mb-6">
-                  <img
-                    src="/professional-middle-aged-british-businessman-with-.png"
-                    alt={t("testimonials.michael.name")}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-lg text-gray-900">
-                      {t("testimonials.michael.name")}
-                    </h3>
-                    <p className="text-gray-600">
-                      {t("testimonials.michael.role")}
-                    </p>
-                  </div>
+              <div className="flex items-start space-x-4 mb-6">
+                <Image
+                  src="/professional-middle-aged-british-businessman-with-.png"
+                  alt={t("testimonials.michael.name")}
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                />
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900">
+                    {t("testimonials.michael.name")}
+                  </h3>
+                  <p className="text-gray-600">
+                    {t("testimonials.michael.role")}
+                  </p>
                 </div>
-                <blockquote className="text-lg leading-relaxed text-gray-700 italic">
-                  {t("testimonials.michael.quote")}
-                </blockquote>
               </div>
-
-              <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
-                <div className="flex items-start space-x-4 mb-6">
-                  <img
-                    src="/professional-middle-aged-italian-businesswoman-wit.png"
-                    alt={t("testimonials.isabella.name")}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
-                  />
+              <blockquote className="text-lg leading-relaxed text-gray-700 italic">
+                {t("testimonials.michael.quote")}
+              </blockquote>
+              <div className="flex items-start space-x-4 mb-6">
+                <Image
+                  src="/professional-middle-aged-italian-businesswoman-wit.png"
+                  alt={t("testimonials.isabella.name")}
+                  width={80}
+                  height={80}
+                  className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                />
+                <div className="w-20 h-20 rounded-full object-cover flex-shrink-0">
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
                       {t("testimonials.isabella.name")}

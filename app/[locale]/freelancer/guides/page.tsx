@@ -60,7 +60,7 @@ export default function FreelancerGuidesPage() {
                   </Button>
                 </div>
                 <div className="bg-primary/5 p-6 rounded-lg">
-                  <h3 className="font-semibold mb-4">What You'll Learn</h3>
+                  <h3 className="font-semibold mb-4">What You&apos;ll Learn</h3>
                   <ul className="space-y-3">
                     {[
                       t("featured.learnItems.0"),

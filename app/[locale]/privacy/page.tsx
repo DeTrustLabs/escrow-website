@@ -1,5 +1,3 @@
-import Link from "next/link"
-import Image from "next/image"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 
@@ -18,7 +16,7 @@ export default async function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-background">
       {/* Main Content */}
-      <main className="container px-8 mx-auto px-4 py-16">
+      <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-foreground mb-8">
             {t("title")}

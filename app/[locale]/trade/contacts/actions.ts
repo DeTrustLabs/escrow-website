@@ -3,7 +3,17 @@
 // Simple in-memory storage for v0 preview
 // In production, you'd use a proper database or file storage
 const subscribers: { email: string; timestamp: Date }[] = []
-const messages: any[] = []
+const messages: ContactMessage[] = []
+
+type ContactMessage = {
+  from: string
+  firstName: string
+  lastName: string
+  company: string
+  tradeType: string
+  message: string
+  timestamp: Date
+}
 
 export async function sendContactMessage(formData: FormData) {
   const firstName = formData.get("firstName") as string
@@ -25,7 +35,10 @@ export async function sendContactMessage(formData: FormData) {
 
   messages.push(messageData)
 
-  console.log("Sending contact message to info@escrow-protocol.com:", messageData)
+  console.log(
+    "Sending contact message to info@escrow-protocol.com:",
+    messageData
+  )
 
   // Simulate email sending delay
   await new Promise((resolve) => setTimeout(resolve, 1000))
