@@ -1,0 +1,75 @@
+{
+  "support": {
+    "metadata": {
+      "title": "Support - Escrow Protocol",
+      "description": "Get support for the Escrow Protocol. Request early access, contact our team, and stay updated with the latest news."
+    },
+    "hero": {
+      "badge": "Invite-Only Access",
+      "title": "Join the Early Access Program",
+      "subtitle": "The protocol is currently working on an invite-only basis. Exporters, importers, trade advisors, and freelancers are welcome to leave their contact details and will be contacted to discuss how the protocol can benefit their business.",
+      "form": {
+        "title": "Request Early Access",
+        "description": "Tell us about your business and we'll reach out to discuss how the escrow protocol can help you.",
+        "firstName": "First Name *",
+        "lastName": "Last Name *",
+        "email": "Business Email *",
+        "company": "Company Name",
+        "userType": "I am a... *",
+        "userTypes": {
+          "exporter": "Exporter",
+          "importer": "Importer",
+          "tradeAdvisor": "Trade Advisor",
+          "freelancer": "Freelancer",
+          "serviceProvider": "Service Provider",
+          "financialInstitution": "Financial Institution",
+          "developer": "Developer/Integrator",
+          "other": "Other"
+        },
+        "businessDescription": "Tell us about your business",
+        "businessPlaceholder": "What type of transactions do you handle? What challenges are you facing?",
+        "monthlyVolume": "Estimated Monthly Transaction Volume",
+        "volumes": {
+          "under10k": "Under $10,000",
+          "10k50k": "$10,000 - $50,000",
+          "50k250k": "$50,000 - $250,000",
+          "250k1m": "$250,000 - $1,000,000",
+          "over1m": "Over $1,000,000"
+        },
+        "button": "Request Early Access",
+        "footer": "We'll review your application and reach out within 48 hours."
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Have a specific question or need personalized help? Send us a message and we'll get back to you within 24 hours.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "button": "Send Message"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Get the latest updates on protocol development, new features, and important announcements delivered to your inbox.",
+      "email": "Email Address",
+      "interests": "What interests you most? (Optional)",
+      "options": {
+        "updates": "Protocol updates and new features",
+        "guides": "Integration guides and tutorials",
+        "events": "Community events and webinars",
+        "news": "Industry news and insights"
+      },
+      "button": "Subscribe to Newsletter"
+    },
+    "cta": {
+      "title": "Still Need Help?",
+      "subtitle": "The support team is here to help you succeed. Get in touch and receive a response within 24 hours.",
+      "primaryButton": "Contact Support",
+      "secondaryButton": "Schedule Call"
+    }
+  }
+}

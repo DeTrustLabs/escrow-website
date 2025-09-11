@@ -1,0 +1,74 @@
+{
+	"app": {
+		"title": "Escrow App for Cross-Border Trade",
+		"description": "Access the digital escrow app for international trade.",
+		"login": "Log In to Escrow App"
+	},
+	"common": {
+		"loading": "Loading...",
+		"error": "Something went wrong",
+		"retry": "Try again",
+		"cancel": "Cancel",
+		"continue": "Continue",
+		"save": "Save",
+		"delete": "Delete",
+		"edit": "Edit",
+		"close": "Close",
+		"back": "Back",
+		"next": "Next",
+		"previous": "Previous",
+		"submit": "Submit",
+		"confirm": "Confirm",
+		"yes": "Yes",
+		"no": "No",
+		"learnMore": "Learn More",
+		"getStarted": "Get Started",
+		"startEscrow": "Start Escrow"
+	},
+	"notFound": {
+		"title": "404",
+		"heading": "Page Not Found",
+		"description": "The page you're looking for doesn't exist or has been moved.",
+		"goHome": {
+			"title": "Go Home",
+			"description": "Return to the main trade escrow page",
+			"button": "Back to Home"
+		},
+		"getSupport": {
+			"title": "Need Help?",
+			"description": "Contact our support team",
+			"button": "Get Support"
+		},
+		"popularPages": {
+			"title": "Popular pages:",
+			"home": "Home",
+			"howItWorks": "How It Works",
+			"forExporters": "For Exporters",
+			"forImporters": "For Importers",
+			"faq": "FAQ",
+			"startEscrow": "Start Escrow"
+		}
+	},
+	"stats": {
+		"escrowVolume": {
+			"label": "Escrow Volume Secured",
+			"description": "Total value protected in early adoption"
+		},
+		"activeUsers": {
+			"label": "Active Users",
+			"description": "Early adopters testing the protocol"
+		},
+		"transactions": {
+			"label": "Transactions",
+			"description": "Successfully completed escrows"
+		}
+	},
+	"partners": {
+		"partner1": "Partner 1",
+		"partner2": "Partner 2",
+		"partner3": "Partner 3",
+		"partner4": "Partner 4",
+		"partner5": "Partner 5",
+		"partner6": "Partner 6"
+	}
+}

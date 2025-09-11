@@ -1,0 +1,23 @@
+{
+	"navigation": {
+		"home": "Home",
+		"trade": "Trade",
+		"freelancer": "Freelancer",
+		"community": "Community",
+		"integrations": "Integrations",
+		"support": "Support",
+		"resources": "Resources & Support",
+		"exporter": "Exporter",
+		"importer": "Importer",
+		"workflow": "Workflow",
+		"guides": "Guides",
+		"blog": "Blog",
+		"faq": "FAQ",
+		"contacts": "Contacts",
+		"projectowner": "Project Owner",
+		"startEscrow": "Start Escrow",
+		"languages": {
+			"en": "English"
+		}
+	}
+}

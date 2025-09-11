@@ -1,0 +1,135 @@
+{
+  "integrations": {
+    "metadata": {
+      "title": "Integrations - Escrow Protocol",
+      "description": "Build with the decentralized escrow protocol. Open ecosystem for developers, businesses, and integrators."
+    },
+    "hero": {
+      "badge": "Open Ecosystem",
+      "title": "Build with the Escrow Protocol",
+      "subtitle": "Open ecosystem for everyone. Trade advisors, financial institutions, eCommerce platforms, traditional escrow service providers and developers can access and integrate the protocol in multiple ways.",
+      "primaryButton": "Start Building",
+      "secondaryButton": "View Documentation"
+    },
+    "ecosystem": {
+      "title": "Open Ecosystem for Everyone",
+      "subtitle": "The protocol is designed to be permissionless and accessible to all types of businesses and developers. Build on top of it, integrate with it, or use it as-is.",
+      "features": [
+        "Permissionless access - no approval needed",
+        "Open source smart contracts and frontend",
+        "Comprehensive documentation and SDKs",
+        "Community support and developer resources"
+      ]
+    },
+    "access": {
+      "title": "How to Access the Protocol",
+      "subtitle": "Multiple ways to interact with the decentralized Escrow Protocol.",
+      "methods": {
+        "smartContract": {
+          "title": "Direct Smart Contract Integration",
+          "description": "Interact directly with the protocol's smart contracts on Internet Computer for maximum flexibility."
+        },
+        "api": {
+          "title": "API Integration",
+          "description": "Use the RESTful API for easy integration into existing systems and applications."
+        },
+        "frontend": {
+          "title": "Frontend Solutions",
+          "description": "Use the open-source frontend or build your own custom interface for your users."
+        }
+      }
+    },
+    "possibilities": {
+      "title": "Integration Possibilities",
+      "subtitle": "The protocol can be integrated with various types of systems and services.",
+      "items": {
+        "ecommerce": {
+          "title": "eCommerce Platforms",
+          "description": "eCommerce platforms can integrate escrow functionality for secure online payments"
+        },
+        "kyc": {
+          "title": "KYC/KYB Providers",
+          "description": "Identity verification services for enhanced trust and compliance"
+        },
+        "invoice": {
+          "title": "Invoice Creators",
+          "description": "Automated invoicing systems with escrow payment integration"
+        },
+        "tradeDocs": {
+          "title": "Trade Document Providers",
+          "description": "Bill of Lading, customs, and shipping document verification systems"
+        },
+        "financial": {
+          "title": "Financial Institutions",
+          "description": "Banks and financial services offering escrow as a service. White label solutions are possible."
+        },
+        "escrow": {
+          "title": "Traditional Escrow Providers",
+          "description": "Existing escrow companies adding digital currency capabilities"
+        },
+        "logistics": {
+          "title": "Logistics Companies",
+          "description": "Shipping and freight companies with automated payment release"
+        },
+        "erp": {
+          "title": "ERP System Providers",
+          "description": "Enterprise resource planning systems with integrated escrow"
+        },
+        "payment": {
+          "title": "Payment Processors",
+          "description": "Payment gateways adding escrow functionality to their services"
+        }
+      }
+    },
+    "resources": {
+      "title": "Technical Resources",
+      "subtitle": "Everything you need to start building with the escrow protocol.",
+      "items": {
+        "api": {
+          "title": "API Documentation",
+          "description": "Complete REST API documentation with examples and interactive testing.",
+          "button": "View API Docs"
+        },
+        "contracts": {
+          "title": "Smart Contract Interfaces",
+          "description": "Direct integration guides for Internet Computer canisters.",
+          "button": "View Contracts"
+        },
+        "frontend": {
+          "title": "Open Source Frontend",
+          "description": "Ready-to-use frontend components and full application templates.",
+          "button": "GitHub Repository"
+        }
+      }
+    },
+    "beneficiaries": {
+      "title": "Who Can Benefit",
+      "serviceProviders": {
+        "title": "Service Providers",
+        "description": "Businesses offering escrow as part of their services",
+        "benefits": [
+          "Trade advisors and consultants",
+          "Banks and financial institutions",
+          "Traditional escrow companies",
+          "Legal and compliance firms"
+        ]
+      },
+      "techCompanies": {
+        "title": "Technology Companies",
+        "description": "Developers and platforms building integrated solutions",
+        "benefits": [
+          "eCommerce platform developers",
+          "Fintech and payment companies",
+          "Enterprise software providers",
+          "Blockchain and DeFi developers"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Build with the Protocol?",
+      "subtitle": "Join the growing ecosystem of developers and businesses building on the escrow protocol. Start integrating today.",
+      "primaryButton": "Start Integration",
+      "secondaryButton": "Join Community"
+    }
+  }
+}

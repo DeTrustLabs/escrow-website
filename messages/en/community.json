@@ -1,0 +1,80 @@
+{
+  "community": {
+    "metadata": {
+      "title": "Community - Escrow Protocol",
+      "description": "Join the Escrow Protocol community. Connect with developers, businesses, and contributors building decentralized escrow services."
+    },
+    "hero": {
+      "badge": "Protocol & Community",
+      "title": "Join the Escrow Protocol Community",
+      "subtitle": "Connect with developers, businesses, and contributors building the future of decentralized escrow services.",
+      "primaryButton": "Start Escrow",
+      "secondaryButton": "Join Community"
+    },
+    "resources": {
+      "title": "Community Resources",
+      "subtitle": "Everything you need to get started with the Escrow Protocol.",
+      "discord": {
+        "title": "Discord Community",
+        "description": "Join our active Discord server for real-time discussions, support, and updates.",
+        "button": "Join Discord"
+      },
+      "docs": {
+        "title": "Documentation",
+        "description": "Comprehensive guides, API references, and technical documentation.",
+        "button": "View Docs"
+      },
+      "github": {
+        "title": "Open Source",
+        "description": "Contribute to the protocol development on GitHub.",
+        "button": "GitHub Repository"
+      }
+    },
+    "protocol": {
+      "title": "Protocol Overview",
+      "subtitle": "Learn about the technical architecture and capabilities of the Escrow Protocol.",
+      "smartContracts": {
+        "title": "Smart Contracts",
+        "description": "Decentralized escrow logic built on Internet Computer blockchain."
+      },
+      "globalAccess": {
+        "title": "Global Access",
+        "description": "24/7 availability with instant settlement using digital currencies."
+      },
+      "multiSignature": {
+        "title": "Multi-Signature",
+        "description": "Flexible approval mechanisms with customizable release conditions."
+      }
+    },
+    "gettingStarted": {
+      "title": "Getting Started",
+      "subtitle": "Choose your path to start using or building with the Escrow Protocol.",
+      "users": {
+        "title": "For Users",
+        "description": "Start using escrow services for secure transactions",
+        "benefits": [
+          "Create your first escrow transaction",
+          "Learn about digital currency payments",
+          "Understand dispute resolution"
+        ],
+        "button": "Start Your First Escrow"
+      },
+      "developers": {
+        "title": "For Developers",
+        "description": "Build applications and integrations with the protocol",
+        "benefits": [
+          "Explore API documentation",
+          "Access smart contract interfaces",
+          "Join developer community"
+        ],
+        "button": "View Documentation"
+      }
+    },
+    "cta": {
+      "title": "Ready to Join the Community?",
+      "subtitle": "Connect with other users, developers, and contributors building the future of decentralized escrow.",
+      "primaryButton": "Join Discord Community",
+      "secondaryButton": "Start Escrow"
+    }
+  }
+}

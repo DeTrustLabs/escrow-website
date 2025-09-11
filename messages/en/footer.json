@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "description": "Decentralized escrow protocol for secure digital transactions.",
+    "solutions": "Solutions",
+    "globalTrade": "Global Trade",
+    "freelancer": "Freelancer",
+    "integrations": "Integrations",
+    "protocolCommunity": "Protocol & Community",
+    "resources": "Resources",
+    "documentation": "Documentation",
+    "faq": "FAQ",
+    "community": "Community",
+    "support": "Support",
+    "stayUpdated": "Stay Updated",
+    "newsletterText": "Get the latest updates on protocol development and features.",
+    "emailPlaceholder": "Enter your email",
+    "copyright": "© 2024 Escrow Protocol. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "dapp": "Dapp"
+  }
+}

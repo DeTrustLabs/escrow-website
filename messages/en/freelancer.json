@@ -1,0 +1,442 @@
+{
+	"freelancer": {
+		"metadata": {
+			"title": "Freelance Escrow - Secure Project Payments",
+			"description": "Eliminate payment risks in freelance work with secure digital escrow for freelancers and project owners. Protect your projects with blockchain-based escrow."
+		},
+		"hero": {
+			"badge": "Freelance Solution",
+			"title": "Secure Freelance Projects with Digital Escrow",
+			"subtitle": "Eliminate payment risks in freelance work with secure escrow for freelancers and project owners.",
+			"startEscrow": "Start Freelance Escrow",
+			"seeHowItWorks": "See How It Works"
+		},
+		"solvesIssues": {
+			"title": "How Escrow Solves Issues in Freelancing",
+			"description": "A digital escrow for freelance projects eliminates the trust barrier that prevents successful collaborations between freelancers and clients. Traditional freelancing requires one party to take significant risk - either the freelancer completes work without payment guarantee, or the client pays upfront without delivery assurance. A digital escrow for freelancers and project owners solves this by securely holding funds until work is completed and approved, creating trust between working partners and enabling secure freelance commerce."
+		},
+		"dilemma": {
+			"title": "The Freelancer and Client Dilemma",
+			"subtitle": "While freelancers fear non-payment, clients fear non-delivery — reducing the risk of the freelancer increases the risk of the client and vice versa.",
+			"freelancerRisks": {
+				"title": "Freelancer Risks",
+				"description": "Freelancers often face the highest risk in project work. They typically complete projects first and wait for payment, leaving them vulnerable to clients who might refuse to pay or disappear after receiving the work. Freelancers could lose not just the payment but also weeks or months of invested time and effort, which can be devastating for their livelihood."
+			},
+			"clientRisks": {
+				"title": "Client Risks",
+				"description": "Clients worry about non-delivery or poor quality work. If they pay upfront, they risk getting nothing in return or receiving work that doesn't match requirements. Without seeing the final deliverables first, clients could end up with subpar work or no work at all, wasting money and project timelines."
+			},
+			"bridging": {
+				"title": "Bridging the Gap with a Digital Escrow",
+				"description": "The freelancer and client dilemma stops many promising projects, missing opportunities for great collaborations. A digital escrow for freelance work offers a solution, securely holding funds until projects are completed and approved, reducing risks for both sides. This fosters trust, turning hesitation into confident, successful freelance partnerships.",
+				"hold": "Hold",
+				"complete": "Complete",
+				"release": "Release"
+			}
+		},
+		"whatIs": {
+			"title": "What is a Digital Escrow?",
+			"subtitle": "A Simple Solution for Secure Freelance Projects",
+			"description": "A digital escrow is a secure payment method designed to protect both freelancers and clients in project work. It works by holding funds in a neutral, digital escrow until work is completed and approved, ensuring neither party faces risks like fraud and non-payment. For freelancers, this means working with confidence, knowing payment is guaranteed once milestones are met. For clients, it ensures payment is only released when work meets agreed specifications. The digital escrow eliminates traditional payment risks, reduces disputes, and simplifies trust between freelancers and clients worldwide.",
+			"imageAlt": "Digital Escrow Process Diagram for Freelance Projects"
+		},
+		"features": {
+			"title": "Escrow Features",
+			"subtitle": "Everything freelancers and clients need for secure, efficient project transactions.",
+			"security": {
+				"title": "Security and Flexibility",
+				"description": "Funds are securely held until both parties have met their project obligations, eliminating risks such as fraud and non-payment."
+			},
+			"trust": {
+				"title": "Trust and Growth",
+				"description": "Secure payments foster trust between freelancers and clients, reduce risk, and open the door to more project opportunities."
+			},
+			"fees": {
+				"title": "Low Transaction Fees",
+				"description": "By removing intermediaries and utilizing digital payments, the escrow ensures significantly lower fees for freelance transactions."
+			},
+			"settlement": {
+				"title": "Instant Settlement",
+				"description": "Once project terms are satisfied, funds are received within minutes after release — no need to wait for days like traditional payment systems."
+			},
+			"milestones": {
+				"title": "Milestones",
+				"description": "Project milestones ensure clear progress tracking and payment releases tied to specific deliverables and completion stages."
+			},
+			"dispute": {
+				"title": "Dispute Resolution",
+				"description": "Every step in the project is recorded and verifiable, with neutral mediators enabling swift and cost-effective resolutions to disputes."
+			}
+		},
+		"categories": {
+			"title": "Supporting All Service Categories",
+			"subtitle": "The escrow protocol works perfectly for any type of freelance service across all categories.",
+			"webDev": {
+				"title": "Web Development",
+				"description": "Websites, web apps, e-commerce platforms",
+				"imageAlt": "Web Development"
+			},
+			"graphicDesign": {
+				"title": "Graphic Design",
+				"description": "Logos, branding, marketing materials",
+				"imageAlt": "Graphic Design"
+			},
+			"contentWriting": {
+				"title": "Content Writing",
+				"description": "Articles, copywriting, technical documentation",
+				"imageAlt": "Content Writing"
+			},
+			"videoProduction": {
+				"title": "Video Production",
+				"description": "Video editing, animation, commercial production",
+				"imageAlt": "Video Production"
+			},
+			"digitalMarketing": {
+				"title": "Digital Marketing",
+				"description": "SEO, social media, advertising campaigns",
+				"imageAlt": "Digital Marketing"
+			},
+			"softwareDev": {
+				"title": "Software Development",
+				"description": "Custom software, mobile apps, system integration",
+				"imageAlt": "Software Development"
+			},
+			"uiUxDesign": {
+				"title": "UI/UX Design",
+				"description": "User interface design, user experience optimization",
+				"imageAlt": "UI/UX Design"
+			},
+			"virtualAssistance": {
+				"title": "Virtual Assistance",
+				"description": "Administrative support, data entry, customer service",
+				"imageAlt": "Virtual Assistance"
+			},
+			"legalServices": {
+				"title": "Legal Services",
+				"description": "Legal research, document preparation, paralegal support",
+				"imageAlt": "Legal Services"
+			},
+			"dataAnalysis": {
+				"title": "Data Analysis",
+				"description": "Business intelligence, data visualization, statistical analysis",
+				"imageAlt": "Data Analysis"
+			},
+			"consulting": {
+				"title": "Consulting",
+				"description": "Business strategy, management consulting, advisory services",
+				"imageAlt": "Consulting"
+			},
+			"translation": {
+				"title": "Translation",
+				"description": "Language translation, localization, interpretation services",
+				"imageAlt": "Translation"
+			}
+		},
+		"perfectFor": {
+			"title": "Perfect for Every Service Type",
+			"subtitle": "Discover specific benefits and features designed for your role in freelance work.",
+			"freelancers": {
+				"title": "For Freelancers",
+				"subtitle": "Secure your freelance income",
+				"benefits": [
+					"Funds secured before starting work",
+					"Instant payment upon project completion",
+					"Protection against non-payment",
+					"Work with new clients confidently"
+				],
+				"moreBenefits": "More Freelancer Benefits"
+			},
+			"projectOwners": {
+				"title": "For Project Owners",
+				"subtitle": "Hire with confidence and control",
+				"benefits": [
+					"Pay only when work meets specifications",
+					"Quality review before payment release",
+					"Protection against non-delivery",
+					"Dispute resolution for quality issues"
+				],
+				"moreBenefits": "More Project Owner Benefits"
+			}
+		},
+		"cta": {
+			"title": "Ready to Secure Your Freelance Projects?",
+			"subtitle": "Join freelancers and clients worldwide who never worry about payment risks again.",
+			"startEscrow": "Start Your First Escrow",
+			"learnMore": "Learn More"
+		},
+		"blog": {
+			"metadata": {
+				"title": "Freelance Escrow Blog - Insights & Updates",
+				"description": "Stay informed with the latest trends, tips, and insights in freelance work and digital escrow."
+			},
+			"hero": {
+				"title": "Freelance Escrow Insights",
+				"subtitle": "Stay informed with the latest trends, tips, and insights in freelance work and digital escrow."
+			},
+			"articles": {
+				"title": "Recent Articles",
+				"subtitle": "We're just getting started with our blog. Check back soon for valuable insights and updates.",
+				"comingSoon": {
+					"freelancerTips": {
+						"title": "Coming Soon: Expert Tips for Freelancers",
+						"excerpt": "We're preparing comprehensive guides to help freelancers navigate project challenges and secure payments.",
+						"category": "Freelancer Tips",
+						"date": "Coming Soon",
+						"readTime": "Stay tuned"
+					},
+					"clientGuide": {
+						"title": "Coming Soon: Client Best Practices",
+						"excerpt": "Detailed guides for clients to ensure quality work and avoid costly disputes in freelance projects.",
+						"category": "Client Guide",
+						"date": "Coming Soon",
+						"readTime": "Stay tuned"
+					},
+					"digitalEscrow": {
+						"title": "Coming Soon: Digital Escrow Insights",
+						"excerpt": "Learn how digital escrow technology is transforming freelance work and commerce.",
+						"category": "Digital Finance",
+						"date": "Coming Soon",
+						"readTime": "Stay tuned"
+					}
+				}
+			},
+			"newsletter": {
+				"title": "Stay Updated",
+				"subtitle": "Get the latest freelance insights and escrow updates delivered to your inbox.",
+				"emailPlaceholder": "Enter your email",
+				"button": "Subscribe"
+			}
+		},
+		"contacts": {
+			"metadata": {
+				"title": "Contact Us - Freelance Escrow Support",
+				"description": "Get help with your freelance escrow. Connect with us for support with your project payments."
+			},
+			"hero": {
+				"title": "Get Help with Your Freelance Escrow",
+				"subtitle": "Need assistance with your freelance escrow? Connect with us for support with your project payments."
+			},
+			"contactForm": {
+				"title": "Send Message",
+				"firstName": "First Name",
+				"firstNamePlaceholder": "John",
+				"lastName": "Last Name",
+				"lastNamePlaceholder": "Doe",
+				"email": "Email",
+				"emailPlaceholder": "john@freelancer.com",
+				"company": "Company/Business",
+				"companyPlaceholder": "Your Company or Freelance Business",
+				"role": "Role",
+				"rolePlaceholder": "Select your role",
+				"roles": {
+					"freelancer": "Freelancer",
+					"client": "Client/Project Owner",
+					"both": "Both"
+				},
+				"message": "Message",
+				"messagePlaceholder": "Tell us about your questions or how we can help...",
+				"submitButton": "Send Message",
+				"submittingButton": "Sending..."
+			},
+			"contactInfo": {
+				"title": "Contact Information",
+				"emailTitle": "Email",
+				"emailAddress": "info@escrow-protocol.com",
+				"emailDescription": "We'll get back to you soon"
+			},
+			"newsletter": {
+				"title": "Stay Informed",
+				"subtitle": "Subscribe to our newsletter for updates on freelance escrow and project insights.",
+				"emailPlaceholder": "Enter your email",
+				"submitButton": "Subscribe",
+				"submittingButton": "Subscribing..."
+			},
+			"popup": { "thankYou": "Thank You!", "close": "Close" }
+		},
+		"faq": {
+			"metadata": {
+				"title": "FAQ - Freelance Escrow Questions & Answers",
+				"description": "Find answers to common questions about digital escrow for freelance projects, security, payments, and more."
+			},
+			"hero": {
+				"title": "Frequently Asked Questions",
+				"subtitle": "Find answers to common questions about digital escrow for freelance projects."
+			},
+			"categories": {
+				"title": "FAQ Categories",
+				"gettingStarted": { "name": "Getting Started", "count": "3" },
+				"security": { "name": "Security & Safety", "count": "2" },
+				"process": { "name": "Process & Timeline", "count": "2" },
+				"payments": { "name": "Payments & Fees", "count": "2" },
+				"freelance": { "name": "Freelance Projects", "count": "2" }
+			},
+			"sections": {
+				"gettingStarted": {
+					"title": "Getting Started",
+					"questions": {
+						"q1": {
+							"question": "What is digital escrow for freelance projects?",
+							"answer": "Digital escrow for freelance projects is a secure peer-to-peer payment method that protects both freelancers and clients during project work. Instead of a third party holding your funds, the escrow uses smart contracts on the blockchain to automatically manage payments based on pre-agreed conditions. Funds remain in the smart contract (Escrow) until project completion and approval conditions are met, eliminating the traditional risks where either the freelancer works first without payment guarantee or the client pays upfront without delivery assurance."
+						},
+						"q2": {
+							"question": "How do I get started with freelance escrow?",
+							"answer": "Click the \"Start Escrow\" button to create a wallet or sign-in. For more detailed information about the complete process, see our Workflow page which explains each step from setup to fund release."
+						},
+						"q3": {
+							"question": "What types of freelance work can use escrow?",
+							"answer": "Digital escrow can be used for nearly every type of freelance service where deliverables are provided, including web development, graphic design, content writing, digital marketing, photography, consulting, and more. The escrow supports freelancer-to-client (F2C), business-to-freelancer (B2F), and individual-to-freelancer (I2F) transactions. For a comprehensive overview of supported service categories, visit our Supporting All Service Categories section to get a first impression of the possibilities."
+						}
+					}
+				},
+				"security": {
+					"title": "Security & Safety",
+					"questions": {
+						"q1": {
+							"question": "How secure are my funds in escrow?",
+							"answer": "Funds in the escrow are secure. No third party, including the development company that created the technology behind the escrow, has access to funds in the escrow. The funds are held in what's called a smart contract, which is a self-executing program on the blockchain that automatically enforces the agreed terms without human intervention. The escrow uses a multi-signature approach, meaning multiple cryptographic signatures are required to authorize any transaction, providing an additional layer of security. This ensures that funds can only be released when all predetermined conditions are met by both project parties."
+						},
+						"q2": {
+							"question": "What happens if there's a project dispute?",
+							"answer": "Both parties can raise disputes, which immediately freezes the funds to protect everyone involved. Once a dispute is initiated, both parties have time to find a bilateral compromise and agree on adjustments such as offering revisions, extending deadlines, or partial payments. If they cannot reach a compromise through direct negotiation, the case will be escalated to a neutral arbitrator for final resolution. For detailed information about this process, see our Project Dispute Resolution section."
+						}
+					}
+				},
+				"process": {
+					"title": "Process & Timeline",
+					"questions": {
+						"q1": {
+							"question": "How long does the freelance escrow process take?",
+							"answer": "The time depends entirely on your project scope and complexity. It could be just a few days for simple tasks, but also weeks or months for complex development projects. Here's a typical example: Setup (1 day), Funding (1 day), Project work (2-4 weeks), Review (2-3 days), Funds release (same day). For a quicker project: Setup and Funding today, Work completion in 3-5 days, Review and funds release within 24 hours of submission."
+						},
+						"q2": {
+							"question": "When are funds released to the freelancer?",
+							"answer": "Fund release depends on the pre-agreed release methods that both parties establish when setting up the escrow. The release method depends on the specific needs and requirements of your project. For detailed information about the various release options available, see our Flexible Payment Release Options section."
+						}
+					}
+				},
+				"payments": {
+					"title": "Payments & Fees",
+					"questions": {
+						"q1": {
+							"question": "What are the fees for using freelance escrow?",
+							"answer": "The escrow is based on a blockchain solution, which requires transaction fees (often called \"gas fees\" - named after the computational energy needed to process transactions, similar to how a car needs gas to run). These blockchain transaction fees are necessary to secure and process your transactions on the network. There may be additional fees such as review fees for external verification, fees for project advisors, and fees for arbitration services. All fees are completely transparent - when you define the project amount and select optional services during escrow setup, both freelancer and client will see exactly what fees apply. The client funds the project amount plus all fees, and the escrow will not be activated unless the full amount is funded."
+						},
+						"q2": {
+							"question": "What payment methods are accepted?",
+							"answer": "You need to distinguish between payment methods for the escrow and payment methods for your wallet. The escrow uses only digital currencies such as USDT (USD from Tether), USDC (USD from Circle), or other stablecoins and CBDCs (Central Bank Digital Currencies). The escrow is funded using currencies from your digital wallet. To get USDC, USDT, or other stablecoins into your wallet, you can use cryptocurrency exchanges or On-Ramp providers. For detailed information about converting traditional money to digital currencies, see our Digital Payments for Freelancers section."
+						}
+					}
+				},
+				"freelance": {
+					"title": "Freelance Projects",
+					"questions": {
+						"q1": {
+							"question": "Which countries and regions are supported for freelance work?",
+							"answer": "The escrow is a peer-to-peer system that can theoretically connect freelancers and clients in any country or region of the world. However, it can only be used in countries where digital currencies are legally allowed. Some restrictions may apply based on local regulations and international sanctions lists. We recommend checking your local regulations regarding digital currency usage and checking international regulations and sanctions before proceeding with transactions."
+						},
+						"q2": {
+							"question": "How do you handle project scope and deliverable requirements?",
+							"answer": "The escrow is a financial contract that is based on the underlying project agreement or work contract but does not replace these contracts. Freelancers and clients are responsible for clearly defining project scope, deliverables, timelines, revision policies, intellectual property rights, and all other project requirements. Since the escrow operates as a peer-to-peer transaction, compliance with local employment laws and tax obligations remain with the individual parties. We recommend using detailed project contracts and consulting with legal advisors for complex freelance arrangements."
+						}
+					}
+				}
+			},
+			"cta": {
+				"title": "Still Have Questions?",
+				"subtitle": "Our freelance experts are here to help you with any specific questions about your project needs.",
+				"contactButton": "Contact Support",
+				"startProjectButton": "Start Your Project"
+			}
+		},
+		"guides": {
+			"metadata": {
+				"title": "Freelance Escrow Guides - Resources & Tutorials",
+				"description": "Comprehensive guides and resources to help freelancers master digital escrow for secure project transactions."
+			},
+			"hero": {
+				"title": "Freelance Escrow Guides",
+				"subtitle": "Comprehensive resources to help you master freelance work with digital escrow protection."
+			},
+			"featured": {
+				"badge": "Featured Guide",
+				"title": "Complete Guide to Freelance Project Escrow",
+				"description": "Everything you need to know about using digital escrow for secure freelance project transactions. From setup to completion, this comprehensive guide covers all aspects of freelance escrow.",
+				"readTime": "30 min read",
+				"level": "Beginner to Advanced",
+				"button": "Read Full Guide",
+				"learnItems": [
+					"Setting up your first freelance escrow",
+					"Project requirements and milestone definition",
+					"Payment release conditions for freelancers",
+					"Dispute resolution process for projects",
+					"Best practices for freelancers and clients",
+					"Common pitfalls and how to avoid them"
+				]
+			},
+			"cta": {
+				"title": "Need Personalized Guidance?",
+				"subtitle": "Our freelance experts are here to help you navigate your specific project situation.",
+				"contactButton": "Contact Freelance Expert",
+				"startProjectButton": "Start Your Project"
+			}
+		},
+		"workflow": {
+			"metadata": {
+				"title": "Digital Escrow Workflow for Freelancers - Secure Project Payments | Escrow Protocol",
+				"description": "Learn how digital escrow works for freelance projects. Step-by-step guide to secure payments, milestone verification, and dispute resolution for freelancers and clients."
+			},
+			"hero": {
+				"badge": "Secure Freelance Workflow",
+				"title": "Freelance Escrow Workflow",
+				"subtitle": "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle.",
+				"features": [
+					"Payment Security",
+					"Milestone-Based Release",
+					"Lower Transaction Costs"
+				]
+			},
+			"steps": {
+				"title": "4 Steps of the Freelance Escrow",
+				"subtitle": "A step-by-step breakdown of the secure digital escrow process for freelance projects",
+				"step1": {
+					"title": "1. Project Agreement",
+					"description": "Define project scope, milestones, payment amount and delivery timeline."
+				},
+				"step2": {
+					"title": "2. Secure Funding",
+					"description": "Client deposits full payment into escrow before work begins"
+				},
+				"step3": {
+					"title": "3. Complete Milestones",
+					"description": "Deliver work according to agreed milestones and upload deliverables."
+				},
+				"step4": {
+					"title": "4. Get Paid",
+					"description": "Receive automatic payments as milestones are approved or time conditions are met."
+				}
+			},
+			"howItWorks": {
+				"title": "How Digital Escrow Works for Freelancers",
+				"subtitle": "Understanding the complete digital escrow process for secure freelance project payments",
+				"onboarding": {
+					"title": "Onboarding",
+					"description": "The secure escrow process begins with a simple online setup completed within minutes. Both freelancer and client create a digital wallet — a secure digital account for sending and receiving digital currencies like USD or EUR. This wallet acts like a digital bank account, keeping everything private and secure. The setup requires no traditional banks and gives you complete control over your assets. Once established, you can easily participate in freelance project escrows with full privacy and security, ensuring your payments are protected.",
+					"features": [
+						"Sign-in and create a digital wallet",
+						"No banks required, full asset control",
+						"Ready for secure freelance projects"
+					]
+				},
+				"projectAgreement": {
+					"title": "Project Agreement",
+					"description": "Once onboarded, both parties collaborate to define the project terms. This includes specifying the project scope, deliverables, milestones, payment amounts, and timelines. The agreement is recorded in a smart contract that automatically enforces the terms. This ensures both freelancer and client have a clear, legally binding understanding of expectations. The smart contract acts as an impartial third party that cannot be altered once established, providing security and transparency for both parties.",
+					"features": [
+						"Define project scope and deliverables",
+						"Set milestones and payment terms",
+						"Smart contract enforces agreement"
+					]
+				}
+			}
+		}
+	}
+}

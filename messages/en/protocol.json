@@ -1,0 +1,124 @@
+{
+  "protocol": {
+    "metadata": {
+      "title": "Protocol - Escrow Protocol",
+      "description": "Explore the smart contract architecture of the Escrow Protocol built on Internet Computer. Join our developer community."
+    },
+    "hero": {
+      "badge": "Protocol & Community",
+      "title": "Built on Internet Computer",
+      "subtitle": "Explore the smart contract architecture, join our developer community, and help build the future of trustless escrow infrastructure.",
+      "primaryButton": "Join Community",
+      "secondaryButton": "Read Documentation"
+    },
+    "tabs": {
+      "protocol": "Protocol",
+      "community": "Community",
+      "developers": "Developers"
+    },
+    "protocolTab": {
+      "title": "Smart Contract Architecture",
+      "subtitle": "Trustless escrow infrastructure built on Internet Computer with Chain Fusion for multi-chain interoperability.",
+      "features": {
+        "canister": {
+          "title": "Canister Smart Contracts",
+          "description": "Escrow logic runs in IC canisters with deterministic execution and cryptographic state verification."
+        },
+        "chainFusion": {
+          "title": "Chain Fusion Integration",
+          "description": "Native Bitcoin and Ethereum integration via threshold ECDSA and HTTPS outcalls for cross-chain escrow."
+        },
+        "crypto": {
+          "title": "Cryptographic Guarantees",
+          "description": "Multi-signature schemes and time-locked contracts ensure trustless execution without custodial risk."
+        }
+      },
+      "mechanisms": {
+        "title": "Smart Contract Release Mechanisms",
+        "automated": {
+          "title": "Automated Release Conditions",
+          "features": [
+            "Multi-signature threshold schemes (m-of-n)",
+            "Time-locked release with block height verification",
+            "Oracle integration for external data verification",
+            "Document hash verification and IPFS storage"
+          ]
+        },
+        "advanced": {
+          "title": "Advanced Contract Features",
+          "features": [
+            "Milestone-based state transitions",
+            "Programmable approval conditions",
+            "Dispute resolution with arbitrator DAOs",
+            "Gas-efficient batch operations"
+          ]
+        }
+      }
+    },
+    "communityTab": {
+      "title": "Join Our Community",
+      "subtitle": "Connect with users, developers, and contributors building the future of decentralized escrow.",
+      "discord": {
+        "title": "Discord Community",
+        "description": "Join our active Discord server for real-time discussions, support, and updates.",
+        "button": "Join Discord"
+      },
+      "governance": {
+        "title": "Governance Forum",
+        "description": "Participate in protocol governance and vote on important proposals and upgrades.",
+        "button": "Visit Forum"
+      },
+      "telegram": {
+        "title": "Telegram Group",
+        "description": "Connect with other users and get quick answers to your questions.",
+        "button": "Join Telegram"
+      }
+    },
+    "developersTab": {
+      "title": "Build with Our Protocol",
+      "subtitle": "Integrate escrow functionality into your platform or build new applications on top of our protocol.",
+      "api": {
+        "title": "API Documentation",
+        "description": "Comprehensive API docs and SDKs for integrating escrow into your applications.",
+        "button": "View API Docs"
+      },
+      "github": {
+        "title": "Open Source",
+        "description": "Explore our open-source codebase and contribute to protocol development.",
+        "button": "View on GitHub"
+      },
+      "guides": {
+        "title": "Developer Guides",
+        "description": "Step-by-step tutorials and examples to get you started building quickly.",
+        "button": "Read Guides"
+      },
+      "integration": {
+        "title": "Integration Options",
+        "widget": {
+          "title": "Embed Escrow Widget",
+          "description": "Add escrow functionality to your existing platform with our embeddable widget.",
+          "features": [
+            "Easy integration with any website",
+            "Customizable UI to match your brand",
+            "Full API access and webhooks"
+          ]
+        },
+        "custom": {
+          "title": "Build Custom Solutions",
+          "description": "Use our smart contract interfaces to build completely custom escrow solutions.",
+          "features": [
+            "Direct smart contract interaction",
+            "Custom business logic support",
+            "White-label solutions available"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Build the Future?",
+      "subtitle": "Join our community of developers, users, and contributors building the next generation of decentralized business tools.",
+      "primaryButton": "Join Community",
+      "secondaryButton": "Start Building"
+    }
+  }
+}
