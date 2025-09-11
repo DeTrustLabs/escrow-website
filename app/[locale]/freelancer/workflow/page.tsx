@@ -26,7 +26,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 
 export const metadata = {
   title:
@@ -179,11 +179,17 @@ export default function FreelancerWorkflowPage() {
             </p>
           </div>
 
-          <div className="mb-12">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Escrw%20Freelance%20STP%203%20%284%29.png-2ogWHJ41ekTJ4oOHM9qAlUJOqeoUly.jpeg"
+          <div className="mb-12 flex justify-center">
+            <AppImage
+              src="/images/digital-escrow-freelance-process-illustration.jpg"
               alt="Digital Escrow Process Illustration for Freelance Projects"
-              className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
+              width={900}
+              height={600}
+              rounded
+              shadow
+              priority
+              variant="content"
+              className="max-w-3xl w-full h-auto"
             />
           </div>
 
@@ -750,12 +756,17 @@ export default function FreelancerWorkflowPage() {
 
             <div className="space-y-16">
               {/* What Are Digital Currencies */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/stablecoins-overview.png"
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/stablecoins-overview.png"
                     alt="USD Stablecoins and Digital Currencies Overview"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    rounded
+                    shadow
+                    variant="card"
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
                 <div className="lg:col-span-3">
@@ -780,12 +791,17 @@ export default function FreelancerWorkflowPage() {
               </div>
 
               {/* What Is a Wallet */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/digital-wallet-interface.png"
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/digital-wallet-interface.png"
                     alt="Digital Wallet Interface showing USDT, USDC, and other stablecoin balances"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    rounded
+                    shadow
+                    variant="card"
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
                 <div className="lg:col-span-3">
@@ -809,12 +825,17 @@ export default function FreelancerWorkflowPage() {
               </div>
 
               {/* How can I change FIAT into Stablecoins */}
-              <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/fiat-conversion-process.png"
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/fiat-conversion-process.png"
                     alt="FIAT to Digital Currency Conversion Process"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    rounded
+                    shadow
+                    variant="card"
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
                 <div className="lg:col-span-3">

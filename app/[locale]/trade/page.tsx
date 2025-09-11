@@ -19,7 +19,7 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 
@@ -259,12 +259,16 @@ export default async function HomePage() {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
               {t("whatIs.subtitle")}
             </p>
-            <div className="mb-8 relative">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Escrow%20Illustration.png-SXVNoV0T9tJ3K9QvZH46VFQEFBN1ZU.jpeg"
+            <div className="mb-8 flex justify-center">
+              <AppImage
+                src="/images/escrow-process-illustration.png"
                 alt={t("whatIs.imageAlt")}
-                fill
-                className="object-cover rounded-lg shadow-lg"
+                width={900}
+                height={600}
+                rounded
+                shadow
+                variant="content"
+                className="w-full max-w-3xl h-auto object-cover"
               />
             </div>
 
@@ -364,11 +368,13 @@ export default async function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Electronics%20%26%20Technology.jpg-ruuM1ul4Sf10PhaZ9t5ViAPxCQeRLi.jpeg"
+                <AppImage
+                  src="/images/Electronics & Technology.jpg"
                   alt={t("industries.electronics.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -384,11 +390,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Textiles%20%26%20Apparel.jpg-89jIjI30u2y6Ravd6m4qMWZ8Df2GSh.jpeg"
+                <AppImage
+                  src="/images/Textiles & Apparel.jpg"
                   alt={t("industries.textiles.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -404,11 +412,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Machinery%20%26%20Equipment.jpg-j9aR8wKHwA0KSaRVH04wTrQ7DlLcqe.jpeg"
+                <AppImage
+                  src="/images/Machinery & Equipment.jpg"
                   alt={t("industries.machinery.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -424,11 +434,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Raw%20Materials.jpg-ZZxBK2jI2Io82BSqAl56Xmvb3LF290.jpeg"
+                <AppImage
+                  src="/images/Raw Materials.jpg"
                   alt={t("industries.rawMaterials.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -444,11 +456,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Food%20%26%20Agriculture.jpg-ay1I14T5ZBeRvXFLud4f3xfEBeL6HQ.jpeg"
+                <AppImage
+                  src="/images/Food & Agriculture.jpg"
                   alt={t("industries.food.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -464,11 +478,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Automotive%20Parts.jpg-afpsyE4i9nhxtKsKgI86p0tSDvjNAt.jpeg"
+                <AppImage
+                  src="/images/Automotive Parts.jpg"
                   alt={t("industries.automotive.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -484,11 +500,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Medical%20Equipment.jpg-uhNWc74DC3LBgM6a4EIqUOMOZ9RtZz.jpeg"
+                <AppImage
+                  src="/images/Medical Equipment.jpg"
                   alt={t("industries.medical.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -504,11 +522,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Construction%20Materials.jpg-e5sdTpiyxbpZchxiQi2wbERkN8liKP.jpeg"
+                <AppImage
+                  src="/images/Construction Materials.jpg"
                   alt={t("industries.construction.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -524,11 +544,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Energy%20%26%20Oil_renewable%20energy%20equipment.jpg-SNaFM4Isf2ukAS2JIpwyEkZkhBAh6P.jpeg"
+                <AppImage
+                  src="/images/Energy & Oil_renewable energy equipment.jpg"
                   alt={t("industries.energy.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -544,11 +566,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Consumer%20Goods.jpg-fzay2ZAtwtWGEWJpqXFNcpyfdRZYGR.jpeg"
+                <AppImage
+                  src="/images/Consumer Goods.jpg"
                   alt="Consumer Goods"
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -564,11 +588,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Chemicals%20%26%20Plastics.jpg-qS94g0xLWqlSisoi5F4n72JPB7hlPg.jpeg"
+                <AppImage
+                  src="/images/Chemicals & Plastics.jpg"
                   alt={t("industries.chemicals.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">
@@ -584,11 +610,13 @@ export default async function HomePage() {
             </Card>
             <Card className="border-0 shadow-lg overflow-hidden">
               <div className="relative">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20Goods.jpg-QpSvCVt9a6jtDMbhV7ZhFFo3H9InAy.jpeg"
+                <AppImage
+                  src="/images/Luxury Goods.jpg"
                   alt={t("industries.luxury.imageAlt")}
-                  fill
-                  objectFit="cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
                   <h3 className="text-white text-lg font-bold">

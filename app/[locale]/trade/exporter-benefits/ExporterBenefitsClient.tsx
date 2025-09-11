@@ -34,7 +34,7 @@ import {
 import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 
 export default function ExporterBenefitsClient() {
   const t = useTranslations("trade.exporterBenefits")
@@ -95,10 +95,14 @@ export default function ExporterBenefitsClient() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="/professional-middle-aged-african-businessman-in-su.png"
+                  <AppImage
+                    src="/images/professional-middle-aged-african-businessman-in-su.png"
                     alt={t("testimonials.samuel.name")}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    width={80}
+                    height={80}
+                    variant="avatar"
+                    rounded
+                    className="w-20 h-20 object-cover flex-shrink-0"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
@@ -116,10 +120,14 @@ export default function ExporterBenefitsClient() {
 
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="/maria-andersson-professional.png"
+                  <AppImage
+                    src="/images/maria-andersson-professional.png"
                     alt={t("testimonials.maria.name")}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    width={80}
+                    height={80}
+                    variant="avatar"
+                    rounded
+                    className="w-20 h-20 object-cover flex-shrink-0"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">

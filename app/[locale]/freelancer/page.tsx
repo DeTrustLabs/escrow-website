@@ -19,7 +19,7 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -231,12 +231,18 @@ export default async function FreelancerPage() {
               {t("whatIs.subtitle")}
             </p>
 
-            <div className="mb-8 relative w-full max-w-3xl mx-auto aspect-video">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Escrw%20Freelance%20STP%203%20%284%29.png-2ogWHJ41ekTJ4oOHM9qAlUJOqeoUly.jpeg"
+            <div className="mb-8 flex justify-center">
+              <AppImage
+                src="/images/digital-escrow-freelance-process-illustration.jpg"
                 alt={t("whatIs.imageAlt")}
-                fill
-                className="rounded-lg shadow-lg object-cover"
+                width={900}
+                height={600}
+                rounded
+                shadow
+                variant="content"
+                className="w-full max-w-3xl h-auto object-cover"
+                quality={85}
+                priority
               />
             </div>
 
@@ -342,11 +348,13 @@ export default async function FreelancerPage() {
             {/* Row 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Web%20Development.jpg-G5rMJAglMKptzudBbL8GFjHTemTmtR.jpeg"
+                <AppImage
+                  src="/images/Web Development.jpg"
                   alt={t("categories.webDev.imageAlt")}
-                  fill
-                  className="object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -363,11 +371,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Graphic%20Design.jpg-xVVlSyBRZ8HMkFsjUbKUkJIS04IrcB.jpeg"
+                <AppImage
+                  src="/images/Graphic Design.jpg"
                   alt={t("categories.graphicDesign.imageAlt")}
-                  fill
-                  className="object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -384,11 +394,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Content%20Writing.jpg-uzinNx2ppddZVj5w2YSBQgApOkP14W.jpeg"
+                <AppImage
+                  src="/images/Content Writing.jpg"
                   alt={t("categories.contentWriting.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -405,11 +417,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Video%20Production.jpg-fWyy1gBgQAx64ZXLR7bgjtsJd33bme.jpeg"
+                <AppImage
+                  src="/images/Video Production.jpg"
                   alt={t("categories.videoProduction.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -427,11 +441,13 @@ export default async function FreelancerPage() {
             {/* Row 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Digital%20Marketing.jpg-HQKDLKGlYeRBvlB5Tjw6IASkd9WxFq.jpeg"
+                <AppImage
+                  src="/images/Digital Marketing.jpg"
                   alt="Digital Marketing"
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -448,11 +464,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Software%20Development.jpg-6cdc2DqxZgti1IFh8KlkOacyUxQAVh.jpeg"
+                <AppImage
+                  src="/images/Software Development.jpg"
                   alt={t("categories.softwareDev.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -469,11 +487,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/UI_UX%20Design.jpg-6uv3OkKJnkaKu4aj9diyxMD0gpIqwO.jpeg"
+                <AppImage
+                  src="/images/UI_UX Design.jpg"
                   alt="UI/UX Design"
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -490,11 +510,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Virtual%20Assistance.jpg-ThFmuPInxXc33XGgwKivA9B06zvdR3.jpeg"
+                <AppImage
+                  src="/images/Virtual Assistance.jpg"
                   alt="Virtual Assistance"
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -512,11 +534,13 @@ export default async function FreelancerPage() {
             {/* Row 3 - New additions */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Legal%20Services.jpg-YBdxMXN0eCOWJInrVpyRCgXpf0eFtb.jpeg"
+                <AppImage
+                  src="/images/Legal Services.jpg"
                   alt={t("categories.legalServices.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -533,11 +557,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Data%20Analysis.jpg-WU8PEh5L9DyUG9UxC3fZceTzbxYl04.jpeg"
+                <AppImage
+                  src="/images/Data Analysis.jpg"
                   alt={t("categories.dataAnalysis.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -554,11 +580,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Consulting.jpg-xWIWl8ZgNip7uU1jjfAy6vN1lCcOR8.jpeg"
+                <AppImage
+                  src="/images/Consulting.jpg"
                   alt={t("categories.consulting.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
@@ -575,11 +603,13 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <Image
-                  fill
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Translation.jpg-EkQi7jMi2145By07CclfhtqKcwwKHR.jpeg"
+                <AppImage
+                  src="/images/Translation.jpg"
                   alt={t("categories.translation.imageAlt")}
-                  className="w-full h-full object-cover"
+                  aspectRatio="4 / 3"
+                  rounded
+                  shadow
+                  variant="card"
                 />
                 <div className="absolute top-4 left-4">
                   <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">

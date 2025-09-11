@@ -28,7 +28,7 @@ import {
   Scale,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 
@@ -96,12 +96,14 @@ export default function ImporterBenefitsClient() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="flex items-start space-x-4 mb-6">
-                <Image
-                  src="/professional-middle-aged-british-businessman-with-.png"
+                <AppImage
+                  src="/images/professional-middle-aged-british-businessman-with-.png"
                   alt={t("testimonials.michael.name")}
                   width={80}
                   height={80}
-                  className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                  variant="avatar"
+                  rounded
+                  className="w-20 h-20 object-cover flex-shrink-0"
                 />
                 <div>
                   <h3 className="font-semibold text-lg text-gray-900">
@@ -116,12 +118,14 @@ export default function ImporterBenefitsClient() {
                 {t("testimonials.michael.quote")}
               </blockquote>
               <div className="flex items-start space-x-4 mb-6">
-                <Image
-                  src="/professional-middle-aged-italian-businesswoman-wit.png"
+                <AppImage
+                  src="/images/professional-middle-aged-italian-businesswoman-wit.png"
                   alt={t("testimonials.isabella.name")}
                   width={80}
                   height={80}
-                  className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                  variant="avatar"
+                  rounded
+                  className="w-20 h-20 object-cover flex-shrink-0"
                 />
                 <div className="w-20 h-20 rounded-full object-cover flex-shrink-0">
                   <div>

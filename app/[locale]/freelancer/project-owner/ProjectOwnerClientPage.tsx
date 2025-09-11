@@ -31,7 +31,7 @@ import {
   Eye,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 
 export default function ProjectOwnerClientPage() {
   return (
@@ -86,10 +86,14 @@ export default function ProjectOwnerClientPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="/project-owner-testimonial-1.jpg"
+                  <AppImage
+                    src="/images/project-owner-testimonial-1.jpg"
                     alt="David Thompson"
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    width={80}
+                    height={80}
+                    variant="avatar"
+                    rounded
+                    className="w-20 h-20 object-cover flex-shrink-0"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
@@ -112,10 +116,14 @@ export default function ProjectOwnerClientPage() {
 
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="/project-owner-testimonial-2.jpg"
+                  <AppImage
+                    src="/images/project-owner-testimonial-2.jpg"
                     alt="Lisa Park"
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    width={80}
+                    height={80}
+                    variant="avatar"
+                    rounded
+                    className="w-20 h-20 object-cover flex-shrink-0"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">

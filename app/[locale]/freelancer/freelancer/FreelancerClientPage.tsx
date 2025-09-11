@@ -32,7 +32,7 @@ import {
   Banknote,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 
 export default function FreelancerClientPage() {
   return (
@@ -87,12 +87,14 @@ export default function FreelancerClientPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/freelancer-testimonial-1-lezkU49Y0BODjPBkDrjl6osUxdbhNK.jpg"
+                  <AppImage
+                    src="/images/freelancer-testimonial-1.jpg"
                     alt="Sarah Chen"
                     width={80}
                     height={80}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    rounded
+                    variant="avatar"
+                    className="w-20 h-20 object-cover flex-shrink-0 rounded-full"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">
@@ -116,12 +118,14 @@ export default function FreelancerClientPage() {
 
               <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
                 <div className="flex items-start space-x-4 mb-6">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/freelancer-testimonial-2-ugDutz7sWj48uWIa6HfbAVPrmFUcOu.jpg"
+                  <AppImage
+                    src="/images/freelancer-testimonial-2.jpg"
                     alt="Marcus Rodriguez"
                     width={80}
                     height={80}
-                    className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                    rounded
+                    variant="avatar"
+                    className="w-20 h-20 object-cover flex-shrink-0 rounded-full"
                   />
                   <div>
                     <h3 className="font-semibold text-lg text-gray-900">

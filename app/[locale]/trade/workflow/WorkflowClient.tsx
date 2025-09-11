@@ -27,7 +27,7 @@ import {
   Settings,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import { AppImage } from "@/components/app-image"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -91,21 +91,25 @@ export function WorkflowClient() {
       {/* How a Digital Escrow Works */}
       <section className="py-20 bg-white">
         <div className="container px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
+          <div className="mb-16 flex flex-col items-center text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-900">
               {t("howItWorks.title")}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <AppImage
+              src="/images/escrow-process-illustration.png"
+              alt="Digital Escrow Process Illustration"
+              variant="content"
+              width={600}
+              height={400}
+              rounded
+              shadow
+              priority
+              quality={85}
+              className="w-full h-auto max-w-3xl"
+            />
+            <p className="text-xl text-muted-foreground leading-relaxed mt-6 max-w-3xl">
               {t("howItWorks.subtitle")}
             </p>
-          </div>
-
-          <div className="mb-12">
-            <Image
-              src="/escrow-process-illustration.png"
-              alt="Digital Escrow Process Illustration"
-              className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
-            />
           </div>
 
           {/* Timeline Steps */}
@@ -551,17 +555,22 @@ export function WorkflowClient() {
             <div className="space-y-16">
               {/* What Are Digital Currencies */}
               <div
-                className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center"
+                className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center"
                 aria-label="digital currencies explanation"
               >
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/stablecoins-overview.png"
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/stablecoins-overview.png"
                     alt="USD Stablecoins and Digital Currencies Overview"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    variant="card"
+                    rounded
+                    shadow
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
-                <div className="lg:col-span-3">
+                <div className="md:col-span-3">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">
                     {t("digitalPayments.digitalCurrencies.title")}
                   </h3>
@@ -573,17 +582,22 @@ export function WorkflowClient() {
 
               {/* What Is a Wallet */}
               <div
-                className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center"
+                className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center"
                 aria-label="digital wallet for secure trade"
               >
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/digital-wallet-interface.png"
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/digital-wallet-interface.png"
                     alt="Digital Wallet Interface showing USDT, USDC, and other stablecoin balances"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    variant="card"
+                    rounded
+                    shadow
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
-                <div className="lg:col-span-3">
+                <div className="md:col-span-3">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">
                     {t("digitalPayments.digitalWallet.title")}
                   </h3>
@@ -595,17 +609,22 @@ export function WorkflowClient() {
 
               {/* How can I change FIAT into Stablecoins */}
               <div
-                className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center"
+                className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center"
                 aria-label="converting fiat to stablecoins"
               >
-                <div className="lg:col-span-2 flex justify-center">
-                  <Image
-                    src="/fiat-conversion-process.png"
+                <div className="md:col-span-2 flex justify-center">
+                  <AppImage
+                    src="/images/fiat-conversion-process.png"
                     alt="FIAT to Digital Currency Conversion Process"
-                    className="w-full max-w-sm rounded-lg shadow-lg"
+                    width={480}
+                    height={480}
+                    variant="card"
+                    rounded
+                    shadow
+                    className="w-full max-w-sm h-auto"
                   />
                 </div>
-                <div className="lg:col-span-3">
+                <div className="md:col-span-3">
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">
                     {t("digitalPayments.fiatConversion.title")}
                   </h3>
