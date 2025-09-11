@@ -384,7 +384,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Content%20Writing.jpg-uzinNx2ppddZVj5w2YSBQgApOkP14W.jpeg"
                   alt={t("categories.contentWriting.imageAlt")}
                   className="w-full h-full object-cover"
@@ -404,7 +405,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Video%20Production.jpg-fWyy1gBgQAx64ZXLR7bgjtsJd33bme.jpeg"
                   alt={t("categories.videoProduction.imageAlt")}
                   className="w-full h-full object-cover"
@@ -425,7 +427,8 @@ export default async function FreelancerPage() {
             {/* Row 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Digital%20Marketing.jpg-HQKDLKGlYeRBvlB5Tjw6IASkd9WxFq.jpeg"
                   alt="Digital Marketing"
                   className="w-full h-full object-cover"
@@ -445,7 +448,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Software%20Development.jpg-6cdc2DqxZgti1IFh8KlkOacyUxQAVh.jpeg"
                   alt={t("categories.softwareDev.imageAlt")}
                   className="w-full h-full object-cover"
@@ -465,7 +469,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/UI_UX%20Design.jpg-6uv3OkKJnkaKu4aj9diyxMD0gpIqwO.jpeg"
                   alt="UI/UX Design"
                   className="w-full h-full object-cover"
@@ -485,7 +490,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Virtual%20Assistance.jpg-ThFmuPInxXc33XGgwKivA9B06zvdR3.jpeg"
                   alt="Virtual Assistance"
                   className="w-full h-full object-cover"
@@ -506,7 +512,8 @@ export default async function FreelancerPage() {
             {/* Row 3 - New additions */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Legal%20Services.jpg-YBdxMXN0eCOWJInrVpyRCgXpf0eFtb.jpeg"
                   alt={t("categories.legalServices.imageAlt")}
                   className="w-full h-full object-cover"
@@ -526,7 +533,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Data%20Analysis.jpg-WU8PEh5L9DyUG9UxC3fZceTzbxYl04.jpeg"
                   alt={t("categories.dataAnalysis.imageAlt")}
                   className="w-full h-full object-cover"
@@ -546,7 +554,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Consulting.jpg-xWIWl8ZgNip7uU1jjfAy6vN1lCcOR8.jpeg"
                   alt={t("categories.consulting.imageAlt")}
                   className="w-full h-full object-cover"
@@ -566,7 +575,8 @@ export default async function FreelancerPage() {
 
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <Image
+                  fill
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Translation.jpg-EkQi7jMi2145By07CclfhtqKcwwKHR.jpeg"
                   alt={t("categories.translation.imageAlt")}
                   className="w-full h-full object-cover"
