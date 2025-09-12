@@ -117,9 +117,6 @@ export default function FreelancerBlogPage() {
       <CTASection
         title={t("newsletter.title")}
         subtitle={t("newsletter.subtitle")}
-        primary={{ label: t("newsletter.button"), onClick: () => {} }}
-        rounded="3xl"
-        gradient="vivid"
       >
         <div className="max-w-md mx-auto w-full flex gap-4">
           <Input

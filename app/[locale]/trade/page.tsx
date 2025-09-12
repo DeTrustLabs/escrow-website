@@ -499,8 +499,6 @@ export default async function HomePage() {
 
       {/* CTA Section */}
       <CTASection
-        gradient="simple"
-        rounded="2xl"
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}
         primary={{

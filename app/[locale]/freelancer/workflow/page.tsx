@@ -724,8 +724,6 @@ export default function FreelancerWorkflowPage() {
           label: t("callToAction.talkToAdvisor"),
           href: "/freelancer/contacts",
         }}
-        rounded="3xl"
-        gradient="vivid"
       />
     </SectionGroup>
   )

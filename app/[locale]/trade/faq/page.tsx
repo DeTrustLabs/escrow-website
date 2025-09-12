@@ -312,8 +312,6 @@ export default async function FAQPage() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
           newTab: true,
         }}
-        rounded="3xl"
-        gradient="vivid"
       />
     </SectionGroup>
   )

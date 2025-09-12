@@ -470,7 +470,7 @@ export default async function HomePage() {
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}
         primary={{ label: t("cta.startEscrow"), href: APP_URL, newTab: true }}
-        secondary={{ label: t("cta.exploreDocs"), onClick: () => {} }}
+        secondary={{ label: t("cta.exploreDocs"), href: ROUTES.protocol }}
       />
     </SectionGroup>
   )

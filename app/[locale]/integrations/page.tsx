@@ -403,8 +403,6 @@ export default async function IntegrationsPage() {
           label: t("cta.secondaryButton"),
           href: "/protocol#community",
         }}
-        rounded="2xl"
-        gradient="simple"
       />
     </SectionGroup>
   )
