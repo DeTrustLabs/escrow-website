@@ -97,12 +97,79 @@ export function WorkflowClient() {
         ]}
       />
 
+      {/* 4 Steps of the Escrow */}
+      <section>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
+            {t("steps.title")}
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            {t("steps.subtitle")}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center">
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Handshake className="h-10 w-10 text-primary" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">
+              {t("steps.step1.title")}
+            </h3>
+            <p className="text-muted-foreground">
+              {t("steps.step1.description")}
+            </p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <DollarSign className="h-10 w-10 text-primary" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">
+              {t("steps.step2.title")}
+            </h3>
+            <p className="text-muted-foreground">
+              {t("steps.step2.description")}
+            </p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Package className="h-10 w-10 text-primary" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">
+              {t("steps.step3.title")}
+            </h3>
+            <p className="text-muted-foreground">
+              {t("steps.step3.description")}
+            </p>
+          </div>
+
+          <div className="text-center">
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <CheckCircle className="h-10 w-10 text-primary" />
+            </div>
+            <h3 className="text-xl font-bold mb-4 text-gray-900">
+              {t("steps.step4.title")}
+            </h3>
+            <p className="text-muted-foreground">
+              {t("steps.step4.description")}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* How a Digital Escrow Works */}
       <section>
         <div className="mb-16 flex flex-col items-center text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-900">
-            {t("howItWorks.title")}
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
+              {t("howItWorks.title")}
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              {t("howItWorks.subtitle")}
+            </p>
+          </div>
           <AppImage
             src="/images/escrow-process-illustration.png"
             alt="Digital Escrow Process Illustration"
@@ -115,9 +182,6 @@ export function WorkflowClient() {
             quality={85}
             className="w-full h-auto max-w-3xl"
           />
-          <p className="text-xl text-muted-foreground leading-relaxed mt-6 max-w-3xl">
-            {t("howItWorks.subtitle")}
-          </p>
         </div>
 
         {/* Timeline Steps */}

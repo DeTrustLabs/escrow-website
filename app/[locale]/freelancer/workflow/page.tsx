@@ -23,8 +23,7 @@ import {
   User,
   Briefcase,
   ShieldIcon,
-  Timer,
-  Banknote,
+  ZapIcon,
 } from "lucide-react"
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
@@ -62,16 +61,16 @@ export default function FreelancerWorkflowPage() {
         subtitle={t("hero.subtitle")}
         trustIndicators={[
           {
-            text: t("hero.trustIndicators.0.text"),
+            text: t("hero.trustIndicators.0"),
             icon: <ShieldIcon className="h-4 w-4 text-primary" />,
           },
           {
-            text: t("hero.trustIndicators.1.text"),
-            icon: <Timer className="h-4 w-4 text-primary" />,
+            text: t("hero.trustIndicators.1"),
+            icon: <ZapIcon className="h-4 w-4 text-primary" />,
           },
           {
-            text: t("hero.trustIndicators.2.text"),
-            icon: <Banknote className="h-4 w-4 text-primary" />,
+            text: t("hero.trustIndicators.2"),
+            icon: <DollarSign className="h-4 w-4 text-primary" />,
           },
         ]}
       />

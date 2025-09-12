@@ -12,6 +12,13 @@ import { sendContactMessage, subscribeToNewsletter } from "./actions"
 import { useTranslations } from "next-intl"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 function SuccessPopup({
   message,
@@ -89,13 +96,7 @@ export default function ContactsPage() {
 
   return (
     <SectionGroup>
-      <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
-      />
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       <section>
         <div className="max-w-6xl mx-auto">
@@ -158,24 +159,24 @@ export default function ContactsPage() {
                       <label className="text-sm font-medium mb-2 block">
                         {t("contactForm.tradeType")}
                       </label>
-                      <select
-                        name="tradeType"
-                        className="w-full p-3 border rounded-lg"
-                        required
-                      >
-                        <option value="">
-                          {t("contactForm.tradeTypePlaceholder")}
-                        </option>
-                        <option value="export">
-                          {t("contactForm.tradeTypes.export")}
-                        </option>
-                        <option value="import">
-                          {t("contactForm.tradeTypes.import")}
-                        </option>
-                        <option value="both">
-                          {t("contactForm.tradeTypes.both")}
-                        </option>
-                      </select>
+                      <Select name="tradeType" required>
+                        <SelectTrigger className="w-full">
+                          <SelectValue
+                            placeholder={t("contactForm.tradeTypePlaceholder")}
+                          />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="freelancer">
+                            {t("contactForm.tradeTypes.export")}
+                          </SelectItem>
+                          <SelectItem value="client">
+                            {t("contactForm.tradeTypes.import")}
+                          </SelectItem>
+                          <SelectItem value="both">
+                            {t("contactForm.tradeTypes.both")}
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div>
@@ -249,7 +250,7 @@ export default function ContactsPage() {
                     />
                     <Button
                       type="submit"
-                      className="w-full bg-[hsl(var(--primary-dark))] hover:bg-[hsl(var(--primary-dark))]/90 text-white font-bold"
+                      className="w-full"
                       size="lg"
                       disabled={isSubmitting}
                     >

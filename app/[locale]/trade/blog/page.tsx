@@ -19,6 +19,7 @@ import {
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
+import { Input } from "@/components/ui/input"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.blog")
@@ -64,13 +65,7 @@ export default async function BlogPage() {
 
   return (
     <SectionGroup>
-      <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
-      />
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       {/* Recent Articles */}
       <section>
@@ -128,8 +123,8 @@ export default async function BlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-primary">
-        <div className="text-center text-white">
+      <section>
+        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("newsletter.title")}
           </h2>
@@ -137,10 +132,10 @@ export default async function BlogPage() {
             {t("newsletter.subtitle")}
           </p>
           <div className="max-w-md mx-auto flex gap-4">
-            <input
+            <Input
               type="email"
+              className="flex-1 h-10 bg-white/10"
               placeholder={t("newsletter.emailPlaceholder")}
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900"
             />
             <Button variant="secondary" size="lg">
               {t("newsletter.button")}

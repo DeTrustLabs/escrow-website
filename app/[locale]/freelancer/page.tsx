@@ -160,10 +160,10 @@ export default async function FreelancerPage() {
           variant: "outline",
         }}
         trustIndicators={[
-          { text: t("hero.trustIndicators.nonCustodial") },
-          { text: t("hero.trustIndicators.openSource") },
-          { text: t("hero.trustIndicators.audited") },
-          { text: t("hero.trustIndicators.availability") },
+          { text: t("hero.trustIndicators.0") },
+          { text: t("hero.trustIndicators.1") },
+          { text: t("hero.trustIndicators.2") },
+          { text: t("hero.trustIndicators.3") },
         ]}
       />
 

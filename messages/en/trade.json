@@ -33,6 +33,26 @@
           "Lower Transaction Costs"
         ]
       },
+      "steps": {
+        "title": "4 Steps of the Escrow",
+        "subtitle": "A step-by-step breakdown of the secure digital escrow process",
+        "step1": {
+          "title": "1. Escrow Agreement",
+          "description": "Negotiate escrow amount, funding date and release mechanism."
+        },
+        "step2": {
+          "title": "2. Verified Funding",
+          "description": "Importer deposits digital currencies into escrow before goods are shipped."
+        },
+        "step3": {
+          "title": "3. Delivery",
+          "description": "Exporter ships goods and uploads delivery documents for verification."
+        },
+        "step4": {
+          "title": "4. Funds Release",
+          "description": "Funds released automatically upon delivery confirmation or document verification."
+        }
+      },
       "howItWorks": {
         "title": "How a Digital Escrow Works",
         "subtitle": "Understanding the complete digital escrow process for secure international trade",

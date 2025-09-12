@@ -29,13 +29,7 @@ export default async function GuidesPage() {
 
   return (
     <SectionGroup>
-      <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
-      />
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       {/* Featured Guide */}
       <section>
@@ -89,8 +83,8 @@ export default async function GuidesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-primary">
-        <div className="text-center text-white">
+      <section>
+        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
           </h2>
