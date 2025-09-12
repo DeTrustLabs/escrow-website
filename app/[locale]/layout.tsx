@@ -29,13 +29,16 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: { locale: string }
 }) {
+  const { locale } = await params
   const messages = await getMessages()
-  // locale is resolved by the segment; provider will use it implicitly
+
   return (
-    <NextIntlClientProvider messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <Header />
         <main className="w-full">{children}</main>

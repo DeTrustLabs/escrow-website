@@ -18,7 +18,9 @@
     "startEscrow": "Démarrer l'escrow",
     "languages": {
       "en": "English",
-      "fr": "Français"
+      "fr": "Français",
+      "es": "Español",
+      "de": "Deutsch"
     }
   }
 }

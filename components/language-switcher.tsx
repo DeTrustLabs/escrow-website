@@ -29,6 +29,7 @@ export function LanguageSwitcher() {
     const segments = pathname.split("/").filter(Boolean)
     if (segments.length === 0) {
       router.push(`/${newLocale}`)
+      router.refresh()
       return
     }
     if (languages.some((l) => l.code === segments[0])) {
@@ -37,6 +38,7 @@ export function LanguageSwitcher() {
       segments.unshift(newLocale)
     }
     router.push(`/${segments.join("/")}`)
+    router.refresh()
   }
 
   return (
