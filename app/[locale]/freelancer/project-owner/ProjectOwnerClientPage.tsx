@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   Accordion,
   AccordionContent,
@@ -32,7 +32,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 import { useTranslations } from "next-intl"
 
 export default function ProjectOwnerClientPage() {

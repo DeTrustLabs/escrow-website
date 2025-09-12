@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   ArrowRight,
   CheckCircle,
@@ -28,7 +28,7 @@ import Link from "next/link"
 import { APP_URL, ROUTES } from "@/lib/urls"
 import { getTranslations, getMessages } from "next-intl/server"
 import type { Metadata } from "next"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home")

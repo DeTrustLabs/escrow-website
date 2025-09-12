@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   Target,
   Shield,
@@ -23,7 +23,7 @@ import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/category-card"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.metadata")
@@ -59,12 +59,12 @@ export default async function HomePage() {
   const t = await getTranslations("trade")
   const messages = await getMessages()
   const tradeRoot = messages.trade
-  const exporterBenefits: string[] = Array.isArray(
+  const exporter: string[] = Array.isArray(
     tradeRoot?.chooseRole?.exporters?.benefits
   )
     ? tradeRoot.chooseRole.exporters.benefits
     : []
-  const importerBenefits: string[] = Array.isArray(
+  const importer: string[] = Array.isArray(
     tradeRoot?.chooseRole?.importers?.benefits
   )
     ? tradeRoot.chooseRole.importers.benefits
@@ -455,13 +455,13 @@ export default async function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {exporterBenefits.map((benefit: string, index: number) => (
+              {exporter.map((benefit: string, index: number) => (
                 <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/exporter-benefits">
+              <Link href="/exporter">
                 <Button className="w-full mt-4">
                   {t("chooseRole.exporters.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -480,13 +480,13 @@ export default async function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {importerBenefits.map((benefit: string, index: number) => (
+              {importer.map((benefit: string, index: number) => (
                 <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/importer-benefits">
+              <Link href="/importer">
                 <Button className="w-full mt-4">
                   {t("chooseRole.importers.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />

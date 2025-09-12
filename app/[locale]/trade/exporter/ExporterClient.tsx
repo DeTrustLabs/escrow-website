@@ -34,30 +34,28 @@ import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 // sections are native; page wraps with SectionGroup
 
-export default function ExporterBenefitsClient() {
-  const t = useTranslations("trade.exporterBenefits")
+export default function ExporterClient() {
+  const t = useTranslations("trade.exporter")
   const messages = useMessages()
   const beforeShippingBenefits = getMessageArray(
     messages,
-    "trade.exporterBenefits.protection.beforeShipping.benefits"
+    "trade.exporter.protection.beforeShipping.benefits"
   )
   const afterDeliveryBenefits = getMessageArray(
     messages,
-    "trade.exporterBenefits.protection.afterDelivery.benefits"
+    "trade.exporter.protection.afterDelivery.benefits"
   )
 
   return (
     <>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
+        titleHighlight={t("hero.titleHighlight")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",

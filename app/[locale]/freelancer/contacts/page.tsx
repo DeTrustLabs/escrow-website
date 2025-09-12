@@ -12,8 +12,8 @@ import {
   sendContactMessage,
   subscribeToNewsletter,
 } from "../../trade/contacts/actions"
-import { Hero } from "@/components/hero"
-import SectionGroup from "@/components/section-group"
+import { Hero } from "@/components/ui/hero"
+import SectionGroup from "@/components/ui/section-group"
 import {
   Select,
   SelectTrigger,

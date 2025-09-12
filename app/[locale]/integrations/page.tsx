@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   Code,
   Layers,
@@ -26,7 +26,7 @@ import Link from "next/link"
 import { getTranslations, getMessages } from "next-intl/server"
 import { Metadata } from "next"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("integrations.metadata")

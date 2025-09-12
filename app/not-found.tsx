@@ -67,10 +67,10 @@ export default async function NotFound() {
             <Link href="/workflow" className="hover:text-primary">
               {t("popularPages.howItWorks")}
             </Link>
-            <Link href="/exporter-benefits" className="hover:text-primary">
+            <Link href="/exporter" className="hover:text-primary">
               {t("popularPages.forExporters")}
             </Link>
-            <Link href="/importer-benefits" className="hover:text-primary">
+            <Link href="/importer" className="hover:text-primary">
               {t("popularPages.forImporters")}
             </Link>
             <Link href="/faq" className="hover:text-primary">

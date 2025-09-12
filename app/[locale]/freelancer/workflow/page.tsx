@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   ArrowRight,
   CheckCircle,
@@ -29,7 +29,7 @@ import {
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 import { useTranslations } from "next-intl"
 import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"

@@ -17,8 +17,8 @@ import {
 import Link from "next/link"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
-import { Hero } from "@/components/hero"
-import SectionGroup from "@/components/section-group"
+import { Hero } from "@/components/ui/hero"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.faq.metadata")

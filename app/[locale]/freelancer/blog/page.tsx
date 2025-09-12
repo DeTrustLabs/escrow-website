@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import { Badge } from "@/components/ui/badge"
 import {
   ArrowRight,
@@ -19,7 +19,7 @@ import {
   Shield,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 import { Input } from "@/components/ui/input"
 
 export default function FreelancerBlogPage() {

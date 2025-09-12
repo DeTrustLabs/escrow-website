@@ -10,8 +10,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Mail, Send, CheckCircle, X } from "lucide-react"
 import { sendContactMessage, subscribeToNewsletter } from "./actions"
 import { useTranslations } from "next-intl"
-import { Hero } from "@/components/hero"
-import SectionGroup from "@/components/section-group"
+import { Hero } from "@/components/ui/hero"
+import SectionGroup from "@/components/ui/section-group"
 
 function SuccessPopup({
   message,

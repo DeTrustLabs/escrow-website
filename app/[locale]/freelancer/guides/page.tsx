@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Clock, Users } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
-import { Hero } from "@/components/hero"
-import SectionGroup from "@/components/section-group"
+import { Hero } from "@/components/ui/hero"
+import SectionGroup from "@/components/ui/section-group"
 
 export default function FreelancerGuidesPage() {
   const t = useTranslations("freelancer.guides")

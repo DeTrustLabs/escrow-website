@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import { Badge } from "@/components/ui/badge"
 import {
   ArrowRight,
@@ -18,7 +18,7 @@ import {
 } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.blog")

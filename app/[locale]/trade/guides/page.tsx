@@ -5,8 +5,8 @@ import Link from "next/link"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import type { Metadata } from "next"
-import { Hero } from "@/components/hero"
-import SectionGroup from "@/components/section-group"
+import { Hero } from "@/components/ui/hero"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.guides.metadata")

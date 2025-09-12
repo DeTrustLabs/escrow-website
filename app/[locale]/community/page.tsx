@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   CheckCircle,
   Users,
@@ -23,7 +23,7 @@ import {
 import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
 export default function CommunityPage() {
   const t = useTranslations("community")

@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import {
   ArrowRight,
   CheckCircle,
@@ -25,9 +25,13 @@ import {
   Truck,
   Unlock,
   Settings,
+  ShieldIcon,
+  ZapIcon,
+  DollarSign,
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
+import SectionGroup from "@/components/ui/section-group"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -70,14 +74,27 @@ export function WorkflowClient() {
   )
 
   return (
-    <>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
+        titleHighlight={t("hero.titleHighlight")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
+        trustIndicators={[
+          {
+            text: t("hero.trustIndicators.0"),
+            icon: <ShieldIcon className="h-4 w-4 text-primary" />,
+          },
+          {
+            text: t("hero.trustIndicators.1"),
+            icon: <ZapIcon className="h-4 w-4 text-primary" />,
+          },
+          {
+            text: t("hero.trustIndicators.2"),
+            icon: <DollarSign className="h-4 w-4 text-primary" />,
+          },
+        ]}
       />
 
       {/* How a Digital Escrow Works */}
@@ -616,6 +633,6 @@ export function WorkflowClient() {
           </div>
         </div>
       </section>
-    </>
+    </SectionGroup>
   )
 }

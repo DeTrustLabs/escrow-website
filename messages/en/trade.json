@@ -23,9 +23,15 @@
         "description": "Learn the complete digital escrow process for secure international trade. Step-by-step guide from setup to fund release for exporters and importers."
       },
       "hero": {
-        "badge": "Complete Process",
-        "title": "Digital Escrow Workflow",
-        "subtitle": "Understanding the complete digital escrow process for secure international trade"
+        "badge": "Secure Trade Workflow",
+        "title": "Escrow ",
+        "titleHighlight": "Workflow",
+        "subtitle": "Eliminate payment risks, reduce costs, and trade with confidence using a digital escrow. Both exporters and importers are protected throughout the entire transaction process.",
+        "trustIndicators": [
+          "Payment Security",
+          "Instant Fund Release",
+          "Lower Transaction Costs"
+        ]
       },
       "howItWorks": {
         "title": "How a Digital Escrow Works",
@@ -439,14 +445,15 @@
         }
       }
     },
-    "exporterBenefits": {
+    "exporter": {
       "metadata": {
         "title": "Exporter Benefits - Digital Escrow for International Trade | Escrow Protocol",
         "description": "Eliminate non-payment risk and payment delays for exporters. Secure digital escrow ensures guaranteed payments for international trade transactions."
       },
       "hero": {
         "badge": "For Exporters",
-        "title": "Get Paid Securely, Every Time",
+        "title": "Get Paid Securely, ",
+        "titleHighlight": "Every Time",
         "subtitle": "Eliminate payment risks and grow your export business with confidence. Digital escrow ensures you receive payment when you deliver as promised.",
         "startEscrow": "Start Export Escrow",
         "learnHowItWorks": "Learn How It Works"
@@ -574,14 +581,15 @@
         "secondaryButton": "Talk to Export Specialist"
       }
     },
-    "importerBenefits": {
+    "importer": {
       "metadata": {
         "title": "Importer Benefits - Digital Escrow for International Trade | Escrow Protocol",
         "description": "Protect your imports from non-delivery and quality issues. Pay only when satisfied with digital escrow for international trade transactions."
       },
       "hero": {
         "badge": "For Importers",
-        "title": "Pay Only When You're Satisfied",
+        "title": "Pay Only When ",
+        "titleHighlight": "You're Satisfied",
         "subtitle": "Protect your business from non-delivery and quality issues. Digital escrow ensures you only pay when goods meet your specifications.",
         "startEscrow": "Start Import Escrow",
         "learnHowItWorks": "Learn How It Works"

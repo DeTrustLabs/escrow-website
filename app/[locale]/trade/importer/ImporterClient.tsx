@@ -28,21 +28,21 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/ui/hero"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import SectionGroup from "@/components/section-group"
+import SectionGroup from "@/components/ui/section-group"
 
-export default function ImporterBenefitsClient() {
-  const t = useTranslations("trade.importerBenefits")
+export default function ImporterClient() {
+  const t = useTranslations("trade.importer")
   const messages = useMessages()
   const beforePaymentBenefits = getMessageArray(
     messages,
-    "trade.importerBenefits.protection.beforePayment.benefits"
+    "trade.importer.protection.beforePayment.benefits"
   )
   const afterDeliveryBenefits = getMessageArray(
     messages,
-    "trade.importerBenefits.protection.afterDelivery.benefits"
+    "trade.importer.protection.afterDelivery.benefits"
   )
 
   // no-op
@@ -50,12 +50,10 @@ export default function ImporterBenefitsClient() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
+        titleHighlight={t("hero.titleHighlight")}
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",

@@ -11,12 +11,12 @@
       "subtitle": "Eliminate payment risks in freelance work with secure escrow for freelancers and project owners.",
       "startEscrow": "Start Freelance Escrow",
       "seeHowItWorks": "See How It Works",
-      "trustIndicators": {
-        "nonCustodial": "Non-custodial",
-        "openSource": "Open source",
-        "audited": "Audited smart contracts",
-        "availability": "24/7 availability"
-      }
+      "trustIndicators": [
+        { "text": "Non-custodial" },
+        { "text": "Open source" },
+        { "text": "Audited smart contracts" },
+        { "text": "24/7 availability" }
+      ]
     },
     "solvesIssues": {
       "title": "How Escrow Solves Issues in Freelancing",
@@ -402,18 +402,9 @@
         "titleHighlight": "Escrow Workflow",
         "subtitle": "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle.",
         "trustIndicators": [
-          {
-            "text": "Payment Security",
-            "icon": "ShieldIcon"
-          },
-          {
-            "text": "Milestone-Based Release",
-            "icon": "Timer"
-          },
-          {
-            "text": "Lower Transaction Costs",
-            "icon": "Banknote"
-          }
+          { "text": "Payment Security" },
+          { "text": "Milestone-Based Release" },
+          { "text": "Lower Transaction Costs" }
         ]
       },
       "steps": {
