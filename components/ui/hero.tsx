@@ -72,7 +72,7 @@ export function Hero({
                 target={primaryButton.target}
                 rel={primaryButton.rel}
               >
-                <Button size="lg" className="text-lg px-8 py-4">
+                <Button size="lg" className="px-8 py-4">
                   {primaryButton.label}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -80,7 +80,7 @@ export function Hero({
             ) : (
               <Button
                 size="lg"
-                className="text-lg px-8 py-4"
+                className="px-8 py-4"
                 onClick={primaryButton.onClick}
               >
                 {primaryButton.label}
@@ -98,7 +98,7 @@ export function Hero({
                 <Button
                   variant={secondaryButton.variant || "outline"}
                   size="lg"
-                  className="text-lg px-8 py-4 bg-transparent"
+                  className="px-8 py-4 bg-transparent"
                 >
                   {secondaryButton.variant === "outline" &&
                   secondaryButton.label === "Watch Demo" ? (
@@ -115,7 +115,7 @@ export function Hero({
               <Button
                 variant={secondaryButton.variant || "outline"}
                 size="lg"
-                className="text-lg px-8 py-4 bg-transparent"
+                className="px-8 py-4 bg-transparent"
                 onClick={secondaryButton.onClick}
               >
                 {secondaryButton.variant === "outline" &&
