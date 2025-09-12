@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-
 export default function FreelancerGuidesPage() {
   const t = useTranslations("freelancer.guides")
 

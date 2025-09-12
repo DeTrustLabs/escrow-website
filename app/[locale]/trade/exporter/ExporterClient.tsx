@@ -68,7 +68,7 @@ export default function ExporterClient() {
         }}
         secondaryButton={{
           label: t("hero.learnHowItWorks"),
-          href: "/en/trade/workflow",
+          href: withLocale(locale, "/trade/workflow"),
           variant: "outline",
         }}
       />

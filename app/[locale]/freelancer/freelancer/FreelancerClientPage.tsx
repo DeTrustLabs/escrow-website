@@ -32,10 +32,12 @@ import {
 import { AppImage } from "@/components/app-image"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
+import { withLocale } from "@/lib/urls"
 
 export default function FreelancerClientPage() {
   const t = useTranslations("freelancer.freelancerPage")
+  const locale = useLocale()
 
   return (
     <SectionGroup>
@@ -52,7 +54,7 @@ export default function FreelancerClientPage() {
         }}
         secondaryButton={{
           label: t("hero.secondaryButton"),
-          href: "/freelancer/workflow",
+          href: withLocale(locale, "/freelancer/workflow"),
           variant: "outline",
         }}
       />
@@ -393,7 +395,7 @@ export default function FreelancerClientPage() {
         }}
         secondary={{
           label: t("callToAction.talkToSpecialist"),
-          href: "/freelancer/contacts",
+          href: withLocale(locale, "/freelancer/contacts"),
         }}
       />
     </SectionGroup>

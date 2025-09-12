@@ -30,8 +30,16 @@ import { getMessageArray } from "@/lib/i18n-arrays"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("integrations.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({
+    locale,
+    namespace: "integrations.metadata",
+  })
 
   return {
     title: t("title"),
@@ -63,8 +71,8 @@ export default async function IntegrationsPage() {
   const locale = await getLocale()
   // Load both the translator and the full messages so we can safely extract arrays
   const [t, messages] = await Promise.all([
-    getTranslations("integrations"),
-    getMessages(),
+    getTranslations({ locale, namespace: "integrations" }),
+    getMessages({ locale }),
   ])
 
   // Safely extracted arrays (empty array fallback avoids runtime errors)
@@ -404,7 +412,7 @@ export default async function IntegrationsPage() {
         }}
         secondary={{
           label: t("cta.secondaryButton"),
-          href: "/protocol#community",
+          href: withLocale(locale, "/protocol#community"),
         }}
       />
     </SectionGroup>

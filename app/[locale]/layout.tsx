@@ -1,7 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
-import { getMessages, getTranslations } from "next-intl/server"
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -35,12 +39,13 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const messages = await getMessages()
+  setRequestLocale(locale)
+  const messages = await getMessages({ locale })
 
   return (
     <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-        <Header />
+        <Header key={locale} />
         <main className="w-full">{children}</main>
         <Footer />
       </ThemeProvider>

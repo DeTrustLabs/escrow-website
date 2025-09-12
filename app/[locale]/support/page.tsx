@@ -21,8 +21,13 @@ import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("support")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "support" })
 
   return {
     title: t("metadata.title"),

@@ -28,8 +28,13 @@ import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import SectionGroup from "@/components/ui/section-group"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("trade.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "trade.metadata" })
 
   return {
     title: t("title"),
@@ -60,8 +65,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function HomePage() {
   const locale = await getLocale()
-  const t = await getTranslations("trade")
-  const messages = await getMessages()
+  const t = await getTranslations({ locale, namespace: "trade" })
+  const messages = await getMessages({ locale })
   const tradeRoot = messages.trade
   const exporter: string[] = Array.isArray(
     tradeRoot?.chooseRole?.exporters?.benefits

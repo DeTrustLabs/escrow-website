@@ -12,8 +12,13 @@ import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("trade.faq.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "trade.faq.metadata" })
 
   return {
     title: t("title"),

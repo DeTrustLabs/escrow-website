@@ -29,8 +29,13 @@ import { getMessageArray } from "@/lib/i18n-arrays"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("freelancer.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "freelancer.metadata" })
 
   return {
     title: t("title"),
@@ -60,8 +65,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function FreelancerPage() {
   const locale = await getLocale()
-  const t = await getTranslations("freelancer")
-  const messages = await getMessages()
+  const t = await getTranslations({ locale, namespace: "freelancer" })
+  const messages = await getMessages({ locale })
   const root = messages.freelancer || {}
   const freelancerBenefits = getMessageArray(
     root,

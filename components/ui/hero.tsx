@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle, Play } from "lucide-react"
 import Link from "next/link"
 import { ReactNode } from "react"
 import { cn } from "@/lib/utils"
+import { useLocale } from "next-intl"
 
 interface HeroButton {
   label: string
@@ -42,6 +43,14 @@ export function Hero({
   className = "",
   titleHighlight,
 }: HeroProps) {
+  const locale = useLocale()
+  const prefixHref = (href?: string) => {
+    if (!href) return href
+    if (href.startsWith("http://") || href.startsWith("https://")) return href
+    if (href.startsWith(`/${locale}`)) return href
+    if (href.startsWith("/")) return `/${locale}${href}`
+    return href
+  }
   return (
     <section className={cn("text-center", className)}>
       {badge && (
@@ -68,7 +77,7 @@ export function Hero({
           {primaryButton &&
             (primaryButton.href ? (
               <Link
-                href={primaryButton.href}
+                href={prefixHref(primaryButton.href) as string}
                 target={primaryButton.target}
                 rel={primaryButton.rel}
               >
@@ -91,7 +100,7 @@ export function Hero({
           {secondaryButton &&
             (secondaryButton.href ? (
               <Link
-                href={secondaryButton.href}
+                href={prefixHref(secondaryButton.href) as string}
                 target={secondaryButton.target}
                 rel={secondaryButton.rel}
               >

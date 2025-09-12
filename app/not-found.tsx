@@ -8,9 +8,11 @@ import {
 } from "@/components/ui/card"
 import { ArrowLeft, Home, Search, HelpCircle } from "lucide-react"
 import Link from "next/link"
-import { getTranslations } from "next-intl/server"
+import { getLocale, getTranslations } from "next-intl/server"
+import { withLocale } from "@/lib/urls"
 
 export default async function NotFound() {
+  const locale = await getLocale()
   const t = await getTranslations("notFound")
 
   return (
@@ -32,7 +34,7 @@ export default async function NotFound() {
               <CardDescription>{t("goHome.description")}</CardDescription>
             </CardHeader>
             <CardContent>
-              <Link href="/home">
+              <Link href={withLocale(locale, "/")}>
                 <Button className="w-full">
                   <ArrowLeft className="mr-2 h-4 w-4" />
                   {t("goHome.button")}
@@ -48,7 +50,7 @@ export default async function NotFound() {
               <CardDescription>{t("getSupport.description")}</CardDescription>
             </CardHeader>
             <CardContent>
-              <Link href="/contacts">
+              <Link href={withLocale(locale, "/contacts")}>
                 <Button variant="outline" className="w-full">
                   <Search className="mr-2 h-4 w-4" />
                   {t("getSupport.button")}
@@ -61,19 +63,31 @@ export default async function NotFound() {
         <div className="text-sm text-muted-foreground">
           <p>{t("popularPages.title")}</p>
           <div className="flex flex-wrap justify-center gap-4 mt-2">
-            <Link href="/home" className="hover:text-primary">
+            <Link href={withLocale(locale, "/")} className="hover:text-primary">
               {t("popularPages.home")}
             </Link>
-            <Link href="/workflow" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/trade/workflow")}
+              className="hover:text-primary"
+            >
               {t("popularPages.howItWorks")}
             </Link>
-            <Link href="/exporter" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/exporter")}
+              className="hover:text-primary"
+            >
               {t("popularPages.forExporters")}
             </Link>
-            <Link href="/importer" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/importer")}
+              className="hover:text-primary"
+            >
               {t("popularPages.forImporters")}
             </Link>
-            <Link href="/faq" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/freelancer/faq")}
+              className="hover:text-primary"
+            >
               {t("popularPages.faq")}
             </Link>
             <a

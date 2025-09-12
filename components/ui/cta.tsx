@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import React from "react"
+import { useLocale } from "next-intl"
 
 export type CTAButton = {
   label: React.ReactNode
@@ -26,6 +27,7 @@ export function CTASection({
   secondary,
   children,
 }: CTASectionProps) {
+  const locale = useLocale()
   const renderButton = (
     cfg: CTAButton,
     variant: "primary" | "secondary" = "primary"
@@ -33,8 +35,16 @@ export function CTASection({
     const newTab = cfg.newTab
       ? { target: "_blank", rel: "noopener noreferrer" }
       : {}
+    const href = (() => {
+      const url = cfg.href
+      if (!url) return "#"
+      if (url.startsWith("http://") || url.startsWith("https://")) return url
+      if (url.startsWith(`/${locale}`)) return url
+      if (url.startsWith("/")) return `/${locale}${url}`
+      return url
+    })()
     return (
-      <Link href={cfg.href} {...newTab}>
+      <Link href={href} {...newTab}>
         <Button
           size="lg"
           variant={variant === "primary" ? "secondary" : "outline"}

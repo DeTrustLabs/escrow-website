@@ -9,7 +9,7 @@ import {
 import { Hero } from "@/components/ui/hero"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CTASection from "@/components/ui/cta"
-import { getTranslations, getMessages } from "next-intl/server"
+import { getTranslations, getMessages, getLocale } from "next-intl/server"
 import { Metadata } from "next"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import {
@@ -26,8 +26,13 @@ import {
 } from "lucide-react"
 import SectionGroup from "@/components/ui/section-group"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("protocol.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "protocol.metadata" })
 
   return {
     title: t("title"),
@@ -57,9 +62,10 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function ProtocolPage() {
   // Load translator + full messages object for safe array extraction
+  const locale = await getLocale()
   const [t, messages] = await Promise.all([
-    getTranslations("protocol"),
-    getMessages(),
+    getTranslations({ locale, namespace: "protocol" }),
+    getMessages({ locale }),
   ])
 
   // Pre-extract arrays used in the UI (empty array fallback)

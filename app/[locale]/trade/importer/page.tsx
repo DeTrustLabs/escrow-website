@@ -3,8 +3,16 @@ import ImporterClient from "./ImporterClient"
 import { SITE_URL } from "@/lib/urls"
 import { getTranslations } from "next-intl/server"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("trade.importer.metadata")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({
+    locale,
+    namespace: "trade.importer.metadata",
+  })
 
   return {
     title: t("title"),

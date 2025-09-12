@@ -25,15 +25,19 @@ import {
   Building,
 } from "lucide-react"
 import Link from "next/link"
-import { getLocale } from "next-intl/server"
 import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
-import { getTranslations, getMessages } from "next-intl/server"
+import { getTranslations, getMessages, getLocale } from "next-intl/server"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("home")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "home" })
 
   return {
     title: t("hero.title"),
@@ -66,8 +70,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function HomePage() {
   const locale = await getLocale()
-  const t = await getTranslations("home")
-  const messages = await getMessages()
+  const t = await getTranslations({ locale, namespace: "home" })
+  const messages = await getMessages({ locale })
   // Safely extract arrays (next-intl t() doesn't return arrays/objects reliably)
   const home = messages.home
   const tradeFeatures: string[] = Array.isArray(home?.business?.trade?.features)

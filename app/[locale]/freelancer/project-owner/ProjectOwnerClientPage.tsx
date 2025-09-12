@@ -31,10 +31,12 @@ import {
 import { AppImage } from "@/components/app-image"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
+import { withLocale } from "@/lib/urls"
 
 export default function ProjectOwnerClientPage() {
   const t = useTranslations("freelancer.projectOwner")
+  const locale = useLocale()
 
   return (
     <SectionGroup>
@@ -398,7 +400,7 @@ export default function ProjectOwnerClientPage() {
         }}
         secondary={{
           label: t("callToAction.talkToSpecialist"),
-          href: "/contacts",
+          href: withLocale(locale, "/contacts"),
         }}
       />
     </SectionGroup>

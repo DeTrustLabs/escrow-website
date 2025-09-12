@@ -22,8 +22,13 @@ import SectionGroup from "@/components/ui/section-group"
 import { Input } from "@/components/ui/input"
 import CTASection from "@/components/ui/cta"
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("trade.blog")
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "trade.blog" })
 
   return {
     title: t("metadata.title"),
