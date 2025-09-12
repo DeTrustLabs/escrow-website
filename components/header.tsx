@@ -59,7 +59,7 @@ export function Header({ forceVariant }: NavigationProps) {
           : "bg-background/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-8 flex h-16 items-center justify-between">
+      <div className="container mx-auto px-4 flex h-16 items-center justify-between">
         {/* Left: Logo (stable) */}
         <Link
           href={logoHref}
@@ -79,14 +79,16 @@ export function Header({ forceVariant }: NavigationProps) {
         {/* Center: Desktop navigation (links vary by variant) */}
         <nav className="hidden lg:flex items-center space-x-6">
           {mainLinks.map((item) => (
-            <Link key={item.href} href={item.href} onClick={handleNavClick}>
-              <Button
-                variant="ghost"
-                className="text-sm font-medium h-auto px-3 py-2 hover:bg-primary/5"
-              >
+            <Button
+              key={item.href}
+              variant="ghost"
+              className="text-sm font-medium h-auto px-3 py-2 hover:bg-primary/5"
+              asChild
+            >
+              <Link href={item.href} onClick={handleNavClick}>
                 {t(item.key)}
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           ))}
           {!isGlobal && resources.length > 0 && (
             <DropdownMenu>

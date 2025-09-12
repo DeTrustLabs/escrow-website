@@ -23,7 +23,7 @@ import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("freelancer.metadata")
@@ -71,7 +71,7 @@ export default async function FreelancerPage() {
     "perfectFor.projectOwners.benefits"
   )
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -105,7 +105,7 @@ export default async function FreelancerPage() {
 
       {/* Sections */}
       {/* How Escrow Solves Issues in Freelancing */}
-      <Section>
+      <section>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("solvesIssues.title")}
@@ -116,10 +116,10 @@ export default async function FreelancerPage() {
             </p>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Risks of Freelancing */}
-      <Section className="py-16">
+      <section className="py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("dilemma.title")}
@@ -205,10 +205,10 @@ export default async function FreelancerPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* What is a Digital Escrow Section */}
-      <Section>
+      <section>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("whatIs.title")}
@@ -236,10 +236,10 @@ export default async function FreelancerPage() {
             {t("whatIs.description")}
           </p>
         </div>
-      </Section>
+      </section>
 
       {/* 6 Escrow Features */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("features.title")}
@@ -310,10 +310,10 @@ export default async function FreelancerPage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Supporting All Service Categories */}
-      <Section id="supporting-all-service-categories">
+      <section id="supporting-all-service-categories">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("categories.title")}
@@ -603,10 +603,10 @@ export default async function FreelancerPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Perfect for Every Service Type */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("perfectFor.title")}
@@ -667,10 +667,10 @@ export default async function FreelancerPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA Section */}
-      <Section>
+      <section>
         <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("cta.title")}
@@ -700,7 +700,7 @@ export default async function FreelancerPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

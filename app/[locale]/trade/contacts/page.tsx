@@ -11,7 +11,7 @@ import { Mail, Send, CheckCircle, X } from "lucide-react"
 import { sendContactMessage, subscribeToNewsletter } from "./actions"
 import { useTranslations } from "next-intl"
 import { Hero } from "@/components/hero"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 function SuccessPopup({
   message,
@@ -88,7 +88,7 @@ export default function ContactsPage() {
   }
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -97,7 +97,7 @@ export default function ContactsPage() {
         maxWidth="max-w-5xl"
       />
 
-      <Section>
+      <section>
         <div className="max-w-6xl mx-auto">
           {/* Two-column layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -263,7 +263,7 @@ export default function ContactsPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {showPopup && (
         <SuccessPopup
@@ -271,6 +271,6 @@ export default function ContactsPage() {
           onClose={() => setShowPopup(false)}
         />
       )}
-    </SectionProvider>
+    </SectionGroup>
   )
 }

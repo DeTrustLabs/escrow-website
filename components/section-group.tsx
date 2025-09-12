@@ -5,24 +5,24 @@ type Palette = "neutral" | "zinc" | "slate" | "none"
 
 const paddingMap: Record<Padding, string> = {
   none: "",
-  sm: "[&>section]:p-12",
-  md: "[&>section]:p-16",
-  lg: "[&>section]:p-20",
-  xl: "[&>section]:p-24",
+  sm: "[&_section]:p-12",
+  md: "[&_section]:p-16",
+  lg: "[&_section]:p-20",
+  xl: "[&_section]:p-24",
 }
 
 const paletteMap: Record<Palette, { odd: string; even: string }> = {
   neutral: {
-    odd: "[&>section:nth-of-type(odd)]:bg-gray-50",
-    even: "[&>section:nth-of-type(even)]:bg-white",
+    odd: "[&_section:nth-of-type(odd)]:bg-gray-50",
+    even: "[&_section:nth-of-type(even)]:bg-white",
   },
   zinc: {
-    odd: "[&>section:nth-of-type(odd)]:bg-zinc-50",
-    even: "[&>section:nth-of-type(even)]:bg-white",
+    odd: "[&_section:nth-of-type(odd)]:bg-zinc-50",
+    even: "[&_section:nth-of-type(even)]:bg-white",
   },
   slate: {
-    odd: "[&>section:nth-of-type(odd)]:bg-slate-50",
-    even: "[&>section:nth-of-type(even)]:bg-white",
+    odd: "[&_section:nth-of-type(odd)]:bg-slate-50",
+    even: "[&_section:nth-of-type(even)]:bg-white",
   },
   none: {
     odd: "",

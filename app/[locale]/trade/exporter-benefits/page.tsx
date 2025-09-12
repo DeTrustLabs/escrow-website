@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server"
-import { SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 import ExporterBenefitsClient from "./ExporterBenefitsClient"
 
 export async function generateMetadata() {
@@ -13,8 +13,8 @@ export async function generateMetadata() {
 
 export default function ExporterBenefitsPage() {
   return (
-    <SectionProvider>
+    <SectionGroup>
       <ExporterBenefitsClient />
-    </SectionProvider>
+    </SectionGroup>
   )
 }

@@ -32,11 +32,11 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function ProjectOwnerClientPage() {
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={"For Project Owners"}
@@ -67,7 +67,7 @@ export default function ProjectOwnerClientPage() {
       />
 
       {/* Testimonial Section */}
-      <Section className="py-16">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -131,10 +131,10 @@ export default function ProjectOwnerClientPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Challenges Project Owners Face */}
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Challenges Project Owners Face When Hiring
@@ -287,10 +287,10 @@ export default function ProjectOwnerClientPage() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </Section>
+      </section>
 
       {/* Why Project Owners Choose Digital Escrow */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Why Project Owners Choose Digital Escrow
@@ -374,10 +374,10 @@ export default function ProjectOwnerClientPage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Complete Protection for Project Owners */}
-      <Section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Complete Protection for Project Owners
@@ -436,10 +436,10 @@ export default function ProjectOwnerClientPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Hire with Complete Confidence?
@@ -470,7 +470,7 @@ export default function ProjectOwnerClientPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

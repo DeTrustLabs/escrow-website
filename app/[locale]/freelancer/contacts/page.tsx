@@ -14,7 +14,7 @@ import {
   subscribeToNewsletter,
 } from "../../trade/contacts/actions"
 import { Hero } from "@/components/hero"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 function SuccessPopup({
   message,
@@ -89,7 +89,7 @@ export default function FreelancerContactsPage() {
   }
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -98,7 +98,7 @@ export default function FreelancerContactsPage() {
         maxWidth="max-w-5xl"
       />
 
-      <Section>
+      <section>
         <div className="max-w-6xl mx-auto">
           {/* Two-column layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -264,13 +264,13 @@ export default function FreelancerContactsPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
       {showPopup && (
         <SuccessPopup
           message={popupMessage}
           onClose={() => setShowPopup(false)}
         />
       )}
-    </SectionProvider>
+    </SectionGroup>
   )
 }

@@ -18,7 +18,7 @@ import Link from "next/link"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import { Hero } from "@/components/hero"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.faq.metadata")
@@ -33,7 +33,7 @@ export default async function FAQPage() {
   const t = await getTranslations("trade.faq")
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -43,7 +43,7 @@ export default async function FAQPage() {
       />
 
       {/* FAQ Categories */}
-      <Section>
+      <section>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar */}
           <div className="lg:col-span-1">
@@ -314,10 +314,10 @@ export default async function FAQPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Still Have Questions */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -347,7 +347,7 @@ export default async function FAQPage() {
             </a>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

@@ -22,7 +22,7 @@ import Link from "next/link"
 import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.metadata")
@@ -69,7 +69,7 @@ export default async function HomePage() {
     ? tradeRoot.chooseRole.importers.benefits
     : []
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -104,7 +104,7 @@ export default async function HomePage() {
       />
 
       {/* Sections */}
-      <Section>
+      <section>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("solvesRisks.title")}
@@ -127,9 +127,9 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
-      <Section>
+      <section>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("trustChanges.title")}
@@ -138,9 +138,9 @@ export default async function HomePage() {
             {t("trustChanges.description")}
           </p>
         </div>
-      </Section>
+      </section>
 
-      <Section className="py-16">
+      <section className="py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("dilemma.title")}
@@ -194,9 +194,9 @@ export default async function HomePage() {
             {t("dilemma.tensions")}
           </p>
         </div>
-      </Section>
+      </section>
 
-      <Section className="py-12">
+      <section className="py-12">
         <Card className="border-primary/20 bg-primary/5 shadow-xl max-w-4xl mx-auto">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-black">
@@ -237,10 +237,10 @@ export default async function HomePage() {
             </div>
           </CardContent>
         </Card>
-      </Section>
+      </section>
 
       {/* What is a Digital Escrow Section */}
-      <Section>
+      <section>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("whatIs.title")}
@@ -265,9 +265,9 @@ export default async function HomePage() {
             {t("whatIs.description")}
           </p>
         </div>
-      </Section>
+      </section>
 
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("features.title")}
@@ -338,9 +338,9 @@ export default async function HomePage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("industries.title")}
@@ -616,10 +616,10 @@ export default async function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Choose Your Trade Role */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("chooseRole.title")}
@@ -680,10 +680,10 @@ export default async function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA Section */}
-      <Section>
+      <section>
         <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("cta.title")}
@@ -715,7 +715,7 @@ export default async function HomePage() {
             </Button>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

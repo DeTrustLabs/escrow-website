@@ -18,7 +18,7 @@ import {
 } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.blog")
@@ -63,7 +63,7 @@ export default async function BlogPage() {
   ]
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -73,7 +73,7 @@ export default async function BlogPage() {
       />
 
       {/* Recent Articles */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("articles.title")}
@@ -125,10 +125,10 @@ export default async function BlogPage() {
             </Card>
           ))}
         </div>
-      </Section>
+      </section>
 
       {/* Newsletter Signup */}
-      <Section className="py-20 bg-primary">
+      <section className="py-20 bg-primary">
         <div className="text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("newsletter.title")}
@@ -147,7 +147,7 @@ export default async function BlogPage() {
             </Button>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

@@ -19,13 +19,13 @@ import {
 import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { Hero } from "@/components/hero"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function FreelancerFAQPage() {
   const t = useTranslations("freelancer.faq")
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -35,7 +35,7 @@ export default function FreelancerFAQPage() {
       />
 
       {/* FAQ Categories */}
-      <Section>
+      <section>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Sidebar */}
           <div className="lg:col-span-1">
@@ -268,10 +268,10 @@ export default function FreelancerFAQPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Still Have Questions */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -301,7 +301,7 @@ export default function FreelancerFAQPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

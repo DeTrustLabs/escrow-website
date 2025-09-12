@@ -31,7 +31,7 @@ import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/hero"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import { Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function ImporterBenefitsClient() {
   const t = useTranslations("trade.importerBenefits")
@@ -48,7 +48,7 @@ export default function ImporterBenefitsClient() {
   // no-op
 
   return (
-    <>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -69,8 +69,8 @@ export default function ImporterBenefitsClient() {
         }}
       />
 
-      {/* Testimonial Section */}
-      <Section className="py-16">
+      {/* Testimonial section */}
+      <section className="py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -124,10 +124,10 @@ export default function ImporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Challenges Importers Face section with accordion */}
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("challenges.title")}
@@ -289,10 +289,10 @@ export default function ImporterBenefitsClient() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </Section>
+      </section>
 
       {/* Key Benefits */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("keyBenefits.title")}
@@ -367,10 +367,10 @@ export default function ImporterBenefitsClient() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Complete Protection for Importers section */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("protection.title")}
@@ -447,10 +447,10 @@ export default function ImporterBenefitsClient() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Call-to-action section */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -480,7 +480,7 @@ export default function ImporterBenefitsClient() {
             </Link>
           </div>
         </div>
-      </Section>
-    </>
+      </section>
+    </SectionGroup>
   )
 }

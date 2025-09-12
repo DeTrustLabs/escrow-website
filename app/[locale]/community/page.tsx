@@ -23,7 +23,7 @@ import {
 import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function CommunityPage() {
   const t = useTranslations("community")
@@ -40,7 +40,7 @@ export default function CommunityPage() {
   )
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -70,7 +70,7 @@ export default function CommunityPage() {
 
       {/* Sections */}
       {/* Community Resources */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("resources.title")}
@@ -135,10 +135,10 @@ export default function CommunityPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Protocol Information */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("protocol.title")}
@@ -179,10 +179,10 @@ export default function CommunityPage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Getting Started */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("gettingStarted.title")}
@@ -243,10 +243,10 @@ export default function CommunityPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA Section */}
-      <Section>
+      <section>
         <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("cta.title")}
@@ -272,7 +272,7 @@ export default function CommunityPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

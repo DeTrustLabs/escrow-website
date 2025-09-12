@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/select"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("support")
@@ -53,7 +53,7 @@ export default async function SupportPage() {
 
   return (
     <>
-      <SectionProvider>
+      <SectionGroup>
         <Hero
           className="bg-gradient-to-br from-primary/5 to-primary/10"
           badge={t("hero.badge")}
@@ -63,7 +63,7 @@ export default async function SupportPage() {
           maxWidth="max-w-5xl"
         />
 
-        <Section>
+        <section>
           <div className="max-w-2xl mx-auto">
             <Card className="border-0 shadow-lg">
               <CardHeader>
@@ -220,10 +220,10 @@ export default async function SupportPage() {
               </CardContent>
             </Card>
           </div>
-        </Section>
+        </section>
 
         {/* Contact Form and Newsletter */}
-        <Section>
+        <section>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card className="border-0 shadow-lg h-full flex flex-col">
@@ -377,10 +377,10 @@ export default async function SupportPage() {
               </CardContent>
             </Card>
           </div>
-        </Section>
+        </section>
 
         {/* Contact Section */}
-        <Section>
+        <section>
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("cta.title")}
@@ -402,8 +402,8 @@ export default async function SupportPage() {
               </Button>
             </div>
           </div>
-        </Section>
-      </SectionProvider>
+        </section>
+      </SectionGroup>
     </>
   )
 }

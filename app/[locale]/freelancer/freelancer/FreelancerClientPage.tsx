@@ -33,11 +33,11 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function FreelancerClientPage() {
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={"For Freelancers"}
@@ -68,7 +68,7 @@ export default function FreelancerClientPage() {
       />
 
       {/* Testimonial Section */}
-      <Section className="py-16">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -131,10 +131,10 @@ export default function FreelancerClientPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Challenges Freelancers Face */}
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Challenges Freelancers Face in Project Work
@@ -286,10 +286,10 @@ export default function FreelancerClientPage() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </Section>
+      </section>
 
       {/* Why Freelancers Choose Digital Escrow */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Why Freelancers Choose Digital Escrow
@@ -372,10 +372,10 @@ export default function FreelancerClientPage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Complete Protection for Freelancers */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Complete Protection for Freelancers
@@ -434,10 +434,10 @@ export default function FreelancerClientPage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Secure Your Freelance Payments?
@@ -468,7 +468,7 @@ export default function FreelancerClientPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

@@ -28,7 +28,6 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { Section } from "@/components/section"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -82,7 +81,7 @@ export function WorkflowClient() {
       />
 
       {/* How a Digital Escrow Works */}
-      <Section>
+      <section>
         <div className="mb-16 flex flex-col items-center text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-900">
             {t("howItWorks.title")}
@@ -344,10 +343,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Flexible Release Mechanisms */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("releaseMechanisms.title")}
@@ -410,10 +409,10 @@ export function WorkflowClient() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Dispute Resolution Process */}
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("disputeResolution.title")}
@@ -488,10 +487,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Digital Currencies and Exchange Providers */}
-      <Section aria-label="digital payments information">
+      <section aria-label="digital payments information">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("digitalPayments.title")}
@@ -583,10 +582,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Call to Action */}
-      <Section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -616,7 +615,7 @@ export function WorkflowClient() {
             </Link>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   )
 }

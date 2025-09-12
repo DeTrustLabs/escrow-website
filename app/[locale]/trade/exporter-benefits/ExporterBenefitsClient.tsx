@@ -35,7 +35,7 @@ import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/hero"
-import { Section } from "@/components/section"
+// sections are native; page wraps with SectionGroup
 
 export default function ExporterBenefitsClient() {
   const t = useTranslations("trade.exporterBenefits")
@@ -72,7 +72,7 @@ export default function ExporterBenefitsClient() {
       />
 
       {/* Testimonial Section */}
-      <Section className="py-16">
+      <section className="py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-primary">
@@ -126,10 +126,10 @@ export default function ExporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Challenges Exporters Face section with accordion */}
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("challenges.title")}
@@ -291,10 +291,10 @@ export default function ExporterBenefitsClient() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </Section>
+      </section>
 
       {/* Key Benefits */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("keyBenefits.title")}
@@ -365,10 +365,10 @@ export default function ExporterBenefitsClient() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* How It Protects Exporters */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             {t("protection.title")}
@@ -445,10 +445,10 @@ export default function ExporterBenefitsClient() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* CTA */}
-      <Section>
+      <section>
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -478,7 +478,7 @@ export default function ExporterBenefitsClient() {
             </Link>
           </div>
         </div>
-      </Section>
+      </section>
     </>
   )
 }

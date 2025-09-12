@@ -24,7 +24,7 @@ import {
   Globe,
   Cpu,
 } from "lucide-react"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("protocol.metadata")
@@ -82,7 +82,7 @@ export default async function ProtocolPage() {
 
   return (
     <>
-      <SectionProvider>
+      <SectionGroup>
         <Hero
           className="bg-gradient-to-br from-primary/5 to-transparent"
           badge={t("hero.badge")}
@@ -104,7 +104,7 @@ export default async function ProtocolPage() {
         />
 
         {/* Tabs Section */}
-        <Section>
+        <section>
           <Tabs defaultValue="community" className="w-full">
             <TabsList className="grid w-full grid-cols-3 max-w-md mx-auto">
               <TabsTrigger value="protocol">{t("tabs.protocol")}</TabsTrigger>
@@ -390,10 +390,10 @@ export default async function ProtocolPage() {
               </div>
             </TabsContent>
           </Tabs>
-        </Section>
+        </section>
 
         {/* CTA Section */}
-        <Section>
+        <section>
           <div className="bg-gradient-to-r from-[hsl(var(--primary-dark))] to-[hsl(var(--primary-dark))]/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
               {t("cta.title")}
@@ -415,8 +415,8 @@ export default async function ProtocolPage() {
               </Button>
             </div>
           </div>
-        </Section>
-      </SectionProvider>
+        </section>
+      </SectionGroup>
     </>
   )
 }

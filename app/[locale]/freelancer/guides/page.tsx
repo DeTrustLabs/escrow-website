@@ -6,13 +6,13 @@ import { ArrowRight, BookOpen, Clock, Users } from "lucide-react"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { Hero } from "@/components/hero"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export default function FreelancerGuidesPage() {
   const t = useTranslations("freelancer.guides")
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -22,7 +22,7 @@ export default function FreelancerGuidesPage() {
       />
 
       {/* Featured Guide */}
-      <Section>
+      <section>
         <Card className="border-0 shadow-xl mb-16">
           <CardContent className="p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -75,10 +75,10 @@ export default function FreelancerGuidesPage() {
             </div>
           </CardContent>
         </Card>
-      </Section>
+      </section>
 
       {/* CTA */}
-      <Section className="py-20 bg-primary">
+      <section className="py-20 bg-primary">
         <div className="text-center text-white">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("cta.title")}
@@ -112,7 +112,7 @@ export default function FreelancerGuidesPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }

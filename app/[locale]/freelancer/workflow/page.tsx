@@ -26,7 +26,7 @@ import {
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
-import { Section, SectionProvider } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export const metadata = {
   title:
@@ -46,7 +46,7 @@ export const metadata = {
 
 export default function FreelancerWorkflowPage() {
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={"Secure Freelance Workflow"}
@@ -66,7 +66,7 @@ export default function FreelancerWorkflowPage() {
       />
 
       {/* 4 Steps of the Escrow */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             4 Steps of the Freelance Escrow
@@ -129,10 +129,10 @@ export default function FreelancerWorkflowPage() {
             </p>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* How a Digital Escrow Works */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             How Digital Escrow Works for Freelancers
@@ -516,10 +516,10 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Flexible Release Mechanisms */}
-      <Section id="flexible-payment-release-options" className="py-20">
+      <section id="flexible-payment-release-options" className="py-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             Flexible Payment Release Options
@@ -575,9 +575,9 @@ export default function FreelancerWorkflowPage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
-      <Section>
+      <section>
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Project Dispute Resolution
@@ -678,9 +678,9 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
-      <Section id="digital-payments-for-freelancers" className="py-20">
+      <section id="digital-payments-for-freelancers" className="py-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             Digital Payments for Freelancers
@@ -805,10 +805,10 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </Section>
+      </section>
 
       {/* Call to Action */}
-      <Section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
         <div className="text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Ready to Secure Your Freelance Projects?
@@ -840,7 +840,7 @@ export default function FreelancerWorkflowPage() {
             </Link>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }
