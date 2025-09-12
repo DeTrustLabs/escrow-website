@@ -424,6 +424,122 @@
       },
       "counter": "{current} de {total} recursos"
     },
+    "projectOwner": {
+      "hero": {
+        "badge": "Para Propietarios de Proyecto",
+        "title": "Contrata con Confianza, ",
+        "titleHighlight": "Siempre",
+        "subtitle": "Elimina los riesgos de proyecto y asegura entregas de calidad. El escrow digital te protege contra la no entrega y garantiza que el trabajo cumpla tus especificaciones.",
+        "primaryButton": {
+          "label": "Iniciar Escrow de Proyecto",
+          "href": "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
+        },
+        "secondaryButton": {
+          "label": "Cómo Funciona",
+          "href": "/freelancer/workflow"
+        }
+      },
+      "testimonials": {
+        "testimonial1": {
+          "name": "David Thompson",
+          "role": "Fundador de startup (ficticio)",
+          "quote": "Contraté a un desarrollador para construir el MVP de nuestra app móvil. Pagué 15.000 $ por adelantado por su portafolio y buena comunicación. Tras dos meses de 'actualizaciones' y excusas, descubrí que apenas habían empezado. Cuando exigí ver el trabajo, desaparecieron. Perdimos el dinero y tres meses críticos. Tuvimos que empezar de cero mientras la competencia avanzaba.",
+          "imageAlt": "David Thompson"
+        },
+        "testimonial2": {
+          "name": "Lisa Park",
+          "role": "Directora de marketing (ficticia)",
+          "quote": "Contratamos a un diseñador para nuestro rebranding. Los primeros conceptos prometían, pero los entregables finales no coincidían con lo acordado. Al pedir revisiones, exigieron pago adicional. Quedamos atrapados: pagar más por algo que debía incluirse o empezar de nuevo. Terminamos pagando dos veces por el mismo proyecto.",
+          "imageAlt": "Lisa Park"
+        }
+      },
+      "challenges": {
+        "title": "Retos al Contratar para Proyectos",
+        "subtitle": "Principales obstáculos que afectan el éxito del proyecto y el crecimiento del negocio",
+        "nonDeliveryRisk": {
+          "title": "Riesgo de No Entrega",
+          "description": "Muchos propietarios pagan por adelantado y esperan la entrega, quedando expuestos a freelancers que desaparecen o no completan el trabajo. Esto provoca pérdidas económicas y retrasos. No es raro que, tras pagar, el freelancer se esfume, dejando al cliente sin trabajo y sin recursos efectivos para recuperarlo."
+        },
+        "qualityIssues": {
+          "title": "Problemas de Calidad y Alcance",
+          "description": "Recibir trabajo que no cumple especificaciones o expectativas es frecuente. Los entregables deficientes requieren revisiones extensas o rehacer todo, generando costes y retrasos adicionales, especialmente si el freelancer exige más pago por correcciones que debían incluirse en el alcance inicial."
+        },
+        "projectDelays": {
+          "title": "Retrasos del Proyecto",
+          "description": "Plazos incumplidos y retrasos afectan campañas, lanzamientos y operaciones. Los freelancers pueden sobrecomprometerse, subestimar complejidad o carecer de gestión de proyectos, con impacto directo en el negocio."
+        },
+        "communicationIssues": {
+          "title": "Comunicación y Responsabilidad",
+          "description": "Comunicación deficiente, falta de actualizaciones y dificultad de contacto complican la gestión. Sin mecanismos claros de responsabilidad, es difícil seguir el progreso y evitar sorpresas al acercarse las fechas límite."
+        },
+        "trustVerification": {
+          "title": "Verificación de Confiabilidad",
+          "description": "Valorar confiabilidad, habilidades y calidad antes de contratar es difícil. Portafolios engañosos y reseñas poco fiables dificultan decisiones informadas, lo que lleva a errores costosos y proyectos fallidos."
+        },
+        "disputeResolution": {
+          "title": "Poca Vía ante Disputas",
+          "description": "Cuando algo sale mal, las alternativas de resolución suelen ser caras o lentas. Los sistemas de disputa de algunas plataformas pueden ser ineficaces, dejando pocas opciones cuando no hay entrega o la calidad es insuficiente."
+        }
+      },
+      "whyChooseEscrow": {
+        "title": "Por Qué Elegir Escrow Digital",
+        "subtitle": "Protege tus proyectos y asegura entregas de calidad con confianza.",
+        "payOnlyCompleted": {
+          "title": "Paga Solo por Trabajo Completado",
+          "description": "El pago se libera únicamente cuando el trabajo cumple las especificaciones. Se acabó pagar por adelantado esperando lo mejor."
+        },
+        "qualityReview": {
+          "title": "Revisión de Calidad Antes del Pago",
+          "description": "Revisa y aprueba entregables antes de liberar fondos. Garantiza requisitos y estándares de calidad."
+        },
+        "confidenceNewFreelancers": {
+          "title": "Confianza con Freelancers Nuevos",
+          "description": "Contrata talento sin riesgo de pago: el escrow asegura la finalización antes del desembolso. Accede a una base más amplia de profesionales."
+        },
+        "milestoneControl": {
+          "title": "Control por Hitos",
+          "description": "Libera pagos por hitos, aprobación de entregables o etapas de avance. Mantén control y responsabilidad a lo largo del proyecto."
+        },
+        "lowerCosts": {
+          "title": "Menores Costes de Proyecto",
+          "description": "Menos comisiones frente a plataformas tradicionales: más presupuesto para el trabajo real. Pagos directos sin intermediarios."
+        },
+        "fairDisputeResolution": {
+          "title": "Resolución Justa de Disputas",
+          "description": "Mediación integrada con árbitros neutrales. Cada paso queda documentado y verificable para resolver conflictos de forma eficaz."
+        }
+      },
+      "completeProtection": {
+        "title": "Protección Completa para Propietarios",
+        "subtitle": "Cada aspecto de tu contratación está asegurado y protegido.",
+        "duringDevelopment": {
+          "title": "Durante el Desarrollo",
+          "subtitle": "Tus fondos están protegidos",
+          "benefits": [
+            "Fondos en escrow hasta aprobar el trabajo",
+            "Revisa entregables antes de liberar el pago",
+            "Solicita revisiones si no cumple especificaciones",
+            "Cancela si no hay entrega del freelancer"
+          ]
+        },
+        "afterApproval": {
+          "title": "Tras la Aprobación",
+          "subtitle": "Pago instantáneo al freelancer",
+          "benefits": [
+            "Aprueba y libera el pago al instante",
+            "El freelancer recibe fondos en minutos",
+            "Documentación y registros completos del proyecto",
+            "Sistema de feedback y calificación integrado"
+          ]
+        }
+      },
+      "callToAction": {
+        "title": "¿Listo para Contratar con Confianza Total?",
+        "subtitle": "Únete a miles de dueños de proyecto que ya no se preocupan por los riesgos. Comienza hoy tu primer proyecto seguro.",
+        "startEscrow": "Iniciar Escrow de Proyecto",
+        "talkToSpecialist": "Hablar con un Especialista de Proyecto"
+      }
+    },
     "freelancerPage": {
       "hero": {
         "badge": "Para Freelancers",
@@ -530,6 +646,134 @@
         "subtitle": "Únete a miles de freelancers que ya no se preocupan por el cobro. Comienza hoy tu primer proyecto seguro.",
         "startEscrow": "Iniciar Escrow Freelance",
         "talkToSpecialist": "Hablar con un Especialista"
+      }
+    },
+    "guides": {
+      "metadata": {
+        "title": "Guías de Escrow Freelance - Recursos y Tutoriales",
+        "description": "Guías y recursos completos para dominar el escrow digital en proyectos freelance seguros."
+      },
+      "hero": {
+        "title": "Guías de Escrow Freelance",
+        "subtitle": "Recursos completos para dominar el trabajo freelance con la protección del escrow digital."
+      },
+      "featured": {
+        "badge": "Guía Destacada",
+        "title": "Guía Completa del Escrow para Proyectos Freelance",
+        "description": "Todo lo que necesitas saber para usar escrow digital en transacciones de proyectos freelance seguras: desde la configuración hasta la finalización.",
+        "readTime": "Lectura de 30 min",
+        "level": "De principiante a avanzado",
+        "button": "Leer Guía Completa",
+        "learnItems": [
+          "Configurar tu primer escrow freelance",
+          "Definir requisitos y hitos del proyecto",
+          "Condiciones de liberación de pago para freelancers",
+          "Proceso de resolución de disputas en proyectos",
+          "Buenas prácticas para freelancers y clientes",
+          "Errores comunes y cómo evitarlos"
+        ]
+      },
+      "cta": {
+        "title": "¿Necesitas orientación personalizada?",
+        "subtitle": "Nuestros expertos en freelancing te ayudan a navegar tu situación específica.",
+        "contactButton": "Contactar a un Experto",
+        "startProjectButton": "Iniciar Tu Proyecto"
+      }
+    },
+    "workflow": {
+      "metadata": {
+        "title": "Flujo de Trabajo de Escrow para Freelancers - Pagos Seguros | Escrow Protocol",
+        "description": "Aprende cómo funciona el escrow digital para proyectos freelance. Guía paso a paso: pagos seguros, verificación por hitos y resolución de disputas.",
+        "keywords": "escrow digital para freelancers, pagos freelance seguros, flujo de trabajo escrow para proyectos, protección de pagos freelance, flujo de proyecto seguro",
+        "canonical": "/freelancer/workflow",
+        "ogTitle": "Flujo de Trabajo de Escrow para Freelancers - Pagos Seguros",
+        "ogDescription": "Guía completa del escrow digital para proyectos freelance: pagos seguros, verificación por hitos y resolución de disputas."
+      },
+      "hero": {
+        "badge": "Flujo Freelance Seguro",
+        "title": "Flujo de Trabajo ",
+        "titleHighlight": "de Escrow",
+        "subtitle": "Elimina riesgos de pago, protege tu trabajo y construye confianza con clientes usando escrow digital. Freelancers y clientes están protegidos durante todo el ciclo del proyecto.",
+        "trustIndicators": [
+          "Seguridad de Pago",
+          "Liberación por Hitos",
+          "Menores Costes"
+        ]
+      },
+      "steps": {
+        "title": "4 Pasos del Escrow Freelance",
+        "subtitle": "Desglose paso a paso del proceso seguro de escrow digital para proyectos freelance",
+        "step1": {
+          "title": "1. Acuerdo de Proyecto",
+          "description": "Define alcance, hitos, montos y cronograma de entregas."
+        },
+        "step2": {
+          "title": "2. Financiamiento Seguro",
+          "description": "El cliente deposita el pago total en el escrow antes de iniciar."
+        },
+        "step3": {
+          "title": "3. Entrega y Revisión",
+          "description": "El freelancer entrega el trabajo; el cliente revisa y solicita ajustes si es necesario."
+        },
+        "step4": {
+          "title": "4. Liberación del Pago",
+          "description": "Tras la aprobación, el pago se libera instantáneamente al freelancer."
+        }
+      },
+      "howItWorks": {
+        "title": "Cómo Funciona en la Práctica",
+        "subtitle": "Desde la incorporación hasta la liberación del pago: todo el flujo protegido por escrow",
+        "onboarding": {
+          "title": "Incorporación",
+          "description": "Configura tu cuenta, verifica identidad si aplica y prepara los detalles del proyecto.",
+          "features": [
+            "Creación de perfil y billetera digital",
+            "Opciones de verificación (KYC/KYB) cuando aplique",
+            "Configuración de preferencias de notificación"
+          ]
+        },
+        "projectAgreement": {
+          "title": "Acuerdo de Proyecto",
+          "description": "Define claramente objetivos, entregables, hitos, revisiones, propiedad intelectual y criterios de aceptación.",
+          "features": [
+            "Plantillas de acuerdo compatibles con escrow",
+            "Definición de hitos y entregables",
+            "Política de revisiones acordada"
+          ]
+        },
+        "secureFunding": {
+          "title": "Financiamiento Seguro",
+          "description": "El cliente financia el escrow con monedas digitales; los fondos quedan bloqueados hasta la aprobación.",
+          "features": [
+            "Depósito completo previo al inicio",
+            "Fondos bloqueados y verificables",
+            "Transparencia total de comisiones"
+          ]
+        },
+        "workDelivery": {
+          "title": "Entrega del Trabajo",
+          "description": "Entrega por hitos; documentación y comunicación claras para facilitar la aprobación.",
+          "features": [
+            "Subida de entregables y evidencias",
+            "Revisiones dentro del alcance acordado",
+            "Historial auditable de cambios"
+          ]
+        },
+        "paymentRelease": {
+          "title": "Liberación del Pago",
+          "description": "Una vez aprobado el trabajo, el escrow libera el pago al instante al freelancer.",
+          "features": [
+            "Aprobación y liberación instantánea",
+            "Notificación a ambas partes",
+            "Registros y recibos automáticos"
+          ]
+        }
+      },
+      "cta": {
+        "title": "¿Listo para Empezar con Escrow?",
+        "subtitle": "Configura tu primer proyecto seguro y elimina riesgos de pago desde hoy.",
+        "contactButton": "Hablar con un Experto",
+        "startProjectButton": "Iniciar Tu Proyecto"
       }
     }
   }
