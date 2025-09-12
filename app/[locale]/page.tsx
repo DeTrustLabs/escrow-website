@@ -6,13 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   ArrowRight,
   CheckCircle,
   TrendingUp,
   Lock,
-  Play,
   Shield,
   Globe,
   Clock,
@@ -88,66 +87,33 @@ export default async function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="container px-8 relative">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <Badge variant="secondary" className="px-4 py-2">
-                {t("hero.badge")}
-              </Badge>
-            </div>
-
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight mb-8 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-              {t("hero.title").split("Global Business")[0]}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Global Business
-              </span>
-            </h1>
-
-            <p className="text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-              {t("hero.subtitle")}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="text-lg px-8 py-4" asChild>
-                <Link href={APP_URL}>
-                  {t("hero.startEscrow")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 py-4 bg-transparent"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                {t("hero.watchDemo")}
-              </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
-                <span>{t("hero.trustIndicators.nonCustodial")}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
-                <span>{t("hero.trustIndicators.openSource")}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
-                <span>{t("hero.trustIndicators.audited")}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="h-4 w-4 text-primary" />
-                <span>{t("hero.trustIndicators.availability")}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-transparent"
+        badge={t("hero.badge")}
+        title={
+          <>
+            {t("hero.title").split("Global Business")[0]}
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              Global Business
+            </span>
+          </>
+        }
+        subtitle={t("hero.subtitle")}
+        primaryButton={{
+          label: t("hero.startEscrow"),
+          href: APP_URL,
+        }}
+        secondaryButton={{
+          label: t("hero.watchDemo"),
+          variant: "outline",
+        }}
+        trustIndicators={[
+          { text: t("hero.trustIndicators.nonCustodial") },
+          { text: t("hero.trustIndicators.openSource") },
+          { text: t("hero.trustIndicators.audited") },
+          { text: t("hero.trustIndicators.availability") },
+        ]}
+      />
 
       {/* Landing Cards - Explore the Escrow Protocol */}
       <section className="py-20 bg-gray-50">

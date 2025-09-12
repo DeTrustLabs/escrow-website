@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import { Mail, ArrowRight, UserPlus } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import {
@@ -52,21 +52,15 @@ export default async function SupportPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Early Access Program */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-4">
-              {t("hero.badge")}
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
-              {t("hero.title")}
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-          </div>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-primary/10"
+        badge={t("hero.badge")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
 
+      <section className="py-20">
+        <div className="container px-8">
           <div className="max-w-2xl mx-auto">
             <Card className="border-0 shadow-lg">
               <CardHeader>

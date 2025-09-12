@@ -13,6 +13,7 @@ import {
   sendContactMessage,
   subscribeToNewsletter,
 } from "../../trade/contacts/actions"
+import { Hero } from "@/components/hero"
 
 function SuccessPopup({
   message,
@@ -88,19 +89,15 @@ export default function FreelancerContactsPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
+
       <section className="py-20">
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-16">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-                {t("hero.title")}
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                {t("hero.subtitle")}
-              </p>
-            </div>
-
             {/* Two-column layout */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Left: Send Message Form */}

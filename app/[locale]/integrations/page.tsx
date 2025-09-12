@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   Code,
   Layers,
@@ -79,37 +79,19 @@ export default async function IntegrationsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 lg:py-32">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-4">
-              {t("hero.badge")}
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
-              {t("hero.title")}
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
-                <Button size="lg" className="text-lg px-8">
-                  {t("hero.primaryButton")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 bg-transparent"
-              >
-                {t("hero.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        badge={t("hero.badge")}
+        primaryButton={{
+          label: t("hero.primaryButton"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+        }}
+        secondaryButton={{
+          label: t("hero.secondaryButton"),
+          variant: "outline",
+        }}
+      />
 
       {/* Open Ecosystem Section */}
       <section className="py-20 bg-gray-50">

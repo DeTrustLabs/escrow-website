@@ -72,6 +72,7 @@ export default async function FreelancerPage() {
   return (
     <div className="min-h-screen bg-background">
       <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={
           <>

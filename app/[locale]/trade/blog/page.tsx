@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { Hero } from "@/components/hero"
 import { Badge } from "@/components/ui/badge"
 import {
   ArrowRight,
@@ -62,19 +63,11 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              {t("hero.title")}
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
 
       {/* Recent Articles */}
       <section className="py-20 bg-gray-50">

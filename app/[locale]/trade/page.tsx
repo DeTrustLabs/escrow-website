@@ -70,6 +70,7 @@ export default async function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={
           <>

@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   Accordion,
   AccordionContent,
@@ -36,48 +36,32 @@ import { AppImage } from "@/components/app-image"
 export default function ProjectOwnerClientPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="px-4 py-2 mb-6">
-              For Project Owners
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Hire with Confidence,{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Every Time
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Eliminate project risks and ensure quality delivery. Digital
-              escrow protects you from non-delivery and ensures work meets your
-              specifications.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="text-lg px-8 py-4">
-                  Start Project Escrow
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/workflow">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg px-8 py-4 bg-transparent"
-                >
-                  Learn How It Works
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        badge={"For Project Owners"}
+        title={
+          <>
+            Hire with Confidence,{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              Every Time
+            </span>
+          </>
+        }
+        subtitle={
+          "Eliminate project risks and ensure quality delivery. Digital escrow protects you from non-delivery and ensures work meets your specifications."
+        }
+        primaryButton={{
+          label: "Start Project Escrow",
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }}
+        secondaryButton={{
+          label: "Learn How It Works",
+          href: "/workflow",
+          variant: "outline",
+        }}
+      />
 
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">

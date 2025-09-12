@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   Accordion,
   AccordionContent,
@@ -37,48 +37,32 @@ import { AppImage } from "@/components/app-image"
 export default function FreelancerClientPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="px-4 py-2 mb-6">
-              For Freelancers
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Get Paid Securely,{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Every Project
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Eliminate payment risks and grow your freelance business with
-              confidence. Digital escrow ensures you receive payment when you
-              deliver as promised.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="text-lg px-8 py-4">
-                  Start Freelance Escrow
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/freelancer/workflow">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg px-8 py-4 bg-transparent"
-                >
-                  Learn How It Works
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        badge={"For Freelancers"}
+        title={
+          <>
+            Get Paid Securely,{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              Every Project
+            </span>
+          </>
+        }
+        subtitle={
+          "Eliminate payment risks and grow your freelance business with confidence. Digital escrow ensures you receive payment when you deliver as promised."
+        }
+        primaryButton={{
+          label: "Start Freelance Escrow",
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }}
+        secondaryButton={{
+          label: "Learn How It Works",
+          href: "/freelancer/workflow",
+          variant: "outline",
+        }}
+      />
 
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">

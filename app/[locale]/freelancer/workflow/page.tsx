@@ -6,12 +6,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   ArrowRight,
   CheckCircle,
   Handshake,
-  Zap,
   FileText,
   Shield,
   AlertTriangle,
@@ -62,41 +61,21 @@ export default function FreelancerWorkflowPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="px-4 py-2 mb-6">
-              Secure Freelance Workflow
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Freelance{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                Escrow Workflow
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Eliminate payment risks, protect your work, and build trust with
-              clients using digital escrow. Both freelancers and project owners
-              are protected throughout the entire project lifecycle.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-              <div className="flex items-center justify-center space-x-2 text-sm">
-                <Shield className="h-5 w-5 text-primary" />
-                <span>Payment Security</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 text-sm">
-                <Zap className="h-5 w-5 text-primary" />
-                <span>Milestone-Based Release</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2 text-sm">
-                <DollarSign className="h-5 w-5 text-primary" />
-                <span>Lower Transaction Costs</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        badge={"Secure Freelance Workflow"}
+        title={
+          <>
+            Freelance{" "}
+            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              Escrow Workflow
+            </span>
+          </>
+        }
+        subtitle={
+          "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle."
+        }
+      />
 
       {/* 4 Steps of the Escrow */}
       <section className="py-20 bg-gray-50">

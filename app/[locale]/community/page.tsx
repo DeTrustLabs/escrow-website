@@ -41,6 +41,7 @@ export default function CommunityPage() {
   return (
     <div className="min-h-screen bg-background">
       <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
