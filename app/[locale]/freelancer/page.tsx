@@ -70,12 +70,8 @@ export default async function FreelancerPage() {
     <SectionGroup>
       <Hero
         badge={t("hero.badge")}
-        title={
-          <>
-            {t("hero.title").split("Digital Escrow")[0]}{" "}
-            <span className="text-primary font-black">Digital Escrow</span>
-          </>
-        }
+        title={t("hero.title")}
+        titleHighlight={t("hero.titleHighlight")}
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.startEscrow"),
@@ -212,7 +208,7 @@ export default async function FreelancerPage() {
 
           <div className="mb-8 flex justify-center">
             <AppImage
-              src="/images/digital-escrow-freelance-process-illustration.jpg"
+              src="/images/escrow-freelance-illustration.png"
               alt={t("whatIs.imageAlt")}
               width={900}
               height={600}

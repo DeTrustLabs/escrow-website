@@ -6,7 +6,8 @@
     },
     "hero": {
       "badge": "Freelance Solution",
-      "title": "Secure Freelance Projects with Digital Escrow",
+      "title": "Secure Freelance Projects with ",
+      "titleHighlight": "Digital Escrow",
       "subtitle": "Eliminate payment risks in freelance work with secure escrow for freelancers and project owners.",
       "startEscrow": "Start Freelance Escrow",
       "seeHowItWorks": "See How It Works",

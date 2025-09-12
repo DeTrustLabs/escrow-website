@@ -28,11 +28,7 @@ interface HeroProps {
   secondaryButton?: HeroButton
   trustIndicators?: TrustIndicator[]
   className?: string
-  titleClassName?: string
-  // When provided, and `title` is a string containing this substring,
-  // the substring will be wrapped in a styled span.
   titleHighlight?: string
-  highlightClassName?: string
 }
 
 export function Hero({

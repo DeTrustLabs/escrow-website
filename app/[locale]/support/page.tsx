@@ -55,12 +55,9 @@ export default async function SupportPage() {
     <>
       <SectionGroup>
         <Hero
-          className="bg-gradient-to-br from-primary/5 to-primary/10"
           badge={t("hero.badge")}
           title={t("hero.title")}
           subtitle={t("hero.subtitle")}
-          titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-          maxWidth="max-w-5xl"
         />
 
         <section>

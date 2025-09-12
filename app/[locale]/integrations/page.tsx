@@ -81,12 +81,9 @@ export default async function IntegrationsPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         badge={t("hero.badge")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.primaryButton"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",

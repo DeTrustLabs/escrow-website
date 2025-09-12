@@ -59,7 +59,7 @@ export function Header({ forceVariant }: NavigationProps) {
           : "bg-background/80 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-4 flex h-16 items-center justify-between">
+      <div className="max-w-7xl mx-auto px-2 flex h-16 items-center justify-between">
         {/* Left: Logo (stable) */}
         <Link
           href={logoHref}

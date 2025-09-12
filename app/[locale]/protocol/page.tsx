@@ -373,26 +373,25 @@ export default async function ProtocolPage() {
 
       {/* CTA Section */}
       <section>
-        <div className="bg-gradient-to-r from-[hsl(var(--primary-dark))] to-[hsl(var(--primary-dark))]/80 rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              {t("cta.primaryButton")}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-            >
-              {t("cta.secondaryButton")}
-            </Button>
-          </div>
+        {" "}
+        <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+          {t("cta.title")}
+        </h2>
+        <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          {t("cta.subtitle")}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" variant="secondary">
+            {t("cta.primaryButton")}
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="text-primary border-gray-200 cursor-not-allowed"
+          >
+            {t("cta.secondaryButton")}
+          </Button>
         </div>
       </section>
     </SectionGroup>

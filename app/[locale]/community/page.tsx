@@ -42,12 +42,9 @@ export default function CommunityPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.primaryButton"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
@@ -70,7 +67,7 @@ export default function CommunityPage() {
 
       {/* Sections */}
       {/* Community Resources */}
-      <section>
+      <section id="discord-community">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("resources.title")}
@@ -81,7 +78,7 @@ export default function CommunityPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="border-0 shadow-lg" id="discord-community">
+          <Card className="border-0 shadow-lg">
             <CardHeader>
               <MessageSquare className="h-12 w-12 text-primary mb-4" />
               <CardTitle>{t("resources.discord.title")}</CardTitle>
