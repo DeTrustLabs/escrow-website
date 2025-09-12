@@ -20,6 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { LanguageSwitcher } from "@/components/language-switcher"
+import { cn } from "@/lib/utils"
 
 interface NavigationProps {
   /** Force a variant (primarily for legacy wrappers). If omitted, path-based detection is used. */
@@ -53,11 +54,16 @@ export function Header({ forceVariant }: NavigationProps) {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
+      className={cn(
+        "sticky top-0 z-50 w-full border-b transition-all duration-300",
         scrolled
-          ? "bg-background/95 backdrop-blur-md shadow-sm"
-          : "bg-background/80 backdrop-blur-sm"
-      }`}
+          ? "bg-white/60 backdrop-blur-xl border-white/30"
+          : "bg-white/40 backdrop-blur-lg border-white/20"
+      )}
+      style={{
+        boxShadow: "0 2px 4px 0 rgba(31, 38, 135, 0.15)",
+        borderBottom: "1px solid rgba(255,255,255,0.25)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-2 flex h-16 items-center justify-between">
         {/* Left: Logo (stable) */}
