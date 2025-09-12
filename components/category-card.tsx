@@ -21,25 +21,31 @@ export function CategoryCard({
   className,
 }: CategoryCardProps) {
   return (
-    <div
-      className={clsx(
-        "bg-white rounded-lg shadow-lg overflow-hidden",
-        className
-      )}
-    >
+    <div className={clsx("bg-white rounded-lg shadow-lg", className)}>
       <div className="relative">
         <AppImage
           src={image.src}
           alt={image.alt}
           aspectRatio={image.aspectRatio ?? "4 / 3"}
           rounded
-          shadow
           variant="card"
+          className="rounded-b-none"
         />
-        <div className="absolute top-4 left-4 z-10">
-          <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm break-words max-w-[calc(100%-2rem)]">
+        <div className="absolute top-5 -left-2 z-10">
+          <span
+            className={clsx(
+              "relative inline-block text-white font-semibold",
+              "px-3 py-1 text-base md:text-sm",
+              "bg-gradient-to-r from-primary to-primary/80",
+              "rounded-r-md shadow-md ring-1 ring-black/5"
+            )}
+          >
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -bottom-2 left-0 w-0 h-0 border-t-8 border-l-8 border-t-primary/80 border-l-transparent"
+            />
             {title}
-          </div>
+          </span>
         </div>
       </div>
       <div className="p-4">
