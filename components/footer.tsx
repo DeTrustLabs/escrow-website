@@ -10,7 +10,7 @@ export async function Footer() {
   const t = await getTranslations("footer")
   return (
     <footer className="bg-gray-50 border-t">
-      <div className="container mx-auto p-8">
+      <div className="max-w-7xl mx-auto p-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
@@ -42,64 +42,66 @@ export async function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold">{t("solutions")}</h4>
-            <div className="space-y-2 text-sm">
-              <Link
-                href={ROUTES.trade}
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("globalTrade")}
-              </Link>
-              <Link
-                href={ROUTES.freelancer}
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("freelancer")}
-              </Link>
-              <Link
-                href={ROUTES.integrations}
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("integrations")}
-              </Link>
-              <Link
-                href={ROUTES.community}
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("protocolCommunity")}
-              </Link>
+          <div className="md:col-span-2 grid grid-cols-2 gap-8">
+            <div className="space-y-4">
+              <h4 className="font-semibold">{t("solutions")}</h4>
+              <div className="space-y-2 text-sm">
+                <Link
+                  href={ROUTES.trade}
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("globalTrade")}
+                </Link>
+                <Link
+                  href={ROUTES.freelancer}
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("freelancer")}
+                </Link>
+                <Link
+                  href={ROUTES.integrations}
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("integrations")}
+                </Link>
+                <Link
+                  href={ROUTES.community}
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("protocolCommunity")}
+                </Link>
+              </div>
             </div>
-          </div>
 
-          {/* Resources */}
-          <div className="space-y-4">
-            <h4 className="font-semibold">{t("resources")}</h4>
-            <div className="space-y-2 text-sm">
-              <Link
-                href="/support"
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("documentation")}
-              </Link>
-              <Link
-                href="/support"
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("faq")}
-              </Link>
-              <Link
-                href="/protocol"
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("community")}
-              </Link>
-              <Link
-                href="/support"
-                className="block text-muted-foreground hover:text-primary"
-              >
-                {t("support")}
-              </Link>
+            {/* Resources */}
+            <div className="space-y-4">
+              <h4 className="font-semibold">{t("resources")}</h4>
+              <div className="space-y-2 text-sm">
+                <Link
+                  href="/support"
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("documentation")}
+                </Link>
+                <Link
+                  href="/support"
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("faq")}
+                </Link>
+                <Link
+                  href="/protocol"
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("community")}
+                </Link>
+                <Link
+                  href="/support"
+                  className="block text-muted-foreground hover:text-primary"
+                >
+                  {t("support")}
+                </Link>
+              </div>
             </div>
           </div>
 

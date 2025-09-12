@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { CategoryCard } from "@/components/category-card"
+import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import SectionGroup from "@/components/ui/section-group"
@@ -72,10 +72,9 @@ export default async function HomePage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
-        title={t("hero.title").split("Digital Escrow")[0]}
-        titleHighlight="Digital Escrow"
+        title={t("hero.title")}
+        titleHighlight={t("hero.titleHighlight")}
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.startEscrow"),
@@ -85,7 +84,7 @@ export default async function HomePage() {
         }}
         secondaryButton={{
           label: t("hero.seeHowItWorks"),
-          href: "/workflow",
+          href: "/en/trade/workflow",
           variant: "outline",
         }}
         trustIndicators={[
@@ -512,20 +511,12 @@ export default async function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button
-                size="lg"
-                variant="secondary"
-                className="text-lg px-8 font-bold"
-              >
+              <Button size="lg" variant="secondary" className="px-8">
                 {t("cta.primaryButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent font-bold"
-            >
+            <Button size="lg" variant="outline" className="px-8">
               {t("cta.secondaryButton")}
             </Button>
           </div>

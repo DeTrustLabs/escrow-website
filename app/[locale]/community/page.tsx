@@ -105,10 +105,7 @@ export default function CommunityPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button
-                variant="outline"
-                className="w-full bg-white text-gray-400 border-gray-200 cursor-not-allowed"
-              >
+              <Button variant="outline" className="w-full">
                 {t("resources.docs.button")}
               </Button>
             </CardContent>
@@ -123,10 +120,7 @@ export default function CommunityPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button
-                variant="outline"
-                className="w-full bg-white text-gray-400 border-gray-200 cursor-not-allowed"
-              >
+              <Button variant="outline" className="w-full">
                 {t("resources.github.button")}
               </Button>
             </CardContent>
@@ -231,10 +225,7 @@ export default function CommunityPage() {
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Button
-                variant="outline"
-                className="w-full mt-4 bg-white text-gray-400 border-gray-200 cursor-not-allowed"
-              >
+              <Button variant="outline" className="w-full mt-4">
                 {t("gettingStarted.developers.button")}
               </Button>
             </CardContent>
@@ -252,21 +243,17 @@ export default function CommunityPage() {
             {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://discord.gg/YourDiscordInvite">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
+            <Button size="lg" variant="secondary" className="px-8" asChild>
+              <Link href="https://discord.gg/YourDiscordInvite">
                 {t("cta.primaryButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-              >
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="px-8" asChild>
+              <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
                 {t("cta.secondaryButton")}
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

@@ -275,7 +275,7 @@ export default function FreelancerFAQPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/freelancer/contacts">
-              <Button size="lg" className="text-lg px-8 py-4">
+              <Button size="lg" className="px-8 py-4">
                 {t("cta.contactButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -285,11 +285,7 @@ export default function FreelancerFAQPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8 py-4">
                 {t("cta.startProjectButton")}
               </Button>
             </Link>

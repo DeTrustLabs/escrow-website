@@ -6,7 +6,8 @@
     },
     "hero": {
       "badge": "Global Trade Solution",
-      "title": "Secure Global Trade with Digital Escrow",
+      "title": "Secure Global Trade with ",
+      "titleHighlight": "Digital Escrow",
       "subtitle": "Eliminate payment risks in cross-border trade with secure escrow for exporters and importers.",
       "startEscrow": "Start Global Trade Escrow",
       "seeHowItWorks": "See How It Works",

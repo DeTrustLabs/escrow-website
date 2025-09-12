@@ -318,7 +318,7 @@ export default async function IntegrationsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" className="w-full bg-transparent">
+              <Button variant="outline" className="w-full">
                 {t("resources.items.contracts.button")}
               </Button>
             </CardContent>
@@ -333,7 +333,7 @@ export default async function IntegrationsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button variant="outline" className="w-full bg-transparent">
+              <Button variant="outline" className="w-full">
                 {t("resources.items.frontend.button")}
               </Button>
             </CardContent>
@@ -401,17 +401,13 @@ export default async function IntegrationsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
+              <Button size="lg" variant="secondary" className=" px-8">
                 {t("cta.primaryButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/protocol#community">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8">
                 {t("cta.secondaryButton")}
               </Button>
             </Link>

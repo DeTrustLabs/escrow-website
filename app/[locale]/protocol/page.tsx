@@ -237,7 +237,7 @@ export default async function ProtocolPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full bg-transparent">
+                  <Button variant="outline" className="w-full">
                     {t("communityTab.governance.button")}
                   </Button>
                 </CardContent>
@@ -257,7 +257,7 @@ export default async function ProtocolPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Button variant="outline" className="w-full bg-transparent">
+                    <Button variant="outline" className="w-full">
                       {t("communityTab.telegram.button")}
                     </Button>
                   </a>
@@ -301,7 +301,7 @@ export default async function ProtocolPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full bg-transparent">
+                  <Button variant="outline" className="w-full">
                     {t("developersTab.github.button")}
                   </Button>
                 </CardContent>
@@ -316,7 +316,7 @@ export default async function ProtocolPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full bg-transparent">
+                  <Button variant="outline" className="w-full">
                     {t("developersTab.guides.button")}
                   </Button>
                 </CardContent>
@@ -373,25 +373,22 @@ export default async function ProtocolPage() {
 
       {/* CTA Section */}
       <section>
-        {" "}
-        <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-          {t("cta.title")}
-        </h2>
-        <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-          {t("cta.subtitle")}
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" variant="secondary">
-            {t("cta.primaryButton")}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-primary border-gray-200 cursor-not-allowed"
-          >
-            {t("cta.secondaryButton")}
-          </Button>
+        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            {t("cta.title")}
+          </h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            {t("cta.subtitle")}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary">
+              {t("cta.primaryButton")}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button size="lg" variant="outline">
+              {t("cta.secondaryButton")}
+            </Button>
+          </div>
         </div>
       </section>
     </SectionGroup>

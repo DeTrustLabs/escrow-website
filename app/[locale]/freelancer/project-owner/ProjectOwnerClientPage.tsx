@@ -391,7 +391,7 @@ export default function ProjectOwnerClientPage() {
 
       {/* CTA */}
       <section>
-        <div className="text-center">
+        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             {t("callToAction.title")}
           </h2>
@@ -399,25 +399,19 @@ export default function ProjectOwnerClientPage() {
             {t("callToAction.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="text-lg px-8 py-4">
+            <Button size="lg" variant="secondary" className="px-8 py-4" asChild>
+              <Link
+                href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {t("callToAction.startEscrow")}
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link href="/contacts">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 bg-transparent"
-              >
-                {t("callToAction.talkToSpecialist")}
-              </Button>
-            </Link>
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="px-8 py-4" asChild>
+              <Link href="/contacts">{t("callToAction.talkToSpecialist")}</Link>
+            </Button>
           </div>
         </div>
       </section>

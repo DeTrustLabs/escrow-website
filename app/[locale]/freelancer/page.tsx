@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
-import { CategoryCard } from "@/components/category-card"
+import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -478,17 +478,13 @@ export default async function FreelancerPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" variant="secondary" className="text-lg px-8">
+              <Button size="lg" variant="secondary" className="px-8">
                 {t("cta.startEscrow")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/freelancer/workflow">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8">
                 {t("cta.learnMore")}
               </Button>
             </Link>

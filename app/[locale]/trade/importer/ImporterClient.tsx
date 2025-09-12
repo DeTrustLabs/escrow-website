@@ -400,7 +400,7 @@ export default function ImporterClient() {
             <CardContent className="pt-0">
               <Link href="/workflow">
                 <Button
-                  className="w-full bg-primary hover:bg-primary/80 text-white"
+                  className="w-full"
                   onClick={() => {
                     setTimeout(() => window.scrollTo(0, 0), 100)
                   }}
@@ -433,7 +433,7 @@ export default function ImporterClient() {
             <CardContent className="pt-0">
               <Link href="/workflow">
                 <Button
-                  className="w-full bg-primary hover:bg-primary/80 text-white"
+                  className="w-full"
                   onClick={() => {
                     setTimeout(() => window.scrollTo(0, 0), 100)
                   }}
@@ -462,17 +462,13 @@ export default function ImporterClient() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="text-lg px-8 py-4">
+              <Button size="lg" className="px-8 py-4">
                 {t("cta.startEscrow")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <Link href="/contacts">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8 py-4">
                 {t("cta.talkToAdvisor")}
               </Button>
             </Link>

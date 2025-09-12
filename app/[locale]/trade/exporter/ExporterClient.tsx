@@ -64,7 +64,7 @@ export default function ExporterClient() {
         }}
         secondaryButton={{
           label: t("hero.learnHowItWorks"),
-          href: "/workflow",
+          href: "/en/trade/workflow",
           variant: "outline",
         }}
       />
@@ -396,9 +396,9 @@ export default function ExporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/workflow">
+              <Link href="/en/trade/workflow">
                 <Button
-                  className="w-full bg-primary hover:bg-primary/80 text-white"
+                  className="w-full"
                   onClick={() => {
                     setTimeout(() => window.scrollTo(0, 0), 100)
                   }}
@@ -429,9 +429,9 @@ export default function ExporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/workflow">
+              <Link href="/en/trade/workflow">
                 <Button
-                  className="w-full bg-primary hover:bg-primary/80 text-white"
+                  className="w-full"
                   onClick={() => {
                     setTimeout(() => window.scrollTo(0, 0), 100)
                   }}
@@ -460,17 +460,13 @@ export default function ExporterClient() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="text-lg px-8 py-4">
+              <Button size="lg" className="px-8 py-4">
                 {t("cta.primaryButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <Link href="/contacts">
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8 py-4">
                 {t("cta.secondaryButton")}
               </Button>
             </Link>

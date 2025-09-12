@@ -476,20 +476,12 @@ export default async function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href={APP_URL}>
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  className="text-lg px-8 py-4 shadow-lg"
-                >
+                <Button size="lg" variant="secondary" className="px-8 py-4">
                   {t("cta.startEscrow")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-              >
+              <Button size="lg" variant="outline" className="px-8 py-4">
                 {t("cta.exploreDocs")}
               </Button>
             </div>

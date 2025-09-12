@@ -386,15 +386,11 @@ export default async function SupportPage() {
               {t("cta.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-lg px-8">
+              <Button size="lg" variant="secondary" className="px-8">
                 {t("cta.primaryButton")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary bg-transparent"
-              >
+              <Button size="lg" variant="outline">
                 {t("cta.secondaryButton")}
               </Button>
             </div>

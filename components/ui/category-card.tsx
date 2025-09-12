@@ -1,6 +1,6 @@
 "use client"
 
-import { AppImage, AppImageProps } from "./app-image"
+import { AppImage, AppImageProps } from "../app-image"
 import clsx from "clsx"
 
 export type CategoryCardProps = {
