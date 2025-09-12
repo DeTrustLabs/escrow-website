@@ -81,7 +81,7 @@ export default function FreelancerWorkflowPage() {
       />
 
       {/* 4 Steps of the Escrow */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -149,7 +149,7 @@ export default function FreelancerWorkflowPage() {
       </Section>
 
       {/* How a Digital Escrow Works */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -607,7 +607,7 @@ export default function FreelancerWorkflowPage() {
         </div>
       </Section>
 
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

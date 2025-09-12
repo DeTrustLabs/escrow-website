@@ -35,7 +35,7 @@ export default function FreelancerFAQPage() {
       />
 
       {/* FAQ Categories */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Sidebar */}
@@ -273,7 +273,7 @@ export default function FreelancerFAQPage() {
       </Section>
 
       {/* Still Have Questions */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">

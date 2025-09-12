@@ -370,7 +370,7 @@ export function WorkflowClient() {
       </Section>
 
       {/* Flexible Release Mechanisms */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -448,7 +448,7 @@ export function WorkflowClient() {
       </Section>
 
       {/* Dispute Resolution Process */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -530,7 +530,7 @@ export function WorkflowClient() {
       </Section>
 
       {/* Digital Currencies and Exchange Providers */}
-      <Section className="py-20" aria-label="digital payments information">
+      <Section aria-label="digital payments information">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">

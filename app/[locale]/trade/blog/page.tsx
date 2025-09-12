@@ -73,7 +73,7 @@ export default async function BlogPage() {
       />
 
       {/* Recent Articles */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">

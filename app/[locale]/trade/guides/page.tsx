@@ -38,7 +38,7 @@ export default async function GuidesPage() {
       />
 
       {/* Featured Guide */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <Card className="border-0 shadow-xl mb-16">
             <CardContent className="p-8">

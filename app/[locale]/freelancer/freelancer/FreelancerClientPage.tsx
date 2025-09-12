@@ -140,7 +140,7 @@ export default function FreelancerClientPage() {
       </Section>
 
       {/* Challenges Freelancers Face */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -302,7 +302,7 @@ export default function FreelancerClientPage() {
       </Section>
 
       {/* Why Freelancers Choose Digital Escrow */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -391,7 +391,7 @@ export default function FreelancerClientPage() {
       </Section>
 
       {/* Complete Protection for Freelancers */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -455,7 +455,7 @@ export default function FreelancerClientPage() {
       </Section>
 
       {/* CTA */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">

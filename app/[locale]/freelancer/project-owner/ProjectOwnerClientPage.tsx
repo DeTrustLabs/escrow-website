@@ -137,7 +137,7 @@ export default function ProjectOwnerClientPage() {
       </Section>
 
       {/* Challenges Project Owners Face */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -300,7 +300,7 @@ export default function ProjectOwnerClientPage() {
       </Section>
 
       {/* Why Project Owners Choose Digital Escrow */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -455,7 +455,7 @@ export default function ProjectOwnerClientPage() {
       </Section>
 
       {/* CTA */}
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">

@@ -97,7 +97,7 @@ export default function ContactsPage() {
         maxWidth="max-w-5xl"
       />
 
-      <Section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             {/* Two-column layout */}
