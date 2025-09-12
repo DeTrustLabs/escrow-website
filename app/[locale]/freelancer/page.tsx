@@ -23,6 +23,7 @@ import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
+import { SectionProvider, Section } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("freelancer.metadata")
@@ -70,7 +71,7 @@ export default async function FreelancerPage() {
     "perfectFor.projectOwners.benefits"
   )
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -102,8 +103,9 @@ export default async function FreelancerPage() {
         ]}
       />
 
+      {/* Sections */}
       {/* How Escrow Solves Issues in Freelancing */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -116,10 +118,10 @@ export default async function FreelancerPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Risks of Freelancing */}
-      <section className="py-16 bg-white">
+      <Section className="py-16">
         <div className="container px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -207,10 +209,10 @@ export default async function FreelancerPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* What is a Digital Escrow Section */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -240,10 +242,10 @@ export default async function FreelancerPage() {
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* 6 Escrow Features */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -316,13 +318,10 @@ export default async function FreelancerPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Supporting All Service Categories */}
-      <section
-        id="supporting-all-service-categories"
-        className="py-20 bg-gray-50"
-      >
+      <Section id="supporting-all-service-categories">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -614,10 +613,10 @@ export default async function FreelancerPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Perfect for Every Service Type */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -680,10 +679,10 @@ export default async function FreelancerPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -715,7 +714,7 @@ export default async function FreelancerPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

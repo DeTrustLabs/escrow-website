@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import ImporterBenefitsClient from "./ImporterBenefitsClient"
 import { SITE_URL } from "@/lib/urls"
 import { getTranslations } from "next-intl/server"
+import { SectionProvider } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.importerBenefits.metadata")
@@ -16,5 +17,9 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function ImporterBenefitsPage() {
-  return <ImporterBenefitsClient />
+  return (
+    <SectionProvider>
+      <ImporterBenefitsClient />
+    </SectionProvider>
+  )
 }

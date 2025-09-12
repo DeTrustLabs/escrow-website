@@ -26,6 +26,7 @@ import Link from "next/link"
 import { getTranslations, getMessages } from "next-intl/server"
 import { Metadata } from "next"
 import { getMessageArray } from "@/lib/i18n-arrays"
+import { SectionProvider, Section } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("integrations.metadata")
@@ -78,7 +79,7 @@ export default async function IntegrationsPage() {
   )
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -103,7 +104,7 @@ export default async function IntegrationsPage() {
       />
 
       {/* Open Ecosystem Section */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -136,10 +137,10 @@ export default async function IntegrationsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Access Methods */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -182,10 +183,10 @@ export default async function IntegrationsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Integration Possibilities */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -296,10 +297,10 @@ export default async function IntegrationsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Technical Resources */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -359,10 +360,10 @@ export default async function IntegrationsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Use Cases for Integrators */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -410,10 +411,10 @@ export default async function IntegrationsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -441,7 +442,7 @@ export default async function IntegrationsPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

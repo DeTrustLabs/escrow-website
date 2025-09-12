@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
     <div className="min-h-screen bg-background">
-      <section className="py-20">
+      <div className="py-20">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <div className="mb-8">
@@ -13,7 +13,7 @@ export default function Loading() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

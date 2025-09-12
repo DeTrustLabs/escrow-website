@@ -35,6 +35,7 @@ import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/hero"
+import { Section } from "@/components/section"
 
 export default function ExporterBenefitsClient() {
   const t = useTranslations("trade.exporterBenefits")
@@ -49,7 +50,7 @@ export default function ExporterBenefitsClient() {
   )
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -71,7 +72,7 @@ export default function ExporterBenefitsClient() {
       />
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-gray-50">
+      <Section className="py-16">
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -127,10 +128,10 @@ export default function ExporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Challenges Exporters Face section with accordion */}
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -299,10 +300,10 @@ export default function ExporterBenefitsClient() {
             </Accordion>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Key Benefits */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -377,10 +378,10 @@ export default function ExporterBenefitsClient() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* How It Protects Exporters */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -459,10 +460,10 @@ export default function ExporterBenefitsClient() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -494,7 +495,7 @@ export default function ExporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </>
   )
 }

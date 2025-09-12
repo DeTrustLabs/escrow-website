@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server"
 import { WorkflowClient } from "./WorkflowClient"
+import { SectionProvider } from "@/components/section"
 
 export async function generateMetadata() {
   const t = await getTranslations("trade.workflow.metadata")
@@ -11,5 +12,9 @@ export async function generateMetadata() {
 }
 
 export default function WorkflowPage() {
-  return <WorkflowClient />
+  return (
+    <SectionProvider>
+      <WorkflowClient />
+    </SectionProvider>
+  )
 }

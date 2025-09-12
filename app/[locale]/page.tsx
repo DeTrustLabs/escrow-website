@@ -28,6 +28,7 @@ import Link from "next/link"
 import { APP_URL, ROUTES } from "@/lib/urls"
 import { getTranslations, getMessages } from "next-intl/server"
 import type { Metadata } from "next"
+import { SectionProvider, Section } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home")
@@ -86,7 +87,7 @@ export default async function HomePage() {
     : []
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -118,7 +119,7 @@ export default async function HomePage() {
       />
 
       {/* Landing Cards - Explore the Escrow Protocol */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -186,10 +187,10 @@ export default async function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Enhanced Features - Escrow Protocol Features */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -262,10 +263,10 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* How It Works - Enhanced */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <Section className="bg-gradient-to-br from-gray-50 to-white">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -320,10 +321,10 @@ export default async function HomePage() {
             })}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Enhanced Use Cases - Perfect for Your Business */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -400,10 +401,10 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Integrators and Community Section */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -480,10 +481,10 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Enhanced CTA */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
             <div className="relative">
@@ -515,7 +516,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

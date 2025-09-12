@@ -28,6 +28,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
+import { Section } from "@/components/section"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -70,7 +71,7 @@ export function WorkflowClient() {
   )
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -81,7 +82,7 @@ export function WorkflowClient() {
       />
 
       {/* How a Digital Escrow Works */}
-      <section className="py-20 bg-white">
+      <Section>
         <div className="container px-8">
           <div className="mb-16 flex flex-col items-center text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-900">
@@ -366,10 +367,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Flexible Release Mechanisms */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -444,10 +445,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Dispute Resolution Process */}
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -526,13 +527,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Digital Currencies and Exchange Providers */}
-      <section
-        className="py-20 bg-gray-50"
-        aria-label="digital payments information"
-      >
+      <Section className="py-20" aria-label="digital payments information">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -628,10 +626,10 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
+      <Section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -663,7 +661,7 @@ export function WorkflowClient() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </>
   )
 }

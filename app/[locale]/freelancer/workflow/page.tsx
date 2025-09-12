@@ -26,6 +26,7 @@ import {
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
+import { Section, SectionProvider } from "@/components/section"
 
 export const metadata = {
   title:
@@ -55,7 +56,7 @@ export default function FreelancerWorkflowPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -80,7 +81,7 @@ export default function FreelancerWorkflowPage() {
       />
 
       {/* 4 Steps of the Escrow */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -145,10 +146,10 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* How a Digital Escrow Works */}
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -539,13 +540,10 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Flexible Release Mechanisms */}
-      <section
-        id="flexible-payment-release-options"
-        className="py-20 bg-gray-50"
-      >
+      <Section id="flexible-payment-release-options" className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -607,9 +605,9 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -717,12 +715,9 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section
-        id="digital-payments-for-freelancers"
-        className="py-20 bg-gray-50"
-      >
+      <Section id="digital-payments-for-freelancers" className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -856,10 +851,10 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
+      <Section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -893,7 +888,7 @@ export default function FreelancerWorkflowPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

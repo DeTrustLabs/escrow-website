@@ -31,6 +31,7 @@ import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/hero"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
+import { Section } from "@/components/section"
 
 export default function ImporterBenefitsClient() {
   const t = useTranslations("trade.importerBenefits")
@@ -47,7 +48,7 @@ export default function ImporterBenefitsClient() {
   // no-op
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -69,7 +70,7 @@ export default function ImporterBenefitsClient() {
       />
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-gray-50">
+      <Section className="py-16">
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -125,10 +126,10 @@ export default function ImporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Challenges Importers Face section with accordion */}
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -297,10 +298,10 @@ export default function ImporterBenefitsClient() {
             </Accordion>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Key Benefits */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -381,10 +382,10 @@ export default function ImporterBenefitsClient() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Complete Protection for Importers section */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -463,10 +464,10 @@ export default function ImporterBenefitsClient() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Call-to-action section */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -498,7 +499,7 @@ export default function ImporterBenefitsClient() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </>
   )
 }

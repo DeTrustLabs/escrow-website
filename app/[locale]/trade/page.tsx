@@ -22,6 +22,7 @@ import Link from "next/link"
 import { AppImage } from "@/components/app-image"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
+import { SectionProvider, Section } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.metadata")
@@ -68,7 +69,7 @@ export default async function HomePage() {
     ? tradeRoot.chooseRole.importers.benefits
     : []
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -102,7 +103,8 @@ export default async function HomePage() {
         ]}
       />
 
-      <section className="py-20 bg-gray-50">
+      {/* Sections */}
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -127,9 +129,9 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -140,9 +142,9 @@ export default async function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-16 bg-gray-50">
+      <Section className="py-16">
         <div className="container px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -198,9 +200,9 @@ export default async function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-12">
+      <Section className="py-12">
         <div className="container px-8">
           <Card className="border-primary/20 bg-primary/5 shadow-xl max-w-4xl mx-auto">
             <CardHeader className="text-center">
@@ -243,10 +245,10 @@ export default async function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* What is a Digital Escrow Section */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -273,9 +275,9 @@ export default async function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -348,9 +350,9 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -628,10 +630,10 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Choose Your Trade Role */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -694,10 +696,10 @@ export default async function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -731,7 +733,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

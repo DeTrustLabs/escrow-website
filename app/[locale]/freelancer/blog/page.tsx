@@ -19,12 +19,13 @@ import {
   Shield,
 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { Section, SectionProvider } from "@/components/section"
 
 export default function FreelancerBlogPage() {
   const t = useTranslations("freelancer.blog")
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -34,7 +35,7 @@ export default function FreelancerBlogPage() {
       />
 
       {/* Recent Articles */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -116,10 +117,10 @@ export default function FreelancerBlogPage() {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-primary">
+      <Section className="py-20 bg-primary">
         <div className="container px-8">
           <div className="text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -140,7 +141,7 @@ export default function FreelancerBlogPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

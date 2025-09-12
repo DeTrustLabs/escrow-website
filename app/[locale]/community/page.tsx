@@ -23,6 +23,7 @@ import {
 import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
+import { SectionProvider, Section } from "@/components/section"
 
 export default function CommunityPage() {
   const t = useTranslations("community")
@@ -39,7 +40,7 @@ export default function CommunityPage() {
   )
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -67,8 +68,9 @@ export default function CommunityPage() {
         ]}
       />
 
+      {/* Sections */}
       {/* Community Resources */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -135,10 +137,10 @@ export default function CommunityPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Protocol Information */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -181,10 +183,10 @@ export default function CommunityPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Getting Started */}
-      <section className="py-20 bg-gray-50">
+      <Section>
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -247,10 +249,10 @@ export default function CommunityPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <Section>
         <div className="container px-8">
           <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -278,7 +280,7 @@ export default function CommunityPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

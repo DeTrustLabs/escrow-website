@@ -32,10 +32,11 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
+import { Section, SectionProvider } from "@/components/section"
 
 export default function ProjectOwnerClientPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={"For Project Owners"}
@@ -66,7 +67,7 @@ export default function ProjectOwnerClientPage() {
       />
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-gray-50">
+      <Section className="py-16">
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -133,10 +134,10 @@ export default function ProjectOwnerClientPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Challenges Project Owners Face */}
-      <section className="py-20 bg-white">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -296,10 +297,10 @@ export default function ProjectOwnerClientPage() {
             </Accordion>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Why Project Owners Choose Digital Escrow */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
@@ -385,10 +386,10 @@ export default function ProjectOwnerClientPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Complete Protection for Project Owners */}
-      <section className="py-20 bg-gray-50">
+      <Section className="py-20 bg-gray-50">
         <div className="container px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -451,10 +452,10 @@ export default function ProjectOwnerClientPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* CTA */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -487,7 +488,7 @@ export default function ProjectOwnerClientPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

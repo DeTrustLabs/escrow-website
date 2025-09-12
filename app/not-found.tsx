@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { Section } from "@/components/section"
 import {
   Card,
   CardContent,
@@ -14,8 +15,8 @@ export default async function NotFound() {
   const t = await getTranslations("notFound")
 
   return (
-    <div className="min-h-screen bg-background">
-      <section className="py-20">
+    <>
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-2xl mx-auto text-center">
             <div className="mb-8">
@@ -96,7 +97,7 @@ export default async function NotFound() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </>
   )
 }

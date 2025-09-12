@@ -14,7 +14,7 @@ export default async function PrivacyPolicy() {
   const t = await getTranslations("privacy")
 
   return (
-    <div className="min-h-screen bg-background">
+    <>
       {/* Main Content */}
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
@@ -26,6 +26,6 @@ export default async function PrivacyPolicy() {
           </div>
         </div>
       </main>
-    </div>
+    </>
   )
 }

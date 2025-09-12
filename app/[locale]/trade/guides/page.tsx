@@ -6,6 +6,7 @@ import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import type { Metadata } from "next"
 import { Hero } from "@/components/hero"
+import { Section, SectionProvider } from "@/components/section"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.guides.metadata")
@@ -27,7 +28,7 @@ export default async function GuidesPage() {
   )
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -37,7 +38,7 @@ export default async function GuidesPage() {
       />
 
       {/* Featured Guide */}
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <Card className="border-0 shadow-xl mb-16">
             <CardContent className="p-8">
@@ -87,10 +88,10 @@ export default async function GuidesPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
       {/* CTA */}
-      <section className="py-20 bg-primary">
+      <Section className="py-20 bg-primary">
         <div className="container px-8">
           <div className="text-center text-white">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -126,7 +127,7 @@ export default async function GuidesPage() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </Section>
+    </SectionProvider>
   )
 }

@@ -38,7 +38,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <Header />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
         <Footer />
       </ThemeProvider>
     </NextIntlClientProvider>

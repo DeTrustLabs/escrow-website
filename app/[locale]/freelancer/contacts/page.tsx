@@ -14,6 +14,7 @@ import {
   subscribeToNewsletter,
 } from "../../trade/contacts/actions"
 import { Hero } from "@/components/hero"
+import { Section, SectionProvider } from "@/components/section"
 
 function SuccessPopup({
   message,
@@ -88,7 +89,7 @@ export default function FreelancerContactsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <SectionProvider>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
@@ -97,7 +98,7 @@ export default function FreelancerContactsPage() {
         maxWidth="max-w-5xl"
       />
 
-      <section className="py-20">
+      <Section className="py-20">
         <div className="container px-8">
           <div className="max-w-6xl mx-auto">
             {/* Two-column layout */}
@@ -268,13 +269,13 @@ export default function FreelancerContactsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </Section>
       {showPopup && (
         <SuccessPopup
           message={popupMessage}
           onClose={() => setShowPopup(false)}
         />
       )}
-    </div>
+    </SectionProvider>
   )
 }
