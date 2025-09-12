@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
+import { CategoryCard } from "@/components/category-card"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -312,286 +313,94 @@ export default async function FreelancerPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Row 1 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Web Development.jpg"
-                alt={t("categories.webDev.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.webDev.title")}
-                </div>
-              </div>
+        {(() => {
+          const categories = [
+            {
+              src: "/images/Web Development.jpg",
+              alt: t("categories.webDev.imageAlt"),
+              title: t("categories.webDev.title"),
+              description: t("categories.webDev.description"),
+            },
+            {
+              src: "/images/Graphic Design.jpg",
+              alt: t("categories.graphicDesign.imageAlt"),
+              title: t("categories.graphicDesign.title"),
+              description: t("categories.graphicDesign.description"),
+            },
+            {
+              src: "/images/Content Writing.jpg",
+              alt: t("categories.contentWriting.imageAlt"),
+              title: t("categories.contentWriting.title"),
+              description: t("categories.contentWriting.description"),
+            },
+            {
+              src: "/images/Video Production.jpg",
+              alt: t("categories.videoProduction.imageAlt"),
+              title: t("categories.videoProduction.title"),
+              description: t("categories.videoProduction.description"),
+            },
+            {
+              src: "/images/Digital Marketing.jpg",
+              alt: "Digital Marketing",
+              title: t("categories.digitalMarketing.title"),
+              description: t("categories.digitalMarketing.description"),
+            },
+            {
+              src: "/images/Software Development.jpg",
+              alt: t("categories.softwareDev.imageAlt"),
+              title: t("categories.softwareDev.title"),
+              description: t("categories.softwareDev.description"),
+            },
+            {
+              src: "/images/UI_UX Design.jpg",
+              alt: "UI/UX Design",
+              title: t("categories.uiUxDesign.title"),
+              description: t("categories.uiUxDesign.description"),
+            },
+            {
+              src: "/images/Virtual Assistance.jpg",
+              alt: "Virtual Assistance",
+              title: t("categories.virtualAssistance.title"),
+              description: t("categories.virtualAssistance.description"),
+            },
+            {
+              src: "/images/Legal Services.jpg",
+              alt: t("categories.legalServices.imageAlt"),
+              title: t("categories.legalServices.title"),
+              description: t("categories.legalServices.description"),
+            },
+            {
+              src: "/images/Data Analysis.jpg",
+              alt: t("categories.dataAnalysis.imageAlt"),
+              title: t("categories.dataAnalysis.title"),
+              description: t("categories.dataAnalysis.description"),
+            },
+            {
+              src: "/images/Consulting.jpg",
+              alt: t("categories.consulting.imageAlt"),
+              title: t("categories.consulting.title"),
+              description: t("categories.consulting.description"),
+            },
+            {
+              src: "/images/Translation.jpg",
+              alt: t("categories.translation.imageAlt"),
+              title: t("categories.translation.title"),
+              description: t("categories.translation.description"),
+            },
+          ]
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {categories.map((c, idx) => (
+                <CategoryCard
+                  key={idx}
+                  image={{ src: c.src, alt: c.alt, aspectRatio: "4 / 3" }}
+                  title={c.title}
+                  description={c.description}
+                />
+              ))}
             </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.webDev.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Graphic Design.jpg"
-                alt={t("categories.graphicDesign.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.graphicDesign.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.graphicDesign.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Content Writing.jpg"
-                alt={t("categories.contentWriting.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.contentWriting.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.contentWriting.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Video Production.jpg"
-                alt={t("categories.videoProduction.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.videoProduction.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.videoProduction.description")}
-              </p>
-            </div>
-          </div>
-
-          {/* Row 2 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Digital Marketing.jpg"
-                alt="Digital Marketing"
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.digitalMarketing.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.digitalMarketing.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Software Development.jpg"
-                alt={t("categories.softwareDev.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.softwareDev.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.softwareDev.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/UI_UX Design.jpg"
-                alt="UI/UX Design"
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.uiUxDesign.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.uiUxDesign.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Virtual Assistance.jpg"
-                alt="Virtual Assistance"
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.virtualAssistance.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.virtualAssistance.description")}
-              </p>
-            </div>
-          </div>
-
-          {/* Row 3 - New additions */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Legal Services.jpg"
-                alt={t("categories.legalServices.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.legalServices.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.legalServices.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Data Analysis.jpg"
-                alt={t("categories.dataAnalysis.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.dataAnalysis.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.dataAnalysis.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Consulting.jpg"
-                alt={t("categories.consulting.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.consulting.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.consulting.description")}
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-48">
-              <AppImage
-                src="/images/Translation.jpg"
-                alt={t("categories.translation.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4">
-                <div className="bg-primary text-white font-bold px-3 py-1 rounded text-sm">
-                  {t("categories.translation.title")}
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("categories.translation.description")}
-              </p>
-            </div>
-          </div>
-        </div>
+          )
+        })()}
       </section>
 
       {/* Perfect for Every Service Type */}
