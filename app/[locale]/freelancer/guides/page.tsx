@@ -16,6 +16,8 @@ export default function FreelancerGuidesPage() {
         className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
       />
 
       {/* Featured Guide */}

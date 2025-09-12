@@ -75,6 +75,8 @@ export default function FreelancerWorkflowPage() {
         subtitle={
           "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle."
         }
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
       />
 
       {/* 4 Steps of the Escrow */}

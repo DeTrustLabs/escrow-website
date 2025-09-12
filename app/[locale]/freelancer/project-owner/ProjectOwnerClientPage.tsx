@@ -50,6 +50,8 @@ export default function ProjectOwnerClientPage() {
         subtitle={
           "Eliminate project risks and ensure quality delivery. Digital escrow protects you from non-delivery and ensures work meets your specifications."
         }
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: "Start Project Escrow",
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",

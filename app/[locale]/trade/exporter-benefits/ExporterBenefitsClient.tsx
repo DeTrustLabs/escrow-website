@@ -55,6 +55,8 @@ export default function ExporterBenefitsClient() {
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
