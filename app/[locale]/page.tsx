@@ -89,19 +89,10 @@ export default async function HomePage() {
   return (
     <SectionGroup>
       <Hero
-        className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
-        title={
-          <>
-            {t("hero.title").split("Global Business")[0]}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Global Business
-            </span>
-          </>
-        }
+        title={t("hero.title")}
+        titleHighlight={t("hero.titleHighlight")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: APP_URL,

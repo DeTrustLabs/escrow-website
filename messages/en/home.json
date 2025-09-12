@@ -1,163 +1,164 @@
 {
-	"home": {
-		"hero": {
-			"badge": "Decentralised Escrow Protocol",
-			"title": "Digital Escrow for Global Business",
-			"subtitle": "Decentralized, non-custodial escrow protocol powered by smart contracts. Trade with confidence using digital currencies - no intermediaries, no custody, just code.",
-			"startEscrow": "Start Escrow",
-			"watchDemo": "Watch Demo",
-			"trustIndicators": {
-				"nonCustodial": "Non-custodial",
-				"openSource": "Open source",
-				"audited": "Audited smart contracts",
-				"availability": "24/7 availability"
-			}
-		},
-		"explore": {
-			"title": "Explore the Escrow Protocol",
-			"subtitle": "Discover how the protocol serves different use cases and integration needs.",
-			"cards": {
-				"trade": {
-					"title": "Global Trade",
-					"description": "Secure international transactions"
-				},
-				"freelancer": {
-					"title": "Freelance",
-					"description": "Protected project payments"
-				},
-				"integrators": {
-					"title": "Integrators",
-					"description": "Build with the protocol"
-				},
-				"community": {
-					"title": "Community",
-					"description": "Join the ecosystem"
-				}
-			}
-		},
-		"features": {
-			"title": "Escrow Protocol Features",
-			"subtitle": "Built for real-world business needs with enterprise-grade security and flexibility.",
-			"featured": "Featured",
-			"security": {
-				"title": "Security and Flexibility",
-				"description": "Funds are protected until both parties fulfill their agreed terms, eliminating fraud and non-payment."
-			},
-			"trust": {
-				"title": "More Trust, More Deals",
-				"description": "Payment security builds trust, reduces risks and drives more business opportunities."
-			},
-			"payments": {
-				"title": "Cross-Border Payments",
-				"description": "Instant settlement with stablecoins like USDC, USDT, and DAI. No banks, no delays, no borders.",
-				"details": "Support for major stablecoins with automatic conversion and real-time settlement across 180+ countries."
-			},
-			"approval": {
-				"title": "Multi-Signature Approval",
-				"description": "Flexible approval mechanisms with buyer, seller, and optional mediator signatures.",
-				"details": "Customizable m-of-n signature schemes with role-based permissions and time-locked conditions."
-			},
-			"availability": {
-				"title": "24/7 Availability",
-				"description": "Decentralized smart contracts operate continuously without downtime or maintenance windows.",
-				"details": "99.9% uptime guaranteed with redundant infrastructure and automatic failover mechanisms."
-			},
-			"arbitration": {
-				"title": "Automated Arbitration",
-				"description": "Onchain storage of data and documents enable faster and cheaper dispute resolution."
-			},
-			"nonCustodial": {
-				"title": "Non-Custodial Security",
-				"description": "Smart contracts hold funds transparently. No one can access, freeze, or control your digital currencies except you.",
-				"details": "Built on Internet Computer with cryptographic guarantees and multi-signature schemes for maximum security."
-			},
-			"documents": {
-				"title": "Document Support",
-				"description": "Upload and verify documents like eBill of Lading for automated release conditions.",
-				"details": "IPFS storage with hash verification, OCR processing, and integration with major shipping providers."
-			},
-			"milestones": {
-				"title": "Milestone Payments",
-				"description": "Customizable release conditions and milestone-based payments for complex projects.",
-				"details": "Advanced workflow engine with conditional logic, automated triggers, and progress tracking."
-			}
-		},
-		"howItWorks": {
-			"title": "How It Works",
-			"subtitle": "Simple, secure, and transparent process for all parties involved.",
-			"steps": {
-				"agree": {
-					"title": "Agree on Terms",
-					"description": "Parties negotiate and agree on transaction terms, optionally uploading supporting documents."
-				},
-				"deposit": {
-					"title": "Deposit Funds",
-					"description": "Buyer deposits digital currencies into the secure escrow protocol for safekeeping."
-				},
-				"deliver": {
-					"title": "Deliver Service or Goods",
-					"description": "Seller delivers goods or services according to the agreed terms and conditions."
-				},
-				"release": {
-					"title": "Release Funds",
-					"description": "Funds are automatically released when signing conditions are met or through dispute resolution."
-				}
-			}
-		},
-		"business": {
-			"title": "Perfect for Your Business",
-			"subtitle": "Designed for real-world business scenarios across industries.",
-			"trade": {
-				"title": "Global Trade",
-				"subtitle": "For exporters and importers worldwide",
-				"features": [
-					"Security against Non-Payment or Non-Delivery",
-					"Speed and Global Accessibility",
-					"Cost Efficiency and Customizable Release Conditions",
-					"Automated Dispute Resolution Mechanism"
-				]
-			},
-			"freelancer": {
-				"title": "Freelancer Services",
-				"subtitle": "For service providers and clients",
-				"features": [
-					"Protection against Non-Payment",
-					"Milestone-based Payments",
-					"Fast and Low-Cost Transactions",
-					"Automated Dispute Resolution Mechanism"
-				]
-			}
-		},
-		"build": {
-			"title": "Build and Connect",
-			"subtitle": "Integrate with the protocol or join the growing community of developers and users.",
-			"integrators": {
-				"title": "Integrators",
-				"subtitle": "For developers and businesses",
-				"features": [
-					"Easy API Integration",
-					"Developer-Friendly Documentation",
-					"Scalable Infrastructure"
-				]
-			},
-			"community": {
-				"title": "Community",
-				"subtitle": "For protocol participants",
-				"features": [
-					"Active Community",
-					"Developer Support",
-					"Educational Resources"
-				]
-			}
-		},
-		"cta": {
-			"title": "Ready for Secure Digital Trade?",
-			"subtitle": "Join businesses worldwide using this trustless escrow protocol for secure, transparent transactions with digital currencies.",
-			"startEscrow": "Start Your First Escrow",
-			"exploreDocs": "Explore Documentation"
-		},
-		"common": {
-			"learnMore": "Learn More"
-		}
-	}
+  "home": {
+    "hero": {
+      "badge": "Decentralised Escrow Protocol",
+      "title": "Digital Escrow for ",
+      "titleHighlight": "Global Business",
+      "subtitle": "Decentralized, non-custodial escrow protocol powered by smart contracts. Trade with confidence using digital currencies - no intermediaries, no custody, just code.",
+      "startEscrow": "Start Escrow",
+      "watchDemo": "Watch Demo",
+      "trustIndicators": {
+        "nonCustodial": "Non-custodial",
+        "openSource": "Open source",
+        "audited": "Audited smart contracts",
+        "availability": "24/7 availability"
+      }
+    },
+    "explore": {
+      "title": "Explore the Escrow Protocol",
+      "subtitle": "Discover how the protocol serves different use cases and integration needs.",
+      "cards": {
+        "trade": {
+          "title": "Global Trade",
+          "description": "Secure international transactions"
+        },
+        "freelancer": {
+          "title": "Freelance",
+          "description": "Protected project payments"
+        },
+        "integrators": {
+          "title": "Integrators",
+          "description": "Build with the protocol"
+        },
+        "community": {
+          "title": "Community",
+          "description": "Join the ecosystem"
+        }
+      }
+    },
+    "features": {
+      "title": "Escrow Protocol Features",
+      "subtitle": "Built for real-world business needs with enterprise-grade security and flexibility.",
+      "featured": "Featured",
+      "security": {
+        "title": "Security and Flexibility",
+        "description": "Funds are protected until both parties fulfill their agreed terms, eliminating fraud and non-payment."
+      },
+      "trust": {
+        "title": "More Trust, More Deals",
+        "description": "Payment security builds trust, reduces risks and drives more business opportunities."
+      },
+      "payments": {
+        "title": "Cross-Border Payments",
+        "description": "Instant settlement with stablecoins like USDC, USDT, and DAI. No banks, no delays, no borders.",
+        "details": "Support for major stablecoins with automatic conversion and real-time settlement across 180+ countries."
+      },
+      "approval": {
+        "title": "Multi-Signature Approval",
+        "description": "Flexible approval mechanisms with buyer, seller, and optional mediator signatures.",
+        "details": "Customizable m-of-n signature schemes with role-based permissions and time-locked conditions."
+      },
+      "availability": {
+        "title": "24/7 Availability",
+        "description": "Decentralized smart contracts operate continuously without downtime or maintenance windows.",
+        "details": "99.9% uptime guaranteed with redundant infrastructure and automatic failover mechanisms."
+      },
+      "arbitration": {
+        "title": "Automated Arbitration",
+        "description": "Onchain storage of data and documents enable faster and cheaper dispute resolution."
+      },
+      "nonCustodial": {
+        "title": "Non-Custodial Security",
+        "description": "Smart contracts hold funds transparently. No one can access, freeze, or control your digital currencies except you.",
+        "details": "Built on Internet Computer with cryptographic guarantees and multi-signature schemes for maximum security."
+      },
+      "documents": {
+        "title": "Document Support",
+        "description": "Upload and verify documents like eBill of Lading for automated release conditions.",
+        "details": "IPFS storage with hash verification, OCR processing, and integration with major shipping providers."
+      },
+      "milestones": {
+        "title": "Milestone Payments",
+        "description": "Customizable release conditions and milestone-based payments for complex projects.",
+        "details": "Advanced workflow engine with conditional logic, automated triggers, and progress tracking."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Simple, secure, and transparent process for all parties involved.",
+      "steps": {
+        "agree": {
+          "title": "Agree on Terms",
+          "description": "Parties negotiate and agree on transaction terms, optionally uploading supporting documents."
+        },
+        "deposit": {
+          "title": "Deposit Funds",
+          "description": "Buyer deposits digital currencies into the secure escrow protocol for safekeeping."
+        },
+        "deliver": {
+          "title": "Deliver Service or Goods",
+          "description": "Seller delivers goods or services according to the agreed terms and conditions."
+        },
+        "release": {
+          "title": "Release Funds",
+          "description": "Funds are automatically released when signing conditions are met or through dispute resolution."
+        }
+      }
+    },
+    "business": {
+      "title": "Perfect for Your Business",
+      "subtitle": "Designed for real-world business scenarios across industries.",
+      "trade": {
+        "title": "Global Trade",
+        "subtitle": "For exporters and importers worldwide",
+        "features": [
+          "Security against Non-Payment or Non-Delivery",
+          "Speed and Global Accessibility",
+          "Cost Efficiency and Customizable Release Conditions",
+          "Automated Dispute Resolution Mechanism"
+        ]
+      },
+      "freelancer": {
+        "title": "Freelancer Services",
+        "subtitle": "For service providers and clients",
+        "features": [
+          "Protection against Non-Payment",
+          "Milestone-based Payments",
+          "Fast and Low-Cost Transactions",
+          "Automated Dispute Resolution Mechanism"
+        ]
+      }
+    },
+    "build": {
+      "title": "Build and Connect",
+      "subtitle": "Integrate with the protocol or join the growing community of developers and users.",
+      "integrators": {
+        "title": "Integrators",
+        "subtitle": "For developers and businesses",
+        "features": [
+          "Easy API Integration",
+          "Developer-Friendly Documentation",
+          "Scalable Infrastructure"
+        ]
+      },
+      "community": {
+        "title": "Community",
+        "subtitle": "For protocol participants",
+        "features": [
+          "Active Community",
+          "Developer Support",
+          "Educational Resources"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready for Secure Digital Trade?",
+      "subtitle": "Join businesses worldwide using this trustless escrow protocol for secure, transparent transactions with digital currencies.",
+      "startEscrow": "Start Your First Escrow",
+      "exploreDocs": "Explore Documentation"
+    },
+    "common": {
+      "learnMore": "Learn More"
+    }
+  }
 }

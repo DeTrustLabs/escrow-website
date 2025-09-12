@@ -83,12 +83,9 @@ export default async function ProtocolPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{ label: t("hero.primaryButton") }}
         secondaryButton={{
           label: t("hero.secondaryButton"),

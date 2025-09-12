@@ -57,23 +57,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function FreelancerPage() {
   const t = await getTranslations("freelancer")
   const messages = await getMessages()
-  const root =
-    ((messages as Record<string, unknown>).freelancer as Record<
-      string,
-      unknown
-    >) || {}
+  const root = messages.freelancer || {}
   const freelancerBenefits = getMessageArray(
-    root as Record<string, string>,
+    root,
     "perfectFor.freelancers.benefits"
   )
   const projectOwnerBenefits = getMessageArray(
-    root as Record<string, string>,
+    root,
     "perfectFor.projectOwners.benefits"
   )
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
         title={
           <>
@@ -82,8 +77,6 @@ export default async function FreelancerPage() {
           </>
         }
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",

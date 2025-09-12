@@ -28,8 +28,11 @@ interface HeroProps {
   secondaryButton?: HeroButton
   trustIndicators?: TrustIndicator[]
   className?: string
-  maxWidth?: string
   titleClassName?: string
+  // When provided, and `title` is a string containing this substring,
+  // the substring will be wrapped in a styled span.
+  titleHighlight?: string
+  highlightClassName?: string
 }
 
 export function Hero({
@@ -40,7 +43,7 @@ export function Hero({
   secondaryButton,
   trustIndicators,
   className = "",
-  titleClassName = "text-4xl lg:text-6xl font-bold tracking-tight mb-6",
+  titleHighlight,
 }: HeroProps) {
   return (
     <section className={cn("text-center", className)}>
@@ -52,7 +55,12 @@ export function Hero({
         </div>
       )}
 
-      <h1 className={titleClassName}>{title}</h1>
+      <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
+        {title}
+        <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+          {titleHighlight}
+        </span>
+      </h1>
 
       <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
         {subtitle}
