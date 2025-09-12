@@ -390,16 +390,30 @@
     "workflow": {
       "metadata": {
         "title": "Digital Escrow Workflow for Freelancers - Secure Project Payments | Escrow Protocol",
-        "description": "Learn how digital escrow works for freelance projects. Step-by-step guide to secure payments, milestone verification, and dispute resolution for freelancers and clients."
+        "description": "Learn how digital escrow works for freelance projects. Step-by-step guide to secure payments, milestone verification, and dispute resolution for freelancers and clients.",
+        "keywords": "digital escrow for freelancers, secure freelance payments, escrow workflow for projects, freelance payment protection, secure project workflow",
+        "canonical": "/freelancer/workflow",
+        "ogTitle": "Digital Escrow Workflow for Freelancers - Secure Project Payments",
+        "ogDescription": "Complete guide to digital escrow for freelance projects. Secure payments, milestone verification, and dispute resolution."
       },
       "hero": {
         "badge": "Secure Freelance Workflow",
-        "title": "Freelance Escrow Workflow",
+        "title": "Freelance ",
+        "titleHighlight": "Escrow Workflow",
         "subtitle": "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle.",
-        "features": [
-          "Payment Security",
-          "Milestone-Based Release",
-          "Lower Transaction Costs"
+        "trustIndicators": [
+          {
+            "text": "Payment Security",
+            "icon": "ShieldIcon"
+          },
+          {
+            "text": "Milestone-Based Release",
+            "icon": "Timer"
+          },
+          {
+            "text": "Lower Transaction Costs",
+            "icon": "Banknote"
+          }
         ]
       },
       "steps": {
@@ -436,13 +450,136 @@
         },
         "projectAgreement": {
           "title": "Project Agreement",
-          "description": "Once onboarded, both parties collaborate to define the project terms. This includes specifying the project scope, deliverables, milestones, payment amounts, and timelines. The agreement is recorded in a smart contract that automatically enforces the terms. This ensures both freelancer and client have a clear, legally binding understanding of expectations. The smart contract acts as an impartial third party that cannot be altered once established, providing security and transparency for both parties.",
+          "description": "To begin, you create a new project escrow, invite your client and define together the terms of the project including scope, milestones, payment amount, and delivery timeline. If you need support, you can involve a project advisor who can help prepare the escrow but has no access to escrow funds. You also choose an arbitration service from the start for any disputes—this service only gets involved if needed and can't see the transaction otherwise. This digital contract focuses specifically on payment security and milestone completion. Both parties digitally sign the escrow agreement, creating a binding contract that ensures fairness throughout the project lifecycle.",
           "features": [
-            "Define project scope and deliverables",
-            "Set milestones and payment terms",
-            "Smart contract enforces agreement"
+            "Define project scope and milestones",
+            "Project advisor available for guidance",
+            "Digital signatures create binding contract"
+          ]
+        },
+        "secureFunding": {
+          "title": "Secure Funding",
+          "description": "The client deposits the agreed project amount using digital currencies within the specified timeframe. Once deposited, both parties receive immediate confirmation that funds are secured and protected. The escrow holds these funds neutrally until project milestones are completed, eliminating risks of non-payment for freelancers and ensuring work completion for clients. This gives freelancers confidence to start work knowing payment is guaranteed.",
+          "features": [
+            "Client deposits project payment",
+            "Instant funding verification",
+            "Payment guaranteed for completed work"
+          ]
+        },
+        "workDelivery": {
+          "title": "Work Delivery",
+          "description": "Following funding confirmation, the freelancer begins work on the project. Key deliverables and milestone completions are uploaded to track progress, while work samples and final deliverables provide proof of completion. The transparent documentation system keeps both parties informed throughout the project lifecycle, reducing uncertainty and maintaining trust until all work is completed to satisfaction.",
+          "features": [
+            "Funding confirmation triggers work start",
+            "Upload deliverables and milestones",
+            "Transparent progress tracking"
+          ]
+        },
+        "paymentRelease": {
+          "title": "Payment Release",
+          "description": "Payment release occurs through pre-selected mechanisms including client approval, milestone completion, time-based release, or third-party review. These flexible options accommodate different project requirements while ensuring freelancers receive prompt payment for completed work and clients receive quality deliverables according to their specific project agreement terms.",
+          "features": [
+            "Multiple release mechanisms",
+            "Milestone-based payments",
+            "Flexible options for different projects"
+          ]
+        },
+        "projectAdjustments": {
+          "title": "Project Adjustments",
+          "description": "The escrow accommodates real-world project changes through flexible adjustment mechanisms. When scope changes arise—such as additional features, timeline extensions, or budget modifications—both parties can propose solutions including deadline adjustments or payment changes. All modifications require digital signatures from both freelancer and client to become legally binding, ensuring transparency and mutual agreement throughout the project development process.",
+          "features": [
+            "Flexible project scope adjustments",
+            "Available until payment release",
+            "Mutual consent required for changes"
+          ]
+        },
+        "disputeResolution": {
+          "title": "Dispute Resolution",
+          "description": "When disagreements occur regarding work quality, scope, or deliverables, either party can initiate a dispute that immediately freezes funds to protect both parties. All project documentation, communications, and deliverables are encrypted and saved, helping to quickly reconstruct the project history. Both parties have time to resolve issues bilaterally through negotiation, such as revisions, partial payments, or timeline adjustments. If bilateral resolution fails, the dispute escalates to a pre-defined neutral arbitrator who has access to all project data to make informed decisions based on clear documentation rather than conflicting claims.",
+          "features": [
+            "Funds locked immediately for protection",
+            "Bilateral negotiation encouraged first",
+            "Neutral arbitrator escalation available"
           ]
         }
+      },
+      "flexibleRelease": {
+        "title": "Flexible Payment Release Options",
+        "subtitle": "Multiple ways to trigger payment release based on your specific project requirements",
+        "clientApproval": {
+          "title": "Client Approval",
+          "description": "Funds are released when the client reviews and approves the completed work or milestone deliverables."
+        },
+        "thirdPartyReview": {
+          "title": "Third Party Review",
+          "description": "Release triggered after successful quality review by independent third-party reviewers or project evaluators."
+        },
+        "milestoneCompletion": {
+          "title": "Milestone Completion",
+          "description": "Automatic release upon submission and verification of required project deliverables and milestones."
+        },
+        "mutualAgreement": {
+          "title": "Mutual Agreement",
+          "description": "Both parties must explicitly agree to release funds, providing maximum control over the project completion."
+        }
+      },
+      "disputeResolutionSection": {
+        "title": "Project Dispute Resolution",
+        "subtitle": "Fair and transparent resolution when issues arise during freelance projects",
+        "whenDisputesOccur": {
+          "title": "When Project Disputes Occur",
+          "subtitle": "Funds are immediately locked for protection",
+          "description": "When either party raises a dispute about work quality, scope changes, or deliverables, funds are immediately frozen to protect both sides. All project documentation, communications, and deliverables between parties are saved (encrypted) and help to quickly reconstruct the project history and agreements.",
+          "features": [
+            "Funds locked immediately upon dispute",
+            "All project communications encrypted and saved",
+            "Complete project history available",
+            "Deliverables and milestones preserved for review"
+          ]
+        },
+        "resolutionOptions": {
+          "title": "Resolution Options",
+          "subtitle": "Multiple paths to fair project resolution",
+          "description": "Parties have time to solve disputes themselves through negotiation (such as work revisions, partial payments, or timeline extensions). If bilateral resolution isn't possible, the dispute can be escalated to a pre-defined neutral arbitrator who reviews all project data to make informed decisions.",
+          "features": [
+            "Direct negotiation between parties",
+            "Flexible solutions (revisions, partial payments)",
+            "Neutral arbitrator escalation",
+            "Access to all project documentation"
+          ]
+        },
+        "arbitratorNote": {
+          "title": "Important: Arbitrator Costs",
+          "description": "The arbitrator is pre-defined at the beginning of the project escrow and remains neutral throughout the process. They have access to all project information and data to make informed decisions. Please note that arbitrator fees are deducted from the escrow funds, reducing the total amount paid out to both parties. This encourages bilateral resolution whenever possible."
+        }
+      },
+      "digitalPayments": {
+        "title": "Digital Payments for Freelancers",
+        "subtitle": "Understanding digital currencies, wallets, and payment providers for secure freelance project payments",
+        "whatAreCurrencies": {
+          "title": "What Are Digital Currencies?",
+          "description": "A digital currency, also known as a stablecoin, is a digital representation of traditional money (FIAT currency) like the US dollar. A digital USD is pegged 1:1 to the paper USD, reflecting its value while offering the advantages of blockchain technology. Stablecoins are issued by (regulated) institutions and backed by collateral, ensuring their stability and trustworthiness. The largest stablecoins are currently USDT and USDC, issued by Tether and Circle. Stablecoins are perfect for freelance payments since they settle instantly and are cheap to send, making international project payments more efficient and cost-effective for both freelancers and clients.",
+          "imageAlt": "USD Stablecoins and Digital Currencies Overview"
+        },
+        "whatIsWallet": {
+          "title": "What Is a Digital Wallet?",
+          "description": "A digital wallet is like a secure digital bank account that you control completely. It's an app on your phone or computer where you can store, send, and receive digital currencies like stablecoins. Think of it as your personal digital safe - only you have the key (password), and no bank or third party can access your funds. For freelancers, a wallet provides direct control over project payments without needing traditional banks. Once ready, you can participate in secure escrow transactions with clients worldwide, keeping your earnings private and under your complete control.",
+          "imageAlt": "Digital Wallet Interface showing USDT, USDC, and other stablecoin balances"
+        },
+        "fiatConversion": {
+          "title": "How to Convert FIAT to Digital Currency?",
+          "description": "You can use an exchange or an on-ramp provider to convert traditional money into digital currencies.",
+          "exchanges": "Exchanges like Coinbase and Binance are platforms where you can buy, sell, and trade various digital currencies including stablecoins.",
+          "onRamp": "An On-ramp Provider or Digital Money Converter is a licensed provider that exchanges traditional money (FIAT) for digital currencies like stablecoins, ensuring secure and compliant transactions.",
+          "process": "For both, you send them FIAT money via bank transaction, mobile payment, or credit card, and they credit your wallet with the equivalent stablecoin. For example, if you send 100 USD (FIAT) to them - they exchange it to 100 USDT (stablecoin) in your digital wallet. These providers handle the KYC/KYB (Know Your Customer/Business) verification process to ensure compliance with financial regulations, making the conversion process both secure and legally compliant for freelance work.",
+          "imageAlt": "FIAT to Digital Currency Conversion Process"
+        }
+      },
+      "callToAction": {
+        "title": "Ready to Secure Your Freelance Projects?",
+        "subtitle": "Join thousands of freelancers and clients who trust digital escrow for their project payments. Experience secure, milestone-based payments today.",
+        "startEscrow": "Start Your Project Escrow",
+        "talkToAdvisor": "Talk to Project Advisor"
       }
     }
   }
