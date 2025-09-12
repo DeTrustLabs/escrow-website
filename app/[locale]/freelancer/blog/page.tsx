@@ -20,19 +20,14 @@ import {
 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import SectionGroup from "@/components/section-group"
+import { Input } from "@/components/ui/input"
 
 export default function FreelancerBlogPage() {
   const t = useTranslations("freelancer.blog")
 
   return (
     <SectionGroup>
-      <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
-      />
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       {/* Recent Articles */}
       <section>
@@ -118,23 +113,25 @@ export default function FreelancerBlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 bg-primary">
-        <div className="text-center text-white">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("newsletter.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("newsletter.subtitle")}
-          </p>
-          <div className="max-w-md mx-auto flex gap-4">
-            <input
-              type="email"
-              placeholder={t("newsletter.emailPlaceholder")}
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-            />
-            <Button variant="secondary" size="lg">
-              {t("newsletter.button")}
-            </Button>
+      <section>
+        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
+          <div className="text-center text-white">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              {t("newsletter.title")}
+            </h2>
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+              {t("newsletter.subtitle")}
+            </p>
+            <div className="max-w-md mx-auto flex gap-4">
+              <Input
+                type="email"
+                className="flex-1 h-10 bg-white/10"
+                placeholder={t("newsletter.emailPlaceholder")}
+              />
+              <Button variant="secondary" size="lg">
+                {t("newsletter.button")}
+              </Button>
+            </div>
           </div>
         </div>
       </section>

@@ -151,7 +151,7 @@ export default function FreelancerWorkflowPage() {
 
         <div className="mb-12 flex justify-center">
           <AppImage
-            src="/images/digital-escrow-freelance-process-illustration.jpg"
+            src="/images/escrow-freelance-illustration.png"
             alt="Digital Escrow Process Illustration for Freelance Projects"
             width={900}
             height={600}

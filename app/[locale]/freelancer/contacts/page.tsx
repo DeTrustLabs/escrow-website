@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -15,6 +14,13 @@ import {
 } from "../../trade/contacts/actions"
 import { Hero } from "@/components/hero"
 import SectionGroup from "@/components/section-group"
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select"
 
 function SuccessPopup({
   message,
@@ -90,13 +96,7 @@ export default function FreelancerContactsPage() {
 
   return (
     <SectionGroup>
-      <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        title={t("hero.title")}
-        subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
-      />
+      <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
 
       <section>
         <div className="max-w-6xl mx-auto">
@@ -159,24 +159,24 @@ export default function FreelancerContactsPage() {
                       <label className="text-sm font-medium mb-2 block">
                         {t("contactForm.role")}
                       </label>
-                      <select
-                        name="tradeType"
-                        className="w-full p-3 border rounded-lg"
-                        required
-                      >
-                        <option value="">
-                          {t("contactForm.rolePlaceholder")}
-                        </option>
-                        <option value="freelancer">
-                          {t("contactForm.roles.freelancer")}
-                        </option>
-                        <option value="client">
-                          {t("contactForm.roles.client")}
-                        </option>
-                        <option value="both">
-                          {t("contactForm.roles.both")}
-                        </option>
-                      </select>
+                      <Select name="tradeType" required>
+                        <SelectTrigger className="w-full">
+                          <SelectValue
+                            placeholder={t("contactForm.rolePlaceholder")}
+                          />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="freelancer">
+                            {t("contactForm.roles.freelancer")}
+                          </SelectItem>
+                          <SelectItem value="client">
+                            {t("contactForm.roles.client")}
+                          </SelectItem>
+                          <SelectItem value="both">
+                            {t("contactForm.roles.both")}
+                          </SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div>
@@ -250,7 +250,7 @@ export default function FreelancerContactsPage() {
                     />
                     <Button
                       type="submit"
-                      className="w-full bg-[hsl(var(--primary))] hover:bg-[hsl(var(--primary))]/90 text-white font-bold"
+                      className="w-full"
                       size="lg"
                       disabled={isSubmitting}
                     >

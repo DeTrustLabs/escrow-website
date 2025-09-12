@@ -38,16 +38,9 @@ export default function ProjectOwnerClientPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        badge={"For Project Owners"}
-        title={
-          <>
-            Hire with Confidence,{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Every Time
-            </span>
-          </>
-        }
+        badge="For Project Owners"
+        title="Hire with Confidence, "
+        titleHighlight="Every Time"
         subtitle={
           "Eliminate project risks and ensure quality delivery. Digital escrow protects you from non-delivery and ensures work meets your specifications."
         }
