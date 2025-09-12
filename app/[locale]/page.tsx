@@ -99,6 +99,8 @@ export default async function HomePage() {
           </>
         }
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: APP_URL,

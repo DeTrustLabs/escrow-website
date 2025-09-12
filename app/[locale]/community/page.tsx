@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/card"
 import { Hero } from "@/components/hero"
 import {
-  ArrowRight,
   CheckCircle,
   Users,
   MessageSquare,
@@ -19,6 +18,7 @@ import {
   Globe,
   Github,
   ExternalLink,
+  ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
@@ -45,6 +45,8 @@ export default function CommunityPage() {
         badge={t("hero.badge")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.primaryButton"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
@@ -57,6 +59,12 @@ export default function CommunityPage() {
               ?.scrollIntoView({ behavior: "smooth" }),
           variant: "outline",
         }}
+        trustIndicators={[
+          { text: t("hero.trustIndicators.nonCustodial") },
+          { text: t("hero.trustIndicators.openSource") },
+          { text: t("hero.trustIndicators.audited") },
+          { text: t("hero.trustIndicators.availability") },
+        ]}
       />
 
       {/* Community Resources */}

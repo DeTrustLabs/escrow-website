@@ -9,7 +9,13 @@
       "title": "Built on Internet Computer",
       "subtitle": "Explore the smart contract architecture, join our developer community, and help build the future of trustless escrow infrastructure.",
       "primaryButton": "Join Community",
-      "secondaryButton": "Read Documentation"
+      "secondaryButton": "Read Documentation",
+      "trustIndicators": {
+        "nonCustodial": "Non-custodial",
+        "openSource": "Open source",
+        "audited": "Audited smart contracts",
+        "availability": "24/7 availability"
+      }
     },
     "tabs": {
       "protocol": "Protocol",

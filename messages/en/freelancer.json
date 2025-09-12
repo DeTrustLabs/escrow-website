@@ -9,7 +9,13 @@
       "title": "Secure Freelance Projects with Digital Escrow",
       "subtitle": "Eliminate payment risks in freelance work with secure escrow for freelancers and project owners.",
       "startEscrow": "Start Freelance Escrow",
-      "seeHowItWorks": "See How It Works"
+      "seeHowItWorks": "See How It Works",
+      "trustIndicators": {
+        "nonCustodial": "Non-custodial",
+        "openSource": "Open source",
+        "audited": "Audited smart contracts",
+        "availability": "24/7 availability"
+      }
     },
     "solvesIssues": {
       "title": "How Escrow Solves Issues in Freelancing",

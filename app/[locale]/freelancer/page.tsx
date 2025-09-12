@@ -11,12 +11,12 @@ import {
   Target,
   Shield,
   Clock,
-  ArrowRight,
   CheckCircle,
   TrendingDown,
   AlertTriangle,
   Users,
   Globe,
+  ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
@@ -81,6 +81,8 @@ export default async function FreelancerPage() {
           </>
         }
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
@@ -92,6 +94,12 @@ export default async function FreelancerPage() {
           href: "/freelancer/workflow",
           variant: "outline",
         }}
+        trustIndicators={[
+          { text: t("hero.trustIndicators.nonCustodial") },
+          { text: t("hero.trustIndicators.openSource") },
+          { text: t("hero.trustIndicators.audited") },
+          { text: t("hero.trustIndicators.availability") },
+        ]}
       />
 
       {/* How Escrow Solves Issues in Freelancing */}

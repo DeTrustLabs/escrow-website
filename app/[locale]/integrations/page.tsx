@@ -11,7 +11,6 @@ import {
   Code,
   Layers,
   Globe,
-  Shield,
   ArrowRight,
   CheckCircle,
   Building,
@@ -21,6 +20,7 @@ import {
   Users,
   ShoppingCart,
   Database,
+  Shield,
 } from "lucide-react"
 import Link from "next/link"
 import { getTranslations, getMessages } from "next-intl/server"
@@ -80,9 +80,12 @@ export default async function IntegrationsPage() {
   return (
     <div className="min-h-screen bg-background">
       <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         badge={t("hero.badge")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.primaryButton"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
@@ -91,6 +94,12 @@ export default async function IntegrationsPage() {
           label: t("hero.secondaryButton"),
           variant: "outline",
         }}
+        trustIndicators={[
+          { text: t("hero.trustIndicators.nonCustodial") },
+          { text: t("hero.trustIndicators.openSource") },
+          { text: t("hero.trustIndicators.audited") },
+          { text: t("hero.trustIndicators.availability") },
+        ]}
       />
 
       {/* Open Ecosystem Section */}

@@ -9,7 +9,13 @@
       "title": "Build with the Escrow Protocol",
       "subtitle": "Open ecosystem for everyone. Trade advisors, financial institutions, eCommerce platforms, traditional escrow service providers and developers can access and integrate the protocol in multiple ways.",
       "primaryButton": "Start Building",
-      "secondaryButton": "View Documentation"
+      "secondaryButton": "View Documentation",
+      "trustIndicators": {
+        "nonCustodial": "Non-custodial",
+        "openSource": "Open source",
+        "audited": "Audited smart contracts",
+        "availability": "24/7 availability"
+      }
     },
     "ecosystem": {
       "title": "Open Ecosystem for Everyone",

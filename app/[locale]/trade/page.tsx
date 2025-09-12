@@ -81,6 +81,8 @@ export default async function HomePage() {
           </>
         }
         subtitle={t("hero.subtitle")}
+        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
+        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
@@ -92,6 +94,12 @@ export default async function HomePage() {
           href: "/workflow",
           variant: "outline",
         }}
+        trustIndicators={[
+          { text: t("hero.trustIndicators.nonCustodial") },
+          { text: t("hero.trustIndicators.openSource") },
+          { text: t("hero.trustIndicators.audited") },
+          { text: t("hero.trustIndicators.availability") },
+        ]}
       />
 
       <section className="py-20 bg-gray-50">

@@ -1,855 +1,861 @@
 {
-	"trade": {
-		"metadata": {
-			"title": "Trade Escrow - Secure Global Trade Payments",
-			"description": "Eliminate payment risks in cross-border trade with secure digital escrow for exporters and importers. Protect your international transactions with blockchain-based escrow."
-		},
-		"hero": {
-			"badge": "Global Trade Solution",
-			"title": "Secure Global Trade with Digital Escrow",
-			"subtitle": "Eliminate payment risks in cross-border trade with secure escrow for exporters and importers.",
-			"startEscrow": "Start Global Trade Escrow",
-			"seeHowItWorks": "See How It Works"
-		},
-		"workflow": {
-			"metadata": {
-				"title": "Digital Escrow Workflow - Complete Process Guide | Escrow Protocol",
-				"description": "Learn the complete digital escrow process for secure international trade. Step-by-step guide from setup to fund release for exporters and importers."
-			},
-			"hero": {
-				"badge": "Complete Process",
-				"title": "Digital Escrow Workflow",
-				"subtitle": "Understanding the complete digital escrow process for secure international trade"
-			},
-			"howItWorks": {
-				"title": "How a Digital Escrow Works",
-				"subtitle": "Understanding the complete digital escrow process for secure international trade",
-				"steps": {
-					"onboarding": {
-						"title": "Onboarding",
-						"description": "The secure escrow process begins with a simple online setup completed within minutes. Both importer and exporter create a digital wallet — a secure digital account for sending and receiving digital currencies like USD or EUR. This wallet acts like a digital bank account, keeping everything private. The setup requires no traditional banks and gives you complete control over your assets. Once established, you can easily participate in international trade escrows with full privacy and security.",
-						"features": [
-							"Sign-In and create a digital wallet",
-							"No banks required, full asset control",
-							"Ready for international trade participation"
-						]
-					},
-					"escrowAgreement": {
-						"title": "Escrow Agreement",
-						"description": "To begin, you open a new escrow, invite your trading partner and define together the terms of the escrow like amount, funding date, delivery date, and release mechanism. If you need any support you can also involve a trade advisor, who can prepare the escrow, but has no access to escrow funds. You also choose an arbitration court from the start for any disputes—this court only gets involved if needed and can't see the transaction otherwise. This legal contract (escrow) focuses specifically on payment security and does not replace a buying contract or invoice. Both parties digitally sign the escrow agreement, creating a binding contract that ensures fairness throughout the trade process.",
-						"features": [
-							"Agree on escrow terms",
-							"Trade Advisor to help with setup",
-							"Digital signatures create binding contract"
-						]
-					},
-					"verifiedFunding": {
-						"title": "Verified Funding",
-						"description": "The importer deposits the agreed amount using digital currencies within the specified timeframe. Once deposited, both parties receive immediate confirmation that funds are secured and protected. The escrow holds these funds neutrally until delivery conditions are satisfied, eliminating risks of non-payment for exporters and non-delivery for importers.",
-						"features": [
-							"Importer deposits funds",
-							"Instant funding verification and information",
-							"Funds are ready and secure"
-						]
-					},
-					"delivery": {
-						"title": "Delivery",
-						"description": "Following funding confirmation, the exporter initiates production and shipping. Key documents such as Bills of Lading are uploaded to track progress, while delivery receipts provide proof of arrival. The transparent documentation system keeps both parties informed throughout the shipping process, reducing uncertainty and maintaining trust until goods reach their destination.",
-						"features": [
-							"Funding confirmation triggers production and shipping",
-							"Upload document as proof of delivery",
-							"Verification of proof of delivery"
-						]
-					},
-					"releaseOfFunds": {
-						"title": "Release of Funds",
-						"description": "Fund release occurs through pre-selected mechanisms including importer confirmation, third-party inspections by companies like SGS or Intertek, customs verification, or electronic document validation. These flexible options accommodate different trade requirements while ensuring both exporters receive prompt payment and importers receive verified goods according to their specific agreement terms.",
-						"features": [
-							"Multiple release options",
-							"Third-party verification available",
-							"Different options to meet your trade needs"
-						]
-					},
-					"adjustments": {
-						"title": "Adjustments",
-						"description": "The escrow accommodates real-world challenges through flexible adjustment mechanisms. When issues arise—such as delivery delays or minor quality concerns—trading partners can propose solutions including deadline extensions or price adjustments. All modifications require digital signatures from both parties to become legally binding, ensuring transparency and mutual agreement throughout the process.",
-						"features": [
-							"Flexible adjustments of escrow terms",
-							"Available until funds are released",
-							"Mutual consent required for changes"
-						]
-					},
-					"dispute": {
-						"title": "Dispute",
-						"description": "When disagreements occur regarding quality or delivery, either party can initiate a dispute that immediately freezes funds to protect both parties. All documentation and correspondence is encrypted and saved, helping to quickly reconstruct the transaction history. Trading partners have time to resolve issues bilaterally through negotiation, such as offering discounts or extending deadlines. If bilateral resolution fails, the dispute escalates to a pre-defined neutral arbitrator who has access to all transaction data to make informed decisions. This comprehensive evidence system enables efficient dispute resolution based on clear documentation rather than conflicting claims.",
-						"features": [
-							"Funds locked immediately for protection",
-							"Bilateral negotiation encouraged first",
-							"Neutral arbitrator escalation available"
-						]
-					}
-				}
-			},
-			"releaseMechanisms": {
-				"title": "Flexible Release Mechanisms",
-				"subtitle": "Multiple ways to trigger fund release based on your specific trade requirements",
-				"mechanisms": {
-					"deliveryConfirmation": {
-						"title": "Delivery Confirmation",
-						"description": "Funds are released automatically when delivery is confirmed by the importer or logistics provider."
-					},
-					"thirdPartyVerification": {
-						"title": "Third Party Verification",
-						"description": "Release triggered after successful quality inspection by independent third-party inspectors or verification services."
-					},
-					"documentBased": {
-						"title": "Document based Confirmation",
-						"description": "Release upon submission and verification of required shipping, customs, and trade documentation."
-					},
-					"mutualAgreement": {
-						"title": "Mutual Agreement",
-						"description": "Both parties must explicitly agree to release funds, providing maximum control over the transaction."
-					}
-				}
-			},
-			"disputeResolution": {
-				"title": "Dispute Resolution Process",
-				"subtitle": "Fair and transparent resolution when issues arise during transactions",
-				"whenDisputesOccur": {
-					"title": "When Disputes Occur",
-					"subtitle": "Funds are immediately locked for protection",
-					"description": "When either party raises a dispute, funds are immediately frozen to protect both sides. All documentation and correspondence between parties is saved (encrypted) and helps to quickly reconstruct the history of what was agreed and what happened.",
-					"features": [
-						"Funds locked immediately upon dispute",
-						"All communications encrypted and saved",
-						"Complete transaction history available",
-						"Evidence preserved for review"
-					]
-				},
-				"resolutionOptions": {
-					"title": "Resolution Options",
-					"subtitle": "Multiple paths to fair resolution",
-					"description": "Parties have time to solve disputes themselves through negotiation (such as offering discounts or extending delivery time). If bilateral resolution isn't possible, the dispute can be escalated to a pre-defined neutral arbitrator who finally decides about fund distribution.",
-					"features": [
-						"Direct negotiation between parties",
-						"Flexible solutions (discounts, extensions)",
-						"Neutral arbitrator escalation",
-						"Access to all transaction data"
-					]
-				},
-				"arbitratorNote": {
-					"title": "Important: Arbitrator Costs",
-					"description": "The arbitrator is pre-defined at the beginning of the escrow and remains neutral throughout the process. They have access to all information and data to make informed decisions. Please note that arbitrator fees are deducted from the escrow funds, reducing the total amount paid out to both parties. This encourages bilateral resolution whenever possible."
-				}
-			},
-			"digitalPayments": {
-				"title": "What You Need to Know About Digital Payments",
-				"subtitle": "Understanding digital currencies, wallets, and on-ramp providers for secure international trade",
-				"digitalCurrencies": {
-					"title": "What Are Digital Currencies?",
-					"description": "A digital currency, also known as a stablecoin, is a digital representation of traditional money (FIAT currency) like the US dollar. A digital USD is pegged 1:1 to the paper USD, reflecting its value while offering the advantages of blockchain technology. Stablecoins are issued by (regulated) institutions and backed by collateral, ensuring their stability and trustworthiness. The largest stablecoins are currently USDT and USDC, which are issued by Tether and Circle. Stablecoins are perfect for cross-border transactions since they settle instantly and are cheap to send, making international trade more efficient and cost-effective."
-				},
-				"digitalWallet": {
-					"title": "What Is a Wallet?",
-					"description": "A digital wallet is like a secure digital bank account that you control completely. It's an app on your phone or computer where you can store, send, and receive digital currencies like stablecoins. Think of it as your personal digital safe - only you have the key (password), and no bank or third party can access your funds. For international traders, a wallet provides direct control over payments without needing traditional banks. Once ready, you can participate in secure escrow transactions with trading partners worldwide, keeping your funds private and under your complete control."
-				},
-				"fiatConversion": {
-					"title": "How can I change FIAT into Stablecoins?",
-					"description": "You can use an exchange or an on-ramp provider to convert traditional money into digital currencies. Exchanges like Coinbase and Binance are platforms where you can buy, sell, and trade various digital currencies including stablecoins. An On-ramp Provider or Digital Money Converter is a licensed provider that exchanges traditional money (FIAT) for digital currencies like stablecoins, ensuring secure and compliant transactions. For both, you send them FIAT money via bank transaction, mobile payment, or credit card, and they credit your wallet with the equivalent stablecoin. For example, imagine you send 100 USD (FIAT) to them - they exchange it to 100 USDT (stablecoin) in your digital wallet. These providers handle the KYC/KYB (Know Your Customer/Business) verification process to ensure compliance with financial regulations, making the conversion process both secure and legally compliant for international trade."
-				}
-			},
-			"cta": {
-				"title": "Ready to Start Secure Trading?",
-				"subtitle": "Join thousands of traders who trust digital escrow for their international transactions. Experience the future of secure global trade today.",
-				"startEscrow": "Start Your Escrow",
-				"talkToAdvisor": "Talk to Trade Advisor"
-			}
-		},
-		"solvesRisks": {
-			"title": "How Escrow Solves Risks in International Trade",
-			"description": "A digital escrow for cross-border trade eliminates the buyer and seller dilemma that prevents successful international transactions. Traditional trade requires one party to take significant risk - either the exporter ships first and waits for payment, or the importer pays upfront without delivery guarantees. A digital escrow for exporters and importers solves this by securely holding funds until goods are delivered and verified, creating trust between trading partners worldwide and enabling secure global commerce.",
-			"videoTitle": "How Escrow Solves Risks in International Trade"
-		},
-		"trustChanges": {
-			"title": "Because Trust Changes Everything",
-			"description": "International trade opens exciting opportunities, connecting exporters and importers to new markets and growth potential. Yet, trust is a major challenge with new trading partners, especially across different countries with unfamiliar laws, regulations, and languages. This is even harder when partners have never traded or have only a few deals, leaving no track record to rely on. Fraud cases—deals failing due to unreliable counterparts—make caution critical, often stopping trades before they start."
-		},
-		"dilemma": {
-			"title": "The Buyer and Seller Dilemma",
-			"subtitle": "While exporters fear non-payment, importers fear non-delivery — reducing the risk of the exporter increases the risk of the importer and vice versa.",
-			"exporterRisks": {
-				"title": "Exporter Risks",
-				"description": "Exporters often face the highest risk in global trade. Typically, they deliver goods first and wait for payment, leaving them vulnerable to importers who might refuse to pay or disappear after receiving the goods. Exporters could lose not just the payment but also the costs of production and shipping, which can be devastating for their business."
-			},
-			"importerRisks": {
-				"title": "Importer Risks",
-				"description": "Importers worry about non-delivery or poor quality. If they pay upfront, they risk getting nothing in return or receiving items that don't match what was promised. Without seeing or testing the goods first, importers could end up with faulty products or no products at all, wasting money and time."
-			},
-			"tensions": "Different risk positions create tensions in negotiations. One side often ends up taking most of the risk, leading to unfair deals or no deals at all when trust is lacking.",
-			"bridging": {
-				"title": "Bridging the Gap with a Digital Escrow",
-				"description": "The buyer and seller dilemma stops many promising trades, missing opportunities for strong business ties. A digital escrow for international trade offers a solution, securely holding funds until goods are delivered and verified, reducing risks for both sides. This fosters trust, turning hesitation into confident, successful global trade.",
-				"hold": "Hold",
-				"verify": "Verify",
-				"release": "Release"
-			}
-		},
-		"whatIs": {
-			"title": "What is a Digital Escrow?",
-			"subtitle": "A Simple Solution for Secure International Trade",
-			"description": "A digital escrow is a secure payment method designed to protect both exporters and importers in cross-border trade. It works by holding funds in a neutral, digital escrow until goods are delivered and verified, ensuring neither party faces risks like non-payment or non-delivery. For exporters, this means shipping with confidence, knowing payment is guaranteed once conditions are met. For importers, it ensures payment is only released when goods meet agreed specifications. The digital escrow eliminates traditional intermediaries, reduces high fees, and simplifies trust between trade partners worldwide.",
-			"imageAlt": "Digital Escrow Process Illustration"
-		},
-		"features": {
-			"title": "Escrow Features",
-			"subtitle": "Everything exporters and importers need for secure, efficient cross-border transactions.",
-			"security": {
-				"title": "Security and Flexibility",
-				"description": "Funds are securely held until both parties have met their contractual obligations, eliminating risks such as fraud and non-payment."
-			},
-			"trust": {
-				"title": "Trust and Growth",
-				"description": "Secure payments foster trust between parties, reduce risk, and open the door to more business opportunities."
-			},
-			"fees": {
-				"title": "Low Transaction Fees",
-				"description": "By removing intermediaries and utilizing digital cross-border payments, the escrow ensures significantly lower fees."
-			},
-			"settlement": {
-				"title": "Instant Settlement",
-				"description": "Once all terms are satisfied, funds are received within minutes after release — no need to wait for days like traditional banking systems."
-			},
-			"dispute": {
-				"title": "Dispute Resolution",
-				"description": "Every step in the transaction is recorded and verifiable, with neutral mediators or arbitrators enabling swift and cost-effective resolutions to disputes."
-			},
-			"global": {
-				"title": "Global Reach & 24/7",
-				"description": "Available worldwide with 24/7 accessibility, enabling secure international trade across all time zones and markets."
-			}
-		},
-		"industries": {
-			"title": "Supporting All Trade Industries",
-			"subtitle": "The escrow protocol works perfectly for any type of international trade across all industries.",
-			"electronics": {
-				"title": "Electronics & Technology",
-				"description": "Semiconductors, computers, mobile devices",
-				"imageAlt": "Electronics & Technology"
-			},
-			"textiles": {
-				"title": "Textiles & Apparel",
-				"description": "Clothing, fabrics, fashion accessories",
-				"imageAlt": "Textiles & Apparel"
-			},
-			"machinery": {
-				"title": "Machinery & Equipment",
-				"description": "Industrial machines, tools, manufacturing equipment",
-				"imageAlt": "Machinery & Equipment"
-			},
-			"rawMaterials": {
-				"title": "Raw Materials",
-				"description": "Metals, minerals, chemical compounds",
-				"imageAlt": "Raw Materials"
-			},
-			"food": {
-				"title": "Food & Agriculture",
-				"description": "Agricultural products, processed foods, beverages",
-				"imageAlt": "Food & Agriculture"
-			},
-			"automotive": {
-				"title": "Automotive Parts",
-				"description": "Car components, spare parts, accessories",
-				"imageAlt": "Automotive Parts"
-			},
-			"medical": {
-				"title": "Medical Equipment",
-				"description": "Healthcare devices, pharmaceutical products",
-				"imageAlt": "Medical Equipment"
-			},
-			"construction": {
-				"title": "Construction Materials",
-				"description": "Building supplies, cement, steel",
-				"imageAlt": "Construction Materials"
-			},
-			"energy": {
-				"title": "Energy & Oil",
-				"description": "Petroleum products, renewable energy equipment",
-				"imageAlt": "Energy & Oil"
-			},
-			"consumer": {
-				"title": "Consumer Goods",
-				"description": "Home appliances, furniture, personal items",
-				"imageAlt": "Consumer Goods"
-			},
-			"chemicals": {
-				"title": "Chemicals & Plastics",
-				"description": "Industrial chemicals, plastic materials",
-				"imageAlt": "Chemicals & Plastics"
-			},
-			"luxury": {
-				"title": "Luxury Goods",
-				"description": "High-end products, jewelry, premium items",
-				"imageAlt": "Luxury Goods"
-			}
-		},
-		"chooseRole": {
-			"title": "Choose Your Trade Role",
-			"subtitle": "Discover specific benefits and features designed for your role in international trade.",
-			"exporters": {
-				"title": "For Exporters",
-				"subtitle": "Secure your international sales",
-				"benefits": [
-					"Funds secured before shipping",
-					"Instant payment upon delivery confirmation",
-					"Protection against non-payment",
-					"Trade with new partners confidently"
-				],
-				"learnMore": "Learn More About Exporter Benefits"
-			},
-			"importers": {
-				"title": "For Importers",
-				"subtitle": "Import with confidence and control",
-				"benefits": [
-					"Pay only when goods meet specifications",
-					"Quality inspection before payment release",
-					"Protection against non-delivery",
-					"Dispute resolution for quality issues"
-				],
-				"learnMore": "Learn More About Importer Benefits"
-			}
-		},
-		"cta": {
-			"title": "Ready to Secure Your Global Trade?",
-			"subtitle": "Join exporters and importers worldwide who never worry about payment risks again.",
-			"startEscrow": "Start Your First Escrow",
-			"learnMore": "Learn More",
-			"primaryButton": "Start Your Escrow",
-			"secondaryButton": "Learn More"
-		},
-		"blog": {
-			"metadata": {
-				"title": "Trade Escrow Blog - Insights & Updates",
-				"description": "Stay informed with the latest trends, tips, and insights in international trade and digital escrow."
-			},
-			"hero": {
-				"title": "Trade Escrow Insights",
-				"subtitle": "Stay informed with the latest trends, tips, and insights in international trade and digital escrow."
-			},
-			"articles": {
-				"title": "Recent Articles",
-				"subtitle": "We're just getting started with our blog. Check back soon for valuable insights and updates.",
-				"comingSoon": {
-					"exporterTips": {
-						"title": "Coming Soon: Expert Tips for Exporters",
-						"excerpt": "We're preparing comprehensive guides to help exporters navigate international trade challenges.",
-						"category": "Exporter Tips",
-						"date": "Coming Soon",
-						"readTime": "Stay tuned"
-					},
-					"importerGuide": {
-						"title": "Coming Soon: Importer Best Practices",
-						"excerpt": "Detailed guides for importers to ensure quality and avoid costly disputes in international purchases.",
-						"category": "Importer Guide",
-						"date": "Coming Soon",
-						"readTime": "Stay tuned"
-					},
-					"digitalFinance": {
-						"title": "Coming Soon: Digital Escrow Insights",
-						"excerpt": "Learn how digital escrow technology is transforming international trade and commerce.",
-						"category": "Digital Finance",
-						"date": "Coming Soon",
-						"readTime": "Stay tuned"
-					}
-				}
-			},
-			"newsletter": {
-				"title": "Stay Updated",
-				"subtitle": "Get the latest trade insights and escrow updates delivered to your inbox.",
-				"emailPlaceholder": "Enter your email",
-				"button": "Subscribe"
-			}
-		},
-		"contacts": {
-			"metadata": {
-				"title": "Contact Us - Trade Escrow Support",
-				"description": "Get help with your international trade escrow. Connect with us for support with your import and export transactions."
-			},
-			"hero": {
-				"title": "Get Help with Your Escrow",
-				"subtitle": "Need assistance with your international trade escrow? Connect with us for support with your import and export transactions."
-			},
-			"contactForm": {
-				"title": "Send Message",
-				"firstName": "First Name",
-				"firstNamePlaceholder": "John",
-				"lastName": "Last Name",
-				"lastNamePlaceholder": "Doe",
-				"email": "Email",
-				"emailPlaceholder": "john@company.com",
-				"company": "Company",
-				"companyPlaceholder": "Your Company Name",
-				"tradeType": "Trade Type",
-				"tradeTypePlaceholder": "Select trade type",
-				"tradeTypes": {
-					"export": "Export",
-					"import": "Import",
-					"both": "Both"
-				},
-				"message": "Message",
-				"messagePlaceholder": "Tell us about your questions or how we can help...",
-				"submitButton": "Send Message",
-				"submittingButton": "Sending..."
-			},
-			"contactInfo": {
-				"title": "Contact Information",
-				"emailTitle": "Email",
-				"emailAddress": "info@escrow-protocol.com",
-				"emailDescription": "We'll get back to you soon"
-			},
-			"newsletter": {
-				"title": "Stay Informed",
-				"subtitle": "Subscribe to our newsletter for updates on the protocol and international trade insights.",
-				"emailPlaceholder": "Enter your email",
-				"submitButton": "Subscribe",
-				"submittingButton": "Subscribing..."
-			},
-			"popup": { "thankYou": "Thank You!", "close": "Close" }
-		},
-		"contactsAdmin": {
-			"newsletterSubscribers": {
-				"title": "Newsletter Subscribers",
-				"total": "Total subscribers: {count}",
-				"email": "Email",
-				"subscriptionDate": "Subscription Date"
-			},
-			"contactMessages": {
-				"title": "Contact Messages",
-				"total": "Total messages: {count}",
-				"fields": {
-					"email": "Email",
-					"company": "Company",
-					"tradeType": "Trade Type",
-					"message": "Message"
-				}
-			}
-		},
-		"exporterBenefits": {
-			"metadata": {
-				"title": "Exporter Benefits - Digital Escrow for International Trade | Escrow Protocol",
-				"description": "Eliminate non-payment risk and payment delays for exporters. Secure digital escrow ensures guaranteed payments for international trade transactions."
-			},
-			"hero": {
-				"badge": "For Exporters",
-				"title": "Get Paid Securely, Every Time",
-				"subtitle": "Eliminate payment risks and grow your export business with confidence. Digital escrow ensures you receive payment when you deliver as promised.",
-				"startEscrow": "Start Export Escrow",
-				"learnHowItWorks": "Learn How It Works"
-			},
-			"testimonials": {
-				"samuel": {
-					"name": "Samuel Okeke",
-					"role": "Exporter (fictional)",
-					"quote": "My business was running smoothly—orders were steady, my team was happy, and suppliers were reliable. Then I took an order from a new client overseas. Everything seemed fine: documents were signed, goods were delivered. But the payment never came—it was a scam. Cash flow dried up fast. I couldn't pay my workers and suppliers. One bad deal pushed my business into bankruptcy. I wish I'd known how quickly one unpaid invoice could destroy everything."
-				},
-				"maria": {
-					"name": "Maria Andersson",
-					"role": "Exporter (fictional)",
-					"quote": "We had been working with Carlos for over eight years. Our families knew each other well—we met at least once a year and built a strong partnership. His company in Spain was our biggest client. Then the economic downturn hit Europe hard. Carlos's business struggled and eventually stopped completely. He owed us €280,000 when his company filed for bankruptcy, creating big trouble on our side. We survived, but learned to more diversify our client base because trouble of a client could easily spill over and put our own company at risk."
-				}
-			},
-			"challenges": {
-				"title": "Challenges Exporters Face in Global Trade",
-				"subtitle": "Understanding the key obstacles that impact export businesses worldwide",
-				"nonPaymentRisk": {
-					"title": "Non-Payment Risk",
-					"description": "Exporters often deliver goods first and wait for payment, leaving them vulnerable to importers who refuse to pay or disappear after receiving the goods. This can result in significant financial losses, including the cost of production and shipping. This common challenge in international trade is exacerbated by geographical distance and limited recourse in foreign jurisdictions. Many exporters have experienced situations where buyers simply vanish after receiving shipments, leaving them with substantial losses and no practical way to recover their funds."
-				},
-				"liquidityRisk": {
-					"title": "Liquidity Risk",
-					"description": "Even a thriving export business can face liquidity crises from one bad deal, leading to cash shortages or bankruptcy. This risk is not limited to new clients—existing partners can default due to their own troubles, amplifying payment risks. A single large unpaid invoice can create a domino effect, affecting the ability to pay suppliers, meet payroll, and fulfill other orders. This liquidity risk is particularly acute for smaller exporters who may not have sufficient cash reserves to weather payment defaults."
-				},
-				"paymentDelays": {
-					"title": "Payment Delays",
-					"description": "Payment delays plague exporters from two main sources: importers who pay late due to cash flow issues, and traditional payment methods that can take weeks to clear through banking systems. These delays disrupt cash flow, increase holding costs, and strain operations. Exporters often find themselves in difficult positions where they need to pay suppliers and employees while waiting for delayed payments from international buyers, creating a cascade of financial stress throughout their business operations."
-				},
-				"highFees": {
-					"title": "High Fees",
-					"description": "Traditional international payment systems typically involve correspondent banking relationships, currency conversion fees, wire transfer charges, and intermediary bank fees, all of which compound to create substantial costs that directly impact the profitability of export transactions. These expenses can erode profit margins, especially in competitive markets."
-				},
-				"trustIssues": {
-					"title": "Trust Issues and Missing Growth Opportunities",
-					"description": "Building trust with new or unfamiliar trading partners is difficult, especially across borders where cultural, legal, and language barriers exist. Exporters, particularly those with no prior trade history with a partner, struggle to verify reliability without extensive due diligence, which is time-consuming and costly. Without a proven track record, exporters hesitate to engage, missing out on valuable growth opportunities in emerging markets. This often leads to stalled deals and limited expansion into potentially lucrative new territories."
-				},
-				"letterOfCredit": {
-					"title": "Expensive and Cumbersome Traditional Trade Finance",
-					"description": "Traditional trade finance instruments like Letters of Credit and bank guarantees are often prohibitively expensive due to multiple intermediaries taking fees at each step. Small and medium-sized exporters frequently lack access to these instruments or find that the costs would completely eliminate their profit margins, making deals unprofitable. Banks require extensive documentation, collateral, and credit facilities that many growing export businesses cannot provide. The complexity and expense of these traditional instruments often force exporters to either accept higher risks or abandon potentially profitable international opportunities."
-				},
-				"disputeResolution": {
-					"title": "Dispute Resolution Challenges",
-					"description": "Disputes over quality, delivery, or payment are hard to resolve internationally due to differing legal systems and high costs of arbitration. Exporters may spend significant time and resources on cross-border conflicts with uncertain outcomes. Moreover, these disputes can damage relationships and reputations in international markets. The complexity of navigating different legal frameworks, languages, and business practices makes dispute resolution a lengthy and expensive process that many exporters simply cannot afford to pursue."
-				}
-			},
-			"keyBenefits": {
-				"title": "Why Exporters Choose Digital Escrow",
-				"subtitle": "Secure your payments and expand your business with confidence.",
-				"paymentSecured": {
-					"title": "Payment Secured Before Shipping",
-					"description": "Exporters are protected from non-payment risks because funds are held in a secure escrow prior to shipment. Receive escrow funding confirmation before investing in production and shipping."
-				},
-				"immediatePayment": {
-					"title": "Immediate Payment on Delivery",
-					"description": "Payments are released instantly once delivery has been verified. You receive your money within minutes (instant settlement), improving cash flow and liquidity management significantly."
-				},
-				"fasterPayments": {
-					"title": "Immediate Payment on Delivery",
-					"description": "Payments are released instantly once delivery has been verified. You receive your money within minutes (instant settlement), improving cash flow and liquidity management significantly."
-				},
-				"confidenceWithNewPartners": {
-					"title": "Confidence with New Partners",
-					"description": "Exporters can engage with new or unfamiliar trade partners confidently, as the escrow secures payment upfront. Expand to new markets without payment risk."
-				},
-				"businessGrowth": {
-					"title": "Confidence with New Partners",
-					"description": "Exporters can engage with new or unfamiliar trade partners confidently, as the escrow secures payment upfront. Expand to new markets without payment risk."
-				},
-				"automatedFundRelease": {
-					"title": "Automated Fund Release",
-					"description": "Automated, flexible payment release depending on what was agreed with the buyer. Customizable release conditions based on delivery confirmation, mutual agreement, inspection results or time-based triggers."
-				},
-				"automatedRelease": {
-					"title": "Automated Fund Release",
-					"description": "Automated, flexible payment release depending on what was agreed with the buyer. Customizable release conditions based on delivery confirmation, mutual agreement, inspection results or time-based triggers."
-				},
-				"lowCosts": {
-					"title": "Low Costs",
-					"description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees."
-				},
-				"lowerFees": {
-					"title": "Low Costs",
-					"description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees."
-				},
-				"disputeResolution": {
-					"title": "Dispute Resolution",
-					"description": "Built-in mediation system with optional third-party arbitrators for fair and neutral conflict resolution. Every transaction step is recorded and verifiable, enabling faster and cheaper dispute resolution."
-				}
-			},
-			"protection": {
-				"title": "Complete Protection for Exporters",
-				"subtitle": "Every aspect of your export transaction is secured and protected.",
-				"beforeShipping": {
-					"title": "Before Shipping",
-					"subtitle": "Payment is secured upfront",
-					"description": "Payment is secured upfront",
-					"benefits": [
-						"Buyer deposits full payment into escrow",
-						"Funds are verified and locked securely",
-						"You receive confirmation before production / shipping",
-						"Trade with new and existing partners confidently"
-					],
-					"button": "Learn about the Workflow"
-				},
-				"afterDelivery": {
-					"title": "After Delivery",
-					"subtitle": "Instant payment release",
-					"description": "Instant payment release",
-					"benefits": [
-						"Delivery confirmation triggers automatic release",
-						"Funds received within minutes of confirmation",
-						"Complete transparency throughout the process",
-						"Built-in, neutral mediation if disputes arise"
-					],
-					"button": "Learn about the Workflow"
-				}
-			},
-			"cta": {
-				"title": "Ready to Secure Your Export Payments?",
-				"subtitle": "Join thousands of exporters who never worry about payment again. Start your first secure export transaction today.",
-				"primaryButton": "Start Export Escrow",
-				"secondaryButton": "Talk to Export Specialist"
-			}
-		},
-		"importerBenefits": {
-			"metadata": {
-				"title": "Importer Benefits - Digital Escrow for International Trade | Escrow Protocol",
-				"description": "Protect your imports from non-delivery and quality issues. Pay only when satisfied with digital escrow for international trade transactions."
-			},
-			"hero": {
-				"badge": "For Importers",
-				"title": "Pay Only When You're Satisfied",
-				"subtitle": "Protect your business from non-delivery and quality issues. Digital escrow ensures you only pay when goods meet your specifications.",
-				"startEscrow": "Start Import Escrow",
-				"learnHowItWorks": "Learn How It Works"
-			},
-			"testimonials": {
-				"michael": {
-					"name": "Michael Thompson",
-					"role": "Importer (fictional)",
-					"quote": "I needed specialized machinery for my manufacturing plant and found a supplier offering exactly what I needed at a fair price. They seemed legitimate—professional website, good communication, I even met them in person at a fair. I paid €450,000 upfront as requested. Weeks passed, then months. No delivery, no response to my calls. It was a complete scam. I had to shut down production and search for new suppliers, which took months. The delayed production cost me three major contracts, and the cash flow crisis nearly destroyed my business. I learned the hard way that even legitimate-looking suppliers can disappear with your money."
-				},
-				"isabella": {
-					"name": "Isabella Rossi",
-					"role": "Importer (fictional)",
-					"quote": "We had been working with a textile supplier for over three years who always requested payment in advance. At the beginning, we felt uncomfortable, but after a couple of successful transactions, we trusted them. The quality was always good, nothing to dispute. We ordered as always a large quantity for preparing the summer collection, but our supplier went bankrupt in between. We had paid €280,000 in advance, but only recovered a small amount through the bankruptcy process after paying expensive legal fees. I still ask myself if it was our mistake to pay in advance, but if your supplier is the only one to provide this special textile, what should you do? Close your business or accept the terms?"
-				}
-			},
-			"challenges": {
-				"title": "Challenges Importers Face in Global Trade",
-				"subtitle": "Understanding the key obstacles that impact import businesses worldwide",
-				"prepaymentRisk": {
-					"title": "Prepayment and Non-Delivery Risk",
-					"description": "Importers face significant risks when paying suppliers upfront, as fraudulent suppliers may disappear after receiving payment without delivering goods. This is particularly common with new suppliers or those found through online marketplaces. Even legitimate suppliers can fail to deliver due to production issues, financial difficulties, or other unforeseen circumstances, leaving importers without recourse and facing operational disruptions."
-				},
-				"qualityIssues": {
-					"title": "Quality Issues and Disputes",
-					"description": "Importers risk receiving goods that don't meet specifications, like incorrect quantities or poor quality. Verifying compliance across borders is tough and costly, leaving importers with unusable inventory that hurts their business. When disputes arise over defective or incorrect goods, they are hard to resolve internationally due to differing laws and languages. Lengthy conflicts drain time and money, damaging supplier relationships and creating additional operational challenges."
-				},
-				"delayedPayments": {
-					"title": "Delayed Payments and Delivery",
-					"description": "Banking payment delays create problems for importers and exporters. When importers need urgent supplies, slow international money transfers mean exporters won't start production or shipping until money arrives, causing critical delays. Similarly, when payment after delivery takes too long due to banking systems, it hurts payment deadlines for exporters and damages the importer's reputation for future deals. Additionally, exporters may delay shipments to non-prepaying importers, causing stock shortages or missed sales that disrupt supply chains, especially for time-sensitive businesses."
-				},
-				"restrictedSuppliers": {
-					"title": "Restricted Supplier Options",
-					"description": "Exporters may refuse to ship without prepayment, restricting importers' access to diverse suppliers. This limits opportunities to source from new or cost-effective markets and reduces competitive pricing options."
-				},
-				"pressureToPay": {
-					"title": "Pressure to Pay Before Full Verification",
-					"description": "Exporters may push for quick payment post-delivery, before thorough quality checks. Paying too soon risks losses if defects are found later, with little recourse across borders."
-				},
-				"highFees": {
-					"title": "High Fees",
-					"description": "Traditional international payment systems involve multiple intermediaries, each adding fees for currency conversion, wire transfers, and processing. These costs accumulate quickly through correspondent banking relationships and intermediary charges, significantly impacting profit margins and ultimately increasing the total cost of goods purchased, especially for smaller import businesses or high-volume, low-margin transactions."
-				},
-				"supplierReliability": {
-					"title": "Supplier Reliability and Due Diligence",
-					"description": "Verifying supplier credibility, financial stability, and production capabilities across different countries and business cultures is challenging and time-consuming. Importers often lack reliable methods to assess supplier reliability, leading to partnerships with unreliable vendors who may fail to deliver on promises or maintain consistent quality standards over time."
-				}
-			},
-			"keyBenefits": {
-				"title": "Why Importers Trust Digital Escrow",
-				"subtitle": "Import with confidence knowing your payment is protected until delivery meets your specifications.",
-				"nonDeliveryProtection": {
-					"title": "Non-Delivery Protection",
-					"description": "Funds remain in escrow until goods are delivered and verified, removing the risk of paying for undelivered goods. Your payment is secured until you receive exactly what you ordered."
-				},
-				"conditionalPayments": {
-					"title": "Conditional Payments",
-					"description": "Payments are only made when goods meet the agreed-upon specifications, protecting importers from subpar or incorrect shipments."
-				},
-				"qualityInspection": {
-					"title": "Quality Inspection",
-					"description": "Take time to thoroughly inspect goods yourself or use third-party inspection services. Third-party inspections through customs or logistics providers are supported, ensuring goods meet quality standards before payment is released."
-				},
-				"globalAccess": {
-					"title": "Global Supplier Access",
-					"description": "Importers can confidently access a global network of suppliers, reducing risk when working with new partners. Expand your sourcing options without payment concerns."
-				},
-				"lowerFees": {
-					"title": "Lower Fees",
-					"description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees, reducing your total import costs."
-				},
-				"disputeResolution": {
-					"title": "Dispute Resolution",
-					"description": "Built-in mediation system with optional third-party arbitrators for fair and neutral conflict resolution. Every transaction step is recorded and verifiable, enabling faster and cheaper dispute resolution."
-				}
-			},
-			"protection": {
-				"title": "Complete Protection for Importers",
-				"subtitle": "Every aspect of your import transaction is secured and protected.",
-				"beforePayment": {
-					"title": "Before Payment",
-					"subtitle": "Your funds are protected",
-					"benefits": [
-						"Funds held securely in escrow account",
-						"Payment only released upon delivery verification",
-						"Full protection from non-delivery fraud",
-						"Work with suppliers worldwide confidently"
-					],
-					"button": "Learn about the Workflow"
-				},
-				"afterDelivery": {
-					"title": "After Delivery",
-					"subtitle": "Quality verification process",
-					"benefits": [
-						"Inspect goods thoroughly before payment release",
-						"Use third-party inspection services if needed",
-						"Payment only when specifications are met",
-						"Built-in dispute resolution for quality issues"
-					],
-					"button": "Learn about the Workflow"
-				}
-			},
-			"cta": {
-				"title": "Ready to Import with Complete Protection?",
-				"subtitle": "Join thousands of importers who never worry about payment fraud or quality issues again. Start your first secure import transaction today.",
-				"startEscrow": "Start Import Escrow",
-				"talkToAdvisor": "Talk to Trade Advisor"
-			}
-		},
-		"guides": {
-			"metadata": {
-				"title": "Trade Escrow Guides - Learn International Trade | Escrow Protocol",
-				"description": "Comprehensive guides to help you master international trade with digital escrow protection. Learn about setup, best practices, and secure transactions."
-			},
-			"hero": {
-				"title": "Trade Escrow Guides",
-				"subtitle": "Comprehensive resources to help you master international trade with digital escrow protection."
-			},
-			"featuredGuide": {
-				"badge": "Featured Guide",
-				"title": "Complete Guide to International Trade Escrow",
-				"description": "Everything you need to know about using digital escrow for secure international trade transactions. From setup to completion, this comprehensive guide covers all aspects of trade escrow.",
-				"readTime": "45 min read",
-				"level": "Beginner to Advanced",
-				"button": "Read Full Guide",
-				"whatYouLearn": {
-					"title": "What You'll Learn",
-					"items": [
-						"Setting up your first trade escrow",
-						"Document requirements and verification",
-						"Payment release conditions",
-						"Dispute resolution process",
-						"Best practices for exporters and importers",
-						"Common pitfalls and how to avoid them"
-					]
-				}
-			},
-			"cta": {
-				"title": "Need Personalized Guidance?",
-				"subtitle": "Our trade experts are here to help you navigate your specific situation.",
-				"contactExpert": "Contact Trade Expert",
-				"startTrade": "Start Your Trade"
-			}
-		},
-		"faq": {
-			"metadata": {
-				"title": "Frequently Asked Questions - Trade Escrow | Escrow Protocol",
-				"description": "Find answers to common questions about digital escrow for international trade. Learn about security, fees, processes, and more."
-			},
-			"hero": {
-				"title": "Frequently Asked Questions",
-				"subtitle": "Find answers to common questions about digital escrow for international trade."
-			},
-			"categories": {
-				"title": "FAQ Categories",
-				"gettingStarted": { "name": "Getting Started", "count": "3" },
-				"securitySafety": { "name": "Security & Safety", "count": "2" },
-				"processTimeline": { "name": "Process & Timeline", "count": "2" },
-				"paymentsFees": { "name": "Payments & Fees", "count": "2" },
-				"internationalTrade": {
-					"name": "International Trade",
-					"count": "2"
-				}
-			},
-			"sections": {
-				"gettingStarted": {
-					"title": "Getting Started",
-					"questions": {
-						"whatIsEscrow": {
-							"question": "What is digital escrow for international trade?",
-							"answer": "Digital escrow for international trade is a secure peer-to-peer payment system that protects both exporters and importers during transactions. Instead of a third party holding your funds, the system uses smart contracts on the blockchain to automatically manage payments based on pre-agreed conditions. Funds remain in the smart contract (Escrow) until delivery and verification conditions are met, eliminating the traditional risks where either the exporter ships first without payment guarantee or the importer pays upfront without delivery assurance."
-						},
-						"howToGetStarted": {
-							"question": "How do I get started with trade escrow?",
-							"answer": "Click the \"Start Escrow\" button on the top right corner to create a wallet or sign-in. For more detailed information about the complete process, see our Workflow page which explains each step from setup to fund release."
-						},
-						"tradeTypes": {
-							"question": "What types of trades can use escrow?",
-							"answer": "Digital escrow can be used in nearly every industry where goods are delivered, including manufacturing, electronics, textiles, machinery, agricultural products, raw materials, and more. The escrow supports B2B (business-to-business), B2C (business-to-consumer), and C2C (consumer-to-consumer) transactions. For a comprehensive overview of supported industries, visit our Supporting All Trade Industries section to get a first impression of the possibilities."
-						}
-					}
-				},
-				"securitySafety": {
-					"title": "Security & Safety",
-					"questions": {
-						"fundSecurity": {
-							"question": "How secure are my funds in escrow?",
-							"answer": "Funds in the escrow are very secure. No third party, including the development company that created the technology behind the escrow, has access to funds in the escrow. The funds are held in what's called a smart contract, which is a self-executing program on the blockchain that automatically enforces the agreed terms without human intervention. The escrow uses a multi-signature approach, meaning multiple cryptographic signatures are required to authorize any transaction, providing an additional layer of security. This ensures that funds can only be released when all predetermined conditions are met by both trading parties."
-						},
-						"disputeResolution": {
-							"question": "What happens if there's a dispute?",
-							"answer": "Both parties can raise disputes, which immediately freezes the funds to protect everyone involved. Once a dispute is initiated, both parties have time to find a bilateral compromise and agree on adjustments such as offering discounts or extending delivery deadlines. If they cannot reach a compromise through direct negotiation, the case will be escalated to a neutral arbitrator for final resolution. For detailed information about this process, see our Dispute Resolution Process section."
-						}
-					}
-				},
-				"processTimeline": {
-					"title": "Process & Timeline",
-					"questions": {
-						"processDuration": {
-							"question": "How long does the escrow process take?",
-							"answer": "The time depends entirely on your business and the nature of the goods being traded. It could be just a couple of days for simple transactions, but also months or even years for complex manufacturing projects. Here's a typical example: Setup (1-2 days), Funding (5 days), Production (20 weeks), Shipping (4 weeks), Inspection (2 days), Funds release (same day). For a quicker transaction: Setup and Funding today, Delivery in 3 days, Inspection and funds release on the day of arrival."
-						},
-						"fundRelease": {
-							"question": "When are funds released to the exporter?",
-							"answer": "Fund release depends on the pre-agreed release methods that both parties establish when setting up the escrow. The release method depends on the specific needs and requirements of your transaction. For detailed information about the various release options available, see our Flexible Release Mechanisms section."
-						}
-					}
-				},
-				"paymentsFees": {
-					"title": "Payments & Fees",
-					"questions": {
-						"fees": {
-							"question": "What are the fees for using trade escrow?",
-							"answer": "The escrow is based on a blockchain solution, which requires transaction fees (often called \"gas fees\" - named after the computational energy needed to process transactions, similar to how a car needs gas to run). These blockchain transaction fees are necessary to secure and process your transactions on the network. There may be additional fees such as inspection fees for external verification, fees for trade advisors, and fees for arbitration services. All fees are completely transparent - when you define the principal amount and select optional services during escrow setup, both exporter and importer will see exactly what fees apply. The importer funds the principal amount plus all fees, and the escrow will not be activated unless the full amount is funded."
-						},
-						"paymentMethods": {
-							"question": "What payment methods are accepted?",
-							"answer": "You need to distinguish between payment methods for the escrow and payment methods for your wallet. The escrow uses only digital currencies such as USDT (USD from Tether), USDC (USD from Circle), or other stablecoins and CBDCs (Central Bank Digital Currencies). The escrow is funded using currencies from your digital wallet. To get USDC, USDT, or other stablecoins into your wallet, you can use cryptocurrency exchanges or On-Ramp providers. For detailed information about converting traditional money to digital currencies, see our How can I change FIAT into Stablecoins? section."
-						}
-					}
-				},
-				"internationalTrade": {
-					"title": "International Trade",
-					"questions": {
-						"supportedCountries": {
-							"question": "Which countries and regions are supported?",
-							"answer": "The escrow is a peer-to-peer system that can theoretically connect exporters and importers in any country or region of the world. However, it can only be used in countries where digital currencies are legally allowed. Some restrictions may apply based on local regulations and international sanctions lists. We recommend checking your local regulations regarding digital currency usage and checking international regulations and sanctions before proceeding with transactions."
-						},
-						"customsRegulations": {
-							"question": "How do you handle customs and import/export regulations?",
-							"answer": "The escrow is a financial contract that is based on the underlying buying contract or commercial invoice but does not replace these contracts. Exporters and importers are responsible for handling customs procedures, import/export licenses, trade documentation, compliance with international trade regulations, product certifications, and all other regulatory requirements. Since the escrow operates as a peer-to-peer transaction, OFAC (Office of Foreign Assets Control) compliance and Anti-Money Laundering (AML) responsibilities remain with the individual trading partners. We recommend consulting with trade professionals and legal advisors for complex international transactions."
-						}
-					}
-				}
-			},
-			"cta": {
-				"title": "Still Have Questions?",
-				"subtitle": "Our trade experts are ready to help you with personalized guidance for your specific situation.",
-				"contactSupport": "Contact Support",
-				"startTrade": "Start Your Trade"
-			}
-		},
-		"resources": {
-			"settingUpTradeEscrow": {
-				"title": "Setting Up Trade Escrow",
-				"description": "Complete guide to creating secure escrow agreements with smart contracts.",
-				"type": "Guide",
-				"buttonText": "Read Guide"
-			},
-			"digitalVsTraditional": {
-				"title": "Digital vs Traditional Trade Finance",
-				"description": "Compare letters of credit, wire transfers, and digital escrow for international trade.",
-				"type": "Comparison",
-				"buttonText": "Learn More"
-			},
-			"managingDisputes": {
-				"title": "Managing Trade Disputes",
-				"description": "How smart contracts and automated arbitration resolve international trade conflicts.",
-				"type": "Tips",
-				"buttonText": "Read Tips"
-			},
-			"compliance": {
-				"title": "International Trade Compliance",
-				"description": "Navigate customs, regulations, and documentation requirements for global trade.",
-				"type": "Checklist",
-				"buttonText": "Download Checklist"
-			},
-			"videoSeries": {
-				"title": "Trade Finance Video Series",
-				"description": "Watch expert interviews and case studies on digital escrow implementation.",
-				"type": "Video",
-				"buttonText": "Watch Videos"
-			},
-			"counter": "{current} of {total} resources"
-		}
-	}
+  "trade": {
+    "metadata": {
+      "title": "Trade Escrow - Secure Global Trade Payments",
+      "description": "Eliminate payment risks in cross-border trade with secure digital escrow for exporters and importers. Protect your international transactions with blockchain-based escrow."
+    },
+    "hero": {
+      "badge": "Global Trade Solution",
+      "title": "Secure Global Trade with Digital Escrow",
+      "subtitle": "Eliminate payment risks in cross-border trade with secure escrow for exporters and importers.",
+      "startEscrow": "Start Global Trade Escrow",
+      "seeHowItWorks": "See How It Works",
+      "trustIndicators": {
+        "nonCustodial": "Non-custodial",
+        "openSource": "Open source",
+        "audited": "Audited smart contracts",
+        "availability": "24/7 availability"
+      }
+    },
+    "workflow": {
+      "metadata": {
+        "title": "Digital Escrow Workflow - Complete Process Guide | Escrow Protocol",
+        "description": "Learn the complete digital escrow process for secure international trade. Step-by-step guide from setup to fund release for exporters and importers."
+      },
+      "hero": {
+        "badge": "Complete Process",
+        "title": "Digital Escrow Workflow",
+        "subtitle": "Understanding the complete digital escrow process for secure international trade"
+      },
+      "howItWorks": {
+        "title": "How a Digital Escrow Works",
+        "subtitle": "Understanding the complete digital escrow process for secure international trade",
+        "steps": {
+          "onboarding": {
+            "title": "Onboarding",
+            "description": "The secure escrow process begins with a simple online setup completed within minutes. Both importer and exporter create a digital wallet — a secure digital account for sending and receiving digital currencies like USD or EUR. This wallet acts like a digital bank account, keeping everything private. The setup requires no traditional banks and gives you complete control over your assets. Once established, you can easily participate in international trade escrows with full privacy and security.",
+            "features": [
+              "Sign-In and create a digital wallet",
+              "No banks required, full asset control",
+              "Ready for international trade participation"
+            ]
+          },
+          "escrowAgreement": {
+            "title": "Escrow Agreement",
+            "description": "To begin, you open a new escrow, invite your trading partner and define together the terms of the escrow like amount, funding date, delivery date, and release mechanism. If you need any support you can also involve a trade advisor, who can prepare the escrow, but has no access to escrow funds. You also choose an arbitration court from the start for any disputes—this court only gets involved if needed and can't see the transaction otherwise. This legal contract (escrow) focuses specifically on payment security and does not replace a buying contract or invoice. Both parties digitally sign the escrow agreement, creating a binding contract that ensures fairness throughout the trade process.",
+            "features": [
+              "Agree on escrow terms",
+              "Trade Advisor to help with setup",
+              "Digital signatures create binding contract"
+            ]
+          },
+          "verifiedFunding": {
+            "title": "Verified Funding",
+            "description": "The importer deposits the agreed amount using digital currencies within the specified timeframe. Once deposited, both parties receive immediate confirmation that funds are secured and protected. The escrow holds these funds neutrally until delivery conditions are satisfied, eliminating risks of non-payment for exporters and non-delivery for importers.",
+            "features": [
+              "Importer deposits funds",
+              "Instant funding verification and information",
+              "Funds are ready and secure"
+            ]
+          },
+          "delivery": {
+            "title": "Delivery",
+            "description": "Following funding confirmation, the exporter initiates production and shipping. Key documents such as Bills of Lading are uploaded to track progress, while delivery receipts provide proof of arrival. The transparent documentation system keeps both parties informed throughout the shipping process, reducing uncertainty and maintaining trust until goods reach their destination.",
+            "features": [
+              "Funding confirmation triggers production and shipping",
+              "Upload document as proof of delivery",
+              "Verification of proof of delivery"
+            ]
+          },
+          "releaseOfFunds": {
+            "title": "Release of Funds",
+            "description": "Fund release occurs through pre-selected mechanisms including importer confirmation, third-party inspections by companies like SGS or Intertek, customs verification, or electronic document validation. These flexible options accommodate different trade requirements while ensuring both exporters receive prompt payment and importers receive verified goods according to their specific agreement terms.",
+            "features": [
+              "Multiple release options",
+              "Third-party verification available",
+              "Different options to meet your trade needs"
+            ]
+          },
+          "adjustments": {
+            "title": "Adjustments",
+            "description": "The escrow accommodates real-world challenges through flexible adjustment mechanisms. When issues arise—such as delivery delays or minor quality concerns—trading partners can propose solutions including deadline extensions or price adjustments. All modifications require digital signatures from both parties to become legally binding, ensuring transparency and mutual agreement throughout the process.",
+            "features": [
+              "Flexible adjustments of escrow terms",
+              "Available until funds are released",
+              "Mutual consent required for changes"
+            ]
+          },
+          "dispute": {
+            "title": "Dispute",
+            "description": "When disagreements occur regarding quality or delivery, either party can initiate a dispute that immediately freezes funds to protect both parties. All documentation and correspondence is encrypted and saved, helping to quickly reconstruct the transaction history. Trading partners have time to resolve issues bilaterally through negotiation, such as offering discounts or extending deadlines. If bilateral resolution fails, the dispute escalates to a pre-defined neutral arbitrator who has access to all transaction data to make informed decisions. This comprehensive evidence system enables efficient dispute resolution based on clear documentation rather than conflicting claims.",
+            "features": [
+              "Funds locked immediately for protection",
+              "Bilateral negotiation encouraged first",
+              "Neutral arbitrator escalation available"
+            ]
+          }
+        }
+      },
+      "releaseMechanisms": {
+        "title": "Flexible Release Mechanisms",
+        "subtitle": "Multiple ways to trigger fund release based on your specific trade requirements",
+        "mechanisms": {
+          "deliveryConfirmation": {
+            "title": "Delivery Confirmation",
+            "description": "Funds are released automatically when delivery is confirmed by the importer or logistics provider."
+          },
+          "thirdPartyVerification": {
+            "title": "Third Party Verification",
+            "description": "Release triggered after successful quality inspection by independent third-party inspectors or verification services."
+          },
+          "documentBased": {
+            "title": "Document based Confirmation",
+            "description": "Release upon submission and verification of required shipping, customs, and trade documentation."
+          },
+          "mutualAgreement": {
+            "title": "Mutual Agreement",
+            "description": "Both parties must explicitly agree to release funds, providing maximum control over the transaction."
+          }
+        }
+      },
+      "disputeResolution": {
+        "title": "Dispute Resolution Process",
+        "subtitle": "Fair and transparent resolution when issues arise during transactions",
+        "whenDisputesOccur": {
+          "title": "When Disputes Occur",
+          "subtitle": "Funds are immediately locked for protection",
+          "description": "When either party raises a dispute, funds are immediately frozen to protect both sides. All documentation and correspondence between parties is saved (encrypted) and helps to quickly reconstruct the history of what was agreed and what happened.",
+          "features": [
+            "Funds locked immediately upon dispute",
+            "All communications encrypted and saved",
+            "Complete transaction history available",
+            "Evidence preserved for review"
+          ]
+        },
+        "resolutionOptions": {
+          "title": "Resolution Options",
+          "subtitle": "Multiple paths to fair resolution",
+          "description": "Parties have time to solve disputes themselves through negotiation (such as offering discounts or extending delivery time). If bilateral resolution isn't possible, the dispute can be escalated to a pre-defined neutral arbitrator who finally decides about fund distribution.",
+          "features": [
+            "Direct negotiation between parties",
+            "Flexible solutions (discounts, extensions)",
+            "Neutral arbitrator escalation",
+            "Access to all transaction data"
+          ]
+        },
+        "arbitratorNote": {
+          "title": "Important: Arbitrator Costs",
+          "description": "The arbitrator is pre-defined at the beginning of the escrow and remains neutral throughout the process. They have access to all information and data to make informed decisions. Please note that arbitrator fees are deducted from the escrow funds, reducing the total amount paid out to both parties. This encourages bilateral resolution whenever possible."
+        }
+      },
+      "digitalPayments": {
+        "title": "What You Need to Know About Digital Payments",
+        "subtitle": "Understanding digital currencies, wallets, and on-ramp providers for secure international trade",
+        "digitalCurrencies": {
+          "title": "What Are Digital Currencies?",
+          "description": "A digital currency, also known as a stablecoin, is a digital representation of traditional money (FIAT currency) like the US dollar. A digital USD is pegged 1:1 to the paper USD, reflecting its value while offering the advantages of blockchain technology. Stablecoins are issued by (regulated) institutions and backed by collateral, ensuring their stability and trustworthiness. The largest stablecoins are currently USDT and USDC, which are issued by Tether and Circle. Stablecoins are perfect for cross-border transactions since they settle instantly and are cheap to send, making international trade more efficient and cost-effective."
+        },
+        "digitalWallet": {
+          "title": "What Is a Wallet?",
+          "description": "A digital wallet is like a secure digital bank account that you control completely. It's an app on your phone or computer where you can store, send, and receive digital currencies like stablecoins. Think of it as your personal digital safe - only you have the key (password), and no bank or third party can access your funds. For international traders, a wallet provides direct control over payments without needing traditional banks. Once ready, you can participate in secure escrow transactions with trading partners worldwide, keeping your funds private and under your complete control."
+        },
+        "fiatConversion": {
+          "title": "How can I change FIAT into Stablecoins?",
+          "description": "You can use an exchange or an on-ramp provider to convert traditional money into digital currencies. Exchanges like Coinbase and Binance are platforms where you can buy, sell, and trade various digital currencies including stablecoins. An On-ramp Provider or Digital Money Converter is a licensed provider that exchanges traditional money (FIAT) for digital currencies like stablecoins, ensuring secure and compliant transactions. For both, you send them FIAT money via bank transaction, mobile payment, or credit card, and they credit your wallet with the equivalent stablecoin. For example, imagine you send 100 USD (FIAT) to them - they exchange it to 100 USDT (stablecoin) in your digital wallet. These providers handle the KYC/KYB (Know Your Customer/Business) verification process to ensure compliance with financial regulations, making the conversion process both secure and legally compliant for international trade."
+        }
+      },
+      "cta": {
+        "title": "Ready to Start Secure Trading?",
+        "subtitle": "Join thousands of traders who trust digital escrow for their international transactions. Experience the future of secure global trade today.",
+        "startEscrow": "Start Your Escrow",
+        "talkToAdvisor": "Talk to Trade Advisor"
+      }
+    },
+    "solvesRisks": {
+      "title": "How Escrow Solves Risks in International Trade",
+      "description": "A digital escrow for cross-border trade eliminates the buyer and seller dilemma that prevents successful international transactions. Traditional trade requires one party to take significant risk - either the exporter ships first and waits for payment, or the importer pays upfront without delivery guarantees. A digital escrow for exporters and importers solves this by securely holding funds until goods are delivered and verified, creating trust between trading partners worldwide and enabling secure global commerce.",
+      "videoTitle": "How Escrow Solves Risks in International Trade"
+    },
+    "trustChanges": {
+      "title": "Because Trust Changes Everything",
+      "description": "International trade opens exciting opportunities, connecting exporters and importers to new markets and growth potential. Yet, trust is a major challenge with new trading partners, especially across different countries with unfamiliar laws, regulations, and languages. This is even harder when partners have never traded or have only a few deals, leaving no track record to rely on. Fraud cases—deals failing due to unreliable counterparts—make caution critical, often stopping trades before they start."
+    },
+    "dilemma": {
+      "title": "The Buyer and Seller Dilemma",
+      "subtitle": "While exporters fear non-payment, importers fear non-delivery — reducing the risk of the exporter increases the risk of the importer and vice versa.",
+      "exporterRisks": {
+        "title": "Exporter Risks",
+        "description": "Exporters often face the highest risk in global trade. Typically, they deliver goods first and wait for payment, leaving them vulnerable to importers who might refuse to pay or disappear after receiving the goods. Exporters could lose not just the payment but also the costs of production and shipping, which can be devastating for their business."
+      },
+      "importerRisks": {
+        "title": "Importer Risks",
+        "description": "Importers worry about non-delivery or poor quality. If they pay upfront, they risk getting nothing in return or receiving items that don't match what was promised. Without seeing or testing the goods first, importers could end up with faulty products or no products at all, wasting money and time."
+      },
+      "tensions": "Different risk positions create tensions in negotiations. One side often ends up taking most of the risk, leading to unfair deals or no deals at all when trust is lacking.",
+      "bridging": {
+        "title": "Bridging the Gap with a Digital Escrow",
+        "description": "The buyer and seller dilemma stops many promising trades, missing opportunities for strong business ties. A digital escrow for international trade offers a solution, securely holding funds until goods are delivered and verified, reducing risks for both sides. This fosters trust, turning hesitation into confident, successful global trade.",
+        "hold": "Hold",
+        "verify": "Verify",
+        "release": "Release"
+      }
+    },
+    "whatIs": {
+      "title": "What is a Digital Escrow?",
+      "subtitle": "A Simple Solution for Secure International Trade",
+      "description": "A digital escrow is a secure payment method designed to protect both exporters and importers in cross-border trade. It works by holding funds in a neutral, digital escrow until goods are delivered and verified, ensuring neither party faces risks like non-payment or non-delivery. For exporters, this means shipping with confidence, knowing payment is guaranteed once conditions are met. For importers, it ensures payment is only released when goods meet agreed specifications. The digital escrow eliminates traditional intermediaries, reduces high fees, and simplifies trust between trade partners worldwide.",
+      "imageAlt": "Digital Escrow Process Illustration"
+    },
+    "features": {
+      "title": "Escrow Features",
+      "subtitle": "Everything exporters and importers need for secure, efficient cross-border transactions.",
+      "security": {
+        "title": "Security and Flexibility",
+        "description": "Funds are securely held until both parties have met their contractual obligations, eliminating risks such as fraud and non-payment."
+      },
+      "trust": {
+        "title": "Trust and Growth",
+        "description": "Secure payments foster trust between parties, reduce risk, and open the door to more business opportunities."
+      },
+      "fees": {
+        "title": "Low Transaction Fees",
+        "description": "By removing intermediaries and utilizing digital cross-border payments, the escrow ensures significantly lower fees."
+      },
+      "settlement": {
+        "title": "Instant Settlement",
+        "description": "Once all terms are satisfied, funds are received within minutes after release — no need to wait for days like traditional banking systems."
+      },
+      "dispute": {
+        "title": "Dispute Resolution",
+        "description": "Every step in the transaction is recorded and verifiable, with neutral mediators or arbitrators enabling swift and cost-effective resolutions to disputes."
+      },
+      "global": {
+        "title": "Global Reach & 24/7",
+        "description": "Available worldwide with 24/7 accessibility, enabling secure international trade across all time zones and markets."
+      }
+    },
+    "industries": {
+      "title": "Supporting All Trade Industries",
+      "subtitle": "The escrow protocol works perfectly for any type of international trade across all industries.",
+      "electronics": {
+        "title": "Electronics & Technology",
+        "description": "Semiconductors, computers, mobile devices",
+        "imageAlt": "Electronics & Technology"
+      },
+      "textiles": {
+        "title": "Textiles & Apparel",
+        "description": "Clothing, fabrics, fashion accessories",
+        "imageAlt": "Textiles & Apparel"
+      },
+      "machinery": {
+        "title": "Machinery & Equipment",
+        "description": "Industrial machines, tools, manufacturing equipment",
+        "imageAlt": "Machinery & Equipment"
+      },
+      "rawMaterials": {
+        "title": "Raw Materials",
+        "description": "Metals, minerals, chemical compounds",
+        "imageAlt": "Raw Materials"
+      },
+      "food": {
+        "title": "Food & Agriculture",
+        "description": "Agricultural products, processed foods, beverages",
+        "imageAlt": "Food & Agriculture"
+      },
+      "automotive": {
+        "title": "Automotive Parts",
+        "description": "Car components, spare parts, accessories",
+        "imageAlt": "Automotive Parts"
+      },
+      "medical": {
+        "title": "Medical Equipment",
+        "description": "Healthcare devices, pharmaceutical products",
+        "imageAlt": "Medical Equipment"
+      },
+      "construction": {
+        "title": "Construction Materials",
+        "description": "Building supplies, cement, steel",
+        "imageAlt": "Construction Materials"
+      },
+      "energy": {
+        "title": "Energy & Oil",
+        "description": "Petroleum products, renewable energy equipment",
+        "imageAlt": "Energy & Oil"
+      },
+      "consumer": {
+        "title": "Consumer Goods",
+        "description": "Home appliances, furniture, personal items",
+        "imageAlt": "Consumer Goods"
+      },
+      "chemicals": {
+        "title": "Chemicals & Plastics",
+        "description": "Industrial chemicals, plastic materials",
+        "imageAlt": "Chemicals & Plastics"
+      },
+      "luxury": {
+        "title": "Luxury Goods",
+        "description": "High-end products, jewelry, premium items",
+        "imageAlt": "Luxury Goods"
+      }
+    },
+    "chooseRole": {
+      "title": "Choose Your Trade Role",
+      "subtitle": "Discover specific benefits and features designed for your role in international trade.",
+      "exporters": {
+        "title": "For Exporters",
+        "subtitle": "Secure your international sales",
+        "benefits": [
+          "Funds secured before shipping",
+          "Instant payment upon delivery confirmation",
+          "Protection against non-payment",
+          "Trade with new partners confidently"
+        ],
+        "learnMore": "Learn More About Exporter Benefits"
+      },
+      "importers": {
+        "title": "For Importers",
+        "subtitle": "Import with confidence and control",
+        "benefits": [
+          "Pay only when goods meet specifications",
+          "Quality inspection before payment release",
+          "Protection against non-delivery",
+          "Dispute resolution for quality issues"
+        ],
+        "learnMore": "Learn More About Importer Benefits"
+      }
+    },
+    "cta": {
+      "title": "Ready to Secure Your Global Trade?",
+      "subtitle": "Join exporters and importers worldwide who never worry about payment risks again.",
+      "startEscrow": "Start Your First Escrow",
+      "learnMore": "Learn More",
+      "primaryButton": "Start Your Escrow",
+      "secondaryButton": "Learn More"
+    },
+    "blog": {
+      "metadata": {
+        "title": "Trade Escrow Blog - Insights & Updates",
+        "description": "Stay informed with the latest trends, tips, and insights in international trade and digital escrow."
+      },
+      "hero": {
+        "title": "Trade Escrow Insights",
+        "subtitle": "Stay informed with the latest trends, tips, and insights in international trade and digital escrow."
+      },
+      "articles": {
+        "title": "Recent Articles",
+        "subtitle": "We're just getting started with our blog. Check back soon for valuable insights and updates.",
+        "comingSoon": {
+          "exporterTips": {
+            "title": "Coming Soon: Expert Tips for Exporters",
+            "excerpt": "We're preparing comprehensive guides to help exporters navigate international trade challenges.",
+            "category": "Exporter Tips",
+            "date": "Coming Soon",
+            "readTime": "Stay tuned"
+          },
+          "importerGuide": {
+            "title": "Coming Soon: Importer Best Practices",
+            "excerpt": "Detailed guides for importers to ensure quality and avoid costly disputes in international purchases.",
+            "category": "Importer Guide",
+            "date": "Coming Soon",
+            "readTime": "Stay tuned"
+          },
+          "digitalFinance": {
+            "title": "Coming Soon: Digital Escrow Insights",
+            "excerpt": "Learn how digital escrow technology is transforming international trade and commerce.",
+            "category": "Digital Finance",
+            "date": "Coming Soon",
+            "readTime": "Stay tuned"
+          }
+        }
+      },
+      "newsletter": {
+        "title": "Stay Updated",
+        "subtitle": "Get the latest trade insights and escrow updates delivered to your inbox.",
+        "emailPlaceholder": "Enter your email",
+        "button": "Subscribe"
+      }
+    },
+    "contacts": {
+      "metadata": {
+        "title": "Contact Us - Trade Escrow Support",
+        "description": "Get help with your international trade escrow. Connect with us for support with your import and export transactions."
+      },
+      "hero": {
+        "title": "Get Help with Your Escrow",
+        "subtitle": "Need assistance with your international trade escrow? Connect with us for support with your import and export transactions."
+      },
+      "contactForm": {
+        "title": "Send Message",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "John",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Doe",
+        "email": "Email",
+        "emailPlaceholder": "john@company.com",
+        "company": "Company",
+        "companyPlaceholder": "Your Company Name",
+        "tradeType": "Trade Type",
+        "tradeTypePlaceholder": "Select trade type",
+        "tradeTypes": {
+          "export": "Export",
+          "import": "Import",
+          "both": "Both"
+        },
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your questions or how we can help...",
+        "submitButton": "Send Message",
+        "submittingButton": "Sending..."
+      },
+      "contactInfo": {
+        "title": "Contact Information",
+        "emailTitle": "Email",
+        "emailAddress": "info@escrow-protocol.com",
+        "emailDescription": "We'll get back to you soon"
+      },
+      "newsletter": {
+        "title": "Stay Informed",
+        "subtitle": "Subscribe to our newsletter for updates on the protocol and international trade insights.",
+        "emailPlaceholder": "Enter your email",
+        "submitButton": "Subscribe",
+        "submittingButton": "Subscribing..."
+      },
+      "popup": { "thankYou": "Thank You!", "close": "Close" }
+    },
+    "contactsAdmin": {
+      "newsletterSubscribers": {
+        "title": "Newsletter Subscribers",
+        "total": "Total subscribers: {count}",
+        "email": "Email",
+        "subscriptionDate": "Subscription Date"
+      },
+      "contactMessages": {
+        "title": "Contact Messages",
+        "total": "Total messages: {count}",
+        "fields": {
+          "email": "Email",
+          "company": "Company",
+          "tradeType": "Trade Type",
+          "message": "Message"
+        }
+      }
+    },
+    "exporterBenefits": {
+      "metadata": {
+        "title": "Exporter Benefits - Digital Escrow for International Trade | Escrow Protocol",
+        "description": "Eliminate non-payment risk and payment delays for exporters. Secure digital escrow ensures guaranteed payments for international trade transactions."
+      },
+      "hero": {
+        "badge": "For Exporters",
+        "title": "Get Paid Securely, Every Time",
+        "subtitle": "Eliminate payment risks and grow your export business with confidence. Digital escrow ensures you receive payment when you deliver as promised.",
+        "startEscrow": "Start Export Escrow",
+        "learnHowItWorks": "Learn How It Works"
+      },
+      "testimonials": {
+        "samuel": {
+          "name": "Samuel Okeke",
+          "role": "Exporter (fictional)",
+          "quote": "My business was running smoothly—orders were steady, my team was happy, and suppliers were reliable. Then I took an order from a new client overseas. Everything seemed fine: documents were signed, goods were delivered. But the payment never came—it was a scam. Cash flow dried up fast. I couldn't pay my workers and suppliers. One bad deal pushed my business into bankruptcy. I wish I'd known how quickly one unpaid invoice could destroy everything."
+        },
+        "maria": {
+          "name": "Maria Andersson",
+          "role": "Exporter (fictional)",
+          "quote": "We had been working with Carlos for over eight years. Our families knew each other well—we met at least once a year and built a strong partnership. His company in Spain was our biggest client. Then the economic downturn hit Europe hard. Carlos's business struggled and eventually stopped completely. He owed us €280,000 when his company filed for bankruptcy, creating big trouble on our side. We survived, but learned to more diversify our client base because trouble of a client could easily spill over and put our own company at risk."
+        }
+      },
+      "challenges": {
+        "title": "Challenges Exporters Face in Global Trade",
+        "subtitle": "Understanding the key obstacles that impact export businesses worldwide",
+        "nonPaymentRisk": {
+          "title": "Non-Payment Risk",
+          "description": "Exporters often deliver goods first and wait for payment, leaving them vulnerable to importers who refuse to pay or disappear after receiving the goods. This can result in significant financial losses, including the cost of production and shipping. This common challenge in international trade is exacerbated by geographical distance and limited recourse in foreign jurisdictions. Many exporters have experienced situations where buyers simply vanish after receiving shipments, leaving them with substantial losses and no practical way to recover their funds."
+        },
+        "liquidityRisk": {
+          "title": "Liquidity Risk",
+          "description": "Even a thriving export business can face liquidity crises from one bad deal, leading to cash shortages or bankruptcy. This risk is not limited to new clients—existing partners can default due to their own troubles, amplifying payment risks. A single large unpaid invoice can create a domino effect, affecting the ability to pay suppliers, meet payroll, and fulfill other orders. This liquidity risk is particularly acute for smaller exporters who may not have sufficient cash reserves to weather payment defaults."
+        },
+        "paymentDelays": {
+          "title": "Payment Delays",
+          "description": "Payment delays plague exporters from two main sources: importers who pay late due to cash flow issues, and traditional payment methods that can take weeks to clear through banking systems. These delays disrupt cash flow, increase holding costs, and strain operations. Exporters often find themselves in difficult positions where they need to pay suppliers and employees while waiting for delayed payments from international buyers, creating a cascade of financial stress throughout their business operations."
+        },
+        "highFees": {
+          "title": "High Fees",
+          "description": "Traditional international payment systems typically involve correspondent banking relationships, currency conversion fees, wire transfer charges, and intermediary bank fees, all of which compound to create substantial costs that directly impact the profitability of export transactions. These expenses can erode profit margins, especially in competitive markets."
+        },
+        "trustIssues": {
+          "title": "Trust Issues and Missing Growth Opportunities",
+          "description": "Building trust with new or unfamiliar trading partners is difficult, especially across borders where cultural, legal, and language barriers exist. Exporters, particularly those with no prior trade history with a partner, struggle to verify reliability without extensive due diligence, which is time-consuming and costly. Without a proven track record, exporters hesitate to engage, missing out on valuable growth opportunities in emerging markets. This often leads to stalled deals and limited expansion into potentially lucrative new territories."
+        },
+        "letterOfCredit": {
+          "title": "Expensive and Cumbersome Traditional Trade Finance",
+          "description": "Traditional trade finance instruments like Letters of Credit and bank guarantees are often prohibitively expensive due to multiple intermediaries taking fees at each step. Small and medium-sized exporters frequently lack access to these instruments or find that the costs would completely eliminate their profit margins, making deals unprofitable. Banks require extensive documentation, collateral, and credit facilities that many growing export businesses cannot provide. The complexity and expense of these traditional instruments often force exporters to either accept higher risks or abandon potentially profitable international opportunities."
+        },
+        "disputeResolution": {
+          "title": "Dispute Resolution Challenges",
+          "description": "Disputes over quality, delivery, or payment are hard to resolve internationally due to differing legal systems and high costs of arbitration. Exporters may spend significant time and resources on cross-border conflicts with uncertain outcomes. Moreover, these disputes can damage relationships and reputations in international markets. The complexity of navigating different legal frameworks, languages, and business practices makes dispute resolution a lengthy and expensive process that many exporters simply cannot afford to pursue."
+        }
+      },
+      "keyBenefits": {
+        "title": "Why Exporters Choose Digital Escrow",
+        "subtitle": "Secure your payments and expand your business with confidence.",
+        "paymentSecured": {
+          "title": "Payment Secured Before Shipping",
+          "description": "Exporters are protected from non-payment risks because funds are held in a secure escrow prior to shipment. Receive escrow funding confirmation before investing in production and shipping."
+        },
+        "immediatePayment": {
+          "title": "Immediate Payment on Delivery",
+          "description": "Payments are released instantly once delivery has been verified. You receive your money within minutes (instant settlement), improving cash flow and liquidity management significantly."
+        },
+        "fasterPayments": {
+          "title": "Immediate Payment on Delivery",
+          "description": "Payments are released instantly once delivery has been verified. You receive your money within minutes (instant settlement), improving cash flow and liquidity management significantly."
+        },
+        "confidenceWithNewPartners": {
+          "title": "Confidence with New Partners",
+          "description": "Exporters can engage with new or unfamiliar trade partners confidently, as the escrow secures payment upfront. Expand to new markets without payment risk."
+        },
+        "businessGrowth": {
+          "title": "Confidence with New Partners",
+          "description": "Exporters can engage with new or unfamiliar trade partners confidently, as the escrow secures payment upfront. Expand to new markets without payment risk."
+        },
+        "automatedFundRelease": {
+          "title": "Automated Fund Release",
+          "description": "Automated, flexible payment release depending on what was agreed with the buyer. Customizable release conditions based on delivery confirmation, mutual agreement, inspection results or time-based triggers."
+        },
+        "automatedRelease": {
+          "title": "Automated Fund Release",
+          "description": "Automated, flexible payment release depending on what was agreed with the buyer. Customizable release conditions based on delivery confirmation, mutual agreement, inspection results or time-based triggers."
+        },
+        "lowCosts": {
+          "title": "Low Costs",
+          "description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees."
+        },
+        "lowerFees": {
+          "title": "Low Costs",
+          "description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees."
+        },
+        "disputeResolution": {
+          "title": "Dispute Resolution",
+          "description": "Built-in mediation system with optional third-party arbitrators for fair and neutral conflict resolution. Every transaction step is recorded and verifiable, enabling faster and cheaper dispute resolution."
+        }
+      },
+      "protection": {
+        "title": "Complete Protection for Exporters",
+        "subtitle": "Every aspect of your export transaction is secured and protected.",
+        "beforeShipping": {
+          "title": "Before Shipping",
+          "subtitle": "Payment is secured upfront",
+          "description": "Payment is secured upfront",
+          "benefits": [
+            "Buyer deposits full payment into escrow",
+            "Funds are verified and locked securely",
+            "You receive confirmation before production / shipping",
+            "Trade with new and existing partners confidently"
+          ],
+          "button": "Learn about the Workflow"
+        },
+        "afterDelivery": {
+          "title": "After Delivery",
+          "subtitle": "Instant payment release",
+          "description": "Instant payment release",
+          "benefits": [
+            "Delivery confirmation triggers automatic release",
+            "Funds received within minutes of confirmation",
+            "Complete transparency throughout the process",
+            "Built-in, neutral mediation if disputes arise"
+          ],
+          "button": "Learn about the Workflow"
+        }
+      },
+      "cta": {
+        "title": "Ready to Secure Your Export Payments?",
+        "subtitle": "Join thousands of exporters who never worry about payment again. Start your first secure export transaction today.",
+        "primaryButton": "Start Export Escrow",
+        "secondaryButton": "Talk to Export Specialist"
+      }
+    },
+    "importerBenefits": {
+      "metadata": {
+        "title": "Importer Benefits - Digital Escrow for International Trade | Escrow Protocol",
+        "description": "Protect your imports from non-delivery and quality issues. Pay only when satisfied with digital escrow for international trade transactions."
+      },
+      "hero": {
+        "badge": "For Importers",
+        "title": "Pay Only When You're Satisfied",
+        "subtitle": "Protect your business from non-delivery and quality issues. Digital escrow ensures you only pay when goods meet your specifications.",
+        "startEscrow": "Start Import Escrow",
+        "learnHowItWorks": "Learn How It Works"
+      },
+      "testimonials": {
+        "michael": {
+          "name": "Michael Thompson",
+          "role": "Importer (fictional)",
+          "quote": "I needed specialized machinery for my manufacturing plant and found a supplier offering exactly what I needed at a fair price. They seemed legitimate—professional website, good communication, I even met them in person at a fair. I paid €450,000 upfront as requested. Weeks passed, then months. No delivery, no response to my calls. It was a complete scam. I had to shut down production and search for new suppliers, which took months. The delayed production cost me three major contracts, and the cash flow crisis nearly destroyed my business. I learned the hard way that even legitimate-looking suppliers can disappear with your money."
+        },
+        "isabella": {
+          "name": "Isabella Rossi",
+          "role": "Importer (fictional)",
+          "quote": "We had been working with a textile supplier for over three years who always requested payment in advance. At the beginning, we felt uncomfortable, but after a couple of successful transactions, we trusted them. The quality was always good, nothing to dispute. We ordered as always a large quantity for preparing the summer collection, but our supplier went bankrupt in between. We had paid €280,000 in advance, but only recovered a small amount through the bankruptcy process after paying expensive legal fees. I still ask myself if it was our mistake to pay in advance, but if your supplier is the only one to provide this special textile, what should you do? Close your business or accept the terms?"
+        }
+      },
+      "challenges": {
+        "title": "Challenges Importers Face in Global Trade",
+        "subtitle": "Understanding the key obstacles that impact import businesses worldwide",
+        "prepaymentRisk": {
+          "title": "Prepayment and Non-Delivery Risk",
+          "description": "Importers face significant risks when paying suppliers upfront, as fraudulent suppliers may disappear after receiving payment without delivering goods. This is particularly common with new suppliers or those found through online marketplaces. Even legitimate suppliers can fail to deliver due to production issues, financial difficulties, or other unforeseen circumstances, leaving importers without recourse and facing operational disruptions."
+        },
+        "qualityIssues": {
+          "title": "Quality Issues and Disputes",
+          "description": "Importers risk receiving goods that don't meet specifications, like incorrect quantities or poor quality. Verifying compliance across borders is tough and costly, leaving importers with unusable inventory that hurts their business. When disputes arise over defective or incorrect goods, they are hard to resolve internationally due to differing laws and languages. Lengthy conflicts drain time and money, damaging supplier relationships and creating additional operational challenges."
+        },
+        "delayedPayments": {
+          "title": "Delayed Payments and Delivery",
+          "description": "Banking payment delays create problems for importers and exporters. When importers need urgent supplies, slow international money transfers mean exporters won't start production or shipping until money arrives, causing critical delays. Similarly, when payment after delivery takes too long due to banking systems, it hurts payment deadlines for exporters and damages the importer's reputation for future deals. Additionally, exporters may delay shipments to non-prepaying importers, causing stock shortages or missed sales that disrupt supply chains, especially for time-sensitive businesses."
+        },
+        "restrictedSuppliers": {
+          "title": "Restricted Supplier Options",
+          "description": "Exporters may refuse to ship without prepayment, restricting importers' access to diverse suppliers. This limits opportunities to source from new or cost-effective markets and reduces competitive pricing options."
+        },
+        "pressureToPay": {
+          "title": "Pressure to Pay Before Full Verification",
+          "description": "Exporters may push for quick payment post-delivery, before thorough quality checks. Paying too soon risks losses if defects are found later, with little recourse across borders."
+        },
+        "highFees": {
+          "title": "High Fees",
+          "description": "Traditional international payment systems involve multiple intermediaries, each adding fees for currency conversion, wire transfers, and processing. These costs accumulate quickly through correspondent banking relationships and intermediary charges, significantly impacting profit margins and ultimately increasing the total cost of goods purchased, especially for smaller import businesses or high-volume, low-margin transactions."
+        },
+        "supplierReliability": {
+          "title": "Supplier Reliability and Due Diligence",
+          "description": "Verifying supplier credibility, financial stability, and production capabilities across different countries and business cultures is challenging and time-consuming. Importers often lack reliable methods to assess supplier reliability, leading to partnerships with unreliable vendors who may fail to deliver on promises or maintain consistent quality standards over time."
+        }
+      },
+      "keyBenefits": {
+        "title": "Why Importers Trust Digital Escrow",
+        "subtitle": "Import with confidence knowing your payment is protected until delivery meets your specifications.",
+        "nonDeliveryProtection": {
+          "title": "Non-Delivery Protection",
+          "description": "Funds remain in escrow until goods are delivered and verified, removing the risk of paying for undelivered goods. Your payment is secured until you receive exactly what you ordered."
+        },
+        "conditionalPayments": {
+          "title": "Conditional Payments",
+          "description": "Payments are only made when goods meet the agreed-upon specifications, protecting importers from subpar or incorrect shipments."
+        },
+        "qualityInspection": {
+          "title": "Quality Inspection",
+          "description": "Take time to thoroughly inspect goods yourself or use third-party inspection services. Third-party inspections through customs or logistics providers are supported, ensuring goods meet quality standards before payment is released."
+        },
+        "globalAccess": {
+          "title": "Global Supplier Access",
+          "description": "Importers can confidently access a global network of suppliers, reducing risk when working with new partners. Expand your sourcing options without payment concerns."
+        },
+        "lowerFees": {
+          "title": "Lower Fees",
+          "description": "Removing expensive intermediaries and using digital currencies significantly reduces transaction costs. Direct peer-to-peer payments eliminate traditional banking fees, reducing your total import costs."
+        },
+        "disputeResolution": {
+          "title": "Dispute Resolution",
+          "description": "Built-in mediation system with optional third-party arbitrators for fair and neutral conflict resolution. Every transaction step is recorded and verifiable, enabling faster and cheaper dispute resolution."
+        }
+      },
+      "protection": {
+        "title": "Complete Protection for Importers",
+        "subtitle": "Every aspect of your import transaction is secured and protected.",
+        "beforePayment": {
+          "title": "Before Payment",
+          "subtitle": "Your funds are protected",
+          "benefits": [
+            "Funds held securely in escrow account",
+            "Payment only released upon delivery verification",
+            "Full protection from non-delivery fraud",
+            "Work with suppliers worldwide confidently"
+          ],
+          "button": "Learn about the Workflow"
+        },
+        "afterDelivery": {
+          "title": "After Delivery",
+          "subtitle": "Quality verification process",
+          "benefits": [
+            "Inspect goods thoroughly before payment release",
+            "Use third-party inspection services if needed",
+            "Payment only when specifications are met",
+            "Built-in dispute resolution for quality issues"
+          ],
+          "button": "Learn about the Workflow"
+        }
+      },
+      "cta": {
+        "title": "Ready to Import with Complete Protection?",
+        "subtitle": "Join thousands of importers who never worry about payment fraud or quality issues again. Start your first secure import transaction today.",
+        "startEscrow": "Start Import Escrow",
+        "talkToAdvisor": "Talk to Trade Advisor"
+      }
+    },
+    "guides": {
+      "metadata": {
+        "title": "Trade Escrow Guides - Learn International Trade | Escrow Protocol",
+        "description": "Comprehensive guides to help you master international trade with digital escrow protection. Learn about setup, best practices, and secure transactions."
+      },
+      "hero": {
+        "title": "Trade Escrow Guides",
+        "subtitle": "Comprehensive resources to help you master international trade with digital escrow protection."
+      },
+      "featuredGuide": {
+        "badge": "Featured Guide",
+        "title": "Complete Guide to International Trade Escrow",
+        "description": "Everything you need to know about using digital escrow for secure international trade transactions. From setup to completion, this comprehensive guide covers all aspects of trade escrow.",
+        "readTime": "45 min read",
+        "level": "Beginner to Advanced",
+        "button": "Read Full Guide",
+        "whatYouLearn": {
+          "title": "What You'll Learn",
+          "items": [
+            "Setting up your first trade escrow",
+            "Document requirements and verification",
+            "Payment release conditions",
+            "Dispute resolution process",
+            "Best practices for exporters and importers",
+            "Common pitfalls and how to avoid them"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Need Personalized Guidance?",
+        "subtitle": "Our trade experts are here to help you navigate your specific situation.",
+        "contactExpert": "Contact Trade Expert",
+        "startTrade": "Start Your Trade"
+      }
+    },
+    "faq": {
+      "metadata": {
+        "title": "Frequently Asked Questions - Trade Escrow | Escrow Protocol",
+        "description": "Find answers to common questions about digital escrow for international trade. Learn about security, fees, processes, and more."
+      },
+      "hero": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about digital escrow for international trade."
+      },
+      "categories": {
+        "title": "FAQ Categories",
+        "gettingStarted": { "name": "Getting Started", "count": "3" },
+        "securitySafety": { "name": "Security & Safety", "count": "2" },
+        "processTimeline": { "name": "Process & Timeline", "count": "2" },
+        "paymentsFees": { "name": "Payments & Fees", "count": "2" },
+        "internationalTrade": {
+          "name": "International Trade",
+          "count": "2"
+        }
+      },
+      "sections": {
+        "gettingStarted": {
+          "title": "Getting Started",
+          "questions": {
+            "whatIsEscrow": {
+              "question": "What is digital escrow for international trade?",
+              "answer": "Digital escrow for international trade is a secure peer-to-peer payment system that protects both exporters and importers during transactions. Instead of a third party holding your funds, the system uses smart contracts on the blockchain to automatically manage payments based on pre-agreed conditions. Funds remain in the smart contract (Escrow) until delivery and verification conditions are met, eliminating the traditional risks where either the exporter ships first without payment guarantee or the importer pays upfront without delivery assurance."
+            },
+            "howToGetStarted": {
+              "question": "How do I get started with trade escrow?",
+              "answer": "Click the \"Start Escrow\" button on the top right corner to create a wallet or sign-in. For more detailed information about the complete process, see our Workflow page which explains each step from setup to fund release."
+            },
+            "tradeTypes": {
+              "question": "What types of trades can use escrow?",
+              "answer": "Digital escrow can be used in nearly every industry where goods are delivered, including manufacturing, electronics, textiles, machinery, agricultural products, raw materials, and more. The escrow supports B2B (business-to-business), B2C (business-to-consumer), and C2C (consumer-to-consumer) transactions. For a comprehensive overview of supported industries, visit our Supporting All Trade Industries section to get a first impression of the possibilities."
+            }
+          }
+        },
+        "securitySafety": {
+          "title": "Security & Safety",
+          "questions": {
+            "fundSecurity": {
+              "question": "How secure are my funds in escrow?",
+              "answer": "Funds in the escrow are very secure. No third party, including the development company that created the technology behind the escrow, has access to funds in the escrow. The funds are held in what's called a smart contract, which is a self-executing program on the blockchain that automatically enforces the agreed terms without human intervention. The escrow uses a multi-signature approach, meaning multiple cryptographic signatures are required to authorize any transaction, providing an additional layer of security. This ensures that funds can only be released when all predetermined conditions are met by both trading parties."
+            },
+            "disputeResolution": {
+              "question": "What happens if there's a dispute?",
+              "answer": "Both parties can raise disputes, which immediately freezes the funds to protect everyone involved. Once a dispute is initiated, both parties have time to find a bilateral compromise and agree on adjustments such as offering discounts or extending delivery deadlines. If they cannot reach a compromise through direct negotiation, the case will be escalated to a neutral arbitrator for final resolution. For detailed information about this process, see our Dispute Resolution Process section."
+            }
+          }
+        },
+        "processTimeline": {
+          "title": "Process & Timeline",
+          "questions": {
+            "processDuration": {
+              "question": "How long does the escrow process take?",
+              "answer": "The time depends entirely on your business and the nature of the goods being traded. It could be just a couple of days for simple transactions, but also months or even years for complex manufacturing projects. Here's a typical example: Setup (1-2 days), Funding (5 days), Production (20 weeks), Shipping (4 weeks), Inspection (2 days), Funds release (same day). For a quicker transaction: Setup and Funding today, Delivery in 3 days, Inspection and funds release on the day of arrival."
+            },
+            "fundRelease": {
+              "question": "When are funds released to the exporter?",
+              "answer": "Fund release depends on the pre-agreed release methods that both parties establish when setting up the escrow. The release method depends on the specific needs and requirements of your transaction. For detailed information about the various release options available, see our Flexible Release Mechanisms section."
+            }
+          }
+        },
+        "paymentsFees": {
+          "title": "Payments & Fees",
+          "questions": {
+            "fees": {
+              "question": "What are the fees for using trade escrow?",
+              "answer": "The escrow is based on a blockchain solution, which requires transaction fees (often called \"gas fees\" - named after the computational energy needed to process transactions, similar to how a car needs gas to run). These blockchain transaction fees are necessary to secure and process your transactions on the network. There may be additional fees such as inspection fees for external verification, fees for trade advisors, and fees for arbitration services. All fees are completely transparent - when you define the principal amount and select optional services during escrow setup, both exporter and importer will see exactly what fees apply. The importer funds the principal amount plus all fees, and the escrow will not be activated unless the full amount is funded."
+            },
+            "paymentMethods": {
+              "question": "What payment methods are accepted?",
+              "answer": "You need to distinguish between payment methods for the escrow and payment methods for your wallet. The escrow uses only digital currencies such as USDT (USD from Tether), USDC (USD from Circle), or other stablecoins and CBDCs (Central Bank Digital Currencies). The escrow is funded using currencies from your digital wallet. To get USDC, USDT, or other stablecoins into your wallet, you can use cryptocurrency exchanges or On-Ramp providers. For detailed information about converting traditional money to digital currencies, see our How can I change FIAT into Stablecoins? section."
+            }
+          }
+        },
+        "internationalTrade": {
+          "title": "International Trade",
+          "questions": {
+            "supportedCountries": {
+              "question": "Which countries and regions are supported?",
+              "answer": "The escrow is a peer-to-peer system that can theoretically connect exporters and importers in any country or region of the world. However, it can only be used in countries where digital currencies are legally allowed. Some restrictions may apply based on local regulations and international sanctions lists. We recommend checking your local regulations regarding digital currency usage and checking international regulations and sanctions before proceeding with transactions."
+            },
+            "customsRegulations": {
+              "question": "How do you handle customs and import/export regulations?",
+              "answer": "The escrow is a financial contract that is based on the underlying buying contract or commercial invoice but does not replace these contracts. Exporters and importers are responsible for handling customs procedures, import/export licenses, trade documentation, compliance with international trade regulations, product certifications, and all other regulatory requirements. Since the escrow operates as a peer-to-peer transaction, OFAC (Office of Foreign Assets Control) compliance and Anti-Money Laundering (AML) responsibilities remain with the individual trading partners. We recommend consulting with trade professionals and legal advisors for complex international transactions."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Still Have Questions?",
+        "subtitle": "Our trade experts are ready to help you with personalized guidance for your specific situation.",
+        "contactSupport": "Contact Support",
+        "startTrade": "Start Your Trade"
+      }
+    },
+    "resources": {
+      "settingUpTradeEscrow": {
+        "title": "Setting Up Trade Escrow",
+        "description": "Complete guide to creating secure escrow agreements with smart contracts.",
+        "type": "Guide",
+        "buttonText": "Read Guide"
+      },
+      "digitalVsTraditional": {
+        "title": "Digital vs Traditional Trade Finance",
+        "description": "Compare letters of credit, wire transfers, and digital escrow for international trade.",
+        "type": "Comparison",
+        "buttonText": "Learn More"
+      },
+      "managingDisputes": {
+        "title": "Managing Trade Disputes",
+        "description": "How smart contracts and automated arbitration resolve international trade conflicts.",
+        "type": "Tips",
+        "buttonText": "Read Tips"
+      },
+      "compliance": {
+        "title": "International Trade Compliance",
+        "description": "Navigate customs, regulations, and documentation requirements for global trade.",
+        "type": "Checklist",
+        "buttonText": "Download Checklist"
+      },
+      "videoSeries": {
+        "title": "Trade Finance Video Series",
+        "description": "Watch expert interviews and case studies on digital escrow implementation.",
+        "type": "Video",
+        "buttonText": "Watch Videos"
+      },
+      "counter": "{current} of {total} resources"
+    }
+  }
 }
