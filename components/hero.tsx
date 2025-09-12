@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, CheckCircle, Play } from "lucide-react"
 import Link from "next/link"
 import { ReactNode } from "react"
-import { Section } from "./section"
 import { cn } from "@/lib/utils"
 
 interface HeroButton {
@@ -44,7 +43,7 @@ export function Hero({
   titleClassName = "text-4xl lg:text-6xl font-bold tracking-tight mb-6",
 }: HeroProps) {
   return (
-    <Section className={cn("text-center", className)}>
+    <section className={cn("text-center", className)}>
       {badge && (
         <div className="flex items-center justify-center space-x-2 mb-6">
           <Badge variant="secondary" className="px-4 py-2">
@@ -138,6 +137,6 @@ export function Hero({
           ))}
         </div>
       )}
-    </Section>
+    </section>
   )
 }

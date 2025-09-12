@@ -28,7 +28,7 @@ import Link from "next/link"
 import { APP_URL, ROUTES } from "@/lib/urls"
 import { getTranslations, getMessages } from "next-intl/server"
 import type { Metadata } from "next"
-import { SectionProvider, Section } from "@/components/section"
+import SectionGroup from "@/components/section-group"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("home")
@@ -87,7 +87,7 @@ export default async function HomePage() {
     : []
 
   return (
-    <SectionProvider>
+    <SectionGroup>
       <Hero
         className="relative overflow-hidden bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -119,7 +119,7 @@ export default async function HomePage() {
       />
 
       {/* Landing Cards - Explore the Escrow Protocol */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("explore.title")}
@@ -185,10 +185,10 @@ export default async function HomePage() {
             </div>
           </Link>
         </div>
-      </Section>
+      </section>
 
       {/* Enhanced Features - Escrow Protocol Features */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("features.title")}
@@ -259,10 +259,10 @@ export default async function HomePage() {
             </CardHeader>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* How It Works - Enhanced */}
-      <Section className="bg-gradient-to-br from-gray-50 to-white">
+      <section className="bg-gradient-to-br from-gray-50 to-white">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("howItWorks.title")}
@@ -315,10 +315,10 @@ export default async function HomePage() {
             )
           })}
         </div>
-      </Section>
+      </section>
 
       {/* Enhanced Use Cases - Perfect for Your Business */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("business.title")}
@@ -393,10 +393,10 @@ export default async function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Integrators and Community Section */}
-      <Section>
+      <section>
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
             {t("build.title")}
@@ -471,10 +471,10 @@ export default async function HomePage() {
             </CardContent>
           </Card>
         </div>
-      </Section>
+      </section>
 
       {/* Enhanced CTA */}
-      <Section>
+      <section>
         <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
           <div className="relative">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -504,7 +504,7 @@ export default async function HomePage() {
             </div>
           </div>
         </div>
-      </Section>
-    </SectionProvider>
+      </section>
+    </SectionGroup>
   )
 }
