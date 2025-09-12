@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { AppImage } from "@/components/app-image"
+import { CategoryCard } from "@/components/category-card"
 import type { Metadata } from "next"
 import { getTranslations, getMessages } from "next-intl/server"
 import SectionGroup from "@/components/section-group"
@@ -73,17 +74,9 @@ export default async function HomePage() {
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
-        title={
-          <>
-            {t("hero.title").split("Digital Escrow")[0]}{" "}
-            <span className="text-primary font-black text-shadow-sm">
-              Digital Escrow
-            </span>
-          </>
-        }
+        title={t("hero.title").split("Digital Escrow")[0]}
+        titleHighlight="Digital Escrow"
         subtitle={t("hero.subtitle")}
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
         primaryButton={{
           label: t("hero.startEscrow"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
@@ -350,272 +343,94 @@ export default async function HomePage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Electronics & Technology.jpg"
-                alt={t("industries.electronics.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.electronics.title")}
-                </h3>
-              </div>
+        {(() => {
+          const industries = [
+            {
+              src: "/images/Electronics & Technology.jpg",
+              alt: t("industries.electronics.imageAlt"),
+              title: t("industries.electronics.title"),
+              description: t("industries.electronics.description"),
+            },
+            {
+              src: "/images/Textiles & Apparel.jpg",
+              alt: t("industries.textiles.imageAlt"),
+              title: t("industries.textiles.title"),
+              description: t("industries.textiles.description"),
+            },
+            {
+              src: "/images/Machinery & Equipment.jpg",
+              alt: t("industries.machinery.imageAlt"),
+              title: t("industries.machinery.title"),
+              description: t("industries.machinery.description"),
+            },
+            {
+              src: "/images/Raw Materials.jpg",
+              alt: t("industries.rawMaterials.imageAlt"),
+              title: t("industries.rawMaterials.title"),
+              description: t("industries.rawMaterials.description"),
+            },
+            {
+              src: "/images/Food & Agriculture.jpg",
+              alt: t("industries.food.imageAlt"),
+              title: t("industries.food.title"),
+              description: t("industries.food.description"),
+            },
+            {
+              src: "/images/Automotive Parts.jpg",
+              alt: t("industries.automotive.imageAlt"),
+              title: t("industries.automotive.title"),
+              description: t("industries.automotive.description"),
+            },
+            {
+              src: "/images/Medical Equipment.jpg",
+              alt: t("industries.medical.imageAlt"),
+              title: t("industries.medical.title"),
+              description: t("industries.medical.description"),
+            },
+            {
+              src: "/images/Construction Materials.jpg",
+              alt: t("industries.construction.imageAlt"),
+              title: t("industries.construction.title"),
+              description: t("industries.construction.description"),
+            },
+            {
+              src: "/images/Energy & Oil_renewable energy equipment.jpg",
+              alt: t("industries.energy.imageAlt"),
+              title: t("industries.energy.title"),
+              description: t("industries.energy.description"),
+            },
+            {
+              src: "/images/Consumer Goods.jpg",
+              alt: "Consumer Goods",
+              title: t("industries.consumer.title"),
+              description: t("industries.consumer.description"),
+            },
+            {
+              src: "/images/Chemicals & Plastics.jpg",
+              alt: t("industries.chemicals.imageAlt"),
+              title: t("industries.chemicals.title"),
+              description: t("industries.chemicals.description"),
+            },
+            {
+              src: "/images/Luxury Goods.jpg",
+              alt: t("industries.luxury.imageAlt"),
+              title: t("industries.luxury.title"),
+              description: t("industries.luxury.description"),
+            },
+          ]
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {industries.map((c, idx) => (
+                <CategoryCard
+                  key={idx}
+                  image={{ src: c.src, alt: c.alt, aspectRatio: "4 / 3" }}
+                  title={c.title}
+                  description={c.description}
+                />
+              ))}
             </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.electronics.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Textiles & Apparel.jpg"
-                alt={t("industries.textiles.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.textiles.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.textiles.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Machinery & Equipment.jpg"
-                alt={t("industries.machinery.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.machinery.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.machinery.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Raw Materials.jpg"
-                alt={t("industries.rawMaterials.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.rawMaterials.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.rawMaterials.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Food & Agriculture.jpg"
-                alt={t("industries.food.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.food.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.food.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Automotive Parts.jpg"
-                alt={t("industries.automotive.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.automotive.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.automotive.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Medical Equipment.jpg"
-                alt={t("industries.medical.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.medical.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.medical.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Construction Materials.jpg"
-                alt={t("industries.construction.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.construction.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.construction.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Energy & Oil_renewable energy equipment.jpg"
-                alt={t("industries.energy.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.energy.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.energy.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Consumer Goods.jpg"
-                alt="Consumer Goods"
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.consumer.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.consumer.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Chemicals & Plastics.jpg"
-                alt={t("industries.chemicals.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.chemicals.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.chemicals.description")}
-              </p>
-            </CardContent>
-          </Card>
-          <Card className="border-0 shadow-lg overflow-hidden">
-            <div className="relative">
-              <AppImage
-                src="/images/Luxury Goods.jpg"
-                alt={t("industries.luxury.imageAlt")}
-                aspectRatio="4 / 3"
-                rounded
-                shadow
-                variant="card"
-              />
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 rounded">
-                <h3 className="text-white text-lg font-bold">
-                  {t("industries.luxury.title")}
-                </h3>
-              </div>
-            </div>
-            <CardContent className="p-4">
-              <p className="text-muted-foreground text-sm">
-                {t("industries.luxury.description")}
-              </p>
-            </CardContent>
-          </Card>
-        </div>
+          )
+        })()}
       </section>
 
       {/* Choose Your Trade Role */}

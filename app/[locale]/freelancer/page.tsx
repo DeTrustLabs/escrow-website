@@ -67,6 +67,80 @@ export default async function FreelancerPage() {
     root,
     "perfectFor.projectOwners.benefits"
   )
+  const categories = [
+    {
+      src: "/images/Web Development.jpg",
+      alt: t("categories.webDev.imageAlt"),
+      title: t("categories.webDev.title"),
+      description: t("categories.webDev.description"),
+    },
+    {
+      src: "/images/Graphic Design.jpg",
+      alt: t("categories.graphicDesign.imageAlt"),
+      title: t("categories.graphicDesign.title"),
+      description: t("categories.graphicDesign.description"),
+    },
+    {
+      src: "/images/Content Writing.jpg",
+      alt: t("categories.contentWriting.imageAlt"),
+      title: t("categories.contentWriting.title"),
+      description: t("categories.contentWriting.description"),
+    },
+    {
+      src: "/images/Video Production.jpg",
+      alt: t("categories.videoProduction.imageAlt"),
+      title: t("categories.videoProduction.title"),
+      description: t("categories.videoProduction.description"),
+    },
+    {
+      src: "/images/Digital Marketing.jpg",
+      alt: "Digital Marketing",
+      title: t("categories.digitalMarketing.title"),
+      description: t("categories.digitalMarketing.description"),
+    },
+    {
+      src: "/images/Software Development.jpg",
+      alt: t("categories.softwareDev.imageAlt"),
+      title: t("categories.softwareDev.title"),
+      description: t("categories.softwareDev.description"),
+    },
+    {
+      src: "/images/UI_UX Design.jpg",
+      alt: "UI/UX Design",
+      title: t("categories.uiUxDesign.title"),
+      description: t("categories.uiUxDesign.description"),
+    },
+    {
+      src: "/images/Virtual Assistance.jpg",
+      alt: "Virtual Assistance",
+      title: t("categories.virtualAssistance.title"),
+      description: t("categories.virtualAssistance.description"),
+    },
+    {
+      src: "/images/Legal Services.jpg",
+      alt: t("categories.legalServices.imageAlt"),
+      title: t("categories.legalServices.title"),
+      description: t("categories.legalServices.description"),
+    },
+    {
+      src: "/images/Data Analysis.jpg",
+      alt: t("categories.dataAnalysis.imageAlt"),
+      title: t("categories.dataAnalysis.title"),
+      description: t("categories.dataAnalysis.description"),
+    },
+    {
+      src: "/images/Consulting.jpg",
+      alt: t("categories.consulting.imageAlt"),
+      title: t("categories.consulting.title"),
+      description: t("categories.consulting.description"),
+    },
+    {
+      src: "/images/Translation.jpg",
+      alt: t("categories.translation.imageAlt"),
+      title: t("categories.translation.title"),
+      description: t("categories.translation.description"),
+    },
+  ]
   return (
     <SectionGroup>
       <Hero
@@ -313,94 +387,16 @@ export default async function FreelancerPage() {
           </p>
         </div>
 
-        {(() => {
-          const categories = [
-            {
-              src: "/images/Web Development.jpg",
-              alt: t("categories.webDev.imageAlt"),
-              title: t("categories.webDev.title"),
-              description: t("categories.webDev.description"),
-            },
-            {
-              src: "/images/Graphic Design.jpg",
-              alt: t("categories.graphicDesign.imageAlt"),
-              title: t("categories.graphicDesign.title"),
-              description: t("categories.graphicDesign.description"),
-            },
-            {
-              src: "/images/Content Writing.jpg",
-              alt: t("categories.contentWriting.imageAlt"),
-              title: t("categories.contentWriting.title"),
-              description: t("categories.contentWriting.description"),
-            },
-            {
-              src: "/images/Video Production.jpg",
-              alt: t("categories.videoProduction.imageAlt"),
-              title: t("categories.videoProduction.title"),
-              description: t("categories.videoProduction.description"),
-            },
-            {
-              src: "/images/Digital Marketing.jpg",
-              alt: "Digital Marketing",
-              title: t("categories.digitalMarketing.title"),
-              description: t("categories.digitalMarketing.description"),
-            },
-            {
-              src: "/images/Software Development.jpg",
-              alt: t("categories.softwareDev.imageAlt"),
-              title: t("categories.softwareDev.title"),
-              description: t("categories.softwareDev.description"),
-            },
-            {
-              src: "/images/UI_UX Design.jpg",
-              alt: "UI/UX Design",
-              title: t("categories.uiUxDesign.title"),
-              description: t("categories.uiUxDesign.description"),
-            },
-            {
-              src: "/images/Virtual Assistance.jpg",
-              alt: "Virtual Assistance",
-              title: t("categories.virtualAssistance.title"),
-              description: t("categories.virtualAssistance.description"),
-            },
-            {
-              src: "/images/Legal Services.jpg",
-              alt: t("categories.legalServices.imageAlt"),
-              title: t("categories.legalServices.title"),
-              description: t("categories.legalServices.description"),
-            },
-            {
-              src: "/images/Data Analysis.jpg",
-              alt: t("categories.dataAnalysis.imageAlt"),
-              title: t("categories.dataAnalysis.title"),
-              description: t("categories.dataAnalysis.description"),
-            },
-            {
-              src: "/images/Consulting.jpg",
-              alt: t("categories.consulting.imageAlt"),
-              title: t("categories.consulting.title"),
-              description: t("categories.consulting.description"),
-            },
-            {
-              src: "/images/Translation.jpg",
-              alt: t("categories.translation.imageAlt"),
-              title: t("categories.translation.title"),
-              description: t("categories.translation.description"),
-            },
-          ]
-          return (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {categories.map((c, idx) => (
-                <CategoryCard
-                  key={idx}
-                  image={{ src: c.src, alt: c.alt, aspectRatio: "4 / 3" }}
-                  title={c.title}
-                  description={c.description}
-                />
-              ))}
-            </div>
-          )
-        })()}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {categories.map((c, idx) => (
+            <CategoryCard
+              key={idx}
+              image={{ src: c.src, alt: c.alt, aspectRatio: "4 / 3" }}
+              title={c.title}
+              description={c.description}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Perfect for Every Service Type */}
