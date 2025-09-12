@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "description": "Protocolo de escrow descentralizado para transacciones digitales seguras.",
+    "solutions": "Soluciones",
+    "globalTrade": "Comercio Global",
+    "freelancer": "Freelancer",
+    "integrations": "Integraciones",
+    "protocolCommunity": "Protocolo y Comunidad",
+    "resources": "Recursos",
+    "documentation": "Documentación",
+    "faq": "Preguntas Frecuentes",
+    "community": "Comunidad",
+    "support": "Soporte",
+    "stayUpdated": "Mantente Actualizado",
+    "newsletterText": "Obtén las últimas actualizaciones sobre el desarrollo del protocolo y las características.",
+    "emailPlaceholder": "Ingresa tu email",
+    "copyright": "© 2025 Protocolo de Escrow. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "dapp": "Dapp"
+  }
+}

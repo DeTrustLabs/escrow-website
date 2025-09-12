@@ -1,0 +1,86 @@
+{
+  "community": {
+    "metadata": {
+      "title": "Community - Escrow-Protokoll",
+      "description": "Treten Sie der Escrow-Protokoll-Community bei. Verbinden Sie sich mit Entwicklern, Unternehmen und Mitwirkenden, die dezentrale Escrow-Dienste bauen."
+    },
+    "hero": {
+      "badge": "Protokoll & Community",
+      "title": "Treten Sie der Escrow-Protokoll-Community bei",
+      "subtitle": "Verbinden Sie sich mit Entwicklern, Unternehmen und Mitwirkenden, die die Zukunft dezentraler Escrow-Dienste bauen.",
+      "primaryButton": "Escrow starten",
+      "secondaryButton": "Community beitreten",
+      "trustIndicators": {
+        "nonCustodial": "Nicht-verwahrend",
+        "openSource": "Open Source",
+        "audited": "Geprüfte Smart Contracts",
+        "availability": "24/7 Verfügbarkeit"
+      }
+    },
+    "resources": {
+      "title": "Community-Ressourcen",
+      "subtitle": "Alles, was Sie brauchen, um mit dem Escrow-Protokoll zu beginnen.",
+      "discord": {
+        "title": "Discord-Community",
+        "description": "Treten Sie unserem aktiven Discord-Server für Echtzeit-Diskussionen, Support und Updates bei.",
+        "button": "Discord beitreten"
+      },
+      "docs": {
+        "title": "Dokumentation",
+        "description": "Umfassende Leitfäden, API-Referenzen und technische Dokumentation.",
+        "button": "Dokumentation ansehen"
+      },
+      "github": {
+        "title": "Open Source",
+        "description": "Tragen Sie zur Protokollentwicklung auf GitHub bei.",
+        "button": "GitHub-Repository"
+      }
+    },
+    "protocol": {
+      "title": "Protokoll-Übersicht",
+      "subtitle": "Erfahren Sie mehr über die technische Architektur und Fähigkeiten des Escrow-Protokolls.",
+      "smartContracts": {
+        "title": "Smart Contracts",
+        "description": "Dezentrale Escrow-Logik, gebaut auf der Internet-Computer-Blockchain."
+      },
+      "globalAccess": {
+        "title": "Globaler Zugang",
+        "description": "24/7 Verfügbarkeit mit sofortiger Abrechnung unter Verwendung digitaler Währungen."
+      },
+      "multiSignature": {
+        "title": "Multi-Signatur",
+        "description": "Flexible Genehmigungsmechanismen mit anpassbaren Freigabebedingungen."
+      }
+    },
+    "gettingStarted": {
+      "title": "Erste Schritte",
+      "subtitle": "Wählen Sie Ihren Weg, um mit der Nutzung oder dem Bau mit dem Escrow-Protokoll zu beginnen.",
+      "users": {
+        "title": "Für Benutzer",
+        "description": "Beginnen Sie mit der Nutzung von Escrow-Diensten für sichere Transaktionen",
+        "benefits": [
+          "Erstellen Sie Ihre erste Escrow-Transaktion",
+          "Erfahren Sie mehr über digitale Währungszahlungen",
+          "Verstehen Sie Streitbeilegung"
+        ],
+        "button": "Starten Sie Ihr erstes Escrow"
+      },
+      "developers": {
+        "title": "Für Entwickler",
+        "description": "Bauen Sie Anwendungen und Integrationen mit dem Protokoll",
+        "benefits": [
+          "API-Dokumentation erkunden",
+          "Smart-Contract-Schnittstellen zugreifen",
+          "Entwickler-Community beitreten"
+        ],
+        "button": "Dokumentation ansehen"
+      }
+    },
+    "cta": {
+      "title": "Bereit, der Community beizutreten?",
+      "subtitle": "Verbinden Sie sich mit anderen Benutzern, Entwicklern und Mitwirkenden, die die Zukunft dezentraler Escrow-Dienste bauen.",
+      "primaryButton": "Discord-Community beitreten",
+      "secondaryButton": "Escrow starten"
+    }
+  }
+}

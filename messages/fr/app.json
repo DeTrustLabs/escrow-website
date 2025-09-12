@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "Application d'Escrow pour le Commerce Transfrontalier",
+    "description": "Accédez à l'application d'escrow numérique pour le commerce international.",
+    "login": "Se Connecter à l'Application d'Escrow"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "continue": "Continuer",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Soumettre",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non",
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "startEscrow": "Démarrer l'Escrow"
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Page Non Trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": {
+      "title": "Aller à l'Accueil",
+      "description": "Retourner à la page principale d'escrow commercial",
+      "button": "Retour à l'Accueil"
+    },
+    "getSupport": {
+      "title": "Besoin d'Aide ?",
+      "description": "Contactez notre équipe de support",
+      "button": "Obtenir du Support"
+    },
+    "popularPages": {
+      "title": "Pages populaires :",
+      "home": "Accueil",
+      "howItWorks": "Comment Ça Marche",
+      "forExporters": "Pour les Exportateurs",
+      "forImporters": "Pour les Importateurs",
+      "faq": "FAQ",
+      "startEscrow": "Démarrer l'Escrow"
+    }
+  },
+  "stats": {
+    "escrowVolume": {
+      "label": "Volume d'Escrow Sécurisé",
+      "description": "Valeur totale protégée dans l'adoption précoce"
+    },
+    "activeUsers": {
+      "label": "Utilisateurs Actifs",
+      "description": "Adopteurs précoces testant le protocole"
+    },
+    "transactions": {
+      "label": "Transactions",
+      "description": "Escrows terminés avec succès"
+    }
+  },
+  "partners": {
+    "partner1": "Partenaire 1",
+    "partner2": "Partenaire 2",
+    "partner3": "Partenaire 3",
+    "partner4": "Partenaire 4",
+    "partner5": "Partenaire 5",
+    "partner6": "Partenaire 6"
+  }
+}

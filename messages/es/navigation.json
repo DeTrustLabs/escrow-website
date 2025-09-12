@@ -1,0 +1,25 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "trade": "Comercio",
+    "freelancer": "Freelancer",
+    "community": "Comunidad",
+    "integrations": "Integraciones",
+    "support": "Soporte",
+    "resources": "Recursos y Soporte",
+    "exporter": "Exportador",
+    "importer": "Importador",
+    "workflow": "Flujo de Trabajo",
+    "guides": "Guías",
+    "blog": "Blog",
+    "faq": "Preguntas Frecuentes",
+    "contacts": "Contactos",
+    "projectowner": "Propietario del Proyecto",
+    "startEscrow": "Iniciar Escrow",
+    "languages": {
+      "en": "English",
+      "fr": "Français",
+      "es": "Español"
+    }
+  }
+}

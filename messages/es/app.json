@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "Aplicación de Escrow para Comercio Transfronterizo",
+    "description": "Accede a la aplicación de escrow digital para comercio internacional.",
+    "login": "Iniciar Sesión en la Aplicación de Escrow"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "retry": "Intentar de nuevo",
+    "cancel": "Cancelar",
+    "continue": "Continuar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "confirm": "Confirmar",
+    "yes": "Sí",
+    "no": "No",
+    "learnMore": "Aprender Más",
+    "getStarted": "Comenzar",
+    "startEscrow": "Iniciar Escrow"
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "goHome": {
+      "title": "Ir al Inicio",
+      "description": "Regresar a la página principal de escrow comercial",
+      "button": "Volver al Inicio"
+    },
+    "getSupport": {
+      "title": "¿Necesitas Ayuda?",
+      "description": "Contacta a nuestro equipo de soporte",
+      "button": "Obtener Soporte"
+    },
+    "popularPages": {
+      "title": "Páginas populares:",
+      "home": "Inicio",
+      "howItWorks": "Cómo Funciona",
+      "forExporters": "Para Exportadores",
+      "forImporters": "Para Importadores",
+      "faq": "Preguntas Frecuentes",
+      "startEscrow": "Iniciar Escrow"
+    }
+  },
+  "stats": {
+    "escrowVolume": {
+      "label": "Volumen de Escrow Protegido",
+      "description": "Valor total protegido en adopción temprana"
+    },
+    "activeUsers": {
+      "label": "Usuarios Activos",
+      "description": "Adoptantes tempranos probando el protocolo"
+    },
+    "transactions": {
+      "label": "Transacciones",
+      "description": "Escrows completados exitosamente"
+    }
+  },
+  "partners": {
+    "partner1": "Socio 1",
+    "partner2": "Socio 2",
+    "partner3": "Socio 3",
+    "partner4": "Socio 4",
+    "partner5": "Socio 5",
+    "partner6": "Socio 6"
+  }
+}

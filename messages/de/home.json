@@ -1,0 +1,164 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Dezentrales Escrow-Protokoll",
+      "title": "Digitales Escrow für ",
+      "titleHighlight": "Globales Geschäft",
+      "subtitle": "Dezentrales, nicht-verwahrendes Escrow-Protokoll, betrieben durch Smart Contracts. Handeln Sie mit Vertrauen unter Verwendung digitaler Währungen - keine Intermediäre, keine Verwahrung, nur Code.",
+      "startEscrow": "Escrow starten",
+      "watchDemo": "Demo ansehen",
+      "trustIndicators": {
+        "nonCustodial": "Nicht-verwahrend",
+        "openSource": "Open Source",
+        "audited": "Geprüfte Smart Contracts",
+        "availability": "24/7 Verfügbarkeit"
+      }
+    },
+    "explore": {
+      "title": "Das Escrow-Protokoll erkunden",
+      "subtitle": "Entdecken Sie, wie das Protokoll verschiedene Anwendungsfälle und Integrationsanforderungen bedient.",
+      "cards": {
+        "trade": {
+          "title": "Globaler Handel",
+          "description": "Sichere internationale Transaktionen"
+        },
+        "freelancer": {
+          "title": "Freelancer",
+          "description": "Geschützte Projektzahlungen"
+        },
+        "integrators": {
+          "title": "Integratoren",
+          "description": "Mit dem Protokoll entwickeln"
+        },
+        "community": {
+          "title": "Community",
+          "description": "Dem Ökosystem beitreten"
+        }
+      }
+    },
+    "features": {
+      "title": "Escrow-Protokoll-Funktionen",
+      "subtitle": "Entwickelt für reale Geschäftsanforderungen mit unternehmensgerechter Sicherheit und Flexibilität.",
+      "featured": "Ausgewählt",
+      "security": {
+        "title": "Sicherheit und Flexibilität",
+        "description": "Gelder sind geschützt, bis beide Parteien ihre vereinbarten Bedingungen erfüllen, wodurch Betrug und Nichtzahlung eliminiert werden."
+      },
+      "trust": {
+        "title": "Mehr Vertrauen, Mehr Geschäfte",
+        "description": "Zahlungssicherheit baut Vertrauen auf, reduziert Risiken und fördert mehr Geschäftsmöglichkeiten."
+      },
+      "payments": {
+        "title": "Grenzüberschreitende Zahlungen",
+        "description": "Sofortige Abrechnung mit Stablecoins wie USDC, USDT und DAI. Keine Banken, keine Verzögerungen, keine Grenzen.",
+        "details": "Unterstützung für wichtige Stablecoins mit automatischer Konvertierung und Echtzeitabrechnung in über 180 Ländern."
+      },
+      "approval": {
+        "title": "Multi-Signatur-Genehmigung",
+        "description": "Flexible Genehmigungsmechanismen mit Käufer-, Verkäufer- und optionalen Mediator-Signaturen.",
+        "details": "Anpassbare m-von-n-Signaturschemata mit rollenbasierter Berechtigung und zeitgesperrten Bedingungen."
+      },
+      "availability": {
+        "title": "24/7 Verfügbarkeit",
+        "description": "Dezentrale Smart Contracts arbeiten kontinuierlich ohne Ausfallzeiten oder Wartungsfenster.",
+        "details": "99,9% Betriebszeit garantiert mit redundanter Infrastruktur und automatischen Failover-Mechanismen."
+      },
+      "arbitration": {
+        "title": "Automatisierte Schlichtung",
+        "description": "Onchain-Speicherung von Daten und Dokumenten ermöglicht schnellere und günstigere Streitbeilegung."
+      },
+      "nonCustodial": {
+        "title": "Nicht-verwahrende Sicherheit",
+        "description": "Smart Contracts halten Gelder transparent. Niemand kann auf Ihre digitalen Währungen zugreifen, einfrieren oder diese kontrollieren, außer Ihnen.",
+        "details": "Auf Internet Computer aufgebaut mit kryptografischen Garantien und Multi-Signatur-Schemata für maximale Sicherheit."
+      },
+      "documents": {
+        "title": "Dokumentenunterstützung",
+        "description": "Hochladen und Verifizieren von Dokumenten wie eBill of Lading für automatisierte Freigabebedingungen.",
+        "details": "IPFS-Speicher mit Hash-Verifizierung, OCR-Verarbeitung und Integration mit wichtigen Versanddienstleistern."
+      },
+      "milestones": {
+        "title": "Meilensteinzahlungen",
+        "description": "Anpassbare Freigabebedingungen und meilensteinbasierte Zahlungen für komplexe Projekte.",
+        "details": "Erweiterte Workflow-Engine mit bedingter Logik, automatischen Triggern und Fortschrittsverfolgung."
+      }
+    },
+    "howItWorks": {
+      "title": "Wie es funktioniert",
+      "subtitle": "Einfacher, sicherer und transparenter Prozess für alle beteiligten Parteien.",
+      "steps": {
+        "agree": {
+          "title": "Bedingungen vereinbaren",
+          "description": "Parteien verhandeln und einigen sich auf Transaktionsbedingungen, optional mit Hochladen unterstützender Dokumente."
+        },
+        "deposit": {
+          "title": "Gelder einzahlen",
+          "description": "Käufer zahlt digitale Währungen in das sichere Escrow-Protokoll zur sicheren Aufbewahrung ein."
+        },
+        "deliver": {
+          "title": "Dienstleistungen oder Waren liefern",
+          "description": "Verkäufer liefert Waren oder Dienstleistungen gemäß den vereinbarten Bedingungen."
+        },
+        "release": {
+          "title": "Gelder freigeben",
+          "description": "Gelder werden automatisch freigegeben, wenn die Signaturbedingungen erfüllt sind oder durch Streitbeilegung."
+        }
+      }
+    },
+    "business": {
+      "title": "Perfekt für Ihr Geschäft",
+      "subtitle": "Entwickelt für reale Geschäftsszenarien in allen Branchen.",
+      "trade": {
+        "title": "Globaler Handel",
+        "subtitle": "Für Exporteure und Importeure weltweit",
+        "features": [
+          "Schutz vor Nichtzahlung oder Nichtlieferung",
+          "Schnelligkeit und globale Zugänglichkeit",
+          "Kosteneffizienz und anpassbare Freigabebedingungen",
+          "Automatisierter Streitbeilegungsmechanismus"
+        ]
+      },
+      "freelancer": {
+        "title": "Freelancer-Dienstleistungen",
+        "subtitle": "Für Dienstleister und Kunden",
+        "features": [
+          "Schutz vor Nichtzahlung",
+          "Meilensteinbasierte Zahlungen",
+          "Schnelle und kostengünstige Transaktionen",
+          "Automatisierter Streitbeilegungsmechanismus"
+        ]
+      }
+    },
+    "build": {
+      "title": "Entwickeln und verbinden",
+      "subtitle": "Integrieren Sie mit dem Protokoll oder treten Sie der wachsenden Community von Entwicklern und Benutzern bei.",
+      "integrators": {
+        "title": "Integratoren",
+        "subtitle": "Für Entwickler und Unternehmen",
+        "features": [
+          "Einfache API-Integration",
+          "Entwicklerfreundliche Dokumentation",
+          "Skalierbare Infrastruktur"
+        ]
+      },
+      "community": {
+        "title": "Community",
+        "subtitle": "Für Protokollteilnehmer",
+        "features": [
+          "Aktive Community",
+          "Entwicklerunterstützung",
+          "Bildungsressourcen"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit für sicheren digitalen Handel?",
+      "subtitle": "Treten Sie Unternehmen weltweit bei, die dieses vertrauenslose Escrow-Protokoll für sichere, transparente Transaktionen mit digitalen Währungen verwenden.",
+      "startEscrow": "Starten Sie Ihr erstes Escrow",
+      "exploreDocs": "Dokumentation erkunden"
+    },
+    "common": {
+      "learnMore": "Mehr erfahren"
+    }
+  }
+}

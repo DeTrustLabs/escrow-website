@@ -1,0 +1,141 @@
+{
+  "integrations": {
+    "metadata": {
+      "title": "Integrationen - Escrow-Protokoll",
+      "description": "Bauen Sie mit dem dezentralen Escrow-Protokoll. Offenes Ökosystem für Entwickler, Unternehmen und Integratoren."
+    },
+    "hero": {
+      "badge": "Offenes Ökosystem",
+      "title": "Bauen Sie mit dem Escrow-Protokoll",
+      "subtitle": "Offenes Ökosystem für alle. Handelsberater, Finanzinstitute, E-Commerce-Plattformen, traditionelle Escrow-Dienstleister und Entwickler können auf das Protokoll auf multiple Wege zugreifen und es integrieren.",
+      "primaryButton": "Starten Sie den Bau",
+      "secondaryButton": "Dokumentation ansehen",
+      "trustIndicators": {
+        "nonCustodial": "Nicht-verwahrend",
+        "openSource": "Open Source",
+        "audited": "Geprüfte Smart Contracts",
+        "availability": "24/7 Verfügbarkeit"
+      }
+    },
+    "ecosystem": {
+      "title": "Offenes Ökosystem für Alle",
+      "subtitle": "Das Protokoll ist so konzipiert, dass es berechtigungslos und für alle Arten von Unternehmen und Entwicklern zugänglich ist. Bauen Sie darauf auf, integrieren Sie damit oder verwenden Sie es wie es ist.",
+      "features": [
+        "Berechtigungsloser Zugang - keine Genehmigung erforderlich",
+        "Open-Source-Smart-Contracts und Frontend",
+        "Umfassende Dokumentation und SDKs",
+        "Community-Support und Entwicklerressourcen"
+      ]
+    },
+    "access": {
+      "title": "Wie man auf das Protokoll zugreift",
+      "subtitle": "Multiple Wege, um mit dem dezentralen Escrow-Protokoll zu interagieren.",
+      "methods": {
+        "smartContract": {
+          "title": "Direkte Smart-Contract-Integration",
+          "description": "Interagieren Sie direkt mit den Smart-Contracts des Protokolls auf Internet Computer für maximale Flexibilität."
+        },
+        "api": {
+          "title": "API-Integration",
+          "description": "Verwenden Sie die RESTful-API für einfache Integration in bestehende Systeme und Anwendungen."
+        },
+        "frontend": {
+          "title": "Frontend-Lösungen",
+          "description": "Verwenden Sie das Open-Source-Frontend oder bauen Sie Ihre eigene benutzerdefinierte Oberfläche für Ihre Benutzer."
+        }
+      }
+    },
+    "possibilities": {
+      "title": "Integrationsmöglichkeiten",
+      "subtitle": "Das Protokoll kann mit verschiedenen Arten von Systemen und Dienstleistungen integriert werden.",
+      "items": {
+        "ecommerce": {
+          "title": "E-Commerce-Plattformen",
+          "description": "E-Commerce-Plattformen können Escrow-Funktionalität für sichere Online-Zahlungen integrieren"
+        },
+        "kyc": {
+          "title": "KYC/KYB-Anbieter",
+          "description": "Identitätsverifizierungsdienste für erhöhtes Vertrauen und Compliance"
+        },
+        "invoice": {
+          "title": "Rechnungsersteller",
+          "description": "Automatisierte Rechnungssysteme mit Escrow-Zahlungsintegration"
+        },
+        "tradeDocs": {
+          "title": "Handelsdokument-Anbieter",
+          "description": "Konnossement-, Zoll- und Versanddokument-Verifizierungssysteme"
+        },
+        "financial": {
+          "title": "Finanzinstitute",
+          "description": "Banken und Finanzdienstleistungen, die Escrow als Service anbieten. White-Label-Lösungen sind möglich."
+        },
+        "escrow": {
+          "title": "Traditionelle Escrow-Anbieter",
+          "description": "Bestehende Escrow-Unternehmen, die digitale Währungsfähigkeiten hinzufügen"
+        },
+        "logistics": {
+          "title": "Logistikunternehmen",
+          "description": "Versand- und Frachtunternehmen mit automatischer Zahlungsfreigabe"
+        },
+        "erp": {
+          "title": "ERP-System-Anbieter",
+          "description": "Enterprise-Resource-Planning-Systeme mit integriertem Escrow"
+        },
+        "payment": {
+          "title": "Zahlungsabwickler",
+          "description": "Zahlungsgateways, die Escrow-Funktionalität zu ihren Dienstleistungen hinzufügen"
+        }
+      }
+    },
+    "resources": {
+      "title": "Technische Ressourcen",
+      "subtitle": "Alles, was Sie brauchen, um mit dem Escrow-Protokoll zu bauen.",
+      "items": {
+        "api": {
+          "title": "API-Dokumentation",
+          "description": "Vollständige REST-API-Dokumentation mit Beispielen und interaktivem Testen.",
+          "button": "API-Dokumentation ansehen"
+        },
+        "contracts": {
+          "title": "Smart-Contract-Schnittstellen",
+          "description": "Direkte Integrationsleitfäden für Internet-Computer-Canister.",
+          "button": "Contracts ansehen"
+        },
+        "frontend": {
+          "title": "Open-Source-Frontend",
+          "description": "Fertige Frontend-Komponenten und vollständige Anwendungsvorlagen.",
+          "button": "GitHub-Repository"
+        }
+      }
+    },
+    "beneficiaries": {
+      "title": "Wer kann profitieren",
+      "serviceProviders": {
+        "title": "Dienstleister",
+        "description": "Unternehmen, die Escrow als Teil ihrer Dienstleistungen anbieten",
+        "benefits": [
+          "Handelsberater und Berater",
+          "Banken und Finanzinstitute",
+          "Traditionelle Escrow-Unternehmen",
+          "Rechts- und Compliance-Firmen"
+        ]
+      },
+      "techCompanies": {
+        "title": "Technologieunternehmen",
+        "description": "Entwickler und Plattformen, die integrierte Lösungen bauen",
+        "benefits": [
+          "E-Commerce-Plattform-Entwickler",
+          "Fintech- und Zahlungsunternehmen",
+          "Enterprise-Software-Anbieter",
+          "Blockchain- und DeFi-Entwickler"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit, mit dem Protokoll zu bauen?",
+      "subtitle": "Treten Sie dem wachsenden Ökosystem von Entwicklern und Unternehmen bei, die auf dem Escrow-Protokoll bauen. Starten Sie die Integration heute.",
+      "primaryButton": "Integration starten",
+      "secondaryButton": "Community beitreten"
+    }
+  }
+}

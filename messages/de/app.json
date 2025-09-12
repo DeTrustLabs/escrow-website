@@ -1,0 +1,74 @@
+{
+  "app": {
+    "title": "Escrow-App für grenzüberschreitenden Handel",
+    "description": "Greifen Sie auf die digitale Escrow-App für internationalen Handel zu.",
+    "login": "In Escrow-App anmelden"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Etwas ist schiefgelaufen",
+    "retry": "Erneut versuchen",
+    "cancel": "Abbrechen",
+    "continue": "Fortfahren",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "submit": "Absenden",
+    "confirm": "Bestätigen",
+    "yes": "Ja",
+    "no": "Nein",
+    "learnMore": "Mehr erfahren",
+    "getStarted": "Loslegen",
+    "startEscrow": "Escrow starten"
+  },
+  "notFound": {
+    "title": "404",
+    "heading": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "goHome": {
+      "title": "Zur Startseite",
+      "description": "Zurück zur Haupt-Escrow-Seite",
+      "button": "Zurück zur Startseite"
+    },
+    "getSupport": {
+      "title": "Brauchen Sie Hilfe?",
+      "description": "Kontaktieren Sie unser Support-Team",
+      "button": "Support erhalten"
+    },
+    "popularPages": {
+      "title": "Beliebte Seiten:",
+      "home": "Startseite",
+      "howItWorks": "Wie es funktioniert",
+      "forExporters": "Für Exporteure",
+      "forImporters": "Für Importeure",
+      "faq": "FAQ",
+      "startEscrow": "Escrow starten"
+    }
+  },
+  "stats": {
+    "escrowVolume": {
+      "label": "Gesichertes Escrow-Volumen",
+      "description": "Gesamtwert, der in der frühen Einführung geschützt wurde"
+    },
+    "activeUsers": {
+      "label": "Aktive Benutzer",
+      "description": "Frühe Anwender, die das Protokoll testen"
+    },
+    "transactions": {
+      "label": "Transaktionen",
+      "description": "Erfolgreich abgeschlossene Escrows"
+    }
+  },
+  "partners": {
+    "partner1": "Partner 1",
+    "partner2": "Partner 2",
+    "partner3": "Partner 3",
+    "partner4": "Partner 4",
+    "partner5": "Partner 5",
+    "partner6": "Partner 6"
+  }
+}

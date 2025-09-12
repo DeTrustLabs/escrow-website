@@ -1,0 +1,141 @@
+{
+  "integrations": {
+    "metadata": {
+      "title": "Intégrations - Protocole d'Escrow",
+      "description": "Construire avec le protocole d'escrow décentralisé. Écosystème ouvert pour les développeurs, entreprises et intégrateurs."
+    },
+    "hero": {
+      "badge": "Écosystème Ouvert",
+      "title": "Construire avec le Protocole d'Escrow",
+      "subtitle": "Écosystème ouvert pour tout le monde. Les conseillers commerciaux, institutions financières, plateformes eCommerce, fournisseurs de services d'escrow traditionnels et développeurs peuvent accéder et intégrer le protocole de multiples façons.",
+      "primaryButton": "Commencer à Construire",
+      "secondaryButton": "Voir la Documentation",
+      "trustIndicators": {
+        "nonCustodial": "Non dépositaire",
+        "openSource": "Code ouvert",
+        "audited": "Contrats intelligents audités",
+        "availability": "Disponibilité 24/7"
+      }
+    },
+    "ecosystem": {
+      "title": "Écosystème Ouvert pour Tout le Monde",
+      "subtitle": "Le protocole est conçu pour être sans permission et accessible à tous types d'entreprises et développeurs. Construire dessus, s'intégrer avec, ou l'utiliser tel quel.",
+      "features": [
+        "Accès sans permission - aucune approbation nécessaire",
+        "Contrats intelligents et frontend open source",
+        "Documentation complète et SDKs",
+        "Support communautaire et ressources développeur"
+      ]
+    },
+    "access": {
+      "title": "Comment Accéder au Protocole",
+      "subtitle": "Multiples façons d'interagir avec le Protocole d'Escrow Décentralisé.",
+      "methods": {
+        "smartContract": {
+          "title": "Intégration Directe de Contrat Intelligent",
+          "description": "Interagir directement avec les contrats intelligents du protocole sur Internet Computer pour une flexibilité maximale."
+        },
+        "api": {
+          "title": "Intégration API",
+          "description": "Utiliser l'API RESTful pour une intégration facile dans les systèmes et applications existants."
+        },
+        "frontend": {
+          "title": "Solutions Frontend",
+          "description": "Utiliser le frontend open-source ou construire votre propre interface personnalisée pour vos utilisateurs."
+        }
+      }
+    },
+    "possibilities": {
+      "title": "Possibilités d'Intégration",
+      "subtitle": "Le protocole peut être intégré avec divers types de systèmes et services.",
+      "items": {
+        "ecommerce": {
+          "title": "Plateformes eCommerce",
+          "description": "Les plateformes eCommerce peuvent intégrer la fonctionnalité d'escrow pour des paiements en ligne sécurisés"
+        },
+        "kyc": {
+          "title": "Fournisseurs KYC/KYB",
+          "description": "Services de vérification d'identité pour une confiance et conformité améliorées"
+        },
+        "invoice": {
+          "title": "Créateurs de Factures",
+          "description": "Systèmes de facturation automatisés avec intégration de paiement d'escrow"
+        },
+        "tradeDocs": {
+          "title": "Fournisseurs de Documents Commerciaux",
+          "description": "Bill of Lading, douanes, et systèmes de vérification de documents d'expédition"
+        },
+        "financial": {
+          "title": "Institutions Financières",
+          "description": "Banques et services financiers offrant l'escrow comme service. Solutions white label possibles."
+        },
+        "escrow": {
+          "title": "Fournisseurs d'Escrow Traditionnels",
+          "description": "Compagnies d'escrow existantes ajoutant des capacités de monnaie numérique"
+        },
+        "logistics": {
+          "title": "Compagnies de Logistique",
+          "description": "Compagnies d'expédition et fret avec libération de paiement automatisée"
+        },
+        "erp": {
+          "title": "Fournisseurs de Systèmes ERP",
+          "description": "Systèmes de planification des ressources d'entreprise avec escrow intégré"
+        },
+        "payment": {
+          "title": "Processeurs de Paiement",
+          "description": "Passerelles de paiement ajoutant la fonctionnalité d'escrow à leurs services"
+        }
+      }
+    },
+    "resources": {
+      "title": "Ressources Techniques",
+      "subtitle": "Tout ce dont vous avez besoin pour commencer à construire avec le protocole d'escrow.",
+      "items": {
+        "api": {
+          "title": "Documentation API",
+          "description": "Documentation complète d'API REST avec exemples et tests interactifs.",
+          "button": "Voir les Docs API"
+        },
+        "contracts": {
+          "title": "Interfaces de Contrats Intelligents",
+          "description": "Guides d'intégration directe pour les canisters Internet Computer.",
+          "button": "Voir les Contrats"
+        },
+        "frontend": {
+          "title": "Frontend Open Source",
+          "description": "Composants frontend prêts à l'emploi et modèles d'application complets.",
+          "button": "Dépôt GitHub"
+        }
+      }
+    },
+    "beneficiaries": {
+      "title": "Qui Peut Bénéficier",
+      "serviceProviders": {
+        "title": "Fournisseurs de Services",
+        "description": "Entreprises offrant l'escrow dans le cadre de leurs services",
+        "benefits": [
+          "Conseillers commerciaux et consultants",
+          "Banques et institutions financières",
+          "Compagnies d'escrow traditionnelles",
+          "Cabinets juridiques et de conformité"
+        ]
+      },
+      "techCompanies": {
+        "title": "Compagnies Technologiques",
+        "description": "Développeurs et plateformes construisant des solutions intégrées",
+        "benefits": [
+          "Développeurs de plateformes eCommerce",
+          "Compagnies Fintech et de paiement",
+          "Fournisseurs de logiciels d'entreprise",
+          "Développeurs Blockchain et DeFi"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt à Construire avec le Protocole ?",
+      "subtitle": "Rejoignez l'écosystème croissant de développeurs et d'entreprises construisant sur le protocole d'escrow. Commencez l'intégration aujourd'hui.",
+      "primaryButton": "Commencer l'Intégration",
+      "secondaryButton": "Rejoindre la Communauté"
+    }
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "freelancer": {
+    "metadata": {
+      "title": "Escrow Freelance - Paiements de Projets Sécurisés",
+      "description": "Éliminez les risques de paiement dans le travail freelance avec un escrow numérique sécurisé pour les freelances et propriétaires de projets. Protégez vos projets avec un escrow basé sur la blockchain."
+    },
+    "hero": {
+      "badge": "Solution Freelance",
+      "title": "Sécurisez les Projets Freelance avec ",
+      "titleHighlight": "l'Escrow Numérique",
+      "subtitle": "Éliminez les risques de paiement dans le travail freelance avec un escrow sécurisé pour les freelances et propriétaires de projets.",
+      "startEscrow": "Démarrer l'Escrow Freelance",
+      "seeHowItWorks": "Voir Comment Ça Marche",
+      "trustIndicators": [
+        "Non dépositaire",
+        "Code ouvert",
+        "Contrats intelligents audités",
+        "Disponibilité 24/7"
+      ]
+    },
+    "solvesIssues": {
+      "title": "Comment l'Escrow Résout les Problèmes dans le Freelancing",
+      "description": "Un escrow numérique pour les projets freelance élimine la barrière de confiance qui empêche les collaborations réussies entre freelances et clients. Le freelancing traditionnel nécessite qu'une partie prenne un risque significatif - soit le freelance termine le travail sans garantie de paiement, soit le client paie d'avance sans assurance de livraison. Un escrow numérique pour les freelances et propriétaires de projets résout cela en maintenant les fonds en sécurité jusqu'à ce que le travail soit terminé et approuvé, créant la confiance entre les partenaires de travail et permettant le commerce freelance sécurisé."
+    },
+    "dilemma": {
+      "title": "Le Dilemme Freelance et Client",
+      "subtitle": "Alors que les freelances craignent le non-paiement, les clients craignent la non-livraison — réduire le risque du freelance augmente le risque du client et vice versa.",
+      "freelancerRisks": {
+        "title": "Risques du Freelance",
+        "description": "Les freelances font souvent face au risque le plus élevé dans le travail de projet. Ils terminent généralement les projets en premier et attendent le paiement, les laissant vulnérables aux clients qui pourraient refuser de payer ou disparaître après avoir reçu le travail. Les freelances pourraient perdre non seulement le paiement mais aussi des semaines ou des mois d'efforts et de temps investis, ce qui peut être dévastateur pour leurs moyens de subsistance."
+      },
+      "clientRisks": {
+        "title": "Risques du Client",
+        "description": "Les clients s'inquiètent de la non-livraison ou de la mauvaise qualité du travail. S'ils paient d'avance, ils risquent de ne rien recevoir en retour ou de recevoir un travail qui ne correspond pas aux exigences. Sans voir les livrables finaux en premier, les clients pourraient finir avec un travail de qualité inférieure ou aucun travail du tout, gaspillant de l'argent et les délais de projet."
+      },
+      "bridging": {
+        "title": "Combler le Fossé avec un Escrow Numérique",
+        "description": "Le dilemme freelance et client arrête de nombreux projets prometteurs, manquant des opportunités de grandes collaborations. Un escrow numérique pour le travail freelance offre une solution, maintenant les fonds en sécurité jusqu'à ce que les projets soient terminés et approuvés, réduisant les risques des deux côtés. Cela favorise la confiance, transformant l'hésitation en partenariats freelance réussis et confiants.",
+        "hold": "Maintenir",
+        "complete": "Terminer",
+        "release": "Libérer"
+      }
+    },
+    "whatIs": {
+      "title": "Qu'est-ce qu'un Escrow Numérique ?",
+      "subtitle": "Une Solution Simple pour les Projets Freelance Sécurisés",
+      "description": "Un escrow numérique est une méthode de paiement sécurisée conçue pour protéger à la fois les freelances et les clients dans le travail de projet. Il fonctionne en maintenant les fonds dans un escrow numérique neutre jusqu'à ce que le travail soit terminé et approuvé, assurant qu'aucune partie ne fasse face à des risques comme la fraude et le non-paiement. Pour les freelances, cela signifie travailler avec confiance, sachant que le paiement est garanti une fois les étapes atteintes. Pour les clients, cela assure que le paiement n'est libéré que lorsque le travail répond aux spécifications convenues. L'escrow numérique élimine les risques de paiement traditionnels, réduit les litiges et simplifie la confiance entre freelances et clients du monde entier.",
+      "imageAlt": "Diagramme du Processus d'Escrow Numérique pour les Projets Freelance"
+    },
+    "features": {
+      "title": "Fonctionnalités d'Escrow",
+      "subtitle": "Tout ce dont les freelances et clients ont besoin pour des transactions de projet sécurisées et efficaces.",
+      "security": {
+        "title": "Sécurité et Flexibilité",
+        "description": "Les fonds sont maintenus en sécurité jusqu'à ce que les deux parties aient rempli leurs obligations de projet, éliminant les risques tels que la fraude et le non-paiement."
+      },
+      "trust": {
+        "title": "Confiance et Croissance",
+        "description": "Les paiements sécurisés favorisent la confiance entre freelances et clients, réduisent les risques et ouvrent la voie à plus d'opportunités de projet."
+      },
+      "fees": {
+        "title": "Frais de Transaction Faibles",
+        "description": "En supprimant les intermédiaires et en utilisant les paiements numériques, l'escrow assure des frais considérablement plus faibles pour les transactions freelance."
+      },
+      "settlement": {
+        "title": "Règlement Instantané",
+        "description": "Une fois les conditions du projet satisfaites, les fonds sont reçus dans les minutes suivant la libération — pas besoin d'attendre des jours comme les systèmes de paiement traditionnels."
+      },
+      "milestones": {
+        "title": "Étapes",
+        "description": "Les étapes du projet assurent un suivi clair de la progression et des libérations de paiement liées à des livrables spécifiques et des étapes d'achèvement."
+      },
+      "dispute": {
+        "title": "Résolution de Litiges",
+        "description": "Chaque étape du projet est enregistrée et vérifiable, avec des médiateurs neutres permettant des résolutions rapides et économiques des litiges."
+      }
+    },
+    "categories": {
+      "title": "Support de Toutes les Catégories de Services",
+      "subtitle": "Le protocole d'escrow fonctionne parfaitement pour tout type de service freelance dans toutes les catégories.",
+      "webDev": {
+        "title": "Développement Web",
+        "description": "Sites web, applications web, plateformes e-commerce",
+        "imageAlt": "Développement Web"
+      },
+      "graphicDesign": {
+        "title": "Design Graphique",
+        "description": "Logos, branding, matériaux marketing",
+        "imageAlt": "Design Graphique"
+      },
+      "contentWriting": {
+        "title": "Rédaction de Contenu",
+        "description": "Articles, copywriting, documentation technique",
+        "imageAlt": "Rédaction de Contenu"
+      },
+      "videoProduction": {
+        "title": "Production Vidéo",
+        "description": "Montage vidéo, animation, production commerciale",
+        "imageAlt": "Production Vidéo"
+      },
+      "digitalMarketing": {
+        "title": "Marketing Numérique",
+        "description": "SEO, réseaux sociaux, campagnes publicitaires",
+        "imageAlt": "Marketing Numérique"
+      },
+      "softwareDev": {
+        "title": "Développement Logiciel",
+        "description": "Logiciels personnalisés, applications mobiles, intégration système",
+        "imageAlt": "Développement Logiciel"
+      },
+      "uiUxDesign": {
+        "title": "Design UI/UX",
+        "description": "Design d'interface utilisateur, optimisation de l'expérience utilisateur",
+        "imageAlt": "Design UI/UX"
+      },
+      "virtualAssistance": {
+        "title": "Assistance Virtuelle",
+        "description": "Support administratif, saisie de données, service client",
+        "imageAlt": "Assistance Virtuelle"
+      },
+      "legalServices": {
+        "title": "Services Juridiques",
+        "description": "Recherche juridique, préparation de documents, support paralégal",
+        "imageAlt": "Services Juridiques"
+      },
+      "dataAnalysis": {
+        "title": "Analyse de Données",
+        "description": "Intelligence d'affaires, visualisation de données, analyse statistique",
+        "imageAlt": "Analyse de Données"
+      },
+      "consulting": {
+        "title": "Conseil",
+        "description": "Stratégie d'affaires, conseil en management, services consultatifs",
+        "imageAlt": "Conseil"
+      },
+      "translation": {
+        "title": "Traduction",
+        "description": "Traduction linguistique, localisation, services d'interprétation",
+        "imageAlt": "Traduction"
+      }
+    },
+    "perfectFor": {
+      "title": "Parfait pour Tout Type de Service",
+      "subtitle": "Découvrez les avantages spécifiques et les fonctionnalités conçues pour votre rôle dans le travail freelance.",
+      "freelancers": {
+        "title": "Pour les Freelances",
+        "subtitle": "Sécurisez votre revenu freelance",
+        "benefits": [
+          "Fonds sécurisés avant de commencer le travail",
+          "Paiement instantané à la fin du projet",
+          "Protection contre le non-paiement",
+          "Travaillez avec de nouveaux clients en toute confiance"
+        ],
+        "moreBenefits": "Plus d'Avantages pour les Freelances"
+      },
+      "projectOwners": {
+        "title": "Pour les Propriétaires de Projet",
+        "subtitle": "Embauchez avec confiance et contrôle",
+        "benefits": [
+          "Payez seulement pour le travail terminé",
+          "Révision de qualité avant la libération du paiement",
+          "Protection contre la non-livraison",
+          "Résolution de litiges pour les problèmes de qualité"
+        ],
+        "moreBenefits": "Plus d'Avantages pour les Propriétaires de Projet"
+      }
+    },
+    "cta": {
+      "title": "Prêt à Sécuriser Vos Projets Freelance ?",
+      "subtitle": "Rejoignez les freelances et clients du monde entier qui ne s'inquiètent plus jamais des risques de paiement.",
+      "startEscrow": "Démarrez Votre Premier Escrow",
+      "learnMore": "En Savoir Plus"
+    },
+    "blog": {
+      "metadata": {
+        "title": "Blog d'Escrow Freelance - Insights & Mises à Jour",
+        "description": "Restez informé avec les dernières tendances, conseils et insights sur le travail freelance et l'escrow numérique."
+      },
+      "hero": {
+        "title": "Insights d'Escrow Freelance",
+        "subtitle": "Restez informé avec les dernières tendances, conseils et insights sur le travail freelance et l'escrow numérique."
+      },
+      "articles": {
+        "title": "Articles Récents",
+        "subtitle": "Nous commençons tout juste notre blog. Vérifiez bientôt pour des insights précieux et des mises à jour.",
+        "comingSoon": {
+          "freelancerTips": {
+            "title": "Bientôt : Conseils d'Experts pour les Freelances",
+            "excerpt": "Nous préparons des guides complets pour aider les freelances à naviguer les défis de projet et à sécuriser les paiements.",
+            "category": "Conseils Freelance",
+            "date": "Bientôt",
+            "readTime": "Restez à l'écoute"
+          },
+          "clientGuide": {
+            "title": "Bientôt : Meilleures Pratiques pour les Clients",
+            "excerpt": "Guides détaillés pour les clients afin d'assurer un travail de qualité et d'éviter des litiges coûteux dans les projets freelance.",
+            "category": "Guide Client",
+            "date": "Bientôt",
+            "readTime": "Restez à l'écoute"
+          },
+          "digitalEscrow": {
+            "title": "Bientôt : Insights d'Escrow Numérique",
+            "excerpt": "Apprenez comment la technologie d'escrow numérique transforme le travail freelance et le commerce.",
+            "category": "Finance Numérique",
+            "date": "Bientôt",
+            "readTime": "Restez à l'écoute"
+          }
+        }
+      },
+      "newsletter": {
+        "title": "Restez Informé",
+        "subtitle": "Recevez les derniers insights freelance et mises à jour d'escrow dans votre boîte mail.",
+        "emailPlaceholder": "Entrez votre email",
+        "button": "S'abonner"
+      }
+    },
+    "contacts": {
+      "metadata": {
+        "title": "Contactez-Nous - Support d'Escrow Freelance",
+        "description": "Obtenez de l'aide avec votre escrow freelance. Connectez-vous avec nous pour du support avec vos paiements de projet."
+      },
+      "hero": {
+        "title": "Obtenez de l'Aide avec Votre Escrow Freelance",
+        "subtitle": "Besoin d'assistance avec votre escrow freelance ? Connectez-vous avec nous pour du support avec vos paiements de projet."
+      },
+      "contactForm": {
+        "title": "Envoyer un Message",
+        "firstName": "Prénom",
+        "firstNamePlaceholder": "Jean",
+        "lastName": "Nom",
+        "lastNamePlaceholder": "Dupont",
+        "email": "Email",
+        "emailPlaceholder": "jean@freelance.com",
+        "company": "Entreprise",
+        "companyPlaceholder": "Votre Entreprise ou Business Freelance",
+        "role": "Rôle",
+        "rolePlaceholder": "Sélectionnez votre rôle",
+        "roles": {
+          "freelancer": "Freelance",
+          "client": "Client/Propriétaire de Projet",
+          "both": "Les Deux"
+        },
+        "message": "Message",
+        "messagePlaceholder": "Dites-nous vos questions ou comment nous pouvons vous aider...",
+        "submitButton": "Envoyer le Message",
+        "submittingButton": "Envoi en cours..."
+      },
+      "contactInfo": {
+        "title": "Informations de Contact",
+        "emailTitle": "Email",
+        "emailAddress": "info@escrow-protocol.com",
+        "emailDescription": "Nous vous répondrons bientôt"
+      },
+      "newsletter": {
+        "title": "Restez Informé",
+        "subtitle": "Abonnez-vous à notre newsletter pour des mises à jour sur l'escrow freelance et les insights de projet.",
+        "emailPlaceholder": "Entrez votre email",
+        "submitButton": "S'abonner",
+        "submittingButton": "Abonnement en cours..."
+      },
+      "popup": { "thankYou": "Merci !", "close": "Fermer" }
+    },
+    "faq": {
+      "metadata": {
+        "title": "FAQ - Questions & Réponses sur l'Escrow Freelance",
+        "description": "Trouvez des réponses aux questions courantes sur l'escrow numérique pour les projets freelance, sécurité, paiements et plus."
+      },
+      "hero": {
+        "title": "Questions Fréquemment Posées",
+        "subtitle": "Trouvez des réponses aux questions courantes sur l'escrow numérique pour les projets freelance."
+      },
+      "categories": {
+        "title": "Catégories FAQ",
+        "gettingStarted": { "name": "Commencer", "count": "3" },
+        "security": { "name": "Sécurité & Sécurité", "count": "2" },
+        "process": { "name": "Processus & Délais", "count": "2" },
+        "payments": { "name": "Paiements & Frais", "count": "2" },
+        "freelance": { "name": "Projets Freelance", "count": "2" }
+      },
+      "sections": {
+        "gettingStarted": {
+          "title": "Commencer",
+          "questions": {
+            "q1": {
+              "question": "Qu'est-ce que l'escrow numérique pour les projets freelance ?",
+              "answer": "L'escrow numérique pour les projets freelance est une méthode de paiement peer-to-peer sécurisée qui protège à la fois les freelances et les clients pendant le travail de projet. Au lieu qu'une tierce partie détienne vos fonds, l'escrow utilise des contrats intelligents sur la blockchain pour gérer automatiquement les paiements basés sur des conditions pré-établies. Les fonds restent dans le contrat intelligent (Escrow) jusqu'à ce que les conditions d'achèvement et d'approbation du projet soient remplies, éliminant les risques traditionnels où soit le freelance travaille en premier sans garantie de paiement, soit le client paie d'avance sans assurance de livraison."
+            },
+            "q2": {
+              "question": "Comment commencer avec l'escrow freelance ?",
+              "answer": "Cliquez sur le bouton \"Démarrer l'Escrow\" pour créer un portefeuille ou vous connecter. Pour plus d'informations détaillées sur le processus complet, consultez notre page Workflow qui explique chaque étape de la configuration à la libération des fonds."
+            },
+            "q3": {
+              "question": "Quels types de travail freelance peuvent utiliser l'escrow ?",
+              "answer": "L'escrow numérique peut être utilisé pour presque tout type de service freelance où des livrables sont fournis, y compris le développement web, le design graphique, la rédaction de contenu, le marketing numérique, la photographie, le conseil, et plus. L'escrow supporte les transactions freelance-à-client (F2C), entreprise-à-freelance (B2F), et individu-à-freelance (I2F). Pour un aperçu complet des catégories de services supportées, visitez notre section Support de Toutes les Catégories de Services pour avoir une première impression des possibilités."
+            }
+          }
+        },
+        "security": {
+          "title": "Sécurité & Sécurité",
+          "questions": {
+            "q1": {
+              "question": "À quel point mes fonds sont-ils sécurisés dans l'escrow ?",
+              "answer": "Les fonds dans l'escrow sont sécurisés. Aucune tierce partie, y compris la société de développement qui a créé la technologie derrière l'escrow, n'a accès aux fonds dans l'escrow. Les fonds sont détenus dans ce qu'on appelle un contrat intelligent, qui est un programme auto-exécutable sur la blockchain qui applique automatiquement les conditions convenues sans intervention humaine. L'escrow utilise une approche multi-signature, ce qui signifie que plusieurs signatures cryptographiques sont requises pour autoriser toute transaction, fournissant une couche supplémentaire de sécurité. Cela assure que les fonds ne peuvent être libérés que lorsque toutes les conditions prédéterminées sont remplies par les deux parties du projet."
+            },
+            "q2": {
+              "question": "Que se passe-t-il s'il y a un litige de projet ?",
+              "answer": "Les deux parties peuvent soulever des litiges, ce qui gèle immédiatement les fonds pour protéger tout le monde impliqué. Une fois un litige initié, les deux parties ont du temps pour trouver un compromis bilatéral et convenir d'ajustements tels que l'offre de révisions, l'extension des délais, ou des paiements partiels. Si elles ne peuvent pas atteindre un compromis par négociation directe, le cas sera escaladé vers un arbitre neutre pour une résolution finale. Pour des informations détaillées sur ce processus, consultez notre section Résolution de Litiges de Projet."
+            }
+          }
+        },
+        "process": {
+          "title": "Processus & Délais",
+          "questions": {
+            "q1": {
+              "question": "Combien de temps prend le processus d'escrow freelance ?",
+              "answer": "Le temps dépend entièrement de la portée et de la complexité de votre projet. Cela pourrait être juste quelques jours pour des tâches simples, mais aussi des semaines ou des mois pour des projets de développement complexes. Voici un exemple typique : Configuration (1 jour), Financement (1 jour), Travail de projet (2-4 semaines), Révision (2-3 jours), Libération des fonds (le jour même). Pour un projet plus rapide : Configuration et financement aujourd'hui, Achèvement du travail en 3-5 jours, Révision et libération des fonds dans les 24 heures après soumission."
+            },
+            "q2": {
+              "question": "Quand les fonds sont-ils libérés au freelance ?",
+              "answer": "La libération des fonds dépend des méthodes de libération pré-établies que les deux parties établissent lors de la configuration de l'escrow. La méthode de libération dépend des besoins et exigences spécifiques de votre projet. Pour des informations détaillées sur les diverses options de libération disponibles, consultez notre section Options de Libération de Paiement Flexibles."
+            }
+          }
+        },
+        "payments": {
+          "title": "Paiements & Frais",
+          "questions": {
+            "q1": {
+              "question": "Quels sont les frais pour utiliser l'escrow freelance ?",
+              "answer": "L'escrow est basé sur une solution blockchain, qui nécessite des frais de transaction (souvent appelés \"frais de gas\" - nommés d'après l'énergie computationnelle nécessaire pour traiter les transactions, similaire à comment une voiture a besoin d'essence pour fonctionner). Ces frais de transaction blockchain sont nécessaires pour sécuriser et traiter vos transactions sur le réseau. Il peut y avoir des frais supplémentaires tels que des frais de révision pour la vérification externe, des frais pour les conseillers de projet, et des frais pour les services d'arbitrage. Tous les frais sont complètement transparents - lorsque vous définissez le montant du projet et sélectionnez des services optionnels lors de la configuration de l'escrow, le freelance et le client verront exactement quels frais s'appliquent. Le client finance le montant du projet plus tous les frais, et l'escrow ne sera pas activé à moins que le montant total ne soit financé."
+            },
+            "q2": {
+              "question": "Quelles méthodes de paiement sont acceptées ?",
+              "answer": "Vous devez distinguer entre les méthodes de paiement pour l'escrow et les méthodes de paiement pour votre portefeuille. L'escrow utilise uniquement des monnaies numériques telles que USDT (USD de Tether), USDC (USD de Circle), ou d'autres stablecoins et CBDC (Monnaies Numériques de Banque Centrale). L'escrow est financé en utilisant des monnaies de votre portefeuille numérique. Pour obtenir USDC, USDT, ou d'autres stablecoins dans votre portefeuille, vous pouvez utiliser des échanges de cryptomonnaie ou des fournisseurs On-Ramp. Pour des informations détaillées sur la conversion d'argent traditionnel en monnaies numériques, consultez notre section Paiements Numériques pour les Freelances."
+            }
+          }
+        },
+        "freelance": {
+          "title": "Projets Freelance",
+          "questions": {
+            "q1": {
+              "question": "Quels pays et régions sont supportés pour le travail freelance ?",
+              "answer": "L'escrow est un système peer-to-peer qui peut théoriquement connecter des freelances et des clients dans n'importe quel pays ou région du monde. Cependant, il ne peut être utilisé que dans les pays où les monnaies numériques sont légalement autorisées. Certaines restrictions peuvent s'appliquer basées sur les réglementations locales et les listes de sanctions internationales. Nous recommandons de vérifier vos réglementations locales concernant l'utilisation de monnaies numériques et de vérifier les réglementations internationales et sanctions avant de procéder aux transactions."
+            },
+            "q2": {
+              "question": "Comment gérez-vous la portée du projet et les exigences de livrables ?",
+              "answer": "L'escrow est un contrat financier qui est basé sur l'accord de projet sous-jacent ou le contrat de travail mais ne le remplace pas. Les freelances et clients sont responsables de définir clairement la portée du projet, les livrables, les délais, les politiques de révision, les droits de propriété intellectuelle, et toutes les autres exigences du projet. Puisque l'escrow fonctionne comme une transaction peer-to-peer, la conformité avec les lois d'emploi locales et les obligations fiscales reste avec les parties individuelles. Nous recommandons d'utiliser des contrats de projet détaillés et de consulter des conseillers juridiques pour des arrangements freelance complexes."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Encore des Questions ?",
+        "subtitle": "Nos experts freelance sont là pour vous aider avec toute question spécifique sur vos besoins de projet.",
+        "contactButton": "Contacter le Support",
+        "startProjectButton": "Démarrer Votre Projet"
+      }
+    },
+    "guides": {
+      "metadata": {
+        "title": "Guides d'Escrow Freelance - Ressources & Tutoriels",
+        "description": "Guides complets et ressources pour aider les freelances à maîtriser l'escrow numérique pour des transactions de projet sécurisées."
+      },
+      "hero": {
+        "title": "Guides d'Escrow Freelance",
+        "subtitle": "Ressources complètes pour vous aider à maîtriser le travail freelance avec la protection d'escrow numérique."
+      },
+      "featured": {
+        "badge": "Guide en Vedette",
+        "title": "Guide Complet d'Escrow de Projet Freelance",
+        "description": "Tout ce que vous devez savoir sur l'utilisation d'escrow numérique pour des transactions de projet freelance sécurisées. De la configuration à l'achèvement, ce guide complet couvre tous les aspects de l'escrow freelance.",
+        "readTime": "30 min de lecture",
+        "level": "Débutant à Avancé",
+        "button": "Lire le Guide Complet",
+        "learnItems": [
+          "Configuration de votre premier escrow freelance",
+          "Définition des exigences et étapes du projet",
+          "Conditions de libération de paiement pour les freelances",
+          "Processus de résolution de litiges pour les projets",
+          "Meilleures pratiques pour les freelances et clients",
+          "Pièges courants et comment les éviter"
+        ]
+      },
+      "cta": {
+        "title": "Besoin de Guidance Personnalisée ?",
+        "subtitle": "Nos experts freelance sont là pour vous aider à naviguer votre situation de projet spécifique.",
+        "contactButton": "Contacter l'Expert Freelance",
+        "startProjectButton": "Démarrer Votre Projet"
+      }
+    },
+    "workflow": {
+      "metadata": {
+        "title": "Flux de Travail d'Escrow Numérique pour les Freelances - Paiements de Projets Sécurisés | Protocole d'Escrow",
+        "description": "Apprenez comment l'escrow numérique fonctionne pour les projets freelance. Guide étape par étape pour les paiements sécurisés, vérification d'étapes, et résolution de litiges pour les freelances et clients.",
+        "keywords": "escrow numérique pour freelances, paiements freelance sécurisés, flux de travail d'escrow pour projets, protection de paiement freelance, flux de travail de projet sécurisé",
+        "canonical": "/freelancer/workflow",
+        "ogTitle": "Flux de Travail d'Escrow Numérique pour les Freelances - Paiements de Projets Sécurisés",
+        "ogDescription": "Guide complet d'escrow numérique pour les projets freelance. Paiements sécurisés, vérification d'étapes, et résolution de litiges."
+      },
+      "hero": {
+        "badge": "Flux de Travail Freelance Sécurisé",
+        "title": "Freelance ",
+        "titleHighlight": "d'Escrow Numérique",
+        "subtitle": "Éliminez les risques de paiement, protégez votre travail, et construisez la confiance avec les clients en utilisant l'escrow numérique. Les freelances et propriétaires de projet sont protégés tout au long du cycle de vie du projet.",
+        "trustIndicators": [
+          "Sécurité de Paiement",
+          "Libération Basée sur les Étapes",
+          "Coûts de Transaction Réduits"
+        ]
+      },
+      "steps": {
+        "title": "4 Étapes de l'Escrow Freelance",
+        "subtitle": "Une ventilation étape par étape du processus d'escrow numérique sécurisé pour les projets freelance",
+        "step1": {
+          "title": "1. Accord de Projet",
+          "description": "Définissez la portée du projet, les étapes, le montant de paiement et la timeline de livraison."
+        },
+        "step2": {
+          "title": "2. Financement Sécurisé",
+          "description": "Le client dépose le paiement complet dans l'escrow avant que le travail ne commence"
+        },
+        "step3": {
+          "title": "3. Terminer les Étapes",
+          "description": "Livrez le travail selon les étapes convenues et téléchargez les livrables."
+        },
+        "step4": {
+          "title": "4. Recevoir le Paiement",
+          "description": "Recevez des paiements automatiques lorsque les étapes sont approuvées ou que les conditions de temps sont remplies."
+        }
+      },
+      "howItWorks": {
+        "title": "Comment l'Escrow Numérique Fonctionne pour les Freelances",
+        "subtitle": "Comprendre le processus complet d'escrow numérique pour les paiements de projet freelance sécurisés",
+        "onboarding": {
+          "title": "Intégration",
+          "description": "Le processus d'escrow sécurisé commence avec une configuration en ligne simple terminée en quelques minutes. Les deux freelance et client créent un portefeuille numérique — un compte numérique sécurisé pour envoyer et recevoir des monnaies numériques comme USD ou EUR. Ce portefeuille agit comme un compte bancaire numérique, gardant tout privé et sécurisé. La configuration ne nécessite aucune banque traditionnelle et vous donne un contrôle complet sur vos actifs. Une fois prêt, vous pouvez facilement participer à des escrows de projet freelance avec des clients du monde entier, gardant vos gains privés et sous votre contrôle complet.",
+          "features": [
+            "Connectez-vous et créez un portefeuille numérique",
+            "Aucune banque requise, contrôle complet des actifs",
+            "Prêt pour des projets freelance sécurisés"
+          ]
+        },
+        "projectAgreement": {
+          "title": "Accord de Projet",
+          "description": "Pour commencer, vous créez un nouvel escrow de projet, invitez votre client et définissez ensemble les conditions du projet incluant la portée, les étapes, le montant de paiement, et la timeline de livraison. Si vous avez besoin de support, vous pouvez impliquer un conseiller de projet qui peut aider à préparer l'escrow mais n'a aucun accès aux fonds d'escrow. Vous choisissez aussi un service d'arbitrage dès le départ pour tout litige — ce service ne s'implique que si nécessaire et ne peut pas voir la transaction autrement. Ce contrat numérique se concentre spécifiquement sur la sécurité de paiement et l'achèvement d'étapes. Les deux parties signent numériquement l'accord d'escrow, créant un contrat contraignant qui assure l'équité tout au long du cycle de vie du projet.",
+          "features": [
+            "Définissez la portée et les étapes du projet",
+            "Conseiller de projet disponible pour guidance",
+            "Signatures numériques créent un contrat contraignant"
+          ]
+        },
+        "secureFunding": {
+          "title": "Financement Sécurisé",
+          "description": "Le client dépose le montant convenu du projet en utilisant des monnaies numériques dans le délai spécifié. Une fois déposé, les deux parties reçoivent une confirmation immédiate que les fonds sont sécurisés et protégés. L'escrow détient ces fonds neutre jusqu'à ce que les étapes du projet soient terminées, éliminant les risques de non-paiement pour les freelances et assurant l'achèvement du travail pour les clients. Cela donne aux freelances la confiance de commencer le travail sachant que le paiement est garanti.",
+          "features": [
+            "Le client dépose le paiement du projet",
+            "Vérification de financement instantanée",
+            "Paiement garanti pour le travail terminé"
+          ]
+        },
+        "workDelivery": {
+          "title": "Livraison de Travail",
+          "description": "Suite à la confirmation de financement, le freelance commence le travail sur le projet. Les livrables clés et achèvements d'étapes sont téléchargés pour suivre la progression, tandis que les échantillons de travail et livrables finaux fournissent une preuve d'achèvement. Le système de documentation transparent maintient les deux parties informées tout au long du cycle de vie du projet, réduisant l'incertitude et maintenant la confiance jusqu'à ce que tout le travail soit terminé à satisfaction.",
+          "features": [
+            "Confirmation de financement déclenche le début du travail",
+            "Téléchargez les livrables et étapes",
+            "Suivi de progression transparent"
+          ]
+        },
+        "paymentRelease": {
+          "title": "Libération de Paiement",
+          "description": "La libération de paiement se produit par des mécanismes pré-sélectionnés incluant l'approbation du client, l'achèvement d'étapes, la libération basée sur le temps, ou la révision tierce. Ces options flexibles accommodent différentes exigences de projet tout en assurant aux freelances un paiement rapide pour le travail terminé et aux clients des livrables de qualité selon leur accord de projet spécifique.",
+          "features": [
+            "Mécanismes de libération multiples",
+            "Paiements basés sur les étapes",
+            "Options flexibles pour différents projets"
+          ]
+        },
+        "projectAdjustments": {
+          "title": "Ajustements de Projet",
+          "description": "L'escrow accomode les changements de projet du monde réel par des mécanismes d'ajustement flexibles. Lorsque des changements de portée surviennent — tels que des fonctionnalités supplémentaires, extensions de délai, ou modifications budgétaires — les deux parties peuvent proposer des solutions incluant des ajustements de délai ou des changements de paiement. Tous les modifications nécessitent des signatures numériques du freelance et du client pour devenir légalement contraignantes, assurant la transparence et l'accord mutuel tout au long du développement du projet.",
+          "features": [
+            "Ajustements flexibles de portée de projet",
+            "Disponible jusqu'à la libération de paiement",
+            "Consentement mutuel requis pour les changements"
+          ]
+        },
+        "disputeResolution": {
+          "title": "Résolution de Litiges",
+          "description": "Lorsque des désaccords surviennent concernant la qualité du travail, la portée, ou les livrables, l'une ou l'autre partie peut initier un litige qui gèle immédiatement les fonds pour protéger les deux côtés. Toutes les documentations de projet, communications, et livrables sont chiffrées et sauvegardées, aidant à reconstruire rapidement l'historique du projet. Les deux parties ont du temps pour résoudre les problèmes de manière bilatérale par négociation, tels que des révisions de travail, paiements partiels, ou ajustements de délai. Si la résolution bilatérale échoue, le litige est escaladé vers un arbitre neutre pré-défini qui a accès à toutes les données du projet pour prendre des décisions éclairées basées sur une documentation claire plutôt que des réclamations conflictuelles.",
+          "features": [
+            "Fonds gelés immédiatement pour protection",
+            "Négociation bilatérale encouragée en premier",
+            "Escalade d'arbitre neutre disponible"
+          ]
+        }
+      },
+      "flexibleRelease": {
+        "title": "Options de Libération de Paiement Flexibles",
+        "subtitle": "Plusieurs façons de déclencher la libération de paiement basées sur vos exigences de projet spécifiques",
+        "clientApproval": {
+          "title": "Approbation du Client",
+          "description": "Les fonds sont libérés lorsque le client révise et approuve les livrables ou étapes de travail terminés."
+        },
+        "thirdPartyReview": {
+          "title": "Révision Tierce",
+          "description": "Libération déclenchée après une révision de qualité réussie par des réviseurs ou évaluateurs de projet indépendants tierces."
+        },
+        "milestoneCompletion": {
+          "title": "Achèvement d'Étapes",
+          "description": "Libération automatique sur soumission et vérification des livrables et étapes de projet requis."
+        },
+        "mutualAgreement": {
+          "title": "Accord Mutuel",
+          "description": "Les deux parties doivent explicitement convenir de libérer les fonds, fournissant un contrôle maximal sur l'achèvement du projet."
+        }
+      },
+      "disputeResolutionSection": {
+        "title": "Résolution de Litiges de Projet",
+        "subtitle": "Résolution équitable et transparente lorsqu'il y a des problèmes pendant les projets freelance",
+        "whenDisputesOccur": {
+          "title": "Quand les Litiges de Projet Suriennent",
+          "subtitle": "Les fonds sont immédiatement gelés pour protection",
+          "description": "Lorsqu'une partie soulève un litige concernant la qualité du travail, les changements de portée, ou les livrables, les fonds sont immédiatement gelés pour protéger les deux côtés. Toutes les documentations de projet, communications, et livrables entre parties sont sauvegardées (chiffrées) et aident à reconstruire rapidement l'historique du projet et les accords.",
+          "features": [
+            "Fonds gelés immédiatement sur litige",
+            "Toutes les communications de projet chiffrées et sauvegardées",
+            "Historique complet du projet disponible",
+            "Livrables et étapes préservés pour révision"
+          ]
+        },
+        "resolutionOptions": {
+          "title": "Options de Résolution",
+          "subtitle": "Plusieurs chemins vers une résolution de projet équitable",
+          "description": "Les parties ont du temps pour résoudre les litiges elles-mêmes par négociation (tels que des révisions de travail, paiements partiels, ou extensions de délai). Si la résolution bilatérale n'est pas possible, le litige peut être escaladé vers un arbitre neutre qui révise toutes les données du projet pour prendre des décisions éclairées.",
+          "features": [
+            "Négociation directe entre parties",
+            "Solutions flexibles (révisions, paiements partiels)",
+            "Escalade d'arbitre neutre",
+            "Accès à toute la documentation du projet"
+          ]
+        },
+        "arbitratorNote": {
+          "title": "Note Importante : Coûts d'Arbitre",
+          "description": "L'arbitre est pré-défini au début de l'escrow de projet et reste neutre tout au long du processus. Ils ont accès à toutes les informations et données du projet pour prendre des décisions éclairées. Veuillez noter que les frais d'arbitre sont déduits des fonds d'escrow, réduisant le montant total payé aux deux parties. Cela encourage la résolution bilatérale chaque fois que possible."
+        }
+      },
+      "digitalPayments": {
+        "title": "Paiements Numériques pour les Freelances",
+        "subtitle": "Comprendre les monnaies numériques, portefeuilles, et fournisseurs de paiement pour les paiements de projet freelance sécurisés",
+        "whatAreCurrencies": {
+          "title": "Quelles Sont les Monnaies Numériques ?",
+          "description": "Une monnaie numérique, aussi appelée stablecoin, est une représentation numérique d'argent traditionnel (monnaie FIAT) comme le dollar américain. Un USD numérique est arrimé 1:1 au papier USD, reflétant sa valeur tout en offrant les avantages de la technologie blockchain. Les stablecoins sont émis par des institutions (réglementées) et soutenus par des garanties, assurant leur stabilité et fiabilité. Les plus grands stablecoins sont actuellement USDT et USDC, émis par Tether et Circle. Les stablecoins sont parfaits pour les paiements freelance puisqu'ils règlent instantanément et sont bon marché à envoyer, rendant les paiements de projet international plus efficaces et économiques pour les freelances et clients.",
+          "imageAlt": "Aperçu des Stablecoins USD et Monnaies Numériques"
+        },
+        "whatIsWallet": {
+          "title": "Qu'est-ce qu'un Portefeuille Numérique ?",
+          "description": "Un portefeuille numérique est comme un compte bancaire sécurisé que vous contrôlez complètement. C'est une app sur votre téléphone ou ordinateur où vous pouvez stocker, envoyer, et recevoir des monnaies numériques comme les stablecoins. Pensez-y comme à votre coffre-fort numérique sécurisé - seulement vous avez la clé (mot de passe), et aucune banque ou tierce partie ne peut accéder à vos fonds. Pour les freelances, un portefeuille fournit un contrôle direct sur les paiements de projet sans avoir besoin de banques traditionnelles. Une fois prêt, vous pouvez facilement participer à des transactions d'escrow sécurisées avec des clients du monde entier, gardant vos gains privés et sous votre contrôle complet.",
+          "imageAlt": "Interface de Portefeuille Numérique montrant les soldes USDT, USDC, et autres stablecoins"
+        },
+        "fiatConversion": {
+          "title": "Comment Convertir FIAT en Monnaie Numérique ?",
+          "description": "Vous pouvez utiliser un échange ou un fournisseur on-ramp pour convertir l'argent traditionnel en monnaies numériques.",
+          "exchanges": "Les échanges comme Coinbase et Binance sont des plateformes où vous pouvez acheter, vendre, et échanger diverses monnaies numériques incluant les stablecoins.",
+          "onRamp": "Un Fournisseur On-Ramp ou Convertisseur d'Argent Numérique est un fournisseur licencié qui échange l'argent traditionnel (FIAT) pour des monnaies numériques comme les stablecoins, assurant des transactions sécurisées et conformes.",
+          "process": "Pour les deux, vous envoyez de l'argent FIAT à eux via transaction bancaire, paiement mobile, ou carte de crédit, et ils créditent votre portefeuille avec l'équivalent stablecoin. Par exemple, si vous leur envoyez 100 USD (FIAT) - ils échangent à 100 USDT (stablecoin) dans votre portefeuille numérique. Ces fournisseurs gèrent le processus de vérification KYC/KYB (Connaître Votre Client/Votre Entreprise) pour assurer la conformité avec les réglementations financières, rendant le processus de conversion à la fois sécurisé et légalement conforme pour le travail freelance.",
+          "imageAlt": "Processus de Conversion FIAT en Monnaie Numérique"
+        }
+      },
+      "callToAction": {
+        "title": "Prêt à Sécuriser Vos Projets Freelance ?",
+        "subtitle": "Rejoignez des milliers de freelances et clients qui font confiance à l'escrow numérique pour leurs paiements de projet. Expérimentez des paiements basés sur les étapes sécurisés aujourd'hui.",
+        "startEscrow": "Démarrer Votre Escrow de Projet",
+        "talkToAdvisor": "Parler au Conseiller de Projet"
+      }
+    },
+    "projectOwner": {
+      "hero": {
+        "badge": "Pour les Propriétaires de Projet",
+        "title": "Embauchez avec Confiance, ",
+        "titleHighlight": "À Chaque Fois",
+        "subtitle": "Éliminez les risques de projet et assurez la livraison de qualité. L'escrow numérique vous protège contre la non-livraison et assure que le travail répond à vos spécifications.",
+        "primaryButton": {
+          "label": "Démarrer l'Escrow de Projet",
+          "href": "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
+        },
+        "secondaryButton": {
+          "label": "Apprendre Comment Ça Marche",
+          "href": "/workflow"
+        }
+      },
+      "testimonials": {
+        "testimonial1": {
+          "name": "David Thompson",
+          "role": "Fondateur de Startup (fictif)",
+          "quote": "J'ai embauché un développeur pour construire notre MVP d'application mobile. Le projet était complexe — fonctionnalités personnalisées, intégration de paiement, tout. Quand j'ai livré tout parfaitement, ils ont demandé des 'petits changements' et retardé le paiement pendant des semaines. Finalement, ils ont disparu complètement. Trois mois de travail, partis. Cet échec de projet a failli finir ma carrière freelance. J'ai dû prendre un emploi à temps partiel juste pour payer le loyer tout en reconstruisant ma base de clients.",
+          "imageAlt": "David Thompson"
+        },
+        "testimonial2": {
+          "name": "Lisa Park",
+          "role": "Directrice Marketing (fictive)",
+          "quote": "Nous avons embauché un designer pour notre rebranding. Les concepts initiaux semblaient prometteurs, mais les livrables finaux étaient complètement différents de ce que nous avions convenu. Quand nous avons demandé des révisions pour correspondre au brief original, ils ont demandé un paiement supplémentaire. Nous étions coincés — soit payer plus pour du travail qui devrait être fait correctement la première fois, soit recommencer. Nous avons fini par payer deux fois pour le même projet.",
+          "imageAlt": "Lisa Park"
+        }
+      },
+      "challenges": {
+        "title": "Défis que les Propriétaires de Projet Font Face",
+        "subtitle": "Comprendre les obstacles clés qui impactent le succès du projet et la croissance de l'entreprise",
+        "nonDeliveryRisk": {
+          "title": "Risque de Non-Livraison",
+          "description": "Les propriétaires de projet paient souvent d'avance et attendent la livraison, les laissant vulnérables aux freelances qui disparaissent ou échouent à terminer le travail. Cela peut entraîner des pertes financières significatives et des retards de projet. Beaucoup de propriétaires de projet ont expérimenté des situations où les freelances disparaissent simplement après réception du paiement, les laissant avec aucun travail et aucun recours pour récupération."
+        },
+        "qualityIssues": {
+          "title": "Problèmes de Qualité et de Portée",
+          "description": "Recevoir du travail qui ne correspond pas aux spécifications, exigences, ou standards de qualité est un problème commun. Les propriétaires de projet peuvent finir avec des livrables de qualité inférieure qui nécessitent des révisions extensives ou un retravail complet. Cela conduit souvent à des coûts supplémentaires et des retards, surtout quand les freelances demandent un paiement supplémentaire pour des révisions qui devraient être incluses dans la portée originale."
+        },
+        "projectDelays": {
+          "title": "Retards de Projet",
+          "description": "Les délais manqués et retards de projet peuvent avoir des conséquences commerciales sérieuses, surtout pour des projets sensibles au temps ou lancements de produits. Les freelances peuvent surengager, sous-estimer la complexité du projet, ou simplement manquer de compétences de gestion de projet appropriées. Ces retards peuvent impacter les opérations commerciales, campagnes marketing, et positionnement concurrentiel sur le marché."
+        },
+        "communicationIssues": {
+          "title": "Problèmes de Communication et Responsabilité",
+          "description": "Une mauvaise communication, manque de mises à jour régulières, et difficulté à atteindre les freelances peuvent rendre la gestion de projet difficile. Sans mesures de responsabilité claires, il est difficile de suivre la progression et d'assurer que les projets restent sur les rails. Ce manque de transparence conduit souvent à des surprises et déceptions quand les délais approchent."
+        },
+        "trustVerification": {
+          "title": "Difficulté à Vérifier la Fiabilité du Freelance",
+          "description": "Évaluer la fiabilité du freelance, compétences, et qualité du travail avant embauche est difficile. Les portfolios peuvent être trompeurs, les avis peuvent être faux, et les performances passées ne garantissent pas les résultats futurs. Les propriétaires de projet luttent souvent pour prendre des décisions d'embauche éclairées, conduisant à des erreurs coûteuses et échecs de projet."
+        },
+        "disputeResolution": {
+          "title": "Défis de Résolution de Litiges",
+          "description": "Les litiges sur la portée du projet, qualité, ou paiement sont difficiles à résoudre quand on travaille avec des clients distants. Les propriétaires de projet peuvent dépenser des ressources et temps significatifs sur des conflits avec des résultats incertains. Le manque de mécanismes de résolution de litiges clairs laisse souvent les propriétaires de projet avec peu de recours quand les freelances échouent à livrer ou livrent du travail de qualité inférieure."
+        }
+      },
+      "whyChooseEscrow": {
+        "title": "Pourquoi les Propriétaires de Projet Choisissent l'Escrow Numérique",
+        "subtitle": "Protégez vos projets et assurez la livraison de qualité avec confiance.",
+        "payOnlyCompleted": {
+          "title": "Payez Seulement pour le Travail Terminé",
+          "description": "Les propriétaires de projet sont protégés contre les risques de non-livraison parce que le paiement n'est libéré que lorsque le travail répond aux spécifications. Plus de paiement d'avance et espérer le meilleur."
+        },
+        "qualityReview": {
+          "title": "Révision de Qualité Avant Paiement",
+          "description": "Réviser et approuver le travail avant que le paiement ne soit libéré. Assurez que les livrables répondent à vos exigences et standards de qualité avant que le freelance ne reçoive le paiement."
+        },
+        "confidenceNewFreelancers": {
+          "title": "Confiance avec de Nouveaux Freelances",
+          "description": "Embauchez des freelances talentueux sans risque de paiement, car l'escrow assure l'achèvement du travail avant paiement. Accédez à un pool de talents plus large sans vous inquiéter de la fiabilité."
+        },
+        "milestoneControl": {
+          "title": "Contrôle Basé sur les Étapes",
+          "description": "Libérez les paiements basés sur les étapes du projet, approbation de livrables, ou étapes d'achèvement. Maintenez le contrôle sur la progression du projet et assurez la responsabilité tout au long."
+        },
+        "lowerCosts": {
+          "title": "Coûts de Projet Réduits",
+          "description": "Frais de traitement réduits comparés aux plateformes traditionnelles signifient plus de budget pour le travail de projet réel. Paiements directs éliminent les intermédiaires de plateforme et leurs coûts associés."
+        },
+        "fairDisputeResolution": {
+          "title": "Résolution de Litiges Équitable",
+          "description": "Système de médiation intégré avec des arbitres neutres pour une résolution de conflit équitable. Chaque étape du projet est documentée et vérifiable, permettant une résolution de litiges plus rapide et plus efficace."
+        }
+      },
+      "completeProtection": {
+        "title": "Protection Complète pour les Propriétaires de Projet",
+        "subtitle": "Chaque aspect de votre embauche de projet est sécurisé et protégé.",
+        "duringDevelopment": {
+          "title": "Pendant le Développement du Projet",
+          "subtitle": "Vos fonds sont protégés",
+          "benefits": [
+            "Fonds maintenus en sécurité jusqu'à l'approbation du travail",
+            "Réviser les livrables avant libération du paiement",
+            "Demander des révisions si le travail ne répond pas aux specs",
+            "Annuler le projet si le freelance échoue à livrer"
+          ]
+        },
+        "afterApproval": {
+          "title": "Après Approbation du Projet",
+          "subtitle": "Paiement instantané au freelance",
+          "benefits": [
+            "Approuver le travail et libérer le paiement instantanément",
+            "Le freelance reçoit les fonds dans les minutes",
+            "Documentation complète du projet et enregistrements",
+            "Système intégré de feedback et notation"
+          ]
+        }
+      },
+      "callToAction": {
+        "title": "Prêt à Embaucher avec Confiance Complète ?",
+        "subtitle": "Rejoignez des milliers de propriétaires de projet qui ne s'inquiètent plus jamais des risques de projet. Démarrez votre premier projet sécurisé aujourd'hui.",
+        "startEscrow": "Démarrer l'Escrow de Projet",
+        "talkToSpecialist": "Parler au Spécialiste de Projet"
+      }
+    },
+    "freelancerPage": {
+      "hero": {
+        "badge": "Pour les Freelances",
+        "title": "Recevez le Paiement Sécurisé, ",
+        "titleHighlight": "À Chaque Projet",
+        "subtitle": "Éliminez les risques de paiement et développez votre entreprise freelance avec confiance. L'escrow numérique assure que vous recevez le paiement quand vous livrez comme promis.",
+        "primaryButton": "Démarrer l'Escrow Freelance",
+        "secondaryButton": "Apprendre Comment Ça Marche"
+      },
+      "testimonials": {
+        "sarah": {
+          "name": "Sarah Chen",
+          "role": "Développeuse Web (fictive)",
+          "quote": "J'ai passé trois mois à construire une plateforme e-commerce complète pour une startup. Le projet était complexe — fonctionnalités personnalisées, intégration de paiement, tout. Quand j'ai livré tout parfaitement, ils ont demandé des 'petits changements' et retardé le paiement pendant des semaines. Finalement, ils ont disparu complètement. Trois mois de travail, partis. Cet échec de projet a failli finir ma carrière freelance. J'ai dû prendre un emploi à temps partiel juste pour payer le loyer tout en reconstruisant ma base de clients."
+        },
+        "marcus": {
+          "name": "Marcus Rodriguez",
+          "role": "Designer Graphique (fictif)",
+          "quote": "J'ai travaillé avec cette agence marketing pendant deux ans. Ils étaient mon plus gros client — travail constant, bonne relation, toujours payé à temps. Puis leur client principal s'est retiré et ils ont eu des problèmes financiers. Ils me devaient 28 000 $ pour des projets terminés quand ils ont fait faillite. Même de bons clients peuvent devenir de mauvaises dettes sans faute de leur part. Cela m'a appris que même des relations de confiance ont besoin de protection."
+        }
+      },
+      "challenges": {
+        "title": "Défis que les Freelances Font Face dans le Travail de Projet",
+        "subtitle": "Comprendre les obstacles clés qui impactent les entreprises freelance du monde entier",
+        "nonPaymentRisk": {
+          "title": "Risque de Non-Paiement",
+          "description": "Les freelances terminent souvent les projets en premier et attendent le paiement, les laissant vulnérables aux clients qui refusent de payer ou disparaissent après réception du travail. Cela peut entraîner des pertes financières significatives, incluant des semaines ou des mois d'efforts et de temps investis. Beaucoup de freelances ont expérimenté des situations où les clients disparaissent simplement après achèvement du projet, les laissant avec des pertes substantielles et aucun moyen pratique de récupérer leurs gains."
+        },
+        "cashFlowIssues": {
+          "title": "Problèmes de Trésorerie",
+          "description": "Même des freelances réussis peuvent faire face à des crises de trésorerie d'un mauvais client, conduisant à l'incapacité de payer les factures ou investir dans la croissance de l'entreprise. Ce risque n'est pas limité aux nouveaux clients — les clients existants peuvent faire défaut en raison de leurs propres problèmes financiers. Un seul projet important impayé peut créer du stress financier sérieux, affectant la capacité à couvrir les dépenses de vie et les coûts d'entreprise tout en attendant le paiement différé."
+        },
+        "paymentDelays": {
+          "title": "Retards de Paiement",
+          "description": "Les retards de paiement affligent les freelances de clients qui paient tard en raison de problèmes de trésorerie, processus d'approbation longs, ou simplement de mauvaises pratiques de paiement. Ces retards perturbent les finances personnelles et rendent difficile la planification pour les projets futurs. Les freelances trouvent souvent des positions difficiles où ils doivent couvrir les dépenses de vie tout en attendant des paiements différés de clients."
+        },
+        "platformFees": {
+          "title": "Frais de Paiement Élevés",
+          "description": "Les freelances font souvent face à des coûts élevés de traitement de paiement, conversion de devise, et transferts transfrontaliers, qui peuvent réduire significativement les gains. Ces frais, ainsi que des structures complexes et des délais de retrait, rendent la trésorerie imprévisible et peuvent rendre des petits projets non rentables. Cela pousse les freelances à augmenter les taux pour compenser les dépenses."
+        },
+        "trustIssues": {
+          "title": "Problèmes de Confiance avec de Nouveaux Clients",
+          "description": "Construire la confiance avec de nouveaux clients est difficile, surtout quand on travaille à distance à travers différents fuseaux horaires et cultures. Les freelances luttent souvent pour vérifier la fiabilité du client sans recherche extensive, qui est chronophage. Sans une relation éprouvée avec un client, les freelances hésitent à prendre des projets plus importants, manquant des opportunités de croissance précieuses et de travail mieux payé."
+        },
+        "disputeResolution": {
+          "title": "Défis de Résolution de Litiges",
+          "description": "Les litiges sur la portée du projet, qualité, ou paiement sont difficiles à résoudre quand on travaille avec des clients distants. Les freelances peuvent dépenser des ressources et temps significatifs sur des conflits avec des résultats incertains. Le manque de mécanismes de résolution de litiges clairs laisse souvent les freelances avec peu de recours quand les clients refusent de payer ou demandent des révisions excessives au-delà de la portée convenue."
+        }
+      },
+      "whyChooseEscrow": {
+        "title": "Pourquoi les Freelances Choisissent l'Escrow Numérique",
+        "subtitle": "Sécurisez vos paiements et développez votre entreprise freelance avec confiance.",
+        "paymentSecured": {
+          "title": "Paiement Sécurisé Avant de Commencer",
+          "description": "Les freelances sont protégés contre les risques de non-paiement parce que les fonds sont maintenus dans un escrow sécurisé avant que le travail ne commence."
+        },
+        "immediatePayment": {
+          "title": "Paiement Immédiat à l'Achèvement",
+          "description": "Les paiements sont libérés instantanément une fois le travail approuvé. Vous recevez votre argent dans les minutes, améliorant considérablement la trésorerie et éliminant les retards de paiement."
+        },
+        "confidenceWithClients": {
+          "title": "Confiance avec les Clients Nouveaux et Existants",
+          "description": "Les freelances peuvent travailler avec des clients nouveaux ou peu familiers en toute confiance, car l'escrow sécurise le paiement d'avance. Prenez des projets plus importants sans risque de paiement."
+        },
+        "milestonePayments": {
+          "title": "Paiements Basés sur les Étapes",
+          "description": "Libération de paiement flexible basée sur les étapes du projet, étapes d'achèvement, ou accord mutuel. Conditions de libération personnalisables qui fonctionnent pour votre structure de projet."
+        },
+        "lowFees": {
+          "title": "Frais de Transaction Faibles",
+          "description": "Transactions peer-to-peer avec des monnaies numériques offrent des frais plus faibles que les paiements transfrontaliers traditionnels, aidant les freelances et propriétaires de projet à maximiser les gains."
+        },
+        "fairDisputeResolution": {
+          "title": "Résolution de Litiges Équitable",
+          "description": "Système de médiation intégré avec des arbitres tierces neutres pour une résolution de conflit équitable. Chaque étape du projet est enregistrée et vérifiable, permettant une résolution de litiges plus rapide et moins coûteuse."
+        }
+      },
+      "completeProtection": {
+        "title": "Protection Complète pour les Freelances",
+        "subtitle": "Chaque aspect de votre projet freelance est sécurisé et protégé.",
+        "beforeStarting": {
+          "title": "Avant de Commencer le Travail",
+          "subtitle": "Le paiement est sécurisé d'avance",
+          "benefits": [
+            "Le client dépose le paiement complet dans l'escrow",
+            "Les fonds sont vérifiés et verrouillés en sécurité",
+            "Vous recevez une confirmation avant de commencer le travail",
+            "Travaillez avec de nouveaux et anciens clients en toute confiance"
+          ]
+        },
+        "afterCompletion": {
+          "title": "Après Achèvement du Projet",
+          "subtitle": "Libération de paiement instantanée",
+          "benefits": [
+            "L'approbation du projet déclenche la libération automatique",
+            "Les fonds reçus dans les minutes d'approbation",
+            "Transparence complète tout au long du processus",
+            "Médiation neutre intégrée si des litiges surviennent"
+          ]
+        }
+      },
+      "callToAction": {
+        "title": "Prêt à Sécuriser Vos Paiements Freelance ?",
+        "subtitle": "Rejoignez des milliers de freelances qui ne s'inquiètent plus jamais du paiement. Démarrez votre premier projet freelance sécurisé aujourd'hui.",
+        "startEscrow": "Démarrer l'Escrow Freelance",
+        "talkToSpecialist": "Parler au Spécialiste Freelance"
+      }
+    }
+  }
+}

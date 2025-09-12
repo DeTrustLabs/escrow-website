@@ -1,0 +1,890 @@
+{
+  "trade": {
+    "metadata": {
+      "title": "Handels-Escrow - Sichere globale Handelszahlungen",
+      "description": "Eliminieren Sie Zahlungsrisiken im grenzüberschreitenden Handel mit sicherem digitalem Escrow für Exporteure und Importeure. Schützen Sie Ihre internationalen Transaktionen mit blockchain-basiertem Escrow."
+    },
+    "hero": {
+      "badge": "Globale Handelslösung",
+      "title": "Sichern Sie globalen Handel mit ",
+      "titleHighlight": "Digitalem Escrow",
+      "subtitle": "Eliminieren Sie Zahlungsrisiken im grenzüberschreitenden Handel mit sicherem Escrow für Exporteure und Importeure.",
+      "startEscrow": "Globalen Handels-Escrow starten",
+      "seeHowItWorks": "Erfahren Sie, wie es funktioniert",
+      "trustIndicators": {
+        "nonCustodial": "Nicht-verwahrend",
+        "openSource": "Open Source",
+        "audited": "Geprüfte Smart Contracts",
+        "availability": "24/7 Verfügbarkeit"
+      }
+    },
+    "workflow": {
+      "metadata": {
+        "title": "Digitaler Escrow-Arbeitsablauf - Vollständiger Prozessleitfaden | Escrow-Protokoll",
+        "description": "Erfahren Sie den vollständigen digitalen Escrow-Prozess für sicheren internationalen Handel. Schritt-für-Schritt-Anleitung vom Setup bis zur Freigabe der Mittel für Exporteure und Importeure."
+      },
+      "hero": {
+        "badge": "Sicherer Handelsarbeitsablauf",
+        "title": "Escrow ",
+        "titleHighlight": "Arbeitsablauf",
+        "subtitle": "Eliminieren Sie Zahlungsrisiken, senken Sie Kosten und handeln Sie mit Vertrauen mit einem digitalen Escrow. Sowohl Exporteure als auch Importeure sind während des gesamten Transaktionsprozesses geschützt.",
+        "trustIndicators": [
+          "Zahlungssicherheit",
+          "Sofortige Mittel-Freigabe",
+          "Niedrigere Transaktionskosten"
+        ]
+      },
+      "steps": {
+        "title": "4 Schritte des Escrow",
+        "subtitle": "Eine Schritt-für-Schritt-Aufschlüsselung des sicheren digitalen Escrow-Prozesses",
+        "step1": {
+          "title": "1. Escrow-Vereinbarung",
+          "description": "Verhandeln Sie den Escrow-Betrag, das Finanzierungsdatum und den Freigabemechanismus."
+        },
+        "step2": {
+          "title": "2. Verifizierte Finanzierung",
+          "description": "Der Importeur hinterlegt digitale Währungen in den Escrow, bevor die Waren versendet werden."
+        },
+        "step3": {
+          "title": "3. Lieferung",
+          "description": "Der Exporteur versendet die Waren und lädt Lieferdokumente zur Verifizierung hoch."
+        },
+        "step4": {
+          "title": "4. Mittel-Freigabe",
+          "description": "Die Mittel werden automatisch freigegeben bei Lieferbestätigung oder Dokumentenverifizierung."
+        }
+      },
+      "howItWorks": {
+        "title": "Wie funktioniert ein digitaler Escrow?",
+        "subtitle": "Verständnis des vollständigen digitalen Escrow-Prozesses für sicheren internationalen Handel",
+        "steps": {
+          "onboarding": {
+            "title": "Onboarding",
+            "description": "Der sichere Escrow-Prozess beginnt mit einem einfachen Online-Setup, das innerhalb von Minuten abgeschlossen ist. Sowohl Importeur als auch Exporteur erstellen eine digitale Brieftasche - ein sicheres digitales Konto für das Senden und Empfangen digitaler Währungen wie USD oder EUR. Diese Brieftasche fungiert wie ein digitales Bankkonto, hält alles privat. Das Setup erfordert keine traditionellen Banken und gibt Ihnen die vollständige Kontrolle über Ihre Vermögenswerte. Sobald eingerichtet, können Sie einfach an sicheren Escrows mit Handelspartnern weltweit teilnehmen, Ihre Zahlungen privat halten und unter Ihrer vollständigen Kontrolle.",
+            "features": [
+              "Anmelden und digitale Brieftasche erstellen",
+              "Keine Banken erforderlich, vollständige Vermögenskontrolle",
+              "Bereit für internationale Handelsbeteiligung"
+            ]
+          },
+          "escrowAgreement": {
+            "title": "Escrow-Vereinbarung",
+            "description": "Um zu beginnen, eröffnen Sie einen neuen Escrow, laden Ihren Handelspartner ein und definieren gemeinsam die Bedingungen des Escrow wie Betrag, Finanzierungsdatum, Lieferdatum und Freigabemechanismus. Wenn Sie Unterstützung benötigen, können Sie auch einen Handelsberater einbeziehen, der den Escrow vorbereiten kann, aber keinen Zugang zu Escrow-Mitteln hat. Sie wählen auch ein Schiedsgericht von Anfang an für Streitfälle - dieses Gericht wird nur bei Bedarf eingeschaltet und kann die Transaktion sonst nicht einsehen. Diese Rechtsvereinbarung (Escrow) konzentriert sich speziell auf Zahlungssicherheit und ersetzt keinen Kaufvertrag oder eine Rechnung. Beide Parteien unterzeichnen die Escrow-Vereinbarung digital, wodurch ein bindender Vertrag entsteht, der Fairness während des gesamten Handelsprozesses gewährleistet.",
+            "features": [
+              "Escrow-Bedingungen vereinbaren",
+              "Handelsberater zur Unterstützung beim Setup",
+              "Digitale Unterschriften erstellen bindenden Vertrag"
+            ]
+          },
+          "verifiedFunding": {
+            "title": "Verifizierte Finanzierung",
+            "description": "Der Importeur hinterlegt den vereinbarten Betrag unter Verwendung digitaler Währungen innerhalb des festgelegten Zeitraums. Sobald hinterlegt, erhalten beide Parteien sofortige Bestätigung, dass die Mittel gesichert und geschützt sind. Der Escrow hält diese Mittel neutral, bis die Lieferbedingungen erfüllt sind, wodurch Risiken der Nichtzahlung für Exporteure und der Nichtlieferung für Importeure eliminiert werden.",
+            "features": [
+              "Importeur hinterlegt Mittel",
+              "Sofortige Finanzierungsverifizierung und -information",
+              "Mittel sind bereit und sicher"
+            ]
+          },
+          "delivery": {
+            "title": "Lieferung",
+            "description": "Nach Finanzierungsbestätigung initiiert der Exporteur Produktion und Versand. Wichtige Dokumente wie Konnossemente werden hochgeladen, um den Fortschritt zu verfolgen, während Liefernachweise den Erhalt bestätigen. Das transparente Dokumentationssystem hält beide Parteien während des Versandprozesses auf dem Laufenden, wodurch Unsicherheiten reduziert und Vertrauen bis zur Ankunft der Waren aufrechterhalten wird.",
+            "features": [
+              "Finanzierungsbestätigung löst Produktion und Versand aus",
+              "Dokument als Liefernachweis hochladen",
+              "Verifizierung des Liefernachweises"
+            ]
+          },
+          "releaseOfFunds": {
+            "title": "Freigabe der Mittel",
+            "description": "Die Mittel-Freigabe erfolgt durch vorab ausgewählte Mechanismen einschließlich Importeur-Bestätigung, Drittprüfungen durch Unternehmen wie SGS oder Intertek, Zollverifizierung oder elektronische Dokumentenvalidierung. Diese flexiblen Optionen berücksichtigen verschiedene Handelsanforderungen und gewährleisten, dass Exporteure eine zeitnahe Zahlung erhalten und Importeure verifizierte Waren gemäß ihren spezifischen Vereinbarungsbedingungen erhalten.",
+            "features": [
+              "Mehrere Freigabeoptionen",
+              "Drittverifizierung verfügbar",
+              "Verschiedene Optionen für Ihre Handelsanforderungen"
+            ]
+          },
+          "adjustments": {
+            "title": "Anpassungen",
+            "description": "Der Escrow berücksichtigt reale Herausforderungen durch flexible Anpassungsmechanismen. Wenn Probleme auftreten - wie Lieferverzögerungen oder geringfügige Qualitätsprobleme - können Handelspartner Lösungen vorschlagen, einschließlich Fristverlängerungen oder Preisänderungen. Alle Änderungen erfordern digitale Unterschriften von beiden Parteien, um rechtlich bindend zu werden, wodurch Transparenz und gegenseitige Vereinbarung während des gesamten Prozesses gewährleistet wird.",
+            "features": [
+              "Flexible Anpassung der Escrow-Bedingungen",
+              "Verfügbar bis zur Mittel-Freigabe",
+              "Gegenseitige Zustimmung erforderlich für Änderungen"
+            ]
+          },
+          "dispute": {
+            "title": "Streitfall",
+            "description": "Wenn Meinungsverschiedenheiten bezüglich Qualität oder Lieferung auftreten, kann jede Partei einen Streitfall einleiten, der die Mittel sofort einfriert, um beide Seiten zu schützen. Alle Dokumentation und Korrespondenz wird verschlüsselt und gespeichert, um den Transaktionsverlauf schnell zu rekonstruieren. Handelspartner haben Zeit, Probleme bilateral zu lösen, indem sie Rabatte anbieten oder Fristen verlängern. Wenn die bilaterale Lösung fehlschlägt, eskaliert der Streitfall zu einem vorab festgelegten neutralen Schiedsrichter, der Zugang zu allen Transaktionsdaten hat, um fundierte Entscheidungen zu treffen. Dieses umfassende Beweissystem ermöglicht eine effiziente Streitbeilegung basierend auf klarer Dokumentation anstatt widersprüchlicher Behauptungen.",
+            "features": [
+              "Mittel werden sofort zum Schutz eingefroren",
+              "Bilaterale Verhandlungen werden zuerst ermutigt",
+              "Neutraler Schiedsrichter-Eskalation verfügbar"
+            ]
+          }
+        }
+      },
+      "releaseMechanisms": {
+        "title": "Flexible Freigabemechanismen",
+        "subtitle": "Mehrere Möglichkeiten zur Auslösung der Mittel-Freigabe basierend auf Ihren spezifischen Handelsanforderungen",
+        "mechanisms": {
+          "deliveryConfirmation": {
+            "title": "Lieferbestätigung",
+            "description": "Die Mittel werden automatisch freigegeben, wenn die Lieferung vom Importeur oder Logistikdienstleister bestätigt wird."
+          },
+          "thirdPartyVerification": {
+            "title": "Drittverifizierung",
+            "description": "Freigabe ausgelöst nach erfolgreicher Qualitätsprüfung durch unabhängige Drittprüfer oder Verifizierungsdienste."
+          },
+          "documentBased": {
+            "title": "Dokumentenbasierte Bestätigung",
+            "description": "Freigabe nach Einreichung und Verifizierung erforderlicher Versand-, Zoll- und Handelsdokumentation."
+          },
+          "mutualAgreement": {
+            "title": "Gegenseitige Vereinbarung",
+            "description": "Beide Parteien müssen explizit zustimmen, die Mittel freizugeben, was maximale Kontrolle über die Transaktion bietet."
+          }
+        }
+      },
+      "disputeResolution": {
+        "title": "Streitbeilegungsprozess",
+        "subtitle": "Faire und transparente Beilegung bei auftretenden Problemen während der Transaktionen",
+        "whenDisputesOccur": {
+          "title": "Wenn Streitfälle auftreten",
+          "subtitle": "Mittel werden sofort zum Schutz eingefroren",
+          "description": "Wenn eine der Parteien einen Streitfall erhebt, werden die Mittel sofort eingefroren, um beide Seiten zu schützen. Alle Dokumentation und Korrespondenz zwischen den Parteien wird gespeichert (verschlüsselt) und hilft, den Verlauf dessen, was vereinbart wurde und was passiert ist, schnell zu rekonstruieren.",
+          "features": [
+            "Mittel werden sofort bei Streitfall eingefroren",
+            "Alle Kommunikationen werden verschlüsselt und gespeichert",
+            "Vollständiger Transaktionsverlauf verfügbar",
+            "Beweise für Überprüfung aufbewahrt"
+          ]
+        },
+        "resolutionOptions": {
+          "title": "Beilegungsoptionen",
+          "subtitle": "Mehrere Wege zu fairer Beilegung",
+          "description": "Die Parteien haben Zeit, Streitfälle selbst zu lösen, indem sie Verhandlungen führen (z. B. Rabatte anbieten oder Lieferzeiten verlängern). Wenn bilaterale Lösungen nicht möglich sind, kann der Streitfall zu einem vorab festgelegten neutralen Schiedsrichter eskaliert werden, der schließlich über die Mittelverteilung entscheidet.",
+          "features": [
+            "Direkte Verhandlungen zwischen Parteien",
+            "Flexible Lösungen (Rabatte, Verlängerungen)",
+            "Neutraler Schiedsrichter-Eskalation",
+            "Zugang zu allen Transaktionsdaten"
+          ]
+        },
+        "arbitratorNote": {
+          "title": "Wichtiger Hinweis: Schiedsrichterkosten",
+          "description": "Der Schiedsrichter wird zu Beginn des Escrow festgelegt und bleibt während des gesamten Prozesses neutral. Er hat Zugang zu allen Informationen und Daten, um fundierte Entscheidungen zu treffen. Bitte beachten Sie, dass Schiedsrichtergebühren von den Escrow-Mitteln abgezogen werden, wodurch der Gesamtbetrag, der an beide Parteien ausgezahlt wird, reduziert wird. Dies ermutigt zur bilateralen Lösung, wann immer möglich."
+        }
+      },
+      "digitalPayments": {
+        "title": "Was Sie über digitale Zahlungen wissen müssen",
+        "subtitle": "Verständnis digitaler Währungen, Brieftaschen und On-Ramp-Anbieter für sicheren internationalen Handel",
+        "digitalCurrencies": {
+          "title": "Was sind digitale Währungen?",
+          "description": "Eine digitale Währung, auch als Stablecoin bezeichnet, ist eine digitale Darstellung traditioneller Währung (FIAT-Währung) wie dem US-Dollar. Eine digitale USD ist 1:1 an den Papier-USD gekoppelt, spiegelt seinen Wert wider und bietet die Vorteile der Blockchain-Technologie. Stablecoins werden von (regulierten) Institutionen ausgegeben und durch Sicherheiten gesichert, wodurch ihre Stabilität und Vertrauenswürdigkeit gewährleistet wird. Die größten Stablecoins sind derzeit USDT und USDC, die von Tether bzw. Circle ausgegeben werden. Stablecoins sind perfekt für grenzüberschreitende Transaktionen, da sie instant verrechnet werden und günstig zu senden sind, wodurch der internationale Handel effizienter und kostengünstiger wird."
+        },
+        "digitalWallet": {
+          "title": "Was ist eine Brieftasche?",
+          "description": "Eine digitale Brieftasche ist wie ein sicheres digitales Bankkonto, das Sie vollständig kontrollieren. Es ist eine App auf Ihrem Telefon oder Computer, in der Sie digitale Währungen wie Stablecoins speichern, senden und empfangen können. Stellen Sie es sich wie Ihren persönlichen digitalen Safe vor - nur Sie haben den Schlüssel (Passwort), und keine Bank oder Dritte kann auf Ihre Mittel zugreifen. Für internationale Händler bietet eine Brieftasche direkte Kontrolle über Zahlungen ohne traditionelle Banken. Sobald bereit, können Sie an sicheren Escrow-Transaktionen mit Handelspartnern weltweit teilnehmen, Ihre Mittel privat halten und unter Ihrer vollständigen Kontrolle."
+        },
+        "fiatConversion": {
+          "title": "Wie kann ich FIAT in Stablecoins umwandeln?",
+          "description": "Sie können eine Börse oder einen On-Ramp-Anbieter verwenden, um traditionelles Geld in digitale Währungen umzuwandeln. Börsen wie Coinbase und Binance sind Plattformen, auf denen Sie verschiedene digitale Währungen einschließlich Stablecoins kaufen, verkaufen und handeln können. Ein On-Ramp-Anbieter oder Digitaler Geldumwandler ist ein lizenzierter Anbieter, der traditionelles Geld (FIAT) für digitale Währungen wie Stablecoins umwandelt, wodurch sichere und konforme Transaktionen gewährleistet werden. Für beide senden Sie ihnen FIAT-Geld per Banküberweisung, mobiler Zahlung oder Kreditkarte, und sie gutschreiben Ihre Brieftasche mit dem entsprechenden Stablecoin. Zum Beispiel: Stellen Sie sich vor, Sie senden 100 USD (FIAT) an sie - sie tauschen es in 100 USDT (Stablecoin) in Ihrer digitalen Brieftasche um. Diese Anbieter handhaben die KYC/KYB (Know Your Customer/Business) Verifizierung, um die Einhaltung von Finanzvorschriften zu gewährleisten, wodurch der Umwandlungsprozess sowohl sicher als auch rechtlich konform für den internationalen Handel wird."
+        }
+      },
+      "cta": {
+        "title": "Bereit für sicheren Handel?",
+        "subtitle": "Treten Sie Tausenden von Händlern bei, die sich nie wieder Sorgen um Zahlungsrisiken machen. Erleben Sie die Zukunft des sicheren globalen Handels heute.",
+        "startEscrow": "Starten Sie Ihren Escrow",
+        "talkToAdvisor": "Sprechen Sie mit Handelsberater"
+      }
+    },
+    "solvesRisks": {
+      "title": "Wie Escrow Risiken im internationalen Handel löst",
+      "description": "Ein digitaler Escrow für grenzüberschreitenden Handel eliminiert das Käufer-Verkäufer-Dilemma, das erfolgreiche internationale Transaktionen verhindert. Traditioneller Handel erfordert, dass eine Partei erhebliches Risiko übernimmt - entweder versendet der Exporteur zuerst und wartet auf Zahlung, oder der Importeur zahlt im Voraus ohne Liefergarantien. Ein digitaler Escrow für Exporteure und Importeure löst dies, indem er Mittel sicher hält, bis Waren geliefert und verifiziert sind, wodurch Vertrauen zwischen Handelspartnern weltweit geschaffen und sicherer globaler Handel ermöglicht wird.",
+      "videoTitle": "Wie Escrow Risiken im internationalen Handel löst"
+    },
+    "trustChanges": {
+      "title": "Weil Vertrauen alles verändert",
+      "description": "Internationaler Handel eröffnet aufregende Möglichkeiten, Exporteure und Importeure mit neuen Märkten und Wachstumspotenzial zu verbinden. Doch Vertrauen ist eine große Herausforderung bei neuen Handelspartnern, insbesondere in verschiedenen Ländern mit unbekannten Gesetzen, Vorschriften und Sprachen. Dies ist sogar schwieriger, wenn Partner noch nie gehandelt haben oder nur wenige Geschäfte haben, wodurch kein Track Record vorliegt, auf den man sich verlassen kann. Betrugsfälle - Geschäfte, die aufgrund unzuverlässiger Gegenparteien scheitern - machen Vorsicht entscheidend, oft stoppen sie Geschäfte, bevor sie beginnen."
+    },
+    "dilemma": {
+      "title": "Das Käufer-Verkäufer-Dilemma",
+      "subtitle": "Während Exporteure Nichtzahlung fürchten, fürchten Importeure Nichtlieferung - das Risiko des Exporteurs zu verringern erhöht das Risiko des Importeurs und umgekehrt.",
+      "exporterRisks": {
+        "title": "Exporteur-Risiken",
+        "description": "Exporteure stehen oft vor dem höchsten Risiko im globalen Handel. Typischerweise liefern sie Waren zuerst und warten auf Zahlung, wodurch sie anfällig für Importeure sind, die sich weigern zu zahlen oder nach Erhalt der Waren verschwinden. Exporteure könnten nicht nur die Zahlung verlieren, sondern auch die Kosten für Produktion und Versand, was für ihr Geschäft verheerend sein kann."
+      },
+      "importerRisks": {
+        "title": "Importeur-Risiken",
+        "description": "Importeure sorgen sich um Nichtlieferung oder schlechte Qualität. Wenn sie im Voraus zahlen, riskieren sie, nichts im Gegenzug zu erhalten oder Waren zu erhalten, die nicht dem Versprochenen entsprechen. Ohne die Waren zuerst zu sehen oder zu testen, könnten Importeure mit defekten Produkten oder gar keinen Produkten enden, wodurch Geld und Zeit verschwendet wird."
+      },
+      "tensions": "Verschiedene Risikopositionen schaffen Spannungen in Verhandlungen. Eine Seite muss oft den Großteil des Risikos übernehmen, was zu unfairen Geschäften oder gar keinen Geschäften führt, wenn Vertrauen fehlt.",
+      "bridging": {
+        "title": "Die Lücke schließen mit einem digitalen Escrow",
+        "description": "Das Käufer-Verkäufer-Dilemma stoppt viele vielversprechende Geschäfte, wodurch Möglichkeiten für starke Geschäftskontakte verpasst werden. Ein digitaler Escrow für internationalen Handel bietet eine Lösung, indem er Mittel sicher hält, bis Waren geliefert und verifiziert sind, wodurch Risiken für beide Seiten reduziert werden. Dies fördert Vertrauen, verwandelt Zögern in zuversichtlichen, erfolgreichen globalen Handel.",
+        "hold": "Halten",
+        "verify": "Verifizieren",
+        "release": "Freigeben"
+      }
+    },
+    "whatIs": {
+      "title": "Was ist ein digitaler Escrow?",
+      "subtitle": "Eine einfache Lösung für sicheren internationalen Handel",
+      "description": "Ein digitaler Escrow ist eine sichere Zahlungsmethode, die sowohl Exporteure als auch Importeure in grenzüberschreitenden Transaktionen schützt. Er funktioniert, indem er Mittel in einem neutralen, digitalen Escrow hält, bis Waren geliefert und verifiziert sind, wodurch Risiken wie Betrug und Nichtzahlung eliminiert werden. Für Exporteure bedeutet dies, mit Vertrauen zu versenden, da die Zahlung garantiert ist, sobald Bedingungen erfüllt sind. Für Importeure stellt es sicher, dass die Zahlung nur freigegeben wird, wenn Waren den vereinbarten Spezifikationen entsprechen. Der digitale Escrow eliminiert traditionelle Intermediäre, reduziert hohe Gebühren und vereinfacht Vertrauen zwischen Handelspartnern weltweit.",
+      "imageAlt": "Digitaler Escrow-Prozess-Illustration"
+    },
+    "features": {
+      "title": "Escrow-Funktionen",
+      "subtitle": "Alles, was Exporteure und Importeure für sichere, effiziente grenzüberschreitende Transaktionen brauchen.",
+      "security": {
+        "title": "Sicherheit und Flexibilität",
+        "description": "Mittel werden sicher gehalten, bis beide Parteien ihre vertraglichen Verpflichtungen erfüllt haben, wodurch Risiken wie Betrug und Nichtzahlung eliminiert werden."
+      },
+      "trust": {
+        "title": "Vertrauen und Wachstum",
+        "description": "Sichere Zahlungen fördern Vertrauen zwischen Parteien, reduzieren Risiken und öffnen die Tür zu mehr Geschäftsmöglichkeiten."
+      },
+      "fees": {
+        "title": "Niedrige Transaktionsgebühren",
+        "description": "Durch Entfernung von Intermediären und Nutzung digitaler grenzüberschreitender Zahlungen stellt der Escrow deutlich niedrigere Gebühren sicher."
+      },
+      "settlement": {
+        "title": "Sofortige Verrechnung",
+        "description": "Sobald alle Bedingungen erfüllt sind, werden Mittel innerhalb von Minuten nach Freigabe erhalten - keine Notwendigkeit, Tage wie bei traditionellen Bankensystemen zu warten."
+      },
+      "dispute": {
+        "title": "Streitbeilegung",
+        "description": "Jeder Schritt in der Transaktion wird aufgezeichnet und verifizierbar, mit neutralen Mediatoren oder Schiedsrichtern, die schnelle und kostengünstige Lösungen für Streitfälle ermöglichen."
+      },
+      "global": {
+        "title": "Globaler Zugang & 24/7",
+        "description": "Weltweit verfügbar mit 24/7 Zugänglichkeit, ermöglicht sicheren internationalen Handel über alle Zeitzonen und Märkte hinweg."
+      }
+    },
+    "industries": {
+      "title": "Alle Handelsbranchen unterstützen",
+      "subtitle": "Das Escrow-Protokoll funktioniert perfekt für jede Art von internationalem Handel in allen Branchen.",
+      "electronics": {
+        "title": "Elektronik & Technologie",
+        "description": "Halbleiter, Computer, Mobilgeräte",
+        "imageAlt": "Elektronik & Technologie"
+      },
+      "textiles": {
+        "title": "Textilien & Bekleidung",
+        "description": "Kleidung, Stoffe, Modeaccessoires",
+        "imageAlt": "Textilien & Bekleidung"
+      },
+      "machinery": {
+        "title": "Maschinen & Ausrüstung",
+        "description": "Industrielle Maschinen, Werkzeuge, Fertigungsausrüstung",
+        "imageAlt": "Maschinen & Ausrüstung"
+      },
+      "rawMaterials": {
+        "title": "Rohstoffe",
+        "description": "Metalle, Mineralien, chemische Verbindungen",
+        "imageAlt": "Rohstoffe"
+      },
+      "food": {
+        "title": "Lebensmittel & Landwirtschaft",
+        "description": "Landwirtschaftliche Produkte, verarbeitete Lebensmittel, Getränke",
+        "imageAlt": "Lebensmittel & Landwirtschaft"
+      },
+      "automotive": {
+        "title": "Automobilteile",
+        "description": "Autokomponenten, Ersatzteile, Zubehör",
+        "imageAlt": "Automobilteile"
+      },
+      "medical": {
+        "title": "Medizinische Ausrüstung",
+        "description": "Gesundheitsgeräte, pharmazeutische Produkte",
+        "imageAlt": "Medizinische Ausrüstung"
+      },
+      "construction": {
+        "title": "Baumaterialien",
+        "description": "Baustoffe, Zement, Stahl",
+        "imageAlt": "Baumaterialien"
+      },
+      "energy": {
+        "title": "Energie & Öl",
+        "description": "Petroleumprodukte, erneuerbare Energieausrüstung",
+        "imageAlt": "Energie & Öl"
+      },
+      "consumer": {
+        "title": "Konsumgüter",
+        "description": "Haushaltsgeräte, Möbel, persönliche Artikel",
+        "imageAlt": "Konsumgüter"
+      },
+      "chemicals": {
+        "title": "Chemikalien & Kunststoffe",
+        "description": "Industriechemikalien, Kunststoffmaterialien",
+        "imageAlt": "Chemikalien & Kunststoffe"
+      },
+      "luxury": {
+        "title": "Luxusgüter",
+        "description": "Hochwertige Produkte, Schmuck, Premiumartikel",
+        "imageAlt": "Luxusgüter"
+      }
+    },
+    "chooseRole": {
+      "title": "Wählen Sie Ihre Handelsrolle",
+      "subtitle": "Entdecken Sie spezifische Vorteile und Funktionen, die für Ihre Rolle im internationalen Handel entwickelt wurden.",
+      "exporters": {
+        "title": "Für Exporteure",
+        "subtitle": "Sichern Sie Ihre internationalen Verkäufe",
+        "benefits": [
+          "Mittel vor Versand gesichert",
+          "Sofortige Zahlung bei Lieferbestätigung",
+          "Schutz vor Nichtzahlung",
+          "Handeln Sie mit neuen Partnern vertrauensvoll"
+        ],
+        "learnMore": "Mehr über Exporteur-Vorteile erfahren"
+      },
+      "importers": {
+        "title": "Für Importeure",
+        "subtitle": "Importieren Sie mit Vertrauen und Kontrolle",
+        "benefits": [
+          "Zahlen Sie nur, wenn Waren Spezifikationen entsprechen",
+          "Qualitätsprüfung vor Zahlungsfreigabe",
+          "Schutz vor Nichtlieferung",
+          "Streitbeilegung für Qualitätsprobleme"
+        ],
+        "learnMore": "Mehr über Importeur-Vorteile erfahren"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren globalen Handel zu sichern?",
+      "subtitle": "Treten Sie Exporteuren und Importeuren weltweit bei, die sich nie wieder Sorgen um Zahlungsrisiken machen.",
+      "startEscrow": "Starten Sie Ihren ersten Escrow",
+      "learnMore": "Mehr erfahren",
+      "primaryButton": "Starten Sie Ihren Escrow",
+      "secondaryButton": "Mehr erfahren"
+    },
+    "blog": {
+      "metadata": {
+        "title": "Handels-Escrow-Blog - Einblicke & Updates",
+        "description": "Bleiben Sie informiert mit den neuesten Trends, Tipps und Einblicken im internationalen Handel und digitalen Escrow."
+      },
+      "hero": {
+        "title": "Handels-Escrow-Einblicke",
+        "subtitle": "Bleiben Sie informiert mit den neuesten Trends, Tipps und Einblicken im internationalen Handel und digitalen Escrow."
+      },
+      "articles": {
+        "title": "Aktuelle Artikel",
+        "subtitle": "Wir beginnen gerade mit unserem Blog. Schauen Sie bald wieder vorbei für wertvolle Einblicke und Updates.",
+        "comingSoon": {
+          "exporterTips": {
+            "title": "Bald verfügbar: Experten-Tipps für Exporteure",
+            "excerpt": "Wir bereiten umfassende Leitfäden vor, um Exporteure bei der Bewältigung internationaler Handelsherausforderungen zu unterstützen.",
+            "category": "Exporteur-Tipps",
+            "date": "Bald verfügbar",
+            "readTime": "Bleiben Sie dran"
+          },
+          "importerGuide": {
+            "title": "Bald verfügbar: Importeur-Best-Practices",
+            "excerpt": "Detaillierte Leitfäden für Importeure, um Qualität zu gewährleisten und kostspielige Streitfälle bei internationalen Einkäufen zu vermeiden.",
+            "category": "Importeur-Leitfaden",
+            "date": "Bald verfügbar",
+            "readTime": "Bleiben Sie dran"
+          },
+          "digitalFinance": {
+            "title": "Bald verfügbar: Digitale Escrow-Einblicke",
+            "excerpt": "Erfahren Sie, wie digitale Escrow-Technologie den internationalen Handel und Handel transformiert.",
+            "category": "Digitale Finanzen",
+            "date": "Bald verfügbar",
+            "readTime": "Bleiben Sie dran"
+          }
+        }
+      },
+      "newsletter": {
+        "title": "Bleiben Sie auf dem Laufenden",
+        "subtitle": "Erhalten Sie die neuesten Handelseinblicke und Escrow-Updates direkt in Ihren Posteingang.",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+        "button": "Abonnieren"
+      }
+    },
+    "contacts": {
+      "metadata": {
+        "title": "Kontaktieren Sie uns - Handels-Escrow-Support",
+        "description": "Erhalten Sie Hilfe bei Ihrem internationalen Handels-Escrow. Verbinden Sie sich mit uns für Support bei Ihren Import- und Exporttransaktionen."
+      },
+      "hero": {
+        "title": "Erhalten Sie Hilfe bei Ihrem Escrow",
+        "subtitle": "Brauchen Sie Hilfe bei Ihrem internationalen Handels-Escrow? Verbinden Sie sich mit uns für Support bei Ihren Import- und Exporttransaktionen."
+      },
+      "contactForm": {
+        "title": "Nachricht senden",
+        "firstName": "Vorname",
+        "firstNamePlaceholder": "Max",
+        "lastName": "Nachname",
+        "lastNamePlaceholder": "Mustermann",
+        "email": "E-Mail",
+        "emailPlaceholder": "max@unternehmen.com",
+        "company": "Unternehmen",
+        "companyPlaceholder": "Ihr Unternehmensname",
+        "tradeType": "Handelstyp",
+        "tradeTypePlaceholder": "Handelstyp auswählen",
+        "tradeTypes": {
+          "export": "Export",
+          "import": "Import",
+          "both": "Beide"
+        },
+        "message": "Nachricht",
+        "messagePlaceholder": "Erzählen Sie uns von Ihren Fragen oder wie wir helfen können...",
+        "submitButton": "Nachricht senden",
+        "submittingButton": "Wird gesendet..."
+      },
+      "contactInfo": {
+        "title": "Kontaktinformationen",
+        "emailTitle": "E-Mail",
+        "emailAddress": "info@escrow-protocol.com",
+        "emailDescription": "Wir melden uns bald bei Ihnen"
+      },
+      "newsletter": {
+        "title": "Bleiben Sie informiert",
+        "subtitle": "Abonnieren Sie unseren Newsletter für Updates zum Protokoll und internationale Handelseinblicke.",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+        "submitButton": "Abonnieren",
+        "submittingButton": "Wird abonniert..."
+      },
+      "popup": { "thankYou": "Vielen Dank!", "close": "Schließen" }
+    },
+    "contactsAdmin": {
+      "newsletterSubscribers": {
+        "title": "Newsletter-Abonnenten",
+        "total": "Gesamt Abonnenten: {count}",
+        "email": "E-Mail",
+        "subscriptionDate": "Abonnement-Datum"
+      },
+      "contactMessages": {
+        "title": "Kontakt-Nachrichten",
+        "total": "Gesamt Nachrichten: {count}",
+        "fields": {
+          "email": "E-Mail",
+          "company": "Unternehmen",
+          "tradeType": "Handelstyp",
+          "message": "Nachricht"
+        }
+      }
+    },
+    "exporter": {
+      "metadata": {
+        "title": "Exporteur-Vorteile - Digitaler Escrow für internationalen Handel | Escrow-Protokoll",
+        "description": "Eliminieren Sie Nichtzahlungsrisiko und Zahlungsverzögerungen für Exporteure. Sicherer digitaler Escrow gewährleistet garantierte Zahlungen für internationale Handelstransaktionen."
+      },
+      "hero": {
+        "badge": "Für Exporteure",
+        "title": "Erhalten Sie sicher bezahlt, ",
+        "titleHighlight": "Jedes Mal",
+        "subtitle": "Eliminieren Sie Zahlungsrisiken und erweitern Sie Ihr Exportgeschäft mit Vertrauen. Digitaler Escrow stellt sicher, dass Sie bezahlt werden, wenn Sie wie versprochen liefern.",
+        "startEscrow": "Export-Escrow starten",
+        "learnHowItWorks": "Erfahren Sie, wie es funktioniert"
+      },
+      "testimonials": {
+        "samuel": {
+          "name": "Samuel Okeke",
+          "role": "Exporteur (fiktiv)",
+          "quote": "Mein Geschäft lief reibungslos - Bestellungen waren konstant, mein Team war glücklich und Lieferanten waren zuverlässig. Dann nahm ich eine Bestellung von einem neuen Kunden im Ausland an. Alles schien in Ordnung: Dokumente waren unterzeichnet, Waren geliefert. Aber die Zahlung kam nie - es war ein Betrug. Cashflow trocknete schnell aus. Ich konnte meinen Arbeitern und Lieferanten nicht zahlen. Ein schlechter Deal brachte mein Geschäft in den Bankrott. Ich wünschte, ich hätte gewusst, wie schnell eine unbezahlte Rechnung alles zerstören kann."
+        },
+        "maria": {
+          "name": "Maria Andersson",
+          "role": "Exporteur (fiktiv)",
+          "quote": "Wir arbeiteten seit über acht Jahren mit Carlos zusammen. Unsere Familien kannten sich gut - wir trafen uns mindestens einmal im Jahr und bauten eine starke Partnerschaft auf. Sein Unternehmen in Spanien war unser größter Kunde. Dann traf die Wirtschaftskrise Europa hart. Carlos' Geschäft kämpfte und ging schließlich bankrott. Er schuldete uns €280.000, als sein Unternehmen Konkurs anmeldete, was große Probleme auf unserer Seite verursachte. Wir überlebten, aber lernten, unsere Kundenbasis mehr zu diversifizieren, weil Probleme eines Kunden leicht überschwappen und unser eigenes Unternehmen gefährden können."
+        }
+      },
+      "challenges": {
+        "title": "Herausforderungen, denen Exporteure im globalen Handel gegenüberstehen",
+        "subtitle": "Verständnis der wichtigsten Hindernisse, die Exportgeschäfte weltweit beeinträchtigen",
+        "nonPaymentRisk": {
+          "title": "Nichtzahlungsrisiko",
+          "description": "Exporteure liefern oft Waren zuerst und warten auf Zahlung, wodurch sie anfällig für Importeure sind, die sich weigern zu zahlen oder nach Erhalt der Waren verschwinden. Dies kann erhebliche finanzielle Verluste zur Folge haben, einschließlich der Kosten für Produktion und Versand. Dieses häufige Problem im internationalen Handel wird durch geografische Distanz und begrenzte Rückgriffsmöglichkeiten in ausländischen Gerichtsbarkeiten verschärft. Viele Exporteure haben Situationen erlebt, in denen Käufer einfach nach Erhalt der Sendungen verschwinden, wodurch sie mit erheblichen Verlusten und keinem praktischen Weg zurückbleiben, ihre Mittel wiederzuerlangen."
+        },
+        "liquidityRisk": {
+          "title": "Liquiditätsrisiko",
+          "description": "Selbst ein florierendes Exportgeschäft kann Liquiditätskrisen von einem schlechten Deal ausgesetzt sein, was zu Cashflow-Mangel oder Bankrott führt. Dieses Risiko ist nicht auf neue Kunden beschränkt - bestehende Partner können aufgrund ihrer eigenen Schwierigkeiten ausfallen, wodurch Zahlungsrisiken verstärkt werden. Eine einzige große unbezahlte Rechnung kann einen Dominoeffekt auslösen, der die Fähigkeit beeinträchtigt, Lieferanten zu bezahlen, Gehalt zu zahlen und andere Bestellungen zu erfüllen. Dieses Liquiditätsrisiko ist besonders akut für kleinere Exporteure, die möglicherweise nicht über ausreichende Cash-Reserven verfügen, um Zahlungsausfälle zu überstehen."
+        },
+        "paymentDelays": {
+          "title": "Zahlungsverzögerungen",
+          "description": "Zahlungsverzögerungen plagen Exporteure aus zwei Hauptquellen: Importeure, die aufgrund von Cashflow-Problemen spät zahlen, und traditionelle Zahlungsmethoden, die Wochen brauchen, um durch Banksysteme zu laufen. Diese Verzögerungen stören den Cashflow, erhöhen Haltekosten und belasten Betriebe. Exporteure finden sich oft in schwierigen Positionen wieder, in denen sie Lieferanten und Mitarbeiter bezahlen müssen, während sie auf verzögerte Zahlungen von internationalen Käufern warten, wodurch eine Kaskade finanzieller Belastungen durch ihr gesamtes Geschäft entsteht."
+        },
+        "highFees": {
+          "title": "Hohe Gebühren",
+          "description": "Traditionelle internationale Zahlungssysteme beinhalten typischerweise Korrespondenzbankbeziehungen, Währungsumrechnungsgebühren, Überweisungsgebühren und Intermediärbankgebühren, die sich zusammensetzen, um erhebliche Kosten zu schaffen, die direkt die Rentabilität von Exporttransaktionen beeinträchtigen. Diese Ausgaben erodieren Gewinnmargen, besonders in wettbewerbsintensiven Märkten."
+        },
+        "trustIssues": {
+          "title": "Vertrauensprobleme und verpasste Wachstumschancen",
+          "description": "Vertrauen mit neuen oder unbekannten Handelspartnern aufzubauen ist schwierig, besonders grenzüberschreitend, wo kulturelle, rechtliche und Sprachbarrieren existieren. Exporteure, besonders diejenigen ohne vorherige Handelsgeschichte mit einem Partner, kämpfen darum, Zuverlässigkeit ohne umfangreiche Due-Diligence zu bewerten, die zeitaufwendig und kostspielig ist. Ohne einen bewiesenen Track Record zögern Exporteure, sich zu engagieren, wodurch wertvolle Wachstumschancen in aufstrebenden Märkten verpasst werden. Dies führt oft zu gestoppten Deals und begrenzter Expansion in potenziell lukrative neue Territorien."
+        },
+        "letterOfCredit": {
+          "title": "Teure und umständliche traditionelle Handelsfinanzierung",
+          "description": "Traditionelle Handelsfinanzierungsinstrumente wie Akkreditive und Bankgarantien sind oft prohibitiv teuer aufgrund mehrerer Intermediäre, die bei jedem Schritt Gebühren nehmen. Kleine und mittlere Exporteure haben oft keinen Zugang zu diesen Instrumenten oder finden, dass die Kosten ihre Gewinnmargen vollständig eliminieren würden, wodurch Deals unrentabel werden. Banken verlangen umfangreiche Dokumentation, Sicherheiten und Kreditfazilitäten, die viele wachsende Exportgeschäfte nicht bereitstellen können. Die Komplexität und Kosten dieser traditionellen Instrumente zwingen Exporteure oft, höhere Risiken zu akzeptieren oder profitable internationale Möglichkeiten aufzugeben."
+        },
+        "disputeResolution": {
+          "title": "Streitbeilegungsherausforderungen",
+          "description": "Streitfälle über Qualität, Lieferung oder Zahlung sind international schwer zu lösen aufgrund unterschiedlicher Rechtssysteme und hoher Schiedskosten. Exporteure können erhebliche Zeit und Ressourcen für grenzüberschreitende Konflikte mit unsicheren Ergebnissen aufwenden. Darüber hinaus können diese Streitfälle Beziehungen und Reputationen in internationalen Märkten schädigen. Die Komplexität der Navigation unterschiedlicher Rechtsrahmen, Sprachen und Geschäftspraktiken macht die Streitbeilegung zu einem langwierigen und kostspieligen Prozess, den viele Exporteure sich einfach nicht leisten können."
+        }
+      },
+      "keyBenefits": {
+        "title": "Warum Exporteure digitalen Escrow wählen",
+        "subtitle": "Sichern Sie Ihre Zahlungen und erweitern Sie Ihr Geschäft mit Vertrauen.",
+        "paymentSecured": {
+          "title": "Zahlung vor Versand gesichert",
+          "description": "Exporteure sind vor Nichtzahlungsrisiken geschützt, da Mittel in einem sicheren Escrow gehalten werden, bevor der Versand erfolgt. Erhalten Sie Escrow-Finanzierungsbestätigung, bevor Sie in Produktion und Versand investieren."
+        },
+        "immediatePayment": {
+          "title": "Sofortige Zahlung bei Lieferung",
+          "description": "Zahlungen werden sofort freigegeben, sobald die Lieferung verifiziert wurde. Sie erhalten Ihr Geld innerhalb von Minuten (sofortige Verrechnung), wodurch Cashflow und Liquiditätsmanagement erheblich verbessert werden."
+        },
+        "fasterPayments": {
+          "title": "Sofortige Zahlung bei Lieferung",
+          "description": "Zahlungen werden sofort freigegeben, sobald die Lieferung verifiziert wurde. Sie erhalten Ihr Geld innerhalb von Minuten (sofortige Verrechnung), wodurch Cashflow und Liquiditätsmanagement erheblich verbessert werden."
+        },
+        "confidenceWithNewPartners": {
+          "title": "Vertrauen mit neuen Partnern",
+          "description": "Exporteure können mit neuen oder unbekannten Handelspartnern vertrauensvoll engagieren, da der Escrow die Zahlung im Voraus sichert. Erweitern Sie auf neue Märkte ohne Zahlungsrisiko."
+        },
+        "businessGrowth": {
+          "title": "Vertrauen mit neuen Partnern",
+          "description": "Exporteure können mit neuen oder unbekannten Handelspartnern vertrauensvoll engagieren, da der Escrow die Zahlung im Voraus sichert. Erweitern Sie auf neue Märkte ohne Zahlungsrisiko."
+        },
+        "automatedFundRelease": {
+          "title": "Automatisierte Mittel-Freigabe",
+          "description": "Automatisiert, flexibel abhängig von dem, was mit dem Käufer vereinbart wurde. Anpassbare Freigabebedingungen basierend auf Lieferbestätigung, gegenseitiger Vereinbarung, Prüfungsergebnissen oder zeitbasierten Triggern."
+        },
+        "automatedRelease": {
+          "title": "Automatisierte Mittel-Freigabe",
+          "description": "Automatisiert, flexibel abhängig von dem, was mit dem Käufer vereinbart wurde. Anpassbare Freigabebedingungen basierend auf Lieferbestätigung, gegenseitiger Vereinbarung, Prüfungsergebnissen oder zeitbasierten Triggern."
+        },
+        "lowCosts": {
+          "title": "Niedrige Kosten",
+          "description": "Entfernung teurer Intermediäre und Nutzung digitaler Währungen reduziert Transaktionskosten erheblich. Direkte Peer-to-Peer-Zahlungen eliminieren traditionelle Bankgebühren."
+        },
+        "lowerFees": {
+          "title": "Niedrige Kosten",
+          "description": "Entfernung teurer Intermediäre und Nutzung digitaler Währungen reduziert Transaktionskosten erheblich. Direkte Peer-to-Peer-Zahlungen eliminieren traditionelle Bankgebühren."
+        },
+        "disputeResolution": {
+          "title": "Streitbeilegung",
+          "description": "Eingebautes Mediationssystem mit optionalen Drittschiedsrichtern für faire und neutrale Konfliktlösung. Jeder Transaktionsschritt wird aufgezeichnet und verifizierbar, wodurch schnellere und günstigere Streitbeilegung ermöglicht wird."
+        }
+      },
+      "protection": {
+        "title": "Vollständiger Schutz für Exporteure",
+        "subtitle": "Jeder Aspekt Ihrer Exporttransaktion ist gesichert und geschützt.",
+        "beforeShipping": {
+          "title": "Vor Versand",
+          "subtitle": "Zahlung ist im Voraus gesichert",
+          "description": "Zahlung ist im Voraus gesichert",
+          "benefits": [
+            "Käufer hinterlegt volle Zahlung in Escrow",
+            "Mittel werden sicher verifiziert und gesperrt",
+            "Sie erhalten Bestätigung vor Produktion/Versand",
+            "Handeln Sie mit neuen und bestehenden Partnern vertrauensvoll"
+          ],
+          "button": "Erfahren Sie über den Arbeitsablauf"
+        },
+        "afterDelivery": {
+          "title": "Nach Lieferung",
+          "subtitle": "Sofortige Zahlungsfreigabe",
+          "description": "Sofortige Zahlungsfreigabe",
+          "benefits": [
+            "Lieferbestätigung löst automatische Freigabe aus",
+            "Mittel erhalten innerhalb von Minuten nach Bestätigung",
+            "Vollständige Transparenz während des gesamten Prozesses",
+            "Eingebaut, neutrale Mediation bei Streitfällen"
+          ],
+          "button": "Erfahren Sie über den Arbeitsablauf"
+        }
+      },
+      "cta": {
+        "title": "Bereit, Ihre Exportzahlungen zu sichern?",
+        "subtitle": "Treten Sie Tausenden von Exporteuren bei, die sich nie wieder Sorgen um Zahlung machen. Starten Sie Ihre erste sichere Exporttransaktion heute.",
+        "primaryButton": "Export-Escrow starten",
+        "secondaryButton": "Sprechen Sie mit Exportspezialist"
+      }
+    },
+    "importer": {
+      "metadata": {
+        "title": "Importeur-Vorteile - Digitaler Escrow für internationalen Handel | Escrow-Protokoll",
+        "description": "Schützen Sie Ihre Importe vor Nichtlieferung und Qualitätsproblemen. Zahlen Sie nur, wenn Sie mit digitalem Escrow für internationale Handelstransaktionen zufrieden sind."
+      },
+      "hero": {
+        "badge": "Für Importeure",
+        "title": "Zahlen Sie nur, wenn ",
+        "titleHighlight": "Sie zufrieden sind",
+        "subtitle": "Schützen Sie Ihr Geschäft vor Nichtlieferung und Qualitätsproblemen. Digitaler Escrow stellt sicher, dass Sie nur zahlen, wenn Waren Ihren Spezifikationen entsprechen.",
+        "startEscrow": "Import-Escrow starten",
+        "learnHowItWorks": "Erfahren Sie, wie es funktioniert"
+      },
+      "testimonials": {
+        "michael": {
+          "name": "Michael Thompson",
+          "role": "Importeur (fiktiv)",
+          "quote": "Ich brauchte spezialisierte Maschinen für meine Fertigungsanlage und fand einen Lieferanten, der genau das anbot, was ich brauchte, zu einem fairen Preis. Sie schienen legitim - professionelle Website, gute Kommunikation, ich traf sie sogar persönlich auf einer Messe. Ich zahlte €450.000 im Voraus, wie angefordert. Wochen vergingen, dann Monate. Keine Lieferung, keine Antwort auf meine Anrufe. Es war ein kompletter Betrug. Ich musste die Produktion stoppen und nach neuen Lieferanten suchen, was Monate dauerte. Die verzögerte Produktion kostete mich drei große Verträge, und die Cashflow-Krise brachte mein Geschäft beinahe in den Bankrott. Ich lernte auf die harte Tour, dass selbst legitim aussehende Lieferanten mit Ihrem Geld verschwinden können."
+        },
+        "isabella": {
+          "name": "Isabella Rossi",
+          "role": "Importeur (fiktiv)",
+          "quote": "Wir arbeiteten seit über drei Jahren mit einem Textillieferanten zusammen, der immer Vorauszahlung verlangte. Am Anfang fühlte ich mich unwohl, aber nach ein paar erfolgreichen Transaktionen vertraute ich ihnen. Die Qualität war immer gut, nichts zu beanstanden. Wir bestellten wie immer eine große Menge für die Sommerkollektion, aber unser Lieferant ging pleite dazwischen. Wir hatten €280.000 im Voraus bezahlt, aber nur einen kleinen Betrag durch das Insolvenzverfahren zurückerhalten nach teuren Rechtsgebühren. Ich frage mich immer noch, ob es unser Fehler war, im Voraus zu zahlen, aber wenn Ihr Lieferant der einzige ist, der dieses spezielle Textil liefert, was sollten Sie tun? Das Geschäft schließen oder die Bedingungen akzeptieren?"
+        }
+      },
+      "challenges": {
+        "title": "Herausforderungen, denen Importeure im globalen Handel gegenüberstehen",
+        "subtitle": "Verständnis der wichtigsten Hindernisse, die Importgeschäfte weltweit beeinträchtigen",
+        "prepaymentRisk": {
+          "title": "Vorauszahlungs- und Nichtlieferungsrisiko",
+          "description": "Importeure stehen vor erheblichen Risiken, wenn sie Lieferanten im Voraus bezahlen, da betrügerische Lieferanten nach Erhalt der Zahlung verschwinden können, ohne Waren zu liefern. Dies ist besonders häufig bei neuen Lieferanten oder solchen, die über Online-Marktplätze gefunden werden. Selbst legitime Lieferanten können nach Erhalt der Zahlung nicht liefern aufgrund von Produktionsproblemen, finanziellen Schwierigkeiten oder anderen unvorhergesehenen Umständen, wodurch Importeure ohne Rückgriffsmöglichkeit und mit Betriebsunterbrechungen zurückbleiben."
+        },
+        "qualityIssues": {
+          "title": "Qualitätsprobleme und Streitfälle",
+          "description": "Importeure riskieren, Waren zu erhalten, die den Spezifikationen nicht entsprechen, wie falsche Mengen oder schlechte Qualität. Compliance grenzüberschreitend zu verifizieren ist schwierig und kostspielig, wodurch Importeure mit unbrauchbarem Inventar zurückbleiben, das ihr Geschäft schädigt. Wenn Streitfälle über defekte oder falsche Waren auftreten, sind sie international schwer zu lösen aufgrund unterschiedlicher Gesetze und Sprachen. Längliche Konflikte drainieren Zeit und Geld, schädigen Lieferantenbeziehungen und schaffen zusätzliche Betriebsherausforderungen."
+        },
+        "delayedPayments": {
+          "title": "Verzögerte Zahlungen und Lieferungen",
+          "description": "Bankzahlungsverzögerungen schaffen Probleme für Importeure und Exporteure. Wenn Importeure dringend benötigte Vorräte brauchen, bedeuten langsame internationale Geldtransfers, dass Exporteure nicht mit Produktion oder Versand beginnen, bis das Geld ankommt, was kritische Verzögerungen verursacht. Ebenso, wenn Zahlung nach Lieferung zu lange dauert aufgrund von Banksystemen, schadet es den Zahlungsfristen für Exporteure und schädigt die Reputation des Importeurs für zukünftige Deals. Darüber hinaus können Exporteure den Versand für Nichtvorauszahlungs-Importeure verzögern, was zu Lagerknappheit führt oder Verkäufe verpasst, besonders für zeitkritische Geschäfte."
+        },
+        "restrictedSuppliers": {
+          "title": "Eingeschränkte Lieferantenoptionen",
+          "description": "Exporteure können sich weigern zu versenden ohne Vorauszahlung, wodurch Importeuren der Zugang zu diversen Lieferanten verwehrt wird. Dies begrenzt Möglichkeiten, von neuen oder kosteneffektiven Märkten zu beziehen und reduziert wettbewerbsfähige Preisoptionen."
+        },
+        "pressureToPay": {
+          "title": "Druck, vor voller Verifizierung zu zahlen",
+          "description": "Exporteure können nach Lieferung auf schnelle Zahlung drängen, bevor gründliche Qualitätsprüfungen durchgeführt werden. Zu früh zu zahlen riskiert Verluste, wenn Defekte später gefunden werden, mit wenig Rückgriff grenzüberschreitend."
+        },
+        "highFees": {
+          "title": "Hohe Gebühren",
+          "description": "Traditionelle internationale Zahlungssysteme beinhalten mehrere Intermediäre, jeder fügt Gebühren für Währungsumrechnung, Überweisungen und Verarbeitung hinzu. Diese Kosten summieren sich schnell durch Korrespondenzbankbeziehungen und Intermediärgebühren, beeinträchtigen Gewinnmargen erheblich und erhöhen letztlich die Gesamtkosten der gekauften Waren, besonders für kleinere Importgeschäfte oder hochvolumige, niedrigmargige Transaktionen."
+        },
+        "supplierReliability": {
+          "title": "Lieferanten-Zuverlässigkeit und Due-Diligence",
+          "description": "Die Zuverlässigkeit von Lieferanten, finanzielle Stabilität und Produktionsfähigkeiten über verschiedene Länder und Geschäftskulturen zu verifizieren ist herausfordernd und zeitaufwendig. Importeure mangeln oft an zuverlässigen Methoden, um Lieferantenzuverlässigkeit zu bewerten, was zu Partnerschaften mit unzuverlässigen Anbietern führt, die möglicherweise nicht auf Versprechen eingehen oder im Laufe der Zeit konsistente Qualität aufrechterhalten."
+        }
+      },
+      "keyBenefits": {
+        "title": "Warum Importeure digitalem Escrow vertrauen",
+        "subtitle": "Importieren Sie mit Vertrauen, dass Ihre Zahlung geschützt ist, bis die Lieferung Ihren Spezifikationen entspricht.",
+        "nonDeliveryProtection": {
+          "title": "Nichtlieferungsschutz",
+          "description": "Mittel bleiben in Escrow, bis Waren geliefert und verifiziert sind, wodurch das Risiko eliminiert wird, für nicht gelieferte Waren zu zahlen. Ihre Zahlung ist gesichert, bis Sie genau das erhalten, was Sie bestellt haben."
+        },
+        "conditionalPayments": {
+          "title": "Bedingte Zahlungen",
+          "description": "Zahlungen werden nur gemacht, wenn Waren den vereinbarten Spezifikationen entsprechen, wodurch Importeure vor subparen oder falschen Sendungen geschützt werden."
+        },
+        "qualityInspection": {
+          "title": "Qualitätsprüfung",
+          "description": "Nehmen Sie Zeit, um Waren gründlich selbst zu inspizieren oder verwenden Sie Drittprüfungsdienste. Drittprüfungen durch Zoll oder Logistikdienstleister werden unterstützt, um sicherzustellen, dass Waren Qualitätsstandards entsprechen, bevor die Zahlung freigegeben wird."
+        },
+        "globalAccess": {
+          "title": "Globaler Lieferantenzugang",
+          "description": "Importeure können mit Vertrauen auf ein globales Netzwerk von Lieferanten zugreifen, wodurch Risiken reduziert werden, wenn mit neuen Partnern gearbeitet wird. Erweitern Sie Ihre Beschaffungsoptionen ohne Zahlungsbedenken."
+        },
+        "lowerFees": {
+          "title": "Niedrigere Gebühren",
+          "description": "Entfernung teurer Intermediäre und Nutzung digitaler Währungen reduziert Transaktionskosten erheblich. Direkte Peer-to-Peer-Zahlungen eliminieren traditionelle Bankgebühren, wodurch Ihre Gesamtimportkosten reduziert werden."
+        },
+        "disputeResolution": {
+          "title": "Streitbeilegung",
+          "description": "Eingebautes Mediationssystem mit optionalen Drittschiedsrichtern für faire und neutrale Konfliktlösung. Jeder Transaktionsschritt wird aufgezeichnet und verifizierbar, wodurch schnellere und günstigere Streitbeilegung ermöglicht wird."
+        }
+      },
+      "protection": {
+        "title": "Vollständiger Schutz für Importeure",
+        "subtitle": "Jeder Aspekt Ihrer Importtransaktion ist gesichert und geschützt.",
+        "beforePayment": {
+          "title": "Vor Zahlung",
+          "subtitle": "Ihre Mittel sind geschützt",
+          "benefits": [
+            "Mittel sicher in Escrow-Konto gehalten",
+            "Zahlung nur bei Lieferverifizierung freigegeben",
+            "Vollständiger Schutz vor Nichtlieferungsbetrug",
+            "Arbeiten Sie mit Lieferanten weltweit vertrauensvoll"
+          ],
+          "button": "Erfahren Sie über den Arbeitsablauf"
+        },
+        "afterDelivery": {
+          "title": "Nach Lieferung",
+          "subtitle": "Qualitätsverifizierungsprozess",
+          "benefits": [
+            "Inspizieren Sie Waren gründlich vor Zahlungsfreigabe",
+            "Verwenden Sie Drittprüfungsdienste bei Bedarf",
+            "Zahlung nur wenn Spezifikationen erfüllt sind",
+            "Eingebaut Streitbeilegung für Qualitätsprobleme"
+          ],
+          "button": "Erfahren Sie über den Arbeitsablauf"
+        }
+      },
+      "cta": {
+        "title": "Bereit, mit vollständigem Schutz zu importieren?",
+        "subtitle": "Treten Sie Tausenden von Importeuren bei, die sich nie wieder Sorgen um Zahlungsbetrug oder Qualitätsprobleme machen. Starten Sie Ihre erste sichere Importtransaktion heute.",
+        "startEscrow": "Import-Escrow starten",
+        "talkToAdvisor": "Sprechen Sie mit Handelsberater"
+      }
+    },
+    "guides": {
+      "metadata": {
+        "title": "Handels-Escrow-Leitfäden - Lernen Sie internationalen Handel | Escrow-Protokoll",
+        "description": "Umfassende Leitfäden, um Sie beim Beherrschen internationalen Handels mit digitalem Escrow-Schutz zu unterstützen. Erfahren Sie über Setup, Best-Practices und sichere Transaktionen."
+      },
+      "hero": {
+        "title": "Handels-Escrow-Leitfäden",
+        "subtitle": "Umfassende Ressourcen, um Sie beim Beherrschen internationalen Handels mit digitalem Escrow-Schutz zu unterstützen."
+      },
+      "featuredGuide": {
+        "badge": "Ausgewählter Leitfaden",
+        "title": "Vollständiger Leitfaden für internationalen Handels-Escrow",
+        "description": "Alles, was Sie über die Nutzung digitalen Escrow für sichere internationale Handelstransaktionen wissen müssen. Von Setup bis Abschluss deckt dieser umfassende Leitfaden alle Aspekte des Handels-Escrow ab.",
+        "readTime": "45 Min. Lesezeit",
+        "level": "Anfänger bis Fortgeschrittene",
+        "button": "Vollständigen Leitfaden lesen",
+        "whatYouLearn": {
+          "title": "Was Sie lernen werden",
+          "items": [
+            "Einrichten Ihres ersten Handels-Escrow",
+            "Dokumentenanforderungen und -verifizierung",
+            "Zahlungsfreigabebedingungen",
+            "Streitbeilegungsprozess",
+            "Best-Practices für Exporteure und Importeure",
+            "Häufige Fallstricke und wie man sie vermeidet"
+          ]
+        }
+      },
+      "cta": {
+        "title": "Brauchen Sie personalisierte Anleitung?",
+        "subtitle": "Unsere Handelsexperten sind hier, um Ihnen bei Ihrer spezifischen Situation zu helfen.",
+        "contactExpert": "Handelsexperten kontaktieren",
+        "startTrade": "Ihren Handel starten"
+      }
+    },
+    "faq": {
+      "metadata": {
+        "title": "Häufig gestellte Fragen - Handels-Escrow | Escrow-Protokoll",
+        "description": "Finden Sie Antworten auf häufige Fragen zum digitalen Escrow für internationalen Handel. Erfahren Sie über Sicherheit, Gebühren, Prozesse und mehr."
+      },
+      "hero": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Finden Sie Antworten auf häufige Fragen zum digitalen Escrow für internationalen Handel."
+      },
+      "categories": {
+        "title": "FAQ-Kategorien",
+        "gettingStarted": { "name": "Erste Schritte", "count": "3" },
+        "securitySafety": { "name": "Sicherheit & Schutz", "count": "2" },
+        "processTimeline": { "name": "Prozess & Zeitplan", "count": "2" },
+        "paymentsFees": { "name": "Zahlungen & Gebühren", "count": "2" },
+        "internationalTrade": {
+          "name": "Internationaler Handel",
+          "count": "2"
+        }
+      },
+      "sections": {
+        "gettingStarted": {
+          "title": "Erste Schritte",
+          "questions": {
+            "whatIsEscrow": {
+              "question": "Was ist digitaler Escrow für internationalen Handel?",
+              "answer": "Digitaler Escrow für internationalen Handel ist ein sicheres Peer-to-Peer-Zahlungssystem, das sowohl Exporteure als auch Importeure während Transaktionen schützt. Anstatt dass eine dritte Partei Ihre Mittel hält, verwendet das System Smart Contracts auf der Blockchain, um automatisch Zahlungen basierend auf vorab vereinbarten Bedingungen zu verwalten. Mittel bleiben im Smart Contract (Escrow), bis Liefer- und Verifizierungsbedingungen erfüllt sind, wodurch die traditionellen Risiken eliminiert werden, bei denen entweder der Exporteur zuerst versendet ohne Zahlungsgarantie oder der Importeur im Voraus zahlt ohne Liefergarantie."
+            },
+            "howToGetStarted": {
+              "question": "Wie fange ich mit Handels-Escrow an?",
+              "answer": "Klicken Sie auf die Schaltfläche \"Escrow starten\" oben rechts, um eine Brieftasche zu erstellen oder sich anzumelden. Für detailliertere Informationen zum vollständigen Prozess siehe unsere Arbeitsablauf-Seite, die jeden Schritt vom Setup bis zur Mittel-Freigabe erklärt."
+            },
+            "tradeTypes": {
+              "question": "Welche Arten von Handel können Escrow nutzen?",
+              "answer": "Digitaler Escrow kann in nahezu jeder Branche verwendet werden, wo Waren geliefert werden, einschließlich Fertigung, Elektronik, Textilien, Maschinen, landwirtschaftliche Produkte, Rohstoffe und mehr. Der Escrow unterstützt B2B (Business-to-Business), B2C (Business-to-Consumer) und C2C (Consumer-to-Consumer) Transaktionen. Für eine umfassende Übersicht über unterstützte Branchen besuchen Sie unsere \"Alle Handelsbranchen unterstützen\"-Sektion, um einen ersten Eindruck von den Möglichkeiten zu bekommen."
+            }
+          }
+        },
+        "securitySafety": {
+          "title": "Sicherheit & Schutz",
+          "questions": {
+            "fundSecurity": {
+              "question": "Wie sicher sind meine Mittel in Escrow?",
+              "answer": "Mittel in Escrow sind sehr sicher. Keine dritte Partei, einschließlich des Unternehmens, das die Technologie hinter dem Escrow entwickelt hat, hat Zugang zu Mitteln in Escrow. Die Mittel werden in einem sogenannten Smart Contract gehalten, der ein selbst-ausführendes Programm auf der Blockchain ist, das automatisch die vereinbarten Bedingungen ohne menschliches Eingreifen durchsetzt. Der Escrow verwendet einen Multi-Signatur-Ansatz, was bedeutet, dass mehrere kryptografische Signaturen erforderlich sind, um Transaktionen zu autorisieren, was eine zusätzliche Sicherheitsebene bietet. Dies stellt sicher, dass Mittel nur freigegeben werden können, wenn alle vorherbestimmten Bedingungen von beiden Handelsparteien erfüllt sind."
+            },
+            "disputeResolution": {
+              "question": "Was passiert bei einem Streitfall?",
+              "answer": "Beide Parteien können Streitfälle erheben, die die Mittel sofort einfrieren, um alle Beteiligten zu schützen. Sobald ein Streitfall eingeleitet wird, haben beide Parteien Zeit, eine bilaterale Lösung zu finden und Anpassungen zu vereinbaren, wie Rabatte anzubieten oder Lieferzeiten zu verlängern. Wenn sie keine Lösung durch direkte Verhandlungen finden können, eskaliert der Streitfall zu einem vorab festgelegten neutralen Schiedsrichter zur endgültigen Entscheidung. Für detaillierte Informationen zu diesem Prozess siehe unsere Streitbeilegungsprozess-Sektion."
+            }
+          }
+        },
+        "processTimeline": {
+          "title": "Prozess & Zeitplan",
+          "questions": {
+            "processDuration": {
+              "question": "Wie lange dauert der Escrow-Prozess?",
+              "answer": "Die Zeit hängt vollständig von Ihrem Geschäft und der Art der gehandelten Waren ab. Es könnte nur ein paar Tage für einfache Transaktionen sein, aber auch Monate oder sogar Jahre für komplexe Fertigungsprojekte. Hier ist ein typisches Beispiel: Setup (1-2 Tage), Finanzierung (5 Tage), Produktion (20 Wochen), Versand (4 Wochen), Inspektion (2 Tage), Mittel-Freigabe (gleicher Tag). Für eine schnellere Transaktion: Setup und Finanzierung heute, Lieferung in 3 Tagen, Inspektion und Mittel-Freigabe am Tag der Ankunft."
+            },
+            "fundRelease": {
+              "question": "Wann werden Mittel an den Exporteur freigegeben?",
+              "answer": "Die Mittel-Freigabe hängt von den vorab vereinbarten Freigabemechanismen ab, die beide Parteien beim Setup des Escrow festlegen. Der Freigabemechanismus hängt von den spezifischen Anforderungen und Bedürfnissen Ihrer Transaktion ab. Für detaillierte Informationen zu den verschiedenen verfügbaren Freigabeoptionen siehe unsere Flexiblen Freigabemechanismen-Sektion."
+            }
+          }
+        },
+        "paymentsFees": {
+          "title": "Zahlungen & Gebühren",
+          "questions": {
+            "fees": {
+              "question": "Welche Gebühren fallen bei der Nutzung von Handels-Escrow an?",
+              "answer": "Der Escrow basiert auf einer Blockchain-Lösung, die Transaktionsgebühren erfordert (oft als \"Gas-Gebühren\" bezeichnet - benannt nach der Rechenenergie, die zur Verarbeitung von Transaktionen benötigt wird, ähnlich wie ein Auto Benzin braucht). Diese Blockchain-Transaktionsgebühren sind notwendig, um Ihre Transaktionen zu sichern und zu verarbeiten. Es können zusätzliche Gebühren wie Inspektionsgebühren für externe Verifizierung, Gebühren für Handelsberater und Gebühren für Schiedsdienste anfallen. Alle Gebühren sind vollständig transparent - wenn Sie den Hauptbetrag definieren und optionale Dienste beim Escrow-Setup auswählen, werden beide Importeur und Exporteur genau sehen, welche Gebühren anfallen. Der Importeur finanziert den Hauptbetrag plus alle Gebühren, und der Escrow wird nicht aktiviert, es sei denn, der volle Betrag ist finanziert."
+            },
+            "paymentMethods": {
+              "question": "Welche Zahlungsmethoden werden akzeptiert?",
+              "answer": "Sie müssen zwischen Zahlungsmethoden für den Escrow und Zahlungsmethoden für Ihre Brieftasche unterscheiden. Der Escrow verwendet nur digitale Währungen wie USDT (USD von Tether), USDC (USD von Circle) oder andere Stablecoins und CBDCs (Central Bank Digital Currencies). Der Escrow wird mit Währungen aus Ihrer digitalen Brieftasche finanziert. Um USDC, USDT oder andere Stablecoins in Ihre Brieftasche zu bekommen, können Sie Kryptowährungsbörsen oder On-Ramp-Anbieter verwenden. Für detaillierte Informationen zur Umwandlung traditionellen Geldes in digitale Währungen siehe unsere \"Wie kann ich FIAT in Stablecoins umwandeln?\"-Sektion."
+            }
+          }
+        },
+        "internationalTrade": {
+          "title": "Internationaler Handel",
+          "questions": {
+            "supportedCountries": {
+              "question": "Welche Länder und Regionen werden unterstützt?",
+              "answer": "Der Escrow ist ein Peer-to-Peer-System, das theoretisch Exporteure und Importeure in jedem Land oder jeder Region der Welt verbinden kann. Allerdings kann es nur in Ländern verwendet werden, wo digitale Währungen legal erlaubt sind. Einige Einschränkungen können basierend auf lokalen Vorschriften und internationalen Sanktionslisten gelten. Wir empfehlen, Ihre lokalen Vorschriften bezüglich digitaler Währungsnutzung zu überprüfen und internationale Vorschriften und Sanktionen vor dem Fortfahren mit Transaktionen zu überprüfen."
+            },
+            "customsRegulations": {
+              "question": "Wie handhaben Sie Zoll- und Import-/Exportvorschriften?",
+              "answer": "Der Escrow ist ein finanzieller Vertrag, der auf dem zugrunde liegenden Kaufvertrag oder der Handelsrechnung basiert, ersetzt diese Verträge jedoch nicht. Exporteure und Importeure sind verantwortlich für die Handhabung von Zollverfahren, Import-/Exportlizenzen, Handelsdokumentation, Compliance mit internationalen Handelsvorschriften, Produktzertifizierungen und allen anderen regulatorischen Anforderungen. Da der Escrow als Peer-to-Peer-Transaktion funktioniert, bleiben OFAC (Office of Foreign Assets Control) Compliance und Anti-Geldwäsche (AML) Verantwortlichkeiten bei den individuellen Handelspartnern. Wir empfehlen, sich mit Handelsprofis und Rechtsberatern für komplexe internationale Transaktionen zu konsultieren."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Haben Sie noch Fragen?",
+        "subtitle": "Unsere Handelsexperten sind bereit, Ihnen mit personalisierter Anleitung für Ihre spezifische Situation zu helfen.",
+        "contactSupport": "Support kontaktieren",
+        "startTrade": "Ihren Handel starten"
+      }
+    },
+    "resources": {
+      "settingUpTradeEscrow": {
+        "title": "Einrichten von Handels-Escrow",
+        "description": "Vollständiger Leitfaden zum Erstellen sicherer Escrow-Vereinbarungen mit Smart Contracts.",
+        "type": "Leitfaden",
+        "buttonText": "Leitfaden lesen"
+      },
+      "digitalVsTraditional": {
+        "title": "Digital vs Traditionelle Handelsfinanzierung",
+        "description": "Vergleichen Sie Akkreditive, Überweisungen und digitalen Escrow für internationalen Handel.",
+        "type": "Vergleich",
+        "buttonText": "Mehr erfahren"
+      },
+      "managingDisputes": {
+        "title": "Streitfälle verwalten",
+        "description": "Wie Smart Contracts und automatisierte Schiedsverfahren internationale Handelskonflikte lösen.",
+        "type": "Tipps",
+        "buttonText": "Tipps lesen"
+      },
+      "compliance": {
+        "title": "Internationale Handelscompliance",
+        "description": "Navigieren Sie Zoll, Vorschriften und Dokumentationsanforderungen für globalen Handel.",
+        "type": "Checkliste",
+        "buttonText": "Checkliste herunterladen"
+      },
+      "videoSeries": {
+        "title": "Handelsfinanzierungs-Videoreihe",
+        "description": "Sehen Sie Experteninterviews und Fallstudien zur digitalen Escrow-Implementierung.",
+        "type": "Video",
+        "buttonText": "Videos ansehen"
+      },
+      "counter": "{current} von {total} Ressourcen"
+    }
+  }
+}

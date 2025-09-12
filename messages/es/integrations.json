@@ -1,0 +1,141 @@
+{
+  "integrations": {
+    "metadata": {
+      "title": "Integraciones - Protocolo de Escrow",
+      "description": "Construye con el protocolo de escrow descentralizado. Ecosistema abierto para desarrolladores, empresas e integradores."
+    },
+    "hero": {
+      "badge": "Ecosistema Abierto",
+      "title": "Construye con el Protocolo de Escrow",
+      "subtitle": "Ecosistema abierto para todos. Asesores comerciales, instituciones financieras, plataformas de eCommerce, proveedores tradicionales de servicios de escrow y desarrolladores pueden acceder e integrar el protocolo de múltiples maneras.",
+      "primaryButton": "Comenzar a Construir",
+      "secondaryButton": "Ver Documentación",
+      "trustIndicators": {
+        "nonCustodial": "Sin custodia",
+        "openSource": "Código abierto",
+        "audited": "Contratos inteligentes auditados",
+        "availability": "Disponibilidad 24/7"
+      }
+    },
+    "ecosystem": {
+      "title": "Ecosistema Abierto para Todos",
+      "subtitle": "El protocolo está diseñado para ser sin permisos y accesible para todo tipo de empresas y desarrolladores. Construye encima de él, intégrate con él, o úsalo tal cual.",
+      "features": [
+        "Acceso sin permisos - no se necesita aprobación",
+        "Contratos inteligentes y frontend de código abierto",
+        "Documentación completa y SDKs",
+        "Soporte comunitario y recursos para desarrolladores"
+      ]
+    },
+    "access": {
+      "title": "Cómo Acceder al Protocolo",
+      "subtitle": "Múltiples formas de interactuar con el Protocolo de Escrow Descentralizado.",
+      "methods": {
+        "smartContract": {
+          "title": "Integración Directa de Contrato Inteligente",
+          "description": "Interactúa directamente con los contratos inteligentes del protocolo en Internet Computer para máxima flexibilidad."
+        },
+        "api": {
+          "title": "Integración API",
+          "description": "Usa la API RESTful para fácil integración en sistemas y aplicaciones existentes."
+        },
+        "frontend": {
+          "title": "Soluciones Frontend",
+          "description": "Usa el frontend de código abierto o construye tu propia interfaz personalizada para tus usuarios."
+        }
+      }
+    },
+    "possibilities": {
+      "title": "Posibilidades de Integración",
+      "subtitle": "El protocolo puede integrarse con varios tipos de sistemas y servicios.",
+      "items": {
+        "ecommerce": {
+          "title": "Plataformas de eCommerce",
+          "description": "Las plataformas de eCommerce pueden integrar funcionalidad de escrow para pagos en línea seguros"
+        },
+        "kyc": {
+          "title": "Proveedores KYC/KYB",
+          "description": "Servicios de verificación de identidad para mayor confianza y cumplimiento"
+        },
+        "invoice": {
+          "title": "Creadores de Facturas",
+          "description": "Sistemas de facturación automatizada con integración de pagos escrow"
+        },
+        "tradeDocs": {
+          "title": "Proveedores de Documentos Comerciales",
+          "description": "Bill of Lading, aduanas y sistemas de verificación de documentos de envío"
+        },
+        "financial": {
+          "title": "Instituciones Financieras",
+          "description": "Bancos y servicios financieros ofreciendo escrow como servicio. Son posibles soluciones white label."
+        },
+        "escrow": {
+          "title": "Proveedores Tradicionales de Escrow",
+          "description": "Empresas de escrow existentes agregando capacidades de monedas digitales"
+        },
+        "logistics": {
+          "title": "Empresas de Logística",
+          "description": "Empresas de envío y carga con liberación automática de pagos"
+        },
+        "erp": {
+          "title": "Proveedores de Sistemas ERP",
+          "description": "Sistemas de planificación de recursos empresariales con escrow integrado"
+        },
+        "payment": {
+          "title": "Procesadores de Pagos",
+          "description": "Pasarelas de pago agregando funcionalidad de escrow a sus servicios"
+        }
+      }
+    },
+    "resources": {
+      "title": "Recursos Técnicos",
+      "subtitle": "Todo lo que necesitas para comenzar a construir con el protocolo de escrow.",
+      "items": {
+        "api": {
+          "title": "Documentación API",
+          "description": "Documentación completa de API REST con ejemplos y pruebas interactivas.",
+          "button": "Ver Docs API"
+        },
+        "contracts": {
+          "title": "Interfaces de Contrato Inteligente",
+          "description": "Guías de integración directa para canisters de Internet Computer.",
+          "button": "Ver Contratos"
+        },
+        "frontend": {
+          "title": "Frontend de Código Abierto",
+          "description": "Componentes frontend listos para usar y plantillas de aplicación completas.",
+          "button": "Repositorio GitHub"
+        }
+      }
+    },
+    "beneficiaries": {
+      "title": "Quién Puede Beneficiarse",
+      "serviceProviders": {
+        "title": "Proveedores de Servicios",
+        "description": "Empresas ofreciendo escrow como parte de sus servicios",
+        "benefits": [
+          "Asesores comerciales y consultores",
+          "Bancos e instituciones financieras",
+          "Empresas tradicionales de escrow",
+          "Firmas legales y de cumplimiento"
+        ]
+      },
+      "techCompanies": {
+        "title": "Empresas Tecnológicas",
+        "description": "Desarrolladores y plataformas construyendo soluciones integradas",
+        "benefits": [
+          "Desarrolladores de plataformas de eCommerce",
+          "Empresas fintech y de pagos",
+          "Proveedores de software empresarial",
+          "Desarrolladores de blockchain y DeFi"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Construir con el Protocolo?",
+      "subtitle": "Únete al ecosistema creciente de desarrolladores y empresas construyendo en el protocolo de escrow. Comienza a integrar hoy.",
+      "primaryButton": "Iniciar Integración",
+      "secondaryButton": "Unirse a Comunidad"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "protocol": {
+    "metadata": {
+      "title": "Protocole - Protocole d'Escrow",
+      "description": "Explorez l'architecture des contrats intelligents du Protocole d'Escrow construit sur Internet Computer. Rejoignez notre communauté de développeurs."
+    },
+    "hero": {
+      "badge": "Protocole & Communauté",
+      "title": "Construit sur Internet Computer",
+      "subtitle": "Explorez l'architecture des contrats intelligents, rejoignez notre communauté de développeurs, et aidez à construire l'avenir de l'infrastructure d'escrow sans confiance.",
+      "primaryButton": "Rejoindre la Communauté",
+      "secondaryButton": "Lire la Documentation",
+      "trustIndicators": {
+        "nonCustodial": "Non dépositaire",
+        "openSource": "Code ouvert",
+        "audited": "Contrats intelligents audités",
+        "availability": "Disponibilité 24/7"
+      }
+    },
+    "tabs": {
+      "protocol": "Protocole",
+      "community": "Communauté",
+      "developers": "Développeurs"
+    },
+    "protocolTab": {
+      "title": "Architecture des Contrats Intelligents",
+      "subtitle": "Infrastructure d'escrow sans confiance construite sur Internet Computer avec Chain Fusion pour l'interopérabilité multi-chaîne.",
+      "features": {
+        "canister": {
+          "title": "Contrats Intelligents Canister",
+          "description": "La logique d'escrow s'exécute dans les canisters IC avec exécution déterministe et vérification cryptographique d'état."
+        },
+        "chainFusion": {
+          "title": "Intégration Chain Fusion",
+          "description": "Intégration native Bitcoin et Ethereum via threshold ECDSA et appels HTTPS sortants pour l'escrow cross-chain."
+        },
+        "crypto": {
+          "title": "Garanties Cryptographiques",
+          "description": "Schémas multi-signature et contrats verrouillés dans le temps assurent l'exécution sans confiance sans risque dépositaire."
+        }
+      },
+      "mechanisms": {
+        "title": "Mécanismes de Libération des Contrats Intelligents",
+        "automated": {
+          "title": "Conditions de Libération Automatisées",
+          "features": [
+            "Schémas de seuil multi-signature (m-sur-n)",
+            "Libération verrouillée dans le temps avec vérification de hauteur de bloc",
+            "Intégration d'oracle pour vérification de données externes",
+            "Vérification de hachage de document et stockage IPFS"
+          ]
+        },
+        "advanced": {
+          "title": "Fonctionnalités Avancées de Contrat",
+          "features": [
+            "Transitions d'état basées sur les étapes",
+            "Conditions d'approbation programmables",
+            "Résolution de litiges avec DAOs d'arbitres",
+            "Opérations par lots économes en gas"
+          ]
+        }
+      }
+    },
+    "communityTab": {
+      "title": "Rejoignez Notre Communauté",
+      "subtitle": "Connectez-vous avec les utilisateurs, développeurs et contributeurs construisant l'avenir de l'escrow décentralisé.",
+      "discord": {
+        "title": "Communauté Discord",
+        "description": "Rejoignez notre serveur Discord actif pour des discussions en temps réel, support et mises à jour.",
+        "button": "Rejoindre Discord"
+      },
+      "governance": {
+        "title": "Forum de Gouvernance",
+        "description": "Participez à la gouvernance du protocole et votez sur des propositions et mises à niveau importantes.",
+        "button": "Visiter le Forum"
+      },
+      "telegram": {
+        "title": "Groupe Telegram",
+        "description": "Connectez-vous avec d'autres utilisateurs et obtenez des réponses rapides à vos questions.",
+        "button": "Rejoindre Telegram"
+      }
+    },
+    "developersTab": {
+      "title": "Construire avec Notre Protocole",
+      "subtitle": "Intégrez la fonctionnalité d'escrow dans votre plateforme ou construisez de nouvelles applications sur notre protocole.",
+      "api": {
+        "title": "Documentation API",
+        "description": "Docs API complets et SDKs pour intégrer l'escrow dans vos applications.",
+        "button": "Voir les Docs API"
+      },
+      "github": {
+        "title": "Open Source",
+        "description": "Explorez notre base de code open-source et contribuez au développement du protocole.",
+        "button": "Voir sur GitHub"
+      },
+      "guides": {
+        "title": "Guides Développeur",
+        "description": "Tutoriels étape par étape et exemples pour vous aider à commencer à construire rapidement.",
+        "button": "Lire les Guides"
+      },
+      "integration": {
+        "title": "Options d'Intégration",
+        "widget": {
+          "title": "Widget d'Escrow Intégré",
+          "description": "Ajoutez la fonctionnalité d'escrow à votre plateforme existante avec notre widget intégrable.",
+          "features": [
+            "Intégration facile avec n'importe quel site web",
+            "UI personnalisable pour correspondre à votre marque",
+            "Accès API complet et webhooks"
+          ]
+        },
+        "custom": {
+          "title": "Construire des Solutions Personnalisées",
+          "description": "Utilisez nos interfaces de contrats intelligents pour construire des solutions d'escrow complètement personnalisées.",
+          "features": [
+            "Interaction directe avec les contrats intelligents",
+            "Support de logique métier personnalisée",
+            "Solutions white-label disponibles"
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à Construire l'Avenir ?",
+      "subtitle": "Rejoignez notre communauté de développeurs, utilisateurs et contributeurs construisant la prochaine génération d'outils d'affaires décentralisés.",
+      "primaryButton": "Rejoindre la Communauté",
+      "secondaryButton": "Commencer à Construire"
+    }
+  }
+}

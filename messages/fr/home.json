@@ -1,0 +1,164 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Protocole d'Escrow Décentralisé",
+      "title": "Escrow Numérique pour ",
+      "titleHighlight": "le Commerce Mondial",
+      "subtitle": "Protocole d'escrow décentralisé et non dépositaire alimenté par des contrats intelligents. Commercez en toute confiance en utilisant des monnaies numériques - pas d'intermédiaires, pas de dépôt, juste du code.",
+      "startEscrow": "Démarrer l'Escrow",
+      "watchDemo": "Voir la Démo",
+      "trustIndicators": {
+        "nonCustodial": "Non dépositaire",
+        "openSource": "Code ouvert",
+        "audited": "Contrats intelligents audités",
+        "availability": "Disponibilité 24/7"
+      }
+    },
+    "explore": {
+      "title": "Explorez le Protocole d'Escrow",
+      "subtitle": "Découvrez comment le protocole sert différents cas d'usage et besoins d'intégration.",
+      "cards": {
+        "trade": {
+          "title": "Commerce Mondial",
+          "description": "Transactions internationales sécurisées"
+        },
+        "freelancer": {
+          "title": "Freelance",
+          "description": "Paiements de projets protégés"
+        },
+        "integrators": {
+          "title": "Intégrateurs",
+          "description": "Construire avec le protocole"
+        },
+        "community": {
+          "title": "Communauté",
+          "description": "Rejoignez l'écosystème"
+        }
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités du Protocole d'Escrow",
+      "subtitle": "Conçu pour les besoins commerciaux réels avec une sécurité et une flexibilité de niveau entreprise.",
+      "featured": "En vedette",
+      "security": {
+        "title": "Sécurité et Flexibilité",
+        "description": "Les fonds sont protégés jusqu'à ce que les deux parties remplissent leurs conditions convenues, éliminant la fraude et le non-paiement."
+      },
+      "trust": {
+        "title": "Plus de Confiance, Plus d'Affaires",
+        "description": "La sécurité des paiements construit la confiance, réduit les risques et génère plus d'opportunités commerciales."
+      },
+      "payments": {
+        "title": "Paiements Transfrontaliers",
+        "description": "Règlement instantané avec des stablecoins comme USDC, USDT et DAI. Pas de banques, pas de délais, pas de frontières.",
+        "details": "Support pour les principaux stablecoins avec conversion automatique et règlement en temps réel dans plus de 180 pays."
+      },
+      "approval": {
+        "title": "Approbation Multi-Signature",
+        "description": "Mécanismes d'approbation flexibles avec signatures d'acheteur, vendeur et médiateur optionnel.",
+        "details": "Schémas de signature m-sur-n personnalisables avec permissions basées sur les rôles et conditions verrouillées dans le temps."
+      },
+      "availability": {
+        "title": "Disponibilité 24/7",
+        "description": "Les contrats intelligents décentralisés fonctionnent en continu sans temps d'arrêt ou fenêtres de maintenance.",
+        "details": "99,9% de disponibilité garantie avec infrastructure redondante et mécanismes de basculement automatique."
+      },
+      "arbitration": {
+        "title": "Arbitrage Automatisé",
+        "description": "Le stockage de données et documents sur la chaîne permet une résolution de litiges plus rapide et moins coûteuse."
+      },
+      "nonCustodial": {
+        "title": "Sécurité Non Dépositaire",
+        "description": "Les contrats intelligents détiennent les fonds de manière transparente. Personne ne peut accéder, geler ou contrôler vos monnaies numériques sauf vous.",
+        "details": "Construit sur Internet Computer avec garanties cryptographiques et schémas multi-signature pour une sécurité maximale."
+      },
+      "documents": {
+        "title": "Support de Documents",
+        "description": "Téléchargez et vérifiez des documents comme les eBill of Lading pour des conditions de libération automatisées.",
+        "details": "Stockage IPFS avec vérification de hachage, traitement OCR et intégration avec les principaux fournisseurs de transport."
+      },
+      "milestones": {
+        "title": "Paiements d'Étapes",
+        "description": "Conditions de libération personnalisables et paiements basés sur les étapes pour des projets complexes.",
+        "details": "Moteur de workflow avancé avec logique conditionnelle, déclencheurs automatisés et suivi de progression."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment Ça Marche",
+      "subtitle": "Processus simple, sécurisé et transparent pour toutes les parties impliquées.",
+      "steps": {
+        "agree": {
+          "title": "Se Mettre d'Accord sur les Conditions",
+          "description": "Les parties négocient et s'accordent sur les conditions de transaction, en téléchargeant optionnellement des documents justificatifs."
+        },
+        "deposit": {
+          "title": "Déposer les Fonds",
+          "description": "L'acheteur dépose des monnaies numériques dans le protocole d'escrow sécurisé pour les garder en sécurité."
+        },
+        "deliver": {
+          "title": "Livrer les Services ou Biens",
+          "description": "Le vendeur livre les biens ou services selon les conditions convenues."
+        },
+        "release": {
+          "title": "Libérer les Fonds",
+          "description": "Les fonds sont automatiquement libérés lorsque les conditions de signature sont remplies ou via la résolution de litiges."
+        }
+      }
+    },
+    "business": {
+      "title": "Parfait pour Votre Entreprise",
+      "subtitle": "Conçu pour des scénarios commerciaux réels dans tous les secteurs.",
+      "trade": {
+        "title": "Commerce Mondial",
+        "subtitle": "Pour les exportateurs et importateurs du monde entier",
+        "features": [
+          "Sécurité contre le Non-Paiement ou la Non-Livraison",
+          "Rapidité et Accessibilité Mondiale",
+          "Efficacité des Coûts et Conditions de Libération Personnalisables",
+          "Mécanisme de Résolution de Litiges Automatisé"
+        ]
+      },
+      "freelancer": {
+        "title": "Services Freelance",
+        "subtitle": "Pour les prestataires de services et clients",
+        "features": [
+          "Protection contre le Non-Paiement",
+          "Paiements Basés sur les Étapes",
+          "Transactions Rapides et à Faibles Coûts",
+          "Mécanisme de Résolution de Litiges Automatisé"
+        ]
+      }
+    },
+    "build": {
+      "title": "Construire et Se Connecter",
+      "subtitle": "Intégrez-vous avec le protocole ou rejoignez la communauté croissante de développeurs et d'utilisateurs.",
+      "integrators": {
+        "title": "Intégrateurs",
+        "subtitle": "Pour les développeurs et entreprises",
+        "features": [
+          "Intégration API Facile",
+          "Documentation Développeur-Friendly",
+          "Infrastructure Évolutive"
+        ]
+      },
+      "community": {
+        "title": "Communauté",
+        "subtitle": "Pour les participants du protocole",
+        "features": [
+          "Communauté Active",
+          "Support Développeur",
+          "Ressources Éducatives"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt pour le Commerce Numérique Sécurisé ?",
+      "subtitle": "Rejoignez les entreprises du monde entier utilisant ce protocole d'escrow sans confiance pour des transactions sécurisées et transparentes avec des monnaies numériques.",
+      "startEscrow": "Démarrez Votre Premier Escrow",
+      "exploreDocs": "Explorer la Documentation"
+    },
+    "common": {
+      "learnMore": "En Savoir Plus"
+    }
+  }
+}

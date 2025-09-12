@@ -1,0 +1,428 @@
+{
+  "freelancer": {
+    "metadata": {
+      "title": "Escrow Freelance - Pagos de Proyectos Seguros",
+      "description": "Elimina los riesgos de pago en el trabajo freelance con escrow digital seguro para freelancers y propietarios de proyectos. Protege tus proyectos con escrow basado en blockchain."
+    },
+    "hero": {
+      "badge": "Solución Freelance",
+      "title": "Asegura Proyectos Freelance con ",
+      "titleHighlight": "Escrow Digital",
+      "subtitle": "Elimina los riesgos de pago en el trabajo freelance con escrow seguro para freelancers y propietarios de proyectos.",
+      "startEscrow": "Iniciar Escrow Freelance",
+      "seeHowItWorks": "Ver Cómo Funciona",
+      "trustIndicators": [
+        "Sin custodia",
+        "Código abierto",
+        "Contratos inteligentes auditados",
+        "Disponibilidad 24/7"
+      ]
+    },
+    "solvesIssues": {
+      "title": "Cómo el Escrow Resuelve Problemas en el Freelancing",
+      "description": "Un escrow digital para proyectos freelance elimina la barrera de confianza que impide colaboraciones exitosas entre freelancers y clientes. El freelancing tradicional requiere que una parte tome un riesgo significativo - ya sea que el freelancer complete el trabajo sin garantía de pago, o que el cliente pague por adelantado sin garantía de entrega. Un escrow digital para freelancers y propietarios de proyectos resuelve esto manteniendo los fondos de manera segura hasta que el trabajo esté completado y aprobado, creando confianza entre socios de trabajo y permitiendo el comercio freelance seguro."
+    },
+    "dilemma": {
+      "title": "El Dilema del Freelancer y Cliente",
+      "subtitle": "Mientras los freelancers temen el impago, los clientes temen la no entrega — reducir el riesgo del freelancer aumenta el riesgo del cliente y viceversa.",
+      "freelancerRisks": {
+        "title": "Riesgos del Freelancer",
+        "description": "Los freelancers a menudo enfrentan el riesgo más alto en el trabajo de proyectos. Típicamente completan proyectos primero y esperan el pago, dejándolos vulnerables a clientes que podrían negarse a pagar o desaparecer después de recibir el trabajo. Los freelancers podrían perder no solo el pago sino también semanas o meses de tiempo y esfuerzo invertido, lo cual puede ser devastador para su sustento."
+      },
+      "clientRisks": {
+        "title": "Riesgos del Cliente",
+        "description": "Los clientes se preocupan por la no entrega o el trabajo de mala calidad. Si pagan por adelantado, arriesgan no recibir nada a cambio o recibir trabajo que no cumple con los requisitos. Sin ver los entregables finales primero, los clientes podrían terminar con trabajo inferior o ningún trabajo en absoluto, desperdiciando dinero y plazos de proyecto."
+      },
+      "bridging": {
+        "title": "Puenteando la Brecha con un Escrow Digital",
+        "description": "El dilema del freelancer y cliente detiene muchos proyectos prometedores, perdiendo oportunidades para grandes colaboraciones. Un escrow digital para trabajo freelance ofrece una solución, manteniendo fondos de manera segura hasta que los proyectos estén completados y aprobados, reduciendo riesgos para ambos lados. Esto fomenta la confianza, convirtiendo la hesitación en asociaciones freelance exitosas y confiadas.",
+        "hold": "Mantener",
+        "complete": "Completar",
+        "release": "Liberar"
+      }
+    },
+    "whatIs": {
+      "title": "¿Qué es un Escrow Digital?",
+      "subtitle": "Una Solución Simple para Proyectos Freelance Seguros",
+      "description": "Un escrow digital es un método de pago seguro diseñado para proteger tanto a freelancers como a clientes en el trabajo de proyectos. Funciona manteniendo fondos en un escrow digital neutral hasta que el trabajo esté completado y aprobado, asegurando que ninguna parte enfrente riesgos como fraude e impago. Para freelancers, esto significa trabajar con confianza, sabiendo que el pago está garantizado una vez que se cumplan los hitos. Para clientes, asegura que el pago se libere solo cuando el trabajo cumpla con las especificaciones acordadas. El escrow digital elimina los riesgos de pago tradicionales, reduce disputas y simplifica la confianza entre freelancers y clientes en todo el mundo.",
+      "imageAlt": "Diagrama del Proceso de Escrow Digital para Proyectos Freelance"
+    },
+    "features": {
+      "title": "Características del Escrow",
+      "subtitle": "Todo lo que freelancers y clientes necesitan para transacciones de proyectos seguras y eficientes.",
+      "security": {
+        "title": "Seguridad y Flexibilidad",
+        "description": "Los fondos se mantienen de manera segura hasta que ambas partes hayan cumplido sus obligaciones del proyecto, eliminando riesgos como fraude e impago."
+      },
+      "trust": {
+        "title": "Confianza y Crecimiento",
+        "description": "Los pagos seguros fomentan la confianza entre freelancers y clientes, reducen el riesgo y abren la puerta a más oportunidades de proyectos."
+      },
+      "fees": {
+        "title": "Bajas Tarifas de Transacción",
+        "description": "Al eliminar intermediarios y utilizar pagos digitales, el escrow asegura tarifas significativamente más bajas para transacciones freelance."
+      },
+      "settlement": {
+        "title": "Liquidación Instantánea",
+        "description": "Una vez que se satisfagan los términos del proyecto, los fondos se reciben dentro de minutos después de la liberación — no hay necesidad de esperar días como los sistemas de pago tradicionales."
+      },
+      "milestones": {
+        "title": "Hitos",
+        "description": "Los hitos del proyecto aseguran un seguimiento claro del progreso y liberaciones de pago vinculadas a entregables específicos y etapas de finalización."
+      },
+      "dispute": {
+        "title": "Resolución de Disputas",
+        "description": "Cada paso en el proyecto se registra y verifica, con mediadores neutrales permitiendo resoluciones rápidas y rentables de disputas."
+      }
+    },
+    "categories": {
+      "title": "Apoyando Todas las Categorías de Servicios",
+      "subtitle": "El protocolo de escrow funciona perfectamente para cualquier tipo de servicio freelance en todas las categorías.",
+      "webDev": {
+        "title": "Desarrollo Web",
+        "description": "Sitios web, aplicaciones web, plataformas de e-commerce",
+        "imageAlt": "Desarrollo Web"
+      },
+      "graphicDesign": {
+        "title": "Diseño Gráfico",
+        "description": "Logos, branding, materiales de marketing",
+        "imageAlt": "Diseño Gráfico"
+      },
+      "contentWriting": {
+        "title": "Redacción de Contenido",
+        "description": "Artículos, copywriting, documentación técnica",
+        "imageAlt": "Redacción de Contenido"
+      },
+      "videoProduction": {
+        "title": "Producción de Video",
+        "description": "Edición de video, animación, producción comercial",
+        "imageAlt": "Producción de Video"
+      },
+      "digitalMarketing": {
+        "title": "Marketing Digital",
+        "description": "SEO, redes sociales, campañas publicitarias",
+        "imageAlt": "Marketing Digital"
+      },
+      "softwareDev": {
+        "title": "Desarrollo de Software",
+        "description": "Software personalizado, aplicaciones móviles, integración de sistemas",
+        "imageAlt": "Desarrollo de Software"
+      },
+      "uiUxDesign": {
+        "title": "Diseño UI/UX",
+        "description": "Diseño de interfaz de usuario, optimización de experiencia de usuario",
+        "imageAlt": "Diseño UI/UX"
+      },
+      "virtualAssistance": {
+        "title": "Asistencia Virtual",
+        "description": "Soporte administrativo, entrada de datos, servicio al cliente",
+        "imageAlt": "Asistencia Virtual"
+      },
+      "legalServices": {
+        "title": "Servicios Legales",
+        "description": "Investigación legal, preparación de documentos, soporte paralegal",
+        "imageAlt": "Servicios Legales"
+      },
+      "dataAnalysis": {
+        "title": "Análisis de Datos",
+        "description": "Inteligencia empresarial, visualización de datos, análisis estadístico",
+        "imageAlt": "Análisis de Datos"
+      },
+      "consulting": {
+        "title": "Consultoría",
+        "description": "Estrategia empresarial, consultoría de gestión, servicios de asesoría",
+        "imageAlt": "Consultoría"
+      },
+      "translation": {
+        "title": "Traducción",
+        "description": "Traducción de idiomas, localización, servicios de interpretación",
+        "imageAlt": "Traducción"
+      }
+    },
+    "perfectFor": {
+      "title": "Perfecto para Cada Tipo de Servicio",
+      "subtitle": "Descubre beneficios específicos y características diseñadas para tu rol en el trabajo freelance.",
+      "freelancers": {
+        "title": "Para Freelancers",
+        "subtitle": "Asegura tus ingresos freelance",
+        "benefits": [
+          "Fondos asegurados antes de comenzar el trabajo",
+          "Pago instantáneo al completar el proyecto",
+          "Protección contra impago",
+          "Trabaja con clientes nuevos y existentes con confianza"
+        ],
+        "learnMore": "Aprender Más sobre Beneficios para Freelancers"
+      },
+      "clients": {
+        "title": "Para Clientes",
+        "subtitle": "Contrata con confianza y control",
+        "benefits": [
+          "Paga solo cuando el trabajo cumpla con las especificaciones",
+          "Inspección de calidad antes de liberar el pago",
+          "Protección contra no entrega",
+          "Resolución de disputas para problemas de calidad"
+        ],
+        "learnMore": "Aprender Más sobre Beneficios para Clientes"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Asegurar Tus Proyectos Freelance?",
+      "subtitle": "Únete a miles de freelancers y clientes que ya no se preocupan por los riesgos de pago. Comienza tu primer proyecto freelance seguro hoy.",
+      "startEscrow": "Iniciar Escrow Freelance",
+      "talkToAdvisor": "Hablar con Asesor de Proyectos"
+    },
+    "blog": {
+      "metadata": {
+        "title": "Blog de Escrow Freelance - Insights y Actualizaciones",
+        "description": "Mantente informado con las últimas tendencias, consejos e insights sobre freelancing y escrow digital."
+      },
+      "hero": {
+        "title": "Insights de Escrow Freelance",
+        "subtitle": "Mantente informado con las últimas tendencias, consejos e insights sobre freelancing y escrow digital."
+      },
+      "articles": {
+        "title": "Artículos Recientes",
+        "subtitle": "Estamos comenzando nuestro blog. Verifica pronto para insights valiosos y actualizaciones.",
+        "comingSoon": {
+          "freelancerTips": {
+            "title": "Próximamente: Consejos Expertos para Freelancers",
+            "excerpt": "Estamos preparando guías completas para ayudar a los freelancers a navegar los desafíos del trabajo independiente.",
+            "category": "Consejos Freelancer",
+            "date": "Próximamente",
+            "readTime": "Mantente al tanto"
+          },
+          "clientGuide": {
+            "title": "Próximamente: Mejores Prácticas para Clientes",
+            "excerpt": "Guías detalladas para clientes para asegurar la calidad y evitar disputas costosas en contrataciones independientes.",
+            "category": "Guía Cliente",
+            "date": "Próximamente",
+            "readTime": "Mantente al tanto"
+          },
+          "digitalPayments": {
+            "title": "Próximamente: Insights de Pagos Digitales",
+            "excerpt": "Aprende cómo los pagos digitales están transformando el freelancing y el trabajo independiente.",
+            "category": "Pagos Digitales",
+            "date": "Próximamente",
+            "readTime": "Mantente al tanto"
+          }
+        }
+      },
+      "newsletter": {
+        "title": "Mantente Informado",
+        "subtitle": "Recibe las últimas actualizaciones sobre el protocolo y insights de freelancing en tu bandeja de entrada.",
+        "emailPlaceholder": "Ingresa tu email",
+        "button": "Suscribirse"
+      }
+    },
+    "contacts": {
+      "metadata": {
+        "title": "Contáctanos - Soporte de Escrow Freelance",
+        "description": "Obtén ayuda con tu escrow freelance. Conéctate con nosotros para soporte con tus proyectos independientes."
+      },
+      "hero": {
+        "title": "Obtén Ayuda con Tu Escrow Freelance",
+        "subtitle": "¿Necesitas asistencia con tu escrow freelance? Conéctate con nosotros para soporte con tus proyectos independientes."
+      },
+      "contactForm": {
+        "title": "Enviar Mensaje",
+        "firstName": "Nombre",
+        "firstNamePlaceholder": "Juan",
+        "lastName": "Apellido",
+        "lastNamePlaceholder": "Pérez",
+        "email": "Email",
+        "emailPlaceholder": "juan@empresa.com",
+        "company": "Empresa",
+        "companyPlaceholder": "Nombre de Tu Empresa",
+        "serviceType": "Tipo de Servicio",
+        "serviceTypePlaceholder": "Selecciona el tipo de servicio",
+        "serviceTypes": {
+          "freelancer": "Freelancer",
+          "client": "Cliente",
+          "both": "Ambos"
+        },
+        "message": "Mensaje",
+        "messagePlaceholder": "Cuéntanos tus preguntas o cómo podemos ayudarte...",
+        "submitButton": "Enviar Mensaje",
+        "submittingButton": "Enviando..."
+      },
+      "contactInfo": {
+        "title": "Información de Contacto",
+        "emailTitle": "Email",
+        "emailAddress": "info@escrow-protocol.com",
+        "emailDescription": "Te responderemos pronto"
+      },
+      "newsletter": {
+        "title": "Mantente Informado",
+        "subtitle": "Suscríbete a nuestro newsletter para actualizaciones sobre el protocolo e insights de freelancing.",
+        "emailPlaceholder": "Ingresa tu email",
+        "submitButton": "Suscribirse",
+        "submittingButton": "Suscribiendo..."
+      },
+      "popup": {
+        "thankYou": "¡Gracias!",
+        "close": "Cerrar"
+      }
+    },
+    "contactsAdmin": {
+      "newsletterSubscribers": {
+        "title": "Suscriptores del Newsletter",
+        "total": "Total de suscriptores: {count}",
+        "email": "Email",
+        "subscriptionDate": "Fecha de Suscripción"
+      },
+      "contactMessages": {
+        "title": "Mensajes de Contacto",
+        "total": "Total de mensajes: {count}",
+        "fields": {
+          "email": "Email",
+          "company": "Empresa",
+          "serviceType": "Tipo de Servicio",
+          "message": "Mensaje"
+        }
+      }
+    },
+    "faq": {
+      "metadata": {
+        "title": "Preguntas Frecuentes - Escrow Freelance | Protocolo de Escrow",
+        "description": "Encuentra respuestas a preguntas comunes sobre escrow digital para proyectos freelance. Aprende sobre seguridad, tarifas, procesos y más."
+      },
+      "hero": {
+        "title": "Preguntas Frecuentes",
+        "subtitle": "Encuentra respuestas a preguntas comunes sobre escrow digital para proyectos freelance."
+      },
+      "categories": {
+        "title": "Categorías de FAQ",
+        "gettingStarted": {
+          "name": "Comenzar",
+          "count": "3"
+        },
+        "securitySafety": {
+          "name": "Seguridad y Seguridad",
+          "count": "2"
+        },
+        "processTimeline": {
+          "name": "Proceso y Plazos",
+          "count": "2"
+        },
+        "paymentsFees": {
+          "name": "Pagos y Tarifas",
+          "count": "2"
+        },
+        "freelanceServices": {
+          "name": "Servicios Freelance",
+          "count": "2"
+        }
+      },
+      "sections": {
+        "gettingStarted": {
+          "title": "Comenzar",
+          "questions": {
+            "whatIsFreelanceEscrow": {
+              "question": "¿Qué es el escrow digital para proyectos freelance?",
+              "answer": "El escrow digital para proyectos freelance es un sistema de pago peer-to-peer seguro que protege tanto a freelancers como a clientes durante el trabajo de proyectos. En lugar de que una tercera parte mantenga tus fondos, el sistema utiliza contratos inteligentes en blockchain para gestionar automáticamente los pagos basados en condiciones preestablecidas. Los fondos permanecen en el contrato inteligente (Escrow) hasta que se cumplan las condiciones de entrega y aprobación, eliminando los riesgos tradicionales donde el freelancer debe completar el trabajo sin garantía de pago, o el cliente debe pagar por adelantado sin garantías de entrega."
+            },
+            "howToGetStarted": {
+              "question": "¿Cómo comenzar con el escrow freelance?",
+              "answer": "Haz clic en el botón \"Iniciar Escrow Freelance\" en la esquina superior derecha para crear una billetera o iniciar sesión. Para más información detallada sobre el proceso completo, consulta nuestra página Flujo de Trabajo que explica cada paso desde la configuración hasta la liberación de fondos."
+            },
+            "serviceTypes": {
+              "question": "¿Qué tipos de servicios pueden usar el escrow?",
+              "answer": "El escrow digital puede ser usado en casi cualquier tipo de servicio donde se entreguen resultados, incluyendo desarrollo web, diseño gráfico, redacción de contenido, producción de video, marketing digital, desarrollo de software, diseño UI/UX, asistencia virtual, servicios legales, análisis de datos, consultoría y traducción. El escrow soporta transacciones B2B (empresa a empresa), B2C (empresa a consumidor) y C2C (consumidor a consumidor). Para una primera impresión de las posibilidades, visita nuestra sección Apoyando Todas las Categorías de Servicios."
+            }
+          }
+        },
+        "securitySafety": {
+          "title": "Seguridad y Seguridad",
+          "questions": {
+            "fundSecurity": {
+              "question": "¿Qué tan seguros están mis fondos en el escrow?",
+              "answer": "Los fondos en el escrow están muy seguros. Ninguna tercera parte, incluyendo la compañía de desarrollo que creó la tecnología detrás del escrow, tiene acceso a los fondos en el escrow. Los fondos están mantenidos en lo que se llama un contrato inteligente, que es un programa autoejecutable en la blockchain que aplica automáticamente las condiciones convenidas sin intervención humana. El escrow utiliza un enfoque multi-firma, lo que significa que se requieren múltiples firmas criptográficas para autorizar cualquier transacción, proporcionando una capa adicional de seguridad. Esto asegura que los fondos no puedan ser liberados a menos que se cumplan todas las condiciones predeterminadas por ambas partes."
+            },
+            "disputeResolution": {
+              "question": "¿Qué sucede si hay una disputa?",
+              "answer": "Ambas partes pueden levantar disputas, que congelan inmediatamente los fondos para proteger a todos los involucrados. Una vez que se inicia una disputa, ambas partes tienen tiempo para encontrar un compromiso bilateral y acordar ajustes como ofrecer descuentos o extender plazos de entrega. Si no pueden alcanzar un compromiso por negociación directa, el caso puede escalarse a un árbitro neutral para una resolución final. Para información detallada sobre este proceso, consulta nuestra sección Resolución de Disputas."
+            }
+          }
+        },
+        "processTimeline": {
+          "title": "Proceso y Plazos",
+          "questions": {
+            "processDuration": {
+              "question": "¿Cuánto tiempo toma el proceso de escrow?",
+              "answer": "El tiempo depende completamente de tu proyecto y la naturaleza del trabajo siendo realizado. Podría ser solo unos días para proyectos simples, pero también meses o incluso años para proyectos de desarrollo complejos. Aquí hay un ejemplo típico: Configuración (1-2 días), Financiamiento (5 días), Desarrollo (20 semanas), Entrega (4 semanas), Inspección (2 días), Liberación de fondos (el mismo día). Para un proyecto más rápido: Configuración y financiamiento hoy, Entrega en 3 días, Inspección y liberación de fondos el día de llegada."
+            },
+            "fundRelease": {
+              "question": "¿Cuándo se liberan los fondos al freelancer?",
+              "answer": "La liberación de fondos depende de los mecanismos de liberación preestablecidos que ambas partes establecen durante la configuración del escrow. El mecanismo de liberación depende de las necesidades y requisitos específicos de tu proyecto. Para información detallada sobre las diversas opciones de liberación disponibles, consulta nuestra sección Mecanismos de Liberación Flexibles."
+            }
+          }
+        },
+        "paymentsFees": {
+          "title": "Pagos y Tarifas",
+          "questions": {
+            "fees": {
+              "question": "¿Cuáles son las tarifas para usar el escrow freelance?",
+              "answer": "El escrow se basa en una solución blockchain, que requiere tarifas de transacción (a menudo llamadas \"tarifas de gas\" - nombradas por la energía computacional necesaria para procesar las transacciones, similar a cómo un auto necesita gasolina para funcionar). Estas tarifas de transacción blockchain son necesarias para asegurar y procesar tus transacciones en la red. Puede haber tarifas adicionales como tarifas de inspección para verificación externa, tarifas para asesores de proyectos, y tarifas para servicios de arbitraje. Todas las tarifas son completamente transparentes - cuando defines el monto principal y seleccionas servicios opcionales durante la configuración del escrow, tanto el freelancer como el cliente verán exactamente qué tarifas se aplican. El cliente financia el monto principal más todas las tarifas, y el escrow no se activará a menos que se financie el monto total."
+            },
+            "paymentMethods": {
+              "question": "¿Qué métodos de pago están aceptados?",
+              "answer": "Debes distinguir entre métodos de pago para el escrow y métodos de pago para tu billetera. El escrow utiliza únicamente monedas digitales como USDT (USD de Tether), USDC (USD de Circle), o otras stablecoins y CBDC (Monedas Digitales de Banco Central). El escrow se financia usando monedas de tu billetera digital. Para obtener USDC, USDT, u otras stablecoins en tu billetera, puedes usar exchanges de criptomonedas o proveedores On-Ramp. Para más información detallada sobre la conversión de dinero tradicional en monedas digitales, consulta nuestra sección Cómo puedo cambiar FIAT en Stablecoins."
+            }
+          }
+        },
+        "freelanceServices": {
+          "title": "Servicios Freelance",
+          "questions": {
+            "supportedServices": {
+              "question": "¿Qué servicios freelance están soportados?",
+              "answer": "El protocolo de escrow soporta una amplia gama de servicios freelance incluyendo desarrollo web, diseño gráfico, redacción de contenido, producción de video, marketing digital, desarrollo de software, diseño UI/UX, asistencia virtual, servicios legales, análisis de datos, consultoría y traducción. El sistema es flexible y puede adaptarse a cualquier tipo de servicio donde se puedan definir hitos claros y entregables."
+            },
+            "projectSize": {
+              "question": "¿Hay límites en el tamaño del proyecto?",
+              "answer": "No hay límites estrictos en el tamaño del proyecto. El protocolo puede manejar tanto proyectos pequeños (algunos cientos de dólares) como proyectos grandes (millones de dólares). Lo que importa es que puedas definir claramente los hitos, entregables y condiciones de liberación. Para proyectos muy grandes o complejos, recomendamos consultar con un asesor de proyectos para asegurar que todos los términos estén claramente definidos."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "¿Aún tienes preguntas?",
+        "subtitle": "Nuestros expertos en proyectos están listos para proporcionarte orientación personalizada para tu situación específica.",
+        "contactSupport": "Contactar Soporte",
+        "startProject": "Iniciar Tu Proyecto"
+      }
+    },
+    "resources": {
+      "settingUpFreelanceEscrow": {
+        "title": "Configuración de Escrow Freelance",
+        "description": "Guía completa para crear acuerdos de escrow seguros con contratos inteligentes.",
+        "type": "Guía",
+        "buttonText": "Leer Guía"
+      },
+      "milestonePayments": {
+        "title": "Pagos por Hitos en Proyectos",
+        "description": "Cómo estructurar pagos basados en hitos para proyectos freelance seguros.",
+        "type": "Consejos",
+        "buttonText": "Leer Consejos"
+      },
+      "managingDisputes": {
+        "title": "Gestionar Disputas Freelance",
+        "description": "Cómo los contratos inteligentes y el arbitraje automatizado resuelven conflictos en proyectos.",
+        "type": "Guía",
+        "buttonText": "Leer Guía"
+      },
+      "freelancerContracts": {
+        "title": "Contratos Freelance Seguros",
+        "description": "Mejores prácticas para crear contratos que funcionen bien con escrow digital.",
+        "type": "Lista de Verificación",
+        "buttonText": "Descargar Lista"
+      },
+      "videoSeries": {
+        "title": "Serie de Videos de Freelancing Seguro",
+        "description": "Mira entrevistas de expertos y estudios de caso sobre implementación de escrow freelance.",
+        "type": "Video",
+        "buttonText": "Ver Videos"
+      },
+      "counter": "{current} de {total} recursos"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "community": {
+    "metadata": {
+      "title": "Comunidad - Protocolo de Escrow",
+      "description": "Únete a la comunidad del Protocolo de Escrow. Conecta con desarrolladores, empresas y contribuidores construyendo servicios de escrow descentralizados."
+    },
+    "hero": {
+      "badge": "Protocolo y Comunidad",
+      "title": "Únete a la Comunidad del Protocolo de Escrow",
+      "subtitle": "Conecta con desarrolladores, empresas y contribuidores construyendo el futuro de los servicios de escrow descentralizados.",
+      "primaryButton": "Iniciar Escrow",
+      "secondaryButton": "Unirse a Comunidad",
+      "trustIndicators": {
+        "nonCustodial": "Sin custodia",
+        "openSource": "Código abierto",
+        "audited": "Contratos inteligentes auditados",
+        "availability": "Disponibilidad 24/7"
+      }
+    },
+    "resources": {
+      "title": "Recursos de Comunidad",
+      "subtitle": "Todo lo que necesitas para comenzar con el Protocolo de Escrow.",
+      "discord": {
+        "title": "Comunidad Discord",
+        "description": "Únete a nuestro servidor activo de Discord para discusiones en tiempo real, soporte y actualizaciones.",
+        "button": "Unirse a Discord"
+      },
+      "docs": {
+        "title": "Documentación",
+        "description": "Guías completas, referencias API y documentación técnica.",
+        "button": "Ver Docs"
+      },
+      "github": {
+        "title": "Código Abierto",
+        "description": "Contribuye al desarrollo del protocolo en GitHub.",
+        "button": "Repositorio GitHub"
+      }
+    },
+    "protocol": {
+      "title": "Resumen del Protocolo",
+      "subtitle": "Aprende sobre la arquitectura técnica y capacidades del Protocolo de Escrow.",
+      "smartContracts": {
+        "title": "Contratos Inteligentes",
+        "description": "Lógica de escrow descentralizada construida en blockchain de Internet Computer."
+      },
+      "globalAccess": {
+        "title": "Acceso Global",
+        "description": "Disponibilidad 24/7 con liquidación instantánea usando monedas digitales."
+      },
+      "multiSignature": {
+        "title": "Multi-Firma",
+        "description": "Mecanismos de aprobación flexibles con condiciones de liberación personalizables."
+      }
+    },
+    "gettingStarted": {
+      "title": "Comenzar",
+      "subtitle": "Elige tu camino para comenzar a usar o construir con el Protocolo de Escrow.",
+      "users": {
+        "title": "Para Usuarios",
+        "description": "Comienza a usar servicios de escrow para transacciones seguras",
+        "benefits": [
+          "Crea tu primera transacción de escrow",
+          "Aprende sobre pagos con monedas digitales",
+          "Entiende la resolución de disputas"
+        ],
+        "button": "Inicia Tu Primer Escrow"
+      },
+      "developers": {
+        "title": "Para Desarrolladores",
+        "description": "Construye aplicaciones e integraciones con el protocolo",
+        "benefits": [
+          "Explora documentación API",
+          "Accede a interfaces de contrato inteligente",
+          "Únete a comunidad de desarrolladores"
+        ],
+        "button": "Ver Documentación"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Unirte a la Comunidad?",
+      "subtitle": "Conecta con otros usuarios, desarrolladores y contribuidores construyendo el futuro del escrow descentralizado.",
+      "primaryButton": "Unirse a Comunidad Discord",
+      "secondaryButton": "Iniciar Escrow"
+    }
+  }
+}
