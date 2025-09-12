@@ -37,6 +37,7 @@ export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
   trade: {
     logoHref: "/trade",
     main: [
+      { href: "/trade", key: "home" },
       { href: "/trade/exporter", key: "exporter" },
       { href: "/trade/importer", key: "importer" },
       { href: "/trade/workflow", key: "workflow" },
@@ -52,6 +53,7 @@ export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
   freelancer: {
     logoHref: "/freelancer",
     main: [
+      { href: "/freelancer", key: "home" },
       {
         href: "/freelancer/freelancer",
 
