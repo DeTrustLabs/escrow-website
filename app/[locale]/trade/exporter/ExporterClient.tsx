@@ -33,13 +33,15 @@ import {
   Banknote,
 } from "lucide-react"
 import Link from "next/link"
-import { useTranslations, useMessages } from "next-intl"
+import { useTranslations, useMessages, useLocale } from "next-intl"
+import { withLocale } from "@/lib/urls"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/ui/hero"
 // sections are native; page wraps with SectionGroup
 
 export default function ExporterClient() {
+  const locale = useLocale()
   const t = useTranslations("trade.exporter")
   const messages = useMessages()
   const beforeShippingBenefits = getMessageArray(
@@ -398,7 +400,7 @@ export default function ExporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/en/trade/workflow">
+              <Link href={withLocale(locale, "/trade/workflow")}>
                 <Button
                   className="w-full"
                   onClick={() => {
@@ -431,7 +433,7 @@ export default function ExporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/en/trade/workflow">
+              <Link href={withLocale(locale, "/trade/workflow")}>
                 <Button
                   className="w-full"
                   onClick={() => {
@@ -456,7 +458,10 @@ export default function ExporterClient() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
           newTab: true,
         }}
-        secondary={{ label: t("cta.secondaryButton"), href: "/contacts" }}
+        secondary={{
+          label: t("cta.secondaryButton"),
+          href: withLocale(locale, "/contacts"),
+        }}
       />
     </>
   )

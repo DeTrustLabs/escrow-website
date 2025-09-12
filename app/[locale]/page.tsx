@@ -25,7 +25,8 @@ import {
   Building,
 } from "lucide-react"
 import Link from "next/link"
-import { APP_URL, ROUTES } from "@/lib/urls"
+import { getLocale } from "next-intl/server"
+import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
 import { getTranslations, getMessages } from "next-intl/server"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
@@ -64,6 +65,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
+  const locale = await getLocale()
   const t = await getTranslations("home")
   const messages = await getMessages()
   // Safely extract arrays (next-intl t() doesn't return arrays/objects reliably)
@@ -121,7 +123,7 @@ export default async function HomePage() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <Link href={ROUTES.trade}>
+          <Link href={withLocale(locale, ROUTES.trade)}>
             <div className="bg-white rounded-lg p-8 text-center border-2 border-transparent hover:shadow-lg hover:border-2 hover:border-primary transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <Globe className="h-16 w-16 text-primary" />
@@ -135,7 +137,7 @@ export default async function HomePage() {
             </div>
           </Link>
 
-          <Link href={ROUTES.freelancer}>
+          <Link href={withLocale(locale, ROUTES.freelancer)}>
             <div className="bg-white rounded-lg p-8 text-center border-2 border-transparent hover:shadow-lg hover:border-2 hover:border-primary transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <Users className="h-16 w-16 text-primary" />
@@ -149,7 +151,7 @@ export default async function HomePage() {
             </div>
           </Link>
 
-          <Link href={ROUTES.integrations}>
+          <Link href={withLocale(locale, ROUTES.integrations)}>
             <div className="bg-white rounded-lg p-8 text-center border-2 border-transparent hover:shadow-lg hover:border-2 hover:border-primary transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <Code className="h-16 w-16 text-primary" />
@@ -163,7 +165,7 @@ export default async function HomePage() {
             </div>
           </Link>
 
-          <Link href={ROUTES.community}>
+          <Link href={withLocale(locale, ROUTES.community)}>
             <div className="bg-white rounded-lg p-8 text-center border-2 border-transparent hover:shadow-lg hover:border-2 hover:border-primary transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <Building className="h-16 w-16 text-primary" />
@@ -344,7 +346,7 @@ export default async function HomePage() {
                   <span>{feature}</span>
                 </div>
               ))}
-              <Link href={ROUTES.trade}>
+              <Link href={withLocale(locale, ROUTES.trade)}>
                 <Button className="mt-6 w-full">
                   {t("common.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -376,7 +378,7 @@ export default async function HomePage() {
                   <span>{feature}</span>
                 </div>
               ))}
-              <Link href={ROUTES.freelancer}>
+              <Link href={withLocale(locale, ROUTES.freelancer)}>
                 <Button className="mt-6 w-full">
                   {t("common.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -422,7 +424,7 @@ export default async function HomePage() {
                   <span>{feature}</span>
                 </div>
               ))}
-              <Link href={ROUTES.integrations}>
+              <Link href={withLocale(locale, ROUTES.integrations)}>
                 <Button className="mt-6 w-full">
                   {t("common.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -454,7 +456,7 @@ export default async function HomePage() {
                   <span>{feature}</span>
                 </div>
               ))}
-              <Link href={ROUTES.community}>
+              <Link href={withLocale(locale, ROUTES.community)}>
                 <Button className="mt-6 w-full">
                   {t("common.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />

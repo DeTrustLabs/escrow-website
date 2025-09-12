@@ -20,6 +20,8 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
+import { getLocale } from "next-intl/server"
+import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
@@ -57,6 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
+  const locale = await getLocale()
   const t = await getTranslations("trade")
   const messages = await getMessages()
   const tradeRoot = messages.trade
@@ -85,7 +88,7 @@ export default async function HomePage() {
         }}
         secondaryButton={{
           label: t("hero.seeHowItWorks"),
-          href: "/en/trade/workflow",
+          href: withLocale(locale, "/trade/workflow"),
           variant: "outline",
         }}
         trustIndicators={[
@@ -461,7 +464,7 @@ export default async function HomePage() {
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/exporter">
+              <Link href={withLocale(locale, "/exporter")}>
                 <Button className="w-full mt-4">
                   {t("chooseRole.exporters.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -486,7 +489,7 @@ export default async function HomePage() {
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/importer">
+              <Link href={withLocale(locale, "/importer")}>
                 <Button className="w-full mt-4">
                   {t("chooseRole.importers.learnMore")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -506,7 +509,10 @@ export default async function HomePage() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
           newTab: true,
         }}
-        secondary={{ label: t("cta.secondaryButton"), href: "/trade/contacts" }}
+        secondary={{
+          label: t("cta.secondaryButton"),
+          href: withLocale(locale, "/trade/contacts"),
+        }}
       />
     </SectionGroup>
   )

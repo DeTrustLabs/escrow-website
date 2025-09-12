@@ -3,10 +3,11 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
-import { APP_URL, ROUTES } from "@/lib/urls"
-import { getTranslations } from "next-intl/server"
+import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
+import { getLocale, getTranslations } from "next-intl/server"
 
 export async function Footer() {
+  const locale = await getLocale()
   const t = await getTranslations("footer")
   return (
     <footer className="bg-gray-50 border-t">
@@ -47,25 +48,25 @@ export async function Footer() {
               <h4 className="font-semibold">{t("solutions")}</h4>
               <div className="space-y-2 text-sm">
                 <Link
-                  href={ROUTES.trade}
+                  href={withLocale(locale, ROUTES.trade)}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("globalTrade")}
                 </Link>
                 <Link
-                  href={ROUTES.freelancer}
+                  href={withLocale(locale, ROUTES.freelancer)}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("freelancer")}
                 </Link>
                 <Link
-                  href={ROUTES.integrations}
+                  href={withLocale(locale, ROUTES.integrations)}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("integrations")}
                 </Link>
                 <Link
-                  href={ROUTES.community}
+                  href={withLocale(locale, ROUTES.community)}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("protocolCommunity")}
@@ -78,25 +79,25 @@ export async function Footer() {
               <h4 className="font-semibold">{t("resources")}</h4>
               <div className="space-y-2 text-sm">
                 <Link
-                  href="/support"
+                  href={withLocale(locale, "/support")}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("documentation")}
                 </Link>
                 <Link
-                  href="/support"
+                  href={withLocale(locale, "/support")}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("faq")}
                 </Link>
                 <Link
-                  href="/protocol"
+                  href={withLocale(locale, "/protocol")}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("community")}
                 </Link>
                 <Link
-                  href="/support"
+                  href={withLocale(locale, "/support")}
                   className="block text-muted-foreground hover:text-primary"
                 >
                   {t("support")}
@@ -134,10 +135,16 @@ export async function Footer() {
         <div className="border-t mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">{t("copyright")}</p>
           <div className="flex space-x-4 text-sm text-muted-foreground mt-4 sm:mt-0">
-            <Link href="/privacy" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/privacy")}
+              className="hover:text-primary"
+            >
               {t("privacyPolicy")}
             </Link>
-            <Link href="/terms" className="hover:text-primary">
+            <Link
+              href={withLocale(locale, "/terms")}
+              className="hover:text-primary"
+            >
               {t("termsOfService")}
             </Link>
             <Link href={APP_URL} className="hover:text-primary">

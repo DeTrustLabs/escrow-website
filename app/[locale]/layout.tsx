@@ -11,7 +11,7 @@ import { LANGUAGES } from "@/i18n/request"
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: "metadata" })
@@ -32,13 +32,13 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
   const messages = await getMessages()
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <Header />
         <main className="w-full">{children}</main>

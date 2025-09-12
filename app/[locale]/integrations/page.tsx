@@ -22,6 +22,8 @@ import {
   Shield,
 } from "lucide-react"
 import Link from "next/link"
+import { getLocale } from "next-intl/server"
+import { withLocale } from "@/lib/urls"
 import { getTranslations, getMessages } from "next-intl/server"
 import { Metadata } from "next"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -58,6 +60,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function IntegrationsPage() {
+  const locale = await getLocale()
   // Load both the translator and the full messages so we can safely extract arrays
   const [t, messages] = await Promise.all([
     getTranslations("integrations"),
@@ -301,7 +304,7 @@ export default async function IntegrationsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Link href="/protocol">
+              <Link href={withLocale(locale, "/protocol")}>
                 <Button className="w-full">
                   {t("resources.items.api.button")}
                 </Button>

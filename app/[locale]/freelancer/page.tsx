@@ -19,6 +19,8 @@ import {
   ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
+import { getLocale } from "next-intl/server"
+import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
@@ -57,6 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function FreelancerPage() {
+  const locale = await getLocale()
   const t = await getTranslations("freelancer")
   const messages = await getMessages()
   const root = messages.freelancer || {}
@@ -157,7 +160,7 @@ export default async function FreelancerPage() {
         }}
         secondaryButton={{
           label: t("hero.seeHowItWorks"),
-          href: "/freelancer/workflow",
+          href: withLocale(locale, "/freelancer/workflow"),
           variant: "outline",
         }}
         trustIndicators={[
@@ -428,7 +431,7 @@ export default async function FreelancerPage() {
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/freelancer/freelancer">
+              <Link href={withLocale(locale, "/freelancer/freelancer")}>
                 <Button className="w-full mt-4">
                   {t("perfectFor.freelancers.moreBenefits")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -453,7 +456,7 @@ export default async function FreelancerPage() {
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="/freelancer/project-owner">
+              <Link href={withLocale(locale, "/freelancer/project-owner")}>
                 <Button className="w-full mt-4">
                   {t("perfectFor.projectOwners.moreBenefits")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -473,7 +476,10 @@ export default async function FreelancerPage() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
           newTab: true,
         }}
-        secondary={{ label: t("cta.learnMore"), href: "/freelancer/workflow" }}
+        secondary={{
+          label: t("cta.learnMore"),
+          href: withLocale(locale, "/freelancer/workflow"),
+        }}
       />
     </SectionGroup>
   )

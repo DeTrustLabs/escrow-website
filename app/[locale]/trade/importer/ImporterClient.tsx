@@ -27,6 +27,8 @@ import {
   Scale,
 } from "lucide-react"
 import Link from "next/link"
+import { useLocale } from "next-intl"
+import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/ui/hero"
 import { useTranslations, useMessages } from "next-intl"
@@ -35,6 +37,7 @@ import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
 export default function ImporterClient() {
+  const locale = useLocale()
   const t = useTranslations("trade.importer")
   const messages = useMessages()
   const beforePaymentBenefits = getMessageArray(
@@ -399,7 +402,7 @@ export default function ImporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/workflow">
+              <Link href={withLocale(locale, "/trade/workflow")}>
                 <Button
                   className="w-full"
                   onClick={() => {
@@ -432,7 +435,7 @@ export default function ImporterClient() {
               ))}
             </CardContent>
             <CardContent className="pt-0">
-              <Link href="/workflow">
+              <Link href={withLocale(locale, "/trade/workflow")}>
                 <Button
                   className="w-full"
                   onClick={() => {
@@ -457,7 +460,10 @@ export default function ImporterClient() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
           newTab: true,
         }}
-        secondary={{ label: t("cta.talkToAdvisor"), href: "/contacts" }}
+        secondary={{
+          label: t("cta.talkToAdvisor"),
+          href: withLocale(locale, "/contacts"),
+        }}
       />
     </SectionGroup>
   )
