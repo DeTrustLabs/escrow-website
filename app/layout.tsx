@@ -1,17 +1,19 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Fira_Sans, Fira_Mono } from "next/font/google"
 import "./globals.css"
 import { LANGUAGES } from "@/i18n/request"
 import { headers } from "next/headers"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const firaSans = Fira_Sans({
+  variable: "--font-fira-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaMono = Fira_Mono({
+  variable: "--font-fira-mono",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
 })
 
 export const metadata: Metadata = {
@@ -40,9 +42,7 @@ export default async function RootLayout({
   }
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${firaSans.variable} ${firaMono.variable} antialiased`}>
         {children}
       </body>
     </html>

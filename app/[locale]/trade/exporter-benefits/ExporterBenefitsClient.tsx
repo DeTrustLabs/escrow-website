@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import {
   Accordion,
   AccordionContent,
@@ -35,6 +34,7 @@ import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
+import { Hero } from "@/components/hero"
 
 export default function ExporterBenefitsClient() {
   const t = useTranslations("trade.exporterBenefits")
@@ -50,43 +50,23 @@ export default function ExporterBenefitsClient() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="px-4 py-2 mb-6">
-              {t("hero.badge")}
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              {t("hero.title")}
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button size="lg" className="text-lg px-8 py-4">
-                  {t("hero.startEscrow")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-              <Link href="/workflow">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg px-8 py-4 bg-transparent"
-                >
-                  {t("hero.learnHowItWorks")}
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        badge={t("hero.badge")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        primaryButton={{
+          label: t("hero.startEscrow"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }}
+        secondaryButton={{
+          label: t("hero.learnHowItWorks"),
+          href: "/workflow",
+          variant: "outline",
+        }}
+      />
 
       {/* Testimonial Section */}
       <section className="py-16 bg-gray-50">

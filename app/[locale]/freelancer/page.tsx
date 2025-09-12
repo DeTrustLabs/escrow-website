@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   Target,
   Shield,
@@ -71,47 +71,27 @@ export default async function FreelancerPage() {
   )
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 lg:py-32">
-        <div className="container px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-4">
-              {t("hero.badge")}
-            </Badge>
-            <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
-              {t("hero.title").split("Digital Escrow")[0]}{" "}
-              <span className="text-primary font-black">Digital Escrow</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  size="lg"
-                  className="text-lg px-8 bg-primary hover:bg-primary/90 text-white font-black"
-                >
-                  {t("hero.startEscrow")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/freelancer/workflow">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-8 bg-transparent"
-                >
-                  {t("hero.seeHowItWorks")}
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        badge={t("hero.badge")}
+        title={
+          <>
+            {t("hero.title").split("Digital Escrow")[0]}{" "}
+            <span className="text-primary font-black">Digital Escrow</span>
+          </>
+        }
+        subtitle={t("hero.subtitle")}
+        primaryButton={{
+          label: t("hero.startEscrow"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }}
+        secondaryButton={{
+          label: t("hero.seeHowItWorks"),
+          href: "/freelancer/workflow",
+          variant: "outline",
+        }}
+      />
 
       {/* How Escrow Solves Issues in Freelancing */}
       <section className="py-20 bg-gray-50">

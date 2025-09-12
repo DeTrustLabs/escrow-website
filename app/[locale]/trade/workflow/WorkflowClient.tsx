@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Hero } from "@/components/hero"
 import {
   ArrowRight,
   CheckCircle,
@@ -71,22 +71,12 @@ export function WorkflowClient() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="container px-8">
-          <div className="text-center">
-            <Badge variant="secondary" className="mb-4">
-              {t("hero.badge")}
-            </Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-              {t("hero.title")}
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t("hero.subtitle")}
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero
+        className="bg-gradient-to-br from-primary/5 to-transparent"
+        badge={t("hero.badge")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+      />
 
       {/* How a Digital Escrow Works */}
       <section className="py-20 bg-white">
