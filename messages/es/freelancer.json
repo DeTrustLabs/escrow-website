@@ -423,6 +423,114 @@
         "buttonText": "Ver Videos"
       },
       "counter": "{current} de {total} recursos"
+    },
+    "freelancerPage": {
+      "hero": {
+        "badge": "Para Freelancers",
+        "title": "Cobra de forma segura, ",
+        "titleHighlight": "en cada proyecto",
+        "subtitle": "Elimina los riesgos de impago y haz crecer tu negocio freelance con confianza. El escrow digital asegura que recibas el pago cuando entregas según lo acordado.",
+        "primaryButton": "Iniciar Escrow Freelance",
+        "secondaryButton": "Cómo Funciona"
+      },
+      "testimonials": {
+        "sarah": {
+          "name": "Sarah Chen",
+          "role": "Desarrolladora Web (ficticia)",
+          "quote": "Pasé tres meses construyendo una plataforma de e‑commerce completa para una startup. El proyecto fue complejo: funciones personalizadas, integración de pagos, todo. Cuando entregué todo perfecto, siguieron pidiendo 'pequeños cambios' y retrasaron el pago durante semanas. Finalmente desaparecieron. Tres meses de trabajo, perdidos. Ese fracaso casi termina con mi carrera freelance. Tuve que tomar un trabajo de medio tiempo para pagar el alquiler mientras reconstruía mi cartera de clientes."
+        },
+        "marcus": {
+          "name": "Marcus Rodríguez",
+          "role": "Diseñador Gráfico (ficticio)",
+          "quote": "Trabajé dos años con una agencia de marketing. Eran mi mayor cliente: trabajo constante, buena relación, siempre pagaban a tiempo. Luego su cliente principal se retiró y tuvieron problemas financieros. Me debían 28.000 $ por proyectos completados cuando quebraron. Incluso los buenos clientes pueden convertirse en deudas incobrables. Aprendí que incluso las relaciones de confianza necesitan protección."
+        }
+      },
+      "challenges": {
+        "title": "Retos que Enfrentan los Freelancers",
+        "subtitle": "Obstáculos clave que afectan a los negocios freelance en todo el mundo",
+        "nonPaymentRisk": {
+          "title": "Riesgo de Impago",
+          "description": "Muchos freelancers completan primero y esperan el pago, quedando expuestos a clientes que no pagan o desaparecen tras recibir el trabajo. Esto puede suponer pérdidas significativas de tiempo y dinero sin vías prácticas para recuperarlos."
+        },
+        "cashFlowIssues": {
+          "title": "Problemas de Flujo de Caja",
+          "description": "Incluso freelancers exitosos pueden entrar en crisis de liquidez por un solo cliente moroso, afectando gastos personales e inversiones para crecer."
+        },
+        "paymentDelays": {
+          "title": "Retrasos en el Pago",
+          "description": "Aprobaciones lentas, malas prácticas o falta de liquidez del cliente generan pagos tardíos que desordenan tus finanzas y planificación."
+        },
+        "platformFees": {
+          "title": "Altas Comisiones de Pago",
+          "description": "Procesamiento, conversión y transferencias internacionales pueden reducir notablemente tus ingresos y volver impredecible el flujo de caja."
+        },
+        "trustIssues": {
+          "title": "Confianza con Clientes Nuevos",
+          "description": "Trabajar en remoto y sin historial común dificulta evaluar la fiabilidad del cliente, lo que limita asumir proyectos más grandes."
+        },
+        "disputeResolution": {
+          "title": "Resolución de Disputas",
+          "description": "Los conflictos por alcance, calidad o pagos consumen tiempo y recursos cuando no existen mecanismos claros y neutrales de resolución."
+        }
+      },
+      "whyChooseEscrow": {
+        "title": "Por Qué Elegir Escrow Digital",
+        "subtitle": "Asegura tus pagos y amplía tu negocio freelance con confianza.",
+        "paymentSecured": {
+          "title": "Pago Asegurado Antes de Empezar",
+          "description": "Los fondos quedan en escrow seguro antes de iniciar el trabajo, eliminando el riesgo de impago."
+        },
+        "immediatePayment": {
+          "title": "Pago Inmediato al Completar",
+          "description": "Los pagos se liberan al instante tras la aprobación. Recibes el dinero en minutos, mejorando tu flujo de caja."
+        },
+        "confidenceWithClients": {
+          "title": "Confianza con Clientes Nuevos y Existentes",
+          "description": "Trabaja con clientes nuevos con tranquilidad: el pago queda asegurado desde el inicio, permitiendo aceptar proyectos más grandes."
+        },
+        "milestonePayments": {
+          "title": "Pagos por Hitos",
+          "description": "Condiciones flexibles de liberación por hitos, etapas de finalización o acuerdo mutuo, según tu estructura de proyecto."
+        },
+        "lowFees": {
+          "title": "Bajas Comisiones",
+          "description": "Transacciones P2P con monedas digitales reducen comisiones frente a pagos tradicionales, maximizando ingresos."
+        },
+        "fairDisputeResolution": {
+          "title": "Resolución Justa de Disputas",
+          "description": "Mediación neutral integrada con árbitros independientes. Cada paso queda registrado y verificable para resolver más rápido y a menor coste."
+        }
+      },
+      "completeProtection": {
+        "title": "Protección Completa para Freelancers",
+        "subtitle": "Cada aspecto de tu proyecto freelance está asegurado y protegido.",
+        "beforeStarting": {
+          "title": "Antes de Empezar",
+          "subtitle": "Pago asegurado por adelantado",
+          "benefits": [
+            "El cliente deposita el pago completo en el escrow",
+            "Fondos verificados y bloqueados de forma segura",
+            "Confirmación recibida antes de iniciar el trabajo",
+            "Trabaja con clientes nuevos y existentes con confianza"
+          ]
+        },
+        "afterCompletion": {
+          "title": "Después de la Entrega",
+          "subtitle": "Liberación de pago instantánea",
+          "benefits": [
+            "La aprobación del proyecto libera el pago automáticamente",
+            "Fondos recibidos en minutos tras la aprobación",
+            "Transparencia total durante todo el proceso",
+            "Mediación neutral incorporada si surge una disputa"
+          ]
+        }
+      },
+      "callToAction": {
+        "title": "¿Listo para Asegurar Tus Pagos?",
+        "subtitle": "Únete a miles de freelancers que ya no se preocupan por el cobro. Comienza hoy tu primer proyecto seguro.",
+        "startEscrow": "Iniciar Escrow Freelance",
+        "talkToSpecialist": "Hablar con un Especialista"
+      }
     }
   }
 }
