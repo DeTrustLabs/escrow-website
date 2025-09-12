@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 import { Hero } from "@/components/ui/hero"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import CTASection from "@/components/ui/cta"
 import { getTranslations, getMessages } from "next-intl/server"
 import { Metadata } from "next"
 import { getMessageArray } from "@/lib/i18n-arrays"
@@ -16,7 +17,6 @@ import {
   Users,
   Vote,
   BookOpen,
-  ArrowRight,
   CheckCircle,
   Github,
   MessageSquare,
@@ -372,25 +372,12 @@ export default async function ProtocolPage() {
       </section>
 
       {/* CTA Section */}
-      <section>
-        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary">
-              {t("cta.primaryButton")}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline">
-              {t("cta.secondaryButton")}
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{ label: t("cta.primaryButton"), href: "/integrations" }}
+        secondary={{ label: t("cta.secondaryButton"), href: "/community" }}
+      />
     </SectionGroup>
   )
 }

@@ -2,7 +2,6 @@
 
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -29,9 +28,9 @@ import {
   ZapIcon,
   DollarSign,
 } from "lucide-react"
-import Link from "next/link"
 import { AppImage } from "@/components/app-image"
 import SectionGroup from "@/components/ui/section-group"
+import CTASection from "@/components/ui/cta"
 
 export function WorkflowClient() {
   const t = useTranslations("trade.workflow")
@@ -666,33 +665,16 @@ export function WorkflowClient() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-transparent">
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="px-8 py-4">
-                {t("cta.startEscrow")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <Link href="/contacts">
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                {t("cta.talkToAdvisor")}
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{
+          label: t("cta.startEscrow"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          newTab: true,
+        }}
+        secondary={{ label: t("cta.talkToAdvisor"), href: "/contacts" }}
+      />
     </SectionGroup>
   )
 }

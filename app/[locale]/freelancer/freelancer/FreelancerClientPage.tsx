@@ -1,6 +1,5 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -16,7 +15,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import {
-  ArrowRight,
   CheckCircle,
   Shield,
   DollarSign,
@@ -31,9 +29,9 @@ import {
   Scale,
   Banknote,
 } from "lucide-react"
-import Link from "next/link"
 import { AppImage } from "@/components/app-image"
 import SectionGroup from "@/components/ui/section-group"
+import CTASection from "@/components/ui/cta"
 import { useTranslations } from "next-intl"
 
 export default function FreelancerClientPage() {
@@ -385,33 +383,19 @@ export default function FreelancerClientPage() {
       </section>
 
       {/* CTA */}
-      <section>
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("callToAction.title")}
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t("callToAction.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="px-8 py-4">
-                {t("callToAction.startEscrow")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link href="/freelancer/contacts">
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                {t("callToAction.talkToSpecialist")}
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("callToAction.title")}
+        subtitle={t("callToAction.subtitle")}
+        primary={{
+          label: t("callToAction.startEscrow"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          newTab: true,
+        }}
+        secondary={{
+          label: t("callToAction.talkToSpecialist"),
+          href: "/freelancer/contacts",
+        }}
+      />
     </SectionGroup>
   )
 }

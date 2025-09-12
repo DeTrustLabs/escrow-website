@@ -5,20 +5,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import {
-  ArrowRight,
-  HelpCircle,
-  Shield,
-  Clock,
-  DollarSign,
-  Globe,
-} from "lucide-react"
-import Link from "next/link"
+import { HelpCircle, Shield, Clock, DollarSign, Globe } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
+import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.faq.metadata")
@@ -311,33 +303,18 @@ export default async function FAQPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section>
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contacts">
-              <Button size="lg" className="px-8 py-4">
-                {t("cta.contactSupport")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <a
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                {t("cta.startTrade")}
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{ label: t("cta.contactSupport"), href: "/contacts" }}
+        secondary={{
+          label: t("cta.startTrade"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          newTab: true,
+        }}
+        rounded="3xl"
+        gradient="vivid"
+      />
     </SectionGroup>
   )
 }

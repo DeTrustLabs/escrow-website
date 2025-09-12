@@ -24,6 +24,7 @@ import Link from "next/link"
 import { useTranslations, useMessages } from "next-intl"
 import { getMessageArray } from "@/lib/i18n-arrays"
 import SectionGroup from "@/components/ui/section-group"
+import CTASection from "@/components/ui/cta"
 
 export default function CommunityPage() {
   const t = useTranslations("community")
@@ -234,29 +235,22 @@ export default function CommunityPage() {
       </section>
 
       {/* CTA Section */}
-      <section>
-        <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="px-8" asChild>
-              <Link href="https://discord.gg/YourDiscordInvite">
-                {t("cta.primaryButton")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" className="px-8" asChild>
-              <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
-                {t("cta.secondaryButton")}
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        gradient="simple"
+        rounded="2xl"
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{
+          label: t("cta.primaryButton"),
+          href: "https://discord.gg/YourDiscordInvite",
+          newTab: true,
+        }}
+        secondary={{
+          label: t("cta.secondaryButton"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+          newTab: true,
+        }}
+      />
     </SectionGroup>
   )
 }

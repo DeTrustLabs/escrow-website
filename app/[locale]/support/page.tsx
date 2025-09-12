@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 import { Hero } from "@/components/ui/hero"
 import { Mail, ArrowRight, UserPlus } from "lucide-react"
+import CTASection from "@/components/ui/cta"
 import { Input } from "@/components/ui/input"
 import {
   Select,
@@ -377,25 +378,14 @@ export default async function SupportPage() {
         </section>
 
         {/* Contact Section */}
-        <section>
-          <div className="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-12 text-center text-white">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              {t("cta.title")}
-            </h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              {t("cta.subtitle")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="px-8">
-                {t("cta.primaryButton")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline">
-                {t("cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CTASection
+          gradient="simple"
+          rounded="2xl"
+          title={t("cta.title")}
+          subtitle={t("cta.subtitle")}
+          primary={{ label: t("cta.primaryButton"), href: "/contacts" }}
+          secondary={{ label: t("cta.secondaryButton"), href: "/support" }}
+        />
       </SectionGroup>
     </>
   )

@@ -20,6 +20,7 @@ import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import { Input } from "@/components/ui/input"
+import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("trade.blog")
@@ -123,26 +124,24 @@ export default async function BlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section>
-        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("newsletter.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("newsletter.subtitle")}
-          </p>
-          <div className="max-w-md mx-auto flex gap-4">
-            <Input
-              type="email"
-              className="flex-1 h-10 bg-white/10"
-              placeholder={t("newsletter.emailPlaceholder")}
-            />
-            <Button variant="secondary" size="lg">
-              {t("newsletter.button")}
-            </Button>
-          </div>
+      <CTASection
+        title={t("newsletter.title")}
+        subtitle={t("newsletter.subtitle")}
+        primary={{ label: t("newsletter.button"), onClick: () => {} }}
+        rounded="3xl"
+        gradient="vivid"
+      >
+        <div className="max-w-md mx-auto w-full flex gap-4">
+          <Input
+            type="email"
+            className="flex-1 h-10 bg-white/10"
+            placeholder={t("newsletter.emailPlaceholder")}
+          />
+          <Button variant="secondary" size="lg">
+            {t("newsletter.button")}
+          </Button>
         </div>
-      </section>
+      </CTASection>
     </SectionGroup>
   )
 }

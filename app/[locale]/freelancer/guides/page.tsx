@@ -3,10 +3,10 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Clock, Users } from "lucide-react"
-import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
+import CTASection from "@/components/ui/cta"
 
 export default function FreelancerGuidesPage() {
   const t = useTranslations("freelancer.guides")
@@ -72,33 +72,19 @@ export default function FreelancerGuidesPage() {
       </section>
 
       {/* CTA */}
-      <section>
-        <div className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/80 rounded-3xl p-12 text-center text-white overflow-hidden">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/freelancer/contacts">
-              <Button size="lg" variant="secondary" className="px-8 py-4">
-                {t("cta.contactButton")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                {t("cta.startProjectButton")}
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{
+          label: t("cta.contactButton"),
+          href: "/freelancer/contacts",
+        }}
+        secondary={{
+          label: t("cta.startProjectButton"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          newTab: true,
+        }}
+      />
     </SectionGroup>
   )
 }

@@ -1,5 +1,7 @@
 "use client"
 
+import CTASection from "@/components/ui/cta"
+
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -446,33 +448,16 @@ export default function ExporterClient() {
       </section>
 
       {/* CTA */}
-      <section>
-        <div className="text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            {t("cta.title")}
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t("cta.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="px-8 py-4">
-                {t("cta.primaryButton")}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <Link href="/contacts">
-              <Button size="lg" variant="outline" className="px-8 py-4">
-                {t("cta.secondaryButton")}
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTASection
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        primary={{
+          label: t("cta.primaryButton"),
+          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          newTab: true,
+        }}
+        secondary={{ label: t("cta.secondaryButton"), href: "/contacts" }}
+      />
     </>
   )
 }
