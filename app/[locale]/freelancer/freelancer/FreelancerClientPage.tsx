@@ -39,21 +39,10 @@ export default function FreelancerClientPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        badge={"For Freelancers"}
-        title={
-          <>
-            Get Paid Securely,{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Every Project
-            </span>
-          </>
-        }
-        subtitle={
-          "Eliminate payment risks and grow your freelance business with confidence. Digital escrow ensures you receive payment when you deliver as promised."
-        }
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
+        badge="For Freelancers"
+        title="Get Paid Securely, "
+        titleHighlight="Every Project"
+        subtitle="Eliminate payment risks and grow your freelance business with confidence. Digital escrow ensures you receive payment when you deliver as promised."
         primaryButton={{
           label: "Start Freelance Escrow",
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",

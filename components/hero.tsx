@@ -18,6 +18,7 @@ interface HeroButton {
 
 interface TrustIndicator {
   text: string
+  icon?: ReactNode
 }
 
 interface HeroProps {
@@ -135,7 +136,9 @@ export function Hero({
         <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
           {trustIndicators.map((indicator, index) => (
             <div key={index} className="flex items-center space-x-2">
-              <CheckCircle className="h-4 w-4 text-primary" />
+              {indicator.icon ?? (
+                <CheckCircle className="h-4 w-4 text-primary" />
+              )}
               <span>{indicator.text}</span>
             </div>
           ))}

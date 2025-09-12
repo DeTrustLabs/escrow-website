@@ -22,6 +22,9 @@ import {
   Settings,
   User,
   Briefcase,
+  ShieldIcon,
+  Timer,
+  Banknote,
 } from "lucide-react"
 import Link from "next/link"
 import { SITE_URL } from "@/lib/urls"
@@ -48,21 +51,24 @@ export default function FreelancerWorkflowPage() {
   return (
     <SectionGroup>
       <Hero
-        className="bg-gradient-to-br from-primary/5 to-transparent"
-        badge={"Secure Freelance Workflow"}
-        title={
-          <>
-            Freelance{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              Escrow Workflow
-            </span>
-          </>
-        }
-        subtitle={
-          "Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle."
-        }
-        titleClassName="text-5xl lg:text-7xl font-bold tracking-tight mb-8"
-        maxWidth="max-w-5xl"
+        badge="Secure Freelance Workflow"
+        title="Freelance "
+        titleHighlight="Escrow Workflow"
+        subtitle="Eliminate payment risks, protect your work, and build trust with clients using digital escrow. Both freelancers and project owners are protected throughout the entire project lifecycle."
+        trustIndicators={[
+          {
+            text: "Payment Security",
+            icon: <ShieldIcon className="h-4 w-4 text-primary" />,
+          },
+          {
+            text: "Milestone-Based Release",
+            icon: <Timer className="h-4 w-4 text-primary" />,
+          },
+          {
+            text: "Lower Transaction Costs",
+            icon: <Banknote className="h-4 w-4 text-primary" />,
+          },
+        ]}
       />
 
       {/* 4 Steps of the Escrow */}
