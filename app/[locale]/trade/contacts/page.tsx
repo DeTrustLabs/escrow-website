@@ -98,173 +98,168 @@ export default function ContactsPage() {
       />
 
       <Section>
-        <div className="container px-8">
-          <div className="max-w-6xl mx-auto">
-            {/* Two-column layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left: Send Message Form */}
-              <div>
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold mb-6">
-                      {t("contactForm.title")}
-                    </h2>
-                    <form className="space-y-6" onSubmit={handleContactSubmit}>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                          <label className="text-sm font-medium mb-2 block">
-                            {t("contactForm.firstName")}
-                          </label>
-                          <Input
-                            name="firstName"
-                            placeholder={t("contactForm.firstNamePlaceholder")}
-                            required
-                          />
-                        </div>
-                        <div>
-                          <label className="text-sm font-medium mb-2 block">
-                            {t("contactForm.lastName")}
-                          </label>
-                          <Input
-                            name="lastName"
-                            placeholder={t("contactForm.lastNamePlaceholder")}
-                            required
-                          />
-                        </div>
-                      </div>
-
+        <div className="max-w-6xl mx-auto">
+          {/* Two-column layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left: Send Message Form */}
+            <div>
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold mb-6">
+                    {t("contactForm.title")}
+                  </h2>
+                  <form className="space-y-6" onSubmit={handleContactSubmit}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="text-sm font-medium mb-2 block">
-                          {t("contactForm.email")}
+                          {t("contactForm.firstName")}
                         </label>
                         <Input
-                          name="email"
-                          type="email"
-                          placeholder={t("contactForm.emailPlaceholder")}
+                          name="firstName"
+                          placeholder={t("contactForm.firstNamePlaceholder")}
                           required
                         />
                       </div>
-
                       <div>
                         <label className="text-sm font-medium mb-2 block">
-                          {t("contactForm.company")}
+                          {t("contactForm.lastName")}
                         </label>
                         <Input
-                          name="company"
-                          placeholder={t("contactForm.companyPlaceholder")}
-                        />
-                      </div>
-
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">
-                          {t("contactForm.tradeType")}
-                        </label>
-                        <select
-                          name="tradeType"
-                          className="w-full p-3 border rounded-lg"
-                          required
-                        >
-                          <option value="">
-                            {t("contactForm.tradeTypePlaceholder")}
-                          </option>
-                          <option value="export">
-                            {t("contactForm.tradeTypes.export")}
-                          </option>
-                          <option value="import">
-                            {t("contactForm.tradeTypes.import")}
-                          </option>
-                          <option value="both">
-                            {t("contactForm.tradeTypes.both")}
-                          </option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">
-                          {t("contactForm.message")}
-                        </label>
-                        <Textarea
-                          name="message"
-                          placeholder={t("contactForm.messagePlaceholder")}
-                          rows={4}
+                          name="lastName"
+                          placeholder={t("contactForm.lastNamePlaceholder")}
                           required
                         />
-                      </div>
-
-                      <Button
-                        type="submit"
-                        className="w-full"
-                        size="lg"
-                        disabled={isSubmitting}
-                      >
-                        {isSubmitting
-                          ? t("contactForm.submittingButton")
-                          : t("contactForm.submitButton")}
-                        <Send className="ml-2 h-4 w-4" />
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </div>
-
-              {/* Right: Contact Info and Newsletter */}
-              <div className="space-y-8">
-                {/* Contact Information */}
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold mb-6">
-                      {t("contactInfo.title")}
-                    </h2>
-                    <div className="flex items-start space-x-4">
-                      <Mail className="h-6 w-6 text-primary mt-1" />
-                      <div>
-                        <h3 className="font-semibold text-lg mb-2">
-                          {t("contactInfo.emailTitle")}
-                        </h3>
-                        <p className="text-primary font-medium mb-1">
-                          {t("contactInfo.emailAddress")}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {t("contactInfo.emailDescription")}
-                        </p>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
 
-                {/* Newsletter Signup */}
-                <Card className="border-0 shadow-lg">
-                  <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold mb-4">
-                      {t("newsletter.title")}
-                    </h2>
-                    <p className="text-muted-foreground mb-6">
-                      {t("newsletter.subtitle")}
-                    </p>
-                    <form
-                      className="space-y-4"
-                      onSubmit={handleNewsletterSubmit}
-                    >
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        {t("contactForm.email")}
+                      </label>
                       <Input
                         name="email"
                         type="email"
-                        placeholder={t("newsletter.emailPlaceholder")}
+                        placeholder={t("contactForm.emailPlaceholder")}
                         required
                       />
-                      <Button
-                        type="submit"
-                        className="w-full bg-[hsl(var(--primary-dark))] hover:bg-[hsl(var(--primary-dark))]/90 text-white font-bold"
-                        size="lg"
-                        disabled={isSubmitting}
+                    </div>
+
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        {t("contactForm.company")}
+                      </label>
+                      <Input
+                        name="company"
+                        placeholder={t("contactForm.companyPlaceholder")}
+                      />
+                    </div>
+
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        {t("contactForm.tradeType")}
+                      </label>
+                      <select
+                        name="tradeType"
+                        className="w-full p-3 border rounded-lg"
+                        required
                       >
-                        {isSubmitting
-                          ? t("newsletter.submittingButton")
-                          : t("newsletter.submitButton")}
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </div>
+                        <option value="">
+                          {t("contactForm.tradeTypePlaceholder")}
+                        </option>
+                        <option value="export">
+                          {t("contactForm.tradeTypes.export")}
+                        </option>
+                        <option value="import">
+                          {t("contactForm.tradeTypes.import")}
+                        </option>
+                        <option value="both">
+                          {t("contactForm.tradeTypes.both")}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="text-sm font-medium mb-2 block">
+                        {t("contactForm.message")}
+                      </label>
+                      <Textarea
+                        name="message"
+                        placeholder={t("contactForm.messagePlaceholder")}
+                        rows={4}
+                        required
+                      />
+                    </div>
+
+                    <Button
+                      type="submit"
+                      className="w-full"
+                      size="lg"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting
+                        ? t("contactForm.submittingButton")
+                        : t("contactForm.submitButton")}
+                      <Send className="ml-2 h-4 w-4" />
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Right: Contact Info and Newsletter */}
+            <div className="space-y-8">
+              {/* Contact Information */}
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold mb-6">
+                    {t("contactInfo.title")}
+                  </h2>
+                  <div className="flex items-start space-x-4">
+                    <Mail className="h-6 w-6 text-primary mt-1" />
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2">
+                        {t("contactInfo.emailTitle")}
+                      </h3>
+                      <p className="text-primary font-medium mb-1">
+                        {t("contactInfo.emailAddress")}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {t("contactInfo.emailDescription")}
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Newsletter Signup */}
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold mb-4">
+                    {t("newsletter.title")}
+                  </h2>
+                  <p className="text-muted-foreground mb-6">
+                    {t("newsletter.subtitle")}
+                  </p>
+                  <form className="space-y-4" onSubmit={handleNewsletterSubmit}>
+                    <Input
+                      name="email"
+                      type="email"
+                      placeholder={t("newsletter.emailPlaceholder")}
+                      required
+                    />
+                    <Button
+                      type="submit"
+                      className="w-full bg-[hsl(var(--primary-dark))] hover:bg-[hsl(var(--primary-dark))]/90 text-white font-bold"
+                      size="lg"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting
+                        ? t("newsletter.submittingButton")
+                        : t("newsletter.submitButton")}
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

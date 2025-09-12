@@ -47,7 +47,7 @@ export function Section({
   const pal = ctx?.palette || defaultPalette
   const bg = pal[(order - 1) % pal.length]
   return (
-    <Tag className={cn("py-20", bg, className)} {...rest}>
+    <Tag className={cn("p-20", bg, className)} {...rest}>
       {children}
     </Tag>
   )
