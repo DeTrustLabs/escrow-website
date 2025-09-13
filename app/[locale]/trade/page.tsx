@@ -20,13 +20,12 @@ import {
   Globe,
 } from "lucide-react"
 import Link from "next/link"
-import { getLocale } from "next-intl/server"
 import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
-import { getTranslations, getMessages } from "next-intl/server"
 import SectionGroup from "@/components/ui/section-group"
+import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -34,7 +33,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "trade.metadata" })
+  const t = await getSSRMetadataTranslations(locale, "trade.metadata")
 
   return {
     title: t("title"),
@@ -64,20 +63,15 @@ export async function generateMetadata({
 }
 
 export default async function HomePage() {
-  const locale = await getLocale()
-  const t = await getTranslations({ locale, namespace: "trade" })
-  const messages = await getMessages({ locale })
-  const tradeRoot = messages.trade
-  const exporter: string[] = Array.isArray(
-    tradeRoot?.chooseRole?.exporters?.benefits
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "trade",
+    [
+      { path: "trade.chooseRole.exporters.benefits", key: "exporterBenefits" },
+      { path: "trade.chooseRole.importers.benefits", key: "importerBenefits" }
+    ]
   )
-    ? tradeRoot.chooseRole.exporters.benefits
-    : []
-  const importer: string[] = Array.isArray(
-    tradeRoot?.chooseRole?.importers?.benefits
-  )
-    ? tradeRoot.chooseRole.importers.benefits
-    : []
+  
+  const { exporterBenefits = [], importerBenefits = [] } = arrays
   return (
     <SectionGroup>
       <Hero
@@ -463,7 +457,7 @@ export default async function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {exporter.map((benefit: string, index: number) => (
+              {exporterBenefits.map((benefit: string, index: number) => (
                 <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{benefit}</span>
@@ -488,7 +482,7 @@ export default async function HomePage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {importer.map((benefit: string, index: number) => (
+              {importerBenefits.map((benefit: string, index: number) => (
                 <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{benefit}</span>

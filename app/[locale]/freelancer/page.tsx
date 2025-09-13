@@ -19,15 +19,13 @@ import {
   ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
-import { getLocale } from "next-intl/server"
 import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
-import { getTranslations, getMessages } from "next-intl/server"
-import { getMessageArray } from "@/lib/i18n-arrays"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
+import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -35,7 +33,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "freelancer.metadata" })
+  const t = await getSSRMetadataTranslations(locale, "freelancer.metadata")
 
   return {
     title: t("title"),
@@ -64,18 +62,15 @@ export async function generateMetadata({
 }
 
 export default async function FreelancerPage() {
-  const locale = await getLocale()
-  const t = await getTranslations({ locale, namespace: "freelancer" })
-  const messages = await getMessages({ locale })
-  const root = messages.freelancer || {}
-  const freelancerBenefits = getMessageArray(
-    root,
-    "perfectFor.freelancers.benefits"
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "freelancer",
+    [
+      { path: "freelancer.perfectFor.freelancers.benefits", key: "freelancerBenefits" },
+      { path: "freelancer.perfectFor.projectOwners.benefits", key: "projectOwnerBenefits" }
+    ]
   )
-  const projectOwnerBenefits = getMessageArray(
-    root,
-    "perfectFor.projectOwners.benefits"
-  )
+  
+  const { freelancerBenefits = [], projectOwnerBenefits = [] } = arrays
   const categories = [
     {
       src: "/images/Web Development.jpg",

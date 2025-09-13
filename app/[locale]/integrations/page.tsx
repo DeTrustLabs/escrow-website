@@ -22,13 +22,11 @@ import {
   Shield,
 } from "lucide-react"
 import Link from "next/link"
-import { getLocale } from "next-intl/server"
 import { withLocale } from "@/lib/urls"
-import { getTranslations, getMessages } from "next-intl/server"
 import { Metadata } from "next"
-import { getMessageArray } from "@/lib/i18n-arrays"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
+import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -36,10 +34,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({
-    locale,
-    namespace: "integrations.metadata",
-  })
+  const t = await getSSRMetadataTranslations(locale, "integrations.metadata")
 
   return {
     title: t("title"),
@@ -68,26 +63,20 @@ export async function generateMetadata({
 }
 
 export default async function IntegrationsPage() {
-  const locale = await getLocale()
-  // Load both the translator and the full messages so we can safely extract arrays
-  const [t, messages] = await Promise.all([
-    getTranslations({ locale, namespace: "integrations" }),
-    getMessages({ locale }),
-  ])
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "integrations",
+    [
+      { path: "integrations.ecosystem.features", key: "ecosystemFeatures" },
+      { path: "integrations.beneficiaries.serviceProviders.benefits", key: "serviceProviderBenefits" },
+      { path: "integrations.beneficiaries.techCompanies.benefits", key: "techCompanyBenefits" }
+    ]
+  )
 
-  // Safely extracted arrays (empty array fallback avoids runtime errors)
-  const ecosystemFeatures = getMessageArray(
-    messages,
-    "integrations.ecosystem.features"
-  )
-  const serviceProviderBenefits = getMessageArray(
-    messages,
-    "integrations.beneficiaries.serviceProviders.benefits"
-  )
-  const techCompanyBenefits = getMessageArray(
-    messages,
-    "integrations.beneficiaries.techCompanies.benefits"
-  )
+  const { 
+    ecosystemFeatures = [], 
+    serviceProviderBenefits = [], 
+    techCompanyBenefits = [] 
+  } = arrays
 
   return (
     <SectionGroup>
