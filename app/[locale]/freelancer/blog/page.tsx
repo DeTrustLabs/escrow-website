@@ -1,5 +1,3 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -18,13 +16,17 @@ import {
   Users,
   Shield,
 } from "lucide-react"
-import { useTranslations } from "next-intl"
 import SectionGroup from "@/components/ui/section-group"
 import { Input } from "@/components/ui/input"
 import CTASection from "@/components/ui/cta"
+import { getSSRTranslations } from "@/lib/i18n-ssr"
 
-export default function FreelancerBlogPage() {
-  const t = useTranslations("freelancer.blog")
+export default async function FreelancerBlogPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { t } = await getSSRTranslations("freelancer.blog", params)
 
   return (
     <SectionGroup>

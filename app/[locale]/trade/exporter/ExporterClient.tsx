@@ -1,5 +1,3 @@
-"use client"
-
 import CTASection from "@/components/ui/cta"
 
 import { Button } from "@/components/ui/button"
@@ -33,25 +31,28 @@ import {
   Banknote,
 } from "lucide-react"
 import Link from "next/link"
-import { useTranslations, useMessages, useLocale } from "next-intl"
 import { withLocale } from "@/lib/urls"
-import { getMessageArray } from "@/lib/i18n-arrays"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/ui/hero"
+import { getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 // sections are native; page wraps with SectionGroup
 
-export default function ExporterClient() {
-  const locale = useLocale()
-  const t = useTranslations("trade.exporter")
-  const messages = useMessages()
-  const beforeShippingBenefits = getMessageArray(
-    messages,
-    "trade.exporter.protection.beforeShipping.benefits"
+export default async function ExporterClient({ locale }: { locale: string }) {
+  const { t, arrays } = await getSSRTranslationsWithArrays(
+    "trade.exporter",
+    [
+      {
+        path: "trade.exporter.protection.beforeShipping.benefits",
+        key: "beforeShippingBenefits",
+      },
+      {
+        path: "trade.exporter.protection.afterDelivery.benefits",
+        key: "afterDeliveryBenefits",
+      },
+    ],
+    locale
   )
-  const afterDeliveryBenefits = getMessageArray(
-    messages,
-    "trade.exporter.protection.afterDelivery.benefits"
-  )
+  const { beforeShippingBenefits = [], afterDeliveryBenefits = [] } = arrays
 
   return (
     <>
@@ -401,12 +402,7 @@ export default function ExporterClient() {
             </CardContent>
             <CardContent className="pt-0">
               <Link href={withLocale(locale, "/trade/workflow")}>
-                <Button
-                  className="w-full"
-                  onClick={() => {
-                    setTimeout(() => window.scrollTo(0, 0), 100)
-                  }}
-                >
+                <Button className="w-full">
                   {t("protection.beforeShipping.button")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -434,12 +430,7 @@ export default function ExporterClient() {
             </CardContent>
             <CardContent className="pt-0">
               <Link href={withLocale(locale, "/trade/workflow")}>
-                <Button
-                  className="w-full"
-                  onClick={() => {
-                    setTimeout(() => window.scrollTo(0, 0), 100)
-                  }}
-                >
+                <Button className="w-full">
                   {t("protection.afterDelivery.button")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

@@ -1,14 +1,35 @@
 import type { Metadata } from "next"
 import ProjectOwnerClientPage from "./ProjectOwnerClientPage"
+import SectionGroup from "@/components/ui/section-group"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
-export const metadata: Metadata = {
-  title: "Project Owner Benefits - Digital Escrow for Secure Hiring | Escrow Protocol",
-  description:
-    "Eliminate project risks and ensure quality delivery. Secure digital escrow protects project owners from non-delivery and poor quality work.",
-  keywords:
-    "project owner benefits, freelance hiring security, project protection, quality assurance, secure project payments",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getSSRMetadataTranslations(
+    locale,
+    "freelancer.projectOwner.metadata"
+  )
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords:
+      "project owner benefits, freelance hiring security, project protection, quality assurance, secure project payments",
+  }
 }
 
-export default function ProjectOwnerPage() {
-  return <ProjectOwnerClientPage />
+export default async function ProjectOwnerPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await getSSRTranslations("freelancer.projectOwner", params)
+  return (
+    <SectionGroup>
+      <ProjectOwnerClientPage locale={locale} />
+    </SectionGroup>
+  )
 }

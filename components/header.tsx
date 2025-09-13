@@ -75,25 +75,25 @@ export function Header({ forceVariant }: NavigationProps) {
           <Image
             src="/images/logo/logo.png"
             alt="Escrow Protocol"
-            width={48}
-            height={48}
-            className="cursor-pointer sm:hidden"
+            width={50}
+            height={50}
+            className="h-12 cursor-pointer sm:hidden"
             priority
           />
           <Image
             src="/images/logo/logo-horizontal.png"
             alt="Escrow Protocol"
-            width={150}
-            height={48}
-            className="cursor-pointer hidden sm:block xl:hidden"
+            width={115}
+            height={50}
+            className="h-12 cursor-pointer hidden sm:block xl:hidden"
             priority
           />
           <Image
             src="/images/logo/logo-vertical.png"
             alt="Escrow Protocol"
-            width={205}
-            height={48}
-            className="cursor-pointer hidden xl:block"
+            width={200}
+            height={50}
+            className="h-12 w- cursor-pointer hidden xl:block"
             priority
           />
         </Link>

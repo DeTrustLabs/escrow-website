@@ -23,6 +23,7 @@ export async function Footer({ locale: forcedLocale }: FooterProps) {
               alt="Escrow Protocol"
               width={205}
               height={48}
+              className="h-12 mb-4"
             />
             <p className="text-sm text-muted-foreground max-w-xs">
               {t("description")}

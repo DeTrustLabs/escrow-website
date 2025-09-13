@@ -1,5 +1,3 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -21,24 +19,29 @@ import {
   ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
-import { useTranslations, useMessages } from "next-intl"
-import { getMessageArray } from "@/lib/i18n-arrays"
+import { getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 
-export default function CommunityPage() {
-  const t = useTranslations("community")
-  const messages = useMessages()
+export default async function CommunityPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { t, arrays } = await getSSRTranslationsWithArrays(
+    "community",
+    [
+      { path: "community.gettingStarted.users.benefits", key: "userBenefits" },
+      {
+        path: "community.gettingStarted.developers.benefits",
+        key: "developerBenefits",
+      },
+    ],
+    params
+  )
 
-  // Safely extract benefits arrays (empty array fallback prevents runtime errors)
-  const userBenefits = getMessageArray(
-    messages,
-    "community.gettingStarted.users.benefits"
-  )
-  const developerBenefits = getMessageArray(
-    messages,
-    "community.gettingStarted.developers.benefits"
-  )
+  const userBenefits = arrays.userBenefits || []
+  const developerBenefits = arrays.developerBenefits || []
 
   return (
     <SectionGroup>
@@ -52,10 +55,7 @@ export default function CommunityPage() {
         }}
         secondaryButton={{
           label: t("hero.secondaryButton"),
-          onClick: () =>
-            document
-              .getElementById("discord-community")
-              ?.scrollIntoView({ behavior: "smooth" }),
+          href: "#discord-community",
           variant: "outline",
         }}
         trustIndicators={[
