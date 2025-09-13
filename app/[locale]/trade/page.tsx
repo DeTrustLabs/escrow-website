@@ -25,7 +25,10 @@ import { AppImage } from "@/components/app-image"
 import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
-import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -62,15 +65,21 @@ export async function generateMetadata({
   }
 }
 
-export default async function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "trade",
     [
       { path: "trade.chooseRole.exporters.benefits", key: "exporterBenefits" },
-      { path: "trade.chooseRole.importers.benefits", key: "importerBenefits" }
-    ]
+      { path: "trade.chooseRole.importers.benefits", key: "importerBenefits" },
+    ],
+    routeLocale
   )
-  
+
   const { exporterBenefits = [], importerBenefits = [] } = arrays
   return (
     <SectionGroup>

@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Languages } from "lucide-react"
+import { LANGUAGES } from "@/i18n/request"
 
 const languages = [
   { code: "en", name: "English" },
@@ -26,8 +27,15 @@ export function LanguageSwitcher() {
 
   const switchLanguage = (newLocale: string) => {
     if (newLocale === locale) return
-    // Let next-intl handle locale-aware navigation for us
-    router.replace(pathname, { locale: newLocale })
+    // Ensure we pass a de-localized pathname to the locale-aware router
+    let path = pathname || "/"
+    const segments = path.split("/").filter(Boolean)
+    if (segments.length > 0 && LANGUAGES.includes(segments[0])) {
+      path = "/" + segments.slice(1).join("/")
+      if (path === "/") path = "/"
+    }
+    router.replace(path, { locale: newLocale })
+    router.refresh()
   }
 
   return (

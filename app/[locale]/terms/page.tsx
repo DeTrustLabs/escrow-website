@@ -15,8 +15,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function TermsPage() {
-  const { t } = await getSSRTranslations("terms")
+export default async function TermsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const { t } = await getSSRTranslations("terms", locale)
 
   return (
     <>

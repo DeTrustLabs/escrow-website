@@ -54,8 +54,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function SupportPage() {
-  const { t } = await getSSRTranslations("support")
+export default async function SupportPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const { t } = await getSSRTranslations("support", locale)
 
   return (
     <>

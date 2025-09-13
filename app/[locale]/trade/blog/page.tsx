@@ -36,8 +36,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function BlogPage() {
-  const t = await getTranslations("trade.blog")
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "trade.blog" })
 
   const articles = [
     {

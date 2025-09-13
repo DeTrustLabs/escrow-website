@@ -23,7 +23,10 @@ import {
   Cpu,
 } from "lucide-react"
 import SectionGroup from "@/components/ui/section-group"
-import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -59,22 +62,40 @@ export async function generateMetadata({
   }
 }
 
-export default async function ProtocolPage() {
-  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+export default async function ProtocolPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale: routeLocale } = await params
+  const { t, arrays } = await getSSRTranslationsWithArrays(
     "protocol",
     [
-      { path: "protocol.protocolTab.mechanisms.automated.features", key: "automatedFeatures" },
-      { path: "protocol.protocolTab.mechanisms.advanced.features", key: "advancedFeatures" },
-      { path: "protocol.developersTab.integration.widget.features", key: "widgetIntegrationFeatures" },
-      { path: "protocol.developersTab.integration.custom.features", key: "customIntegrationFeatures" }
-    ]
+      {
+        path: "protocol.protocolTab.mechanisms.automated.features",
+        key: "automatedFeatures",
+      },
+      {
+        path: "protocol.protocolTab.mechanisms.advanced.features",
+        key: "advancedFeatures",
+      },
+      {
+        path: "protocol.developersTab.integration.widget.features",
+        key: "widgetIntegrationFeatures",
+      },
+      {
+        path: "protocol.developersTab.integration.custom.features",
+        key: "customIntegrationFeatures",
+      },
+    ],
+    routeLocale
   )
 
-  const { 
-    automatedFeatures = [], 
-    advancedFeatures = [], 
-    widgetIntegrationFeatures = [], 
-    customIntegrationFeatures = [] 
+  const {
+    automatedFeatures = [],
+    advancedFeatures = [],
+    widgetIntegrationFeatures = [],
+    customIntegrationFeatures = [],
   } = arrays
 
   return (

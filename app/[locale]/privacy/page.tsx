@@ -15,8 +15,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function PrivacyPolicy() {
-  const { t } = await getSSRTranslations("privacy")
+export default async function PrivacyPolicy({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const { t } = await getSSRTranslations("privacy", locale)
 
   return (
     <>
