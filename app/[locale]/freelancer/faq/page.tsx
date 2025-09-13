@@ -10,11 +10,12 @@ import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
 import { getSSRTranslations } from "@/lib/i18n-ssr"
+import { withLocale } from "@/lib/urls"
 
 export default async function FreelancerFAQPage({
   params,
 }: PageProps<"/[locale]/freelancer/faq">) {
-  const { t } = await getSSRTranslations("freelancer.faq", params)
+  const { t, locale } = await getSSRTranslations("freelancer.faq", params)
 
   return (
     <SectionGroup>
@@ -262,7 +263,7 @@ export default async function FreelancerFAQPage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.contactButton"),
-          href: "/freelancer/contacts",
+          href: withLocale(locale, "/freelancer/contacts"),
         }}
         secondary={{
           label: t("cta.startProjectButton"),

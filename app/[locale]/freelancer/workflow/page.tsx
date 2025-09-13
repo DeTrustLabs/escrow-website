@@ -29,19 +29,18 @@ import {
 import { SITE_URL } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import SectionGroup from "@/components/ui/section-group"
-import { useTranslations } from "next-intl"
 import type { Metadata } from "next"
-import { getTranslations } from "next-intl/server"
 import CTASection from "@/components/ui/cta"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/freelancer/workflow">): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({
+  const t = await getSSRMetadataTranslations(
     locale,
-    namespace: "freelancer.workflow.metadata",
-  })
+    "freelancer.workflow.metadata"
+  )
 
   return {
     title: t("title"),
@@ -56,8 +55,10 @@ export async function generateMetadata({
   }
 }
 
-export default function FreelancerWorkflowPage() {
-  const t = useTranslations("freelancer.workflow")
+export default async function FreelancerWorkflowPage({
+  params,
+}: PageProps<"/[locale]/freelancer/workflow">) {
+  const { t } = await getSSRTranslations("freelancer.workflow", params)
 
   return (
     <SectionGroup>
