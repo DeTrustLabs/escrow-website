@@ -1,20 +1,50 @@
 {
   "navigation": {
-    "home": "Inicio",
-    "trade": "Comercio",
-    "freelancer": "Freelancer",
-    "community": "Comunidad",
-    "integrations": "Integraciones",
-    "support": "Soporte",
+    "home": { "label": "Inicio", "description": "Página principal de destino" },
+    "trade": {
+      "label": "Comercio",
+      "description": "Servicios de escrow para comercio internacional"
+    },
+    "freelancer": {
+      "label": "Freelancer",
+      "description": "Escrow para proyectos freelance"
+    },
+    "community": {
+      "label": "Comunidad",
+      "description": "Únete a la comunidad de escrow"
+    },
+    "integrations": {
+      "label": "Integraciones",
+      "description": "API y herramientas de integración"
+    },
+    "support": { "label": "Soporte", "description": "Obtén ayuda y soporte" },
     "resources": "Recursos y Soporte",
-    "exporter": "Exportador",
-    "importer": "Importador",
-    "workflow": "Flujo de Trabajo",
-    "guides": "Guías",
-    "blog": "Blog",
-    "faq": "Preguntas Frecuentes",
-    "contacts": "Contactos",
-    "projectowner": "Propietario del Proyecto",
+    "exporter": { "label": "Exportador", "description": "Para exportadores" },
+    "importer": { "label": "Importador", "description": "Para importadores" },
+    "workflow": {
+      "label": "Flujo de Trabajo",
+      "description": "Flujo de trabajo del proceso de escrow"
+    },
+    "guides": {
+      "label": "Guías",
+      "description": "Guías de usuario y tutoriales"
+    },
+    "blog": {
+      "label": "Blog",
+      "description": "Últimas noticias y actualizaciones"
+    },
+    "faq": {
+      "label": "Preguntas Frecuentes",
+      "description": "Preguntas frecuentes"
+    },
+    "contacts": {
+      "label": "Contactos",
+      "description": "Información de contacto"
+    },
+    "projectowner": {
+      "label": "Propietario del Proyecto",
+      "description": "Para propietarios de proyectos"
+    },
     "startEscrow": "Iniciar Escrow",
     "languages": {
       "en": "English",

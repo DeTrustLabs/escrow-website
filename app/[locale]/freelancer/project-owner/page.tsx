@@ -48,12 +48,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function ProjectOwnerClientPage({
-  locale,
-}: {
-  locale: string
-}) {
-  const { t } = await getSSRTranslations("freelancer.projectOwner", locale)
+export default async function TradeProjectOwnerPage({
+  params,
+}: PageProps<"/[locale]/freelancer/project-owner">) {
+  const { t, locale } = await getSSRTranslations(
+    "freelancer.projectOwner",
+    params
+  )
 
   return (
     <SectionGroup>

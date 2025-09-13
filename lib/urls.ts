@@ -26,32 +26,26 @@ export function withLocale(locale: string, path: string) {
 export const SECTION_ROUTES = [
   {
     key: "home",
-    label: "Home",
     href: ROUTES.home,
   },
   {
     key: "trade",
-    label: "Global Trade",
     href: ROUTES.trade,
   },
   {
     key: "freelancer",
-    label: "Freelancer",
     href: ROUTES.freelancer,
   },
   {
     key: "integrations",
-    label: "Integrations",
     href: ROUTES.integrations,
   },
   {
     key: "community",
-    label: "Protocol & Community",
     href: ROUTES.community,
   },
   {
     key: "support",
-    label: "Support and Contact",
     href: ROUTES.support,
   },
 ]

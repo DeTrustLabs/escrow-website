@@ -172,15 +172,15 @@ export function Header({ forceVariant }: NavigationProps) {
                   onClick={handleNavClick}
                   className="flex flex-col rounded-md px-3 py-2 hover:bg-primary/5"
                 >
-                  <span className="text-sm font-medium">{t(item.key)}</span>
-                  {isGlobal && item.description && (
-                    <span className="text-xs text-muted-foreground">
-                      {item.description}
-                    </span>
-                  )}
+                  <span className="text-sm font-medium">
+                    {t(`${item.key}.label`)}
+                  </span>
+                  <span className="text-xs text-muted-foreground">
+                    {t(`${item.key}.description`)}
+                  </span>
                 </Link>
               ))}
-              {!isGlobal && resources.length > 0 && (
+              {resources.length > 0 && (
                 <div className="pt-4 mt-2 border-t">
                   <p className="text-xs font-semibold text-gray-500 mb-2">
                     {t("resources")}
@@ -192,7 +192,7 @@ export function Header({ forceVariant }: NavigationProps) {
                       onClick={handleNavClick}
                       className="block text-sm font-medium rounded-md px-3 py-2 hover:bg-primary/5"
                     >
-                      {t(r.key)}
+                      {t(`${r.key}.label`)}
                     </Link>
                   ))}
                 </div>

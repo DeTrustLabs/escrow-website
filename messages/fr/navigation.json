@@ -1,20 +1,56 @@
 {
   "navigation": {
-    "home": "Accueil",
-    "trade": "Commerce",
-    "freelancer": "Freelance",
-    "community": "Communauté",
-    "integrations": "Intégrations",
-    "support": "Support",
+    "home": { "label": "Accueil", "description": "Page d'accueil principale" },
+    "trade": {
+      "label": "Commerce",
+      "description": "Services d'escrow pour le commerce international"
+    },
+    "freelancer": {
+      "label": "Freelance",
+      "description": "Escrow pour projets freelance"
+    },
+    "community": {
+      "label": "Communauté",
+      "description": "Rejoignez la communauté escrow"
+    },
+    "integrations": {
+      "label": "Intégrations",
+      "description": "API et outils d'intégration"
+    },
+    "support": {
+      "label": "Support",
+      "description": "Obtenez de l'aide et du support"
+    },
     "resources": "Ressources & Support",
-    "exporter": "Exportateur",
-    "importer": "Importateur",
-    "workflow": "Flux de travail",
-    "guides": "Guides",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "contacts": "Contacts",
-    "projectowner": "Propriétaire du projet",
+    "exporter": {
+      "label": "Exportateur",
+      "description": "Pour les exportateurs"
+    },
+    "importer": {
+      "label": "Importateur",
+      "description": "Pour les importateurs"
+    },
+    "workflow": {
+      "label": "Flux de travail",
+      "description": "Flux de travail du processus escrow"
+    },
+    "guides": {
+      "label": "Guides",
+      "description": "Guides utilisateur et tutoriels"
+    },
+    "blog": {
+      "label": "Blog",
+      "description": "Dernières nouvelles et mises à jour"
+    },
+    "faq": { "label": "FAQ", "description": "Questions fréquemment posées" },
+    "contacts": {
+      "label": "Contacts",
+      "description": "Informations de contact"
+    },
+    "projectowner": {
+      "label": "Propriétaire du projet",
+      "description": "Pour les propriétaires de projets"
+    },
     "startEscrow": "Démarrer l'escrow",
     "languages": {
       "en": "English",

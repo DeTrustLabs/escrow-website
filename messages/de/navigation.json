@@ -1,20 +1,47 @@
 {
   "navigation": {
-    "home": "Startseite",
-    "trade": "Handel",
-    "freelancer": "Freelancer",
-    "community": "Community",
-    "integrations": "Integrationen",
-    "support": "Support",
+    "home": { "label": "Startseite", "description": "Hauptlandeseite" },
+    "trade": {
+      "label": "Handel",
+      "description": "Internationale Handels-Escrow-Dienste"
+    },
+    "freelancer": {
+      "label": "Freelancer",
+      "description": "Freelance-Projekt-Escrow"
+    },
+    "community": {
+      "label": "Community",
+      "description": "Treten Sie der Escrow-Community bei"
+    },
+    "integrations": {
+      "label": "Integrationen",
+      "description": "API und Integrationstools"
+    },
+    "support": {
+      "label": "Support",
+      "description": "Holen Sie sich Hilfe und Support"
+    },
     "resources": "Ressourcen & Support",
-    "exporter": "Exporteur",
-    "importer": "Importeur",
-    "workflow": "Arbeitsablauf",
-    "guides": "Leitfäden",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "contacts": "Kontakte",
-    "projectowner": "Projektinhaber",
+    "exporter": { "label": "Exporteur", "description": "Für Exporteure" },
+    "importer": { "label": "Importeur", "description": "Für Importeure" },
+    "workflow": {
+      "label": "Arbeitsablauf",
+      "description": "Escrow-Prozess-Arbeitsablauf"
+    },
+    "guides": {
+      "label": "Leitfäden",
+      "description": "Benutzerleitfäden und Tutorials"
+    },
+    "blog": {
+      "label": "Blog",
+      "description": "Neueste Nachrichten und Updates"
+    },
+    "faq": { "label": "FAQ", "description": "Häufig gestellte Fragen" },
+    "contacts": { "label": "Kontakte", "description": "Kontaktinformationen" },
+    "projectowner": {
+      "label": "Projektinhaber",
+      "description": "Für Projektinhaber"
+    },
     "startEscrow": "Escrow starten",
     "languages": {
       "en": "English",

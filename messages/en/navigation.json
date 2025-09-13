@@ -1,20 +1,38 @@
 {
   "navigation": {
-    "home": "Home",
-    "trade": "Trade",
-    "freelancer": "Freelancer",
-    "community": "Community",
-    "integrations": "Integrations",
-    "support": "Support",
+    "home": { "label": "Home", "description": "Main landing page" },
+    "trade": {
+      "label": "Trade",
+      "description": "International trade escrow services"
+    },
+    "freelancer": {
+      "label": "Freelancer",
+      "description": "Freelance project escrow"
+    },
+    "community": {
+      "label": "Community",
+      "description": "Join the escrow community"
+    },
+    "integrations": {
+      "label": "Integrations",
+      "description": "API and integration tools"
+    },
+    "support": { "label": "Support", "description": "Get help and support" },
     "resources": "Resources & Support",
-    "exporter": "Exporter",
-    "importer": "Importer",
-    "workflow": "Workflow",
-    "guides": "Guides",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "contacts": "Contacts",
-    "projectowner": "Project Owner",
+    "exporter": { "label": "Exporter", "description": "For exporters" },
+    "importer": { "label": "Importer", "description": "For importers" },
+    "workflow": {
+      "label": "Workflow",
+      "description": "Escrow process workflow"
+    },
+    "guides": { "label": "Guides", "description": "User guides and tutorials" },
+    "blog": { "label": "Blog", "description": "Latest news and updates" },
+    "faq": { "label": "FAQ", "description": "Frequently asked questions" },
+    "contacts": { "label": "Contacts", "description": "Contact information" },
+    "projectowner": {
+      "label": "Project Owner",
+      "description": "For project owners"
+    },
     "startEscrow": "Start Escrow",
     "languages": {
       "en": "English",

@@ -42,8 +42,10 @@ export async function generateMetadata({
   }
 }
 
-export async function WorkflowClient({ locale }: { locale: string }) {
-  const { t, arrays } = await getSSRTranslationsWithArrays(
+export default async function TradeWorkflowPage({
+  params,
+}: PageProps<"/[locale]/trade/workflow">) {
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "trade.workflow",
     [
       {
@@ -83,7 +85,7 @@ export async function WorkflowClient({ locale }: { locale: string }) {
         key: "disputeResolutionOptionsFeatures",
       },
     ],
-    locale
+    params
   )
   const {
     onboardingFeatures = [],

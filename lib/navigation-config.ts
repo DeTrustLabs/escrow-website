@@ -9,6 +9,7 @@ export type NavVariant = "global" | "trade" | "freelancer"
 export interface NavLink {
   href: string
   key: string
+  description?: string // Optional short description (used in global variant)
 }
 
 export interface VariantConfig {

@@ -48,8 +48,10 @@ export async function generateMetadata({
   }
 }
 
-export default async function ExporterClient({ locale }: { locale: string }) {
-  const { t, arrays } = await getSSRTranslationsWithArrays(
+export default async function TradeExporterPage({
+  params,
+}: PageProps<"/[locale]/trade/exporter">) {
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "trade.exporter",
     [
       {
@@ -61,7 +63,7 @@ export default async function ExporterClient({ locale }: { locale: string }) {
         key: "afterDeliveryBenefits",
       },
     ],
-    locale
+    params
   )
   const { beforeShippingBenefits = [], afterDeliveryBenefits = [] } = arrays
 
