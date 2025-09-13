@@ -6,8 +6,12 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
 import { getSSRTranslations } from "@/lib/i18n-ssr"
 
-export async function Footer() {
-  const { t, locale } = await getSSRTranslations("footer")
+type FooterProps = {
+  locale?: string
+}
+
+export async function Footer({ locale: forcedLocale }: FooterProps) {
+  const { t, locale } = await getSSRTranslations("footer", forcedLocale)
   return (
     <footer className="bg-gray-50 border-t">
       <div className="max-w-7xl mx-auto p-8">
@@ -15,10 +19,11 @@ export async function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/logo-main.png"
+              src="/images/logo/logo-vertical.png"
               alt="Escrow Protocol"
               width={205}
               height={48}
+              className="h-12 mb-4"
             />
             <p className="text-sm text-muted-foreground max-w-xs">
               {t("description")}

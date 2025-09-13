@@ -25,7 +25,10 @@ import { CategoryCard } from "@/components/ui/category-card"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -61,15 +64,27 @@ export async function generateMetadata({
   }
 }
 
-export default async function FreelancerPage() {
+export default async function FreelancerPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "freelancer",
     [
-      { path: "freelancer.perfectFor.freelancers.benefits", key: "freelancerBenefits" },
-      { path: "freelancer.perfectFor.projectOwners.benefits", key: "projectOwnerBenefits" }
-    ]
+      {
+        path: "freelancer.perfectFor.freelancers.benefits",
+        key: "freelancerBenefits",
+      },
+      {
+        path: "freelancer.perfectFor.projectOwners.benefits",
+        key: "projectOwnerBenefits",
+      },
+    ],
+    routeLocale
   )
-  
+
   const { freelancerBenefits = [], projectOwnerBenefits = [] } = arrays
   const categories = [
     {

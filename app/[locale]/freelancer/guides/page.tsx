@@ -1,14 +1,17 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Clock, Users } from "lucide-react"
-import { useTranslations } from "next-intl"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-export default function FreelancerGuidesPage() {
-  const t = useTranslations("freelancer.guides")
+import { getSSRTranslations } from "@/lib/i18n-ssr"
+
+export default async function FreelancerGuidesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { t } = await getSSRTranslations("freelancer.guides", params)
 
   return (
     <SectionGroup>

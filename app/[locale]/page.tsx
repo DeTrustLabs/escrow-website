@@ -26,7 +26,10 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
-import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
@@ -68,23 +71,29 @@ export async function generateMetadata({
   }
 }
 
-export default async function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "home",
     [
       { path: "home.business.trade.features", key: "tradeFeatures" },
       { path: "home.business.freelancer.features", key: "freelancerFeatures" },
       { path: "home.build.integrators.features", key: "integratorFeatures" },
-      { path: "home.build.community.features", key: "communityFeatures" }
-    ]
+      { path: "home.build.community.features", key: "communityFeatures" },
+    ],
+    routeLocale
   )
-  
+
   // Extract arrays using the helper
   const {
     tradeFeatures = [],
     freelancerFeatures = [],
     integratorFeatures = [],
-    communityFeatures = []
+    communityFeatures = [],
   } = arrays
 
   return (

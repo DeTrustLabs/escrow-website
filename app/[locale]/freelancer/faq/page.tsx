@@ -1,5 +1,3 @@
-"use client"
-
 import {
   Accordion,
   AccordionContent,
@@ -8,13 +6,17 @@ import {
 } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { HelpCircle, Shield, Clock, DollarSign, Users } from "lucide-react"
-import { useTranslations } from "next-intl"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
+import { getSSRTranslations } from "@/lib/i18n-ssr"
 
-export default function FreelancerFAQPage() {
-  const t = useTranslations("freelancer.faq")
+export default async function FreelancerFAQPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { t } = await getSSRTranslations("freelancer.faq", params)
 
   return (
     <SectionGroup>

@@ -1,5 +1,3 @@
-"use client"
-
 import {
   Card,
   CardContent,
@@ -30,17 +28,19 @@ import {
   Banknote,
 } from "lucide-react"
 import { AppImage } from "@/components/app-image"
-import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { useTranslations, useLocale } from "next-intl"
 import { withLocale } from "@/lib/urls"
+import { getSSRTranslations } from "@/lib/i18n-ssr"
 
-export default function FreelancerClientPage() {
-  const t = useTranslations("freelancer.freelancerPage")
-  const locale = useLocale()
+export default async function FreelancerClientPage({
+  locale,
+}: {
+  locale: string
+}) {
+  const { t } = await getSSRTranslations("freelancer.freelancerPage", locale)
 
   return (
-    <SectionGroup>
+    <>
       <Hero
         badge={t("hero.badge")}
         title={t("hero.title")}
@@ -398,6 +398,6 @@ export default function FreelancerClientPage() {
           href: withLocale(locale, "/freelancer/contacts"),
         }}
       />
-    </SectionGroup>
+    </>
   )
 }

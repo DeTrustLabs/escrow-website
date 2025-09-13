@@ -26,8 +26,13 @@ export async function generateMetadata({
   }
 }
 
-export default async function FAQPage() {
-  const t = await getTranslations("trade.faq")
+export default async function FAQPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "trade.faq" })
 
   return (
     <SectionGroup>

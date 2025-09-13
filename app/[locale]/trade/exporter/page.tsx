@@ -1,6 +1,6 @@
-import { getTranslations } from "next-intl/server"
 import SectionGroup from "@/components/ui/section-group"
 import ExporterClient from "./ExporterClient"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -8,10 +8,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations({
-    locale,
-    namespace: "trade.exporter.metadata",
-  })
+  const t = await getSSRMetadataTranslations(locale, "trade.exporter.metadata")
 
   return {
     title: t("title"),
@@ -19,10 +16,15 @@ export async function generateMetadata({
   }
 }
 
-export default function ExporterBenefitsPage() {
+export default async function ExporterBenefitsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await getSSRTranslations("trade.exporter", params)
   return (
     <SectionGroup>
-      <ExporterClient />
+      <ExporterClient locale={locale} />
     </SectionGroup>
   )
 }

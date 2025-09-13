@@ -26,7 +26,10 @@ import { withLocale } from "@/lib/urls"
 import { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -62,20 +65,32 @@ export async function generateMetadata({
   }
 }
 
-export default async function IntegrationsPage() {
+export default async function IntegrationsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "integrations",
     [
       { path: "integrations.ecosystem.features", key: "ecosystemFeatures" },
-      { path: "integrations.beneficiaries.serviceProviders.benefits", key: "serviceProviderBenefits" },
-      { path: "integrations.beneficiaries.techCompanies.benefits", key: "techCompanyBenefits" }
-    ]
+      {
+        path: "integrations.beneficiaries.serviceProviders.benefits",
+        key: "serviceProviderBenefits",
+      },
+      {
+        path: "integrations.beneficiaries.techCompanies.benefits",
+        key: "techCompanyBenefits",
+      },
+    ],
+    routeLocale
   )
 
-  const { 
-    ecosystemFeatures = [], 
-    serviceProviderBenefits = [], 
-    techCompanyBenefits = [] 
+  const {
+    ecosystemFeatures = [],
+    serviceProviderBenefits = [],
+    techCompanyBenefits = [],
   } = arrays
 
   return (

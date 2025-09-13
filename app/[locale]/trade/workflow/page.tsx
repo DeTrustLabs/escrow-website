@@ -1,5 +1,6 @@
 import { WorkflowClient } from "./WorkflowClient"
-import { getSSRMetadataTranslations } from "@/lib/i18n-ssr"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
+import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata({
   params,
@@ -15,6 +16,15 @@ export async function generateMetadata({
   }
 }
 
-export default function WorkflowPage() {
-  return <WorkflowClient />
+export default async function WorkflowPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await getSSRTranslations("trade.workflow", params)
+  return (
+    <SectionGroup>
+      <WorkflowClient locale={locale} />
+    </SectionGroup>
+  )
 }

@@ -1,5 +1,3 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -27,32 +25,31 @@ import {
   Scale,
 } from "lucide-react"
 import Link from "next/link"
-import { useLocale } from "next-intl"
 import { withLocale } from "@/lib/urls"
 import { AppImage } from "@/components/app-image"
 import { Hero } from "@/components/ui/hero"
-import { useTranslations, useMessages } from "next-intl"
-import { getMessageArray } from "@/lib/i18n-arrays"
-import SectionGroup from "@/components/ui/section-group"
+import { getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 import CTASection from "@/components/ui/cta"
 
-export default function ImporterClient() {
-  const locale = useLocale()
-  const t = useTranslations("trade.importer")
-  const messages = useMessages()
-  const beforePaymentBenefits = getMessageArray(
-    messages,
-    "trade.importer.protection.beforePayment.benefits"
+export default async function ImporterClient({ locale }: { locale: string }) {
+  const { t, arrays } = await getSSRTranslationsWithArrays(
+    "trade.importer",
+    [
+      {
+        path: "trade.importer.protection.beforePayment.benefits",
+        key: "beforePaymentBenefits",
+      },
+      {
+        path: "trade.importer.protection.afterDelivery.benefits",
+        key: "afterDeliveryBenefits",
+      },
+    ],
+    locale
   )
-  const afterDeliveryBenefits = getMessageArray(
-    messages,
-    "trade.importer.protection.afterDelivery.benefits"
-  )
-
-  // no-op
+  const { beforePaymentBenefits = [], afterDeliveryBenefits = [] } = arrays
 
   return (
-    <SectionGroup>
+    <>
       <Hero
         badge={t("hero.badge")}
         title={t("hero.title")}
@@ -403,12 +400,7 @@ export default function ImporterClient() {
             </CardContent>
             <CardContent className="pt-0">
               <Link href={withLocale(locale, "/trade/workflow")}>
-                <Button
-                  className="w-full"
-                  onClick={() => {
-                    setTimeout(() => window.scrollTo(0, 0), 100)
-                  }}
-                >
+                <Button className="w-full">
                   {t("protection.beforePayment.button")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -436,12 +428,7 @@ export default function ImporterClient() {
             </CardContent>
             <CardContent className="pt-0">
               <Link href={withLocale(locale, "/trade/workflow")}>
-                <Button
-                  className="w-full"
-                  onClick={() => {
-                    setTimeout(() => window.scrollTo(0, 0), 100)
-                  }}
-                >
+                <Button className="w-full">
                   {t("protection.afterDelivery.button")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -465,6 +452,6 @@ export default function ImporterClient() {
           href: withLocale(locale, "/contacts"),
         }}
       />
-    </SectionGroup>
+    </>
   )
 }

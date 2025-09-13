@@ -1,7 +1,7 @@
 "use client"
 
 import { useLocale, useTranslations } from "next-intl"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter, usePathname } from "@/lib/locale-navigation"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Languages } from "lucide-react"
+import { LANGUAGES } from "@/i18n/request"
 
 const languages = [
   { code: "en", name: "English" },
@@ -26,18 +27,14 @@ export function LanguageSwitcher() {
 
   const switchLanguage = (newLocale: string) => {
     if (newLocale === locale) return
-    const segments = pathname.split("/").filter(Boolean)
-    if (segments.length === 0) {
-      router.push(`/${newLocale}`)
-      router.refresh()
-      return
+    // Ensure we pass a de-localized pathname to the locale-aware router
+    let path = pathname || "/"
+    const segments = path.split("/").filter(Boolean)
+    if (segments.length > 0 && LANGUAGES.includes(segments[0])) {
+      path = "/" + segments.slice(1).join("/")
+      if (path === "/") path = "/"
     }
-    if (languages.some((l) => l.code === segments[0])) {
-      segments[0] = newLocale
-    } else {
-      segments.unshift(newLocale)
-    }
-    router.push(`/${segments.join("/")}`)
+    router.replace(path, { locale: newLocale })
     router.refresh()
   }
 
@@ -46,7 +43,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="ring-none">
           <Languages className="h-4 w-4 mr-2" />
-          {t(`languages.${locale}`)}
+          <span className="hidden md:block">{t(`languages.${locale}`)}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

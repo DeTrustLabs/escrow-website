@@ -1,5 +1,3 @@
-"use client"
-
 import {
   Card,
   CardContent,
@@ -29,17 +27,19 @@ import {
   Eye,
 } from "lucide-react"
 import { AppImage } from "@/components/app-image"
-import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
-import { useTranslations, useLocale } from "next-intl"
 import { withLocale } from "@/lib/urls"
+import { getSSRTranslations } from "@/lib/i18n-ssr"
 
-export default function ProjectOwnerClientPage() {
-  const t = useTranslations("freelancer.projectOwner")
-  const locale = useLocale()
+export default async function ProjectOwnerClientPage({
+  locale,
+}: {
+  locale: string
+}) {
+  const { t } = await getSSRTranslations("freelancer.projectOwner", locale)
 
   return (
-    <SectionGroup>
+    <>
       <Hero
         badge={t("hero.badge")}
         title={t("hero.title")}
@@ -403,6 +403,6 @@ export default function ProjectOwnerClientPage() {
           href: withLocale(locale, "/contacts"),
         }}
       />
-    </SectionGroup>
+    </>
   )
 }

@@ -1,8 +1,18 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 import { LANGUAGES } from "@/i18n/request"
+import { match as matchLocale } from "@formatjs/intl-localematcher"
+import Negotiator from "negotiator"
 
 const DEFAULT_LOCALE = "en"
+
+function getPreferredLocale(request: NextRequest) {
+  const negotiatorHeaders: Record<string, string> = {}
+  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages()
+  // Allow both bare language and language-region, but map to our supported list
+  return matchLocale(languages, LANGUAGES, DEFAULT_LOCALE)
+}
 
 export function middleware(request: NextRequest) {
   const hostname = request.headers.get("host") || ""
@@ -14,16 +24,18 @@ export function middleware(request: NextRequest) {
   const hasLocalePrefix =
     pathSegments.length > 0 && LANGUAGES.includes(pathSegments[0])
 
-  // Redirect bare root to default locale
+  // Redirect bare root to best matched locale from Accept-Language
   if (pathname === "/") {
-    url.pathname = `/${DEFAULT_LOCALE}`
+    const best = getPreferredLocale(request) || DEFAULT_LOCALE
+    url.pathname = `/${best}`
     return NextResponse.redirect(url)
   }
 
   // If no valid locale prefix (e.g., /trade) and path is not an asset, redirect to add default locale
   if (!hasLocalePrefix) {
     // Preserve existing path by prefixing locale
-    url.pathname = `/${DEFAULT_LOCALE}${pathname}`
+    const best = getPreferredLocale(request) || DEFAULT_LOCALE
+    url.pathname = `/${best}${pathname}`
     return NextResponse.redirect(url)
   }
 

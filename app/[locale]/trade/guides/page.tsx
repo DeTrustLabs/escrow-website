@@ -25,10 +25,14 @@ export async function generateMetadata({
   }
 }
 
-export default async function GuidesPage() {
+export default async function GuidesPage({
+  params,
+}: {
+  params: { locale: string }
+}) {
   const [t, messages] = await Promise.all([
-    getTranslations("trade.guides"),
-    getMessages(),
+    getTranslations({ locale: params.locale, namespace: "trade.guides" }),
+    getMessages({ locale: params.locale }),
   ])
   const whatYouLearnItems = getMessageArray(
     messages,

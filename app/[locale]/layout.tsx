@@ -1,14 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
-import {
-  setRequestLocale,
-} from "next-intl/server"
+import { setRequestLocale } from "next-intl/server"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { LANGUAGES } from "@/i18n/request"
 import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
+
+export const dynamic = "force-dynamic"
 
 // Generate per-locale metadata
 export async function generateMetadata({
@@ -44,9 +44,9 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider key={locale} locale={locale} messages={messages}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-        <Header key={locale} />
+        <Header key={`header-${locale}`} />
         <main className="w-full">{children}</main>
-        <Footer />
+        <Footer locale={locale} />
       </ThemeProvider>
     </NextIntlClientProvider>
   )

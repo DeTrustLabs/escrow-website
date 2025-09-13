@@ -73,11 +73,27 @@ export function Header({ forceVariant }: NavigationProps) {
           onClick={handleNavClick}
         >
           <Image
-            src="/images/logo-main.png"
+            src="/images/logo/logo.png"
+            alt="Escrow Protocol"
+            width={50}
+            height={50}
+            className="h-12 cursor-pointer sm:hidden"
+            priority
+          />
+          <Image
+            src="/images/logo/logo-horizontal.png"
+            alt="Escrow Protocol"
+            width={115}
+            height={50}
+            className="h-12 cursor-pointer hidden sm:block xl:hidden"
+            priority
+          />
+          <Image
+            src="/images/logo/logo-vertical.png"
             alt="Escrow Protocol"
             width={200}
-            height={54}
-            className="h-12 w-auto cursor-pointer"
+            height={50}
+            className="h-12 w- cursor-pointer hidden xl:block"
             priority
           />
         </Link>
@@ -146,7 +162,7 @@ export function Header({ forceVariant }: NavigationProps) {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="lg:hidden border-t bg-white shadow-md">
+        <div className="sm:hidden border-t bg-white shadow-md">
           <div className="container mx-auto px-8 py-4">
             <nav className="flex flex-col space-y-2">
               {mainLinks.map((item) => (

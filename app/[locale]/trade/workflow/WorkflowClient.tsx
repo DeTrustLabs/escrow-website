@@ -1,7 +1,4 @@
-"use client"
-
-import { useTranslations, useMessages } from "next-intl"
-import { getMessageArray } from "@/lib/i18n-arrays"
+import { getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 import {
   Card,
   CardContent,
@@ -29,51 +26,66 @@ import {
   DollarSign,
 } from "lucide-react"
 import { AppImage } from "@/components/app-image"
-import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
+import { withLocale } from "@/lib/urls"
 
-export function WorkflowClient() {
-  const t = useTranslations("trade.workflow")
-  const messages = useMessages()
-  const onboardingFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.onboarding.features"
+export async function WorkflowClient({ locale }: { locale: string }) {
+  const { t, arrays } = await getSSRTranslationsWithArrays(
+    "trade.workflow",
+    [
+      {
+        path: "trade.workflow.howItWorks.steps.onboarding.features",
+        key: "onboardingFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.escrowAgreement.features",
+        key: "escrowAgreementFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.verifiedFunding.features",
+        key: "verifiedFundingFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.delivery.features",
+        key: "deliveryFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.releaseOfFunds.features",
+        key: "releaseOfFundsFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.adjustments.features",
+        key: "adjustmentsFeatures",
+      },
+      {
+        path: "trade.workflow.howItWorks.steps.dispute.features",
+        key: "disputeFeatures",
+      },
+      {
+        path: "trade.workflow.disputeResolution.whenDisputesOccur.features",
+        key: "disputeWhenOccurFeatures",
+      },
+      {
+        path: "trade.workflow.disputeResolution.resolutionOptions.features",
+        key: "disputeResolutionOptionsFeatures",
+      },
+    ],
+    locale
   )
-  const escrowAgreementFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.escrowAgreement.features"
-  )
-  const verifiedFundingFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.verifiedFunding.features"
-  )
-  const deliveryFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.delivery.features"
-  )
-  const releaseOfFundsFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.releaseOfFunds.features"
-  )
-  const adjustmentsFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.adjustments.features"
-  )
-  const disputeFeatures = getMessageArray(
-    messages,
-    "trade.workflow.howItWorks.steps.dispute.features"
-  )
-  const disputeWhenOccurFeatures = getMessageArray(
-    messages,
-    "trade.workflow.disputeResolution.whenDisputesOccur.features"
-  )
-  const disputeResolutionOptionsFeatures = getMessageArray(
-    messages,
-    "trade.workflow.disputeResolution.resolutionOptions.features"
-  )
+  const {
+    onboardingFeatures = [],
+    escrowAgreementFeatures = [],
+    verifiedFundingFeatures = [],
+    deliveryFeatures = [],
+    releaseOfFundsFeatures = [],
+    adjustmentsFeatures = [],
+    disputeFeatures = [],
+    disputeWhenOccurFeatures = [],
+    disputeResolutionOptionsFeatures = [],
+  } = arrays
 
   return (
-    <SectionGroup>
+    <>
       <Hero
         className="bg-gradient-to-br from-primary/5 to-transparent"
         badge={t("hero.badge")}
@@ -673,8 +685,11 @@ export function WorkflowClient() {
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
           newTab: true,
         }}
-        secondary={{ label: t("cta.talkToAdvisor"), href: "/contacts" }}
+        secondary={{
+          label: t("cta.talkToAdvisor"),
+          href: withLocale(locale, "/contacts"),
+        }}
       />
-    </SectionGroup>
+    </>
   )
 }
