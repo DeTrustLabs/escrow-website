@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, BookOpen, Clock, Users } from "lucide-react"
-import { getTranslations, getMessages } from "next-intl/server"
-import { getMessageArray } from "@/lib/i18n-arrays"
 import type { Metadata } from "next"
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
+import {
+  getSSRMetadataTranslations,
+  getSSRTranslationsWithArrays,
+} from "@/lib/i18n-ssr"
+import { withLocale } from "@/lib/urls"
 
 export async function generateMetadata({
   params,
@@ -14,10 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({
-    locale,
-    namespace: "trade.guides.metadata",
-  })
+  const t = await getSSRMetadataTranslations(locale, "trade.guides.metadata")
 
   return {
     title: t("title"),
@@ -28,16 +28,19 @@ export async function generateMetadata({
 export default async function GuidesPage({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const [t, messages] = await Promise.all([
-    getTranslations({ locale: params.locale, namespace: "trade.guides" }),
-    getMessages({ locale: params.locale }),
-  ])
-  const whatYouLearnItems = getMessageArray(
-    messages,
-    "trade.guides.featuredGuide.whatYouLearn.items"
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "trade.guides",
+    [
+      {
+        path: "trade.guides.featuredGuide.whatYouLearn.items",
+        key: "whatYouLearnItems",
+      },
+    ],
+    params
   )
+  const { whatYouLearnItems = [] } = arrays
 
   return (
     <SectionGroup>
@@ -98,7 +101,10 @@ export default async function GuidesPage({
       <CTASection
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}
-        primary={{ label: t("cta.contactExpert"), href: "/contacts" }}
+        primary={{
+          label: t("cta.contactExpert"),
+          href: withLocale(locale, "/trade/contacts"),
+        }}
         secondary={{
           label: t("cta.startTrade"),
           href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
