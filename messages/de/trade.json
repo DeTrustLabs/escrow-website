@@ -446,7 +446,10 @@
         "submitButton": "Abonnieren",
         "submittingButton": "Wird abonniert..."
       },
-      "popup": { "thankYou": "Vielen Dank!", "close": "Schließen" }
+      "popup": {
+        "thankYou": "Vielen Dank!",
+        "close": "Schließen"
+      }
     },
     "contactsAdmin": {
       "newsletterSubscribers": {
@@ -766,10 +769,22 @@
       },
       "categories": {
         "title": "FAQ-Kategorien",
-        "gettingStarted": { "name": "Erste Schritte", "count": "3" },
-        "securitySafety": { "name": "Sicherheit & Schutz", "count": "2" },
-        "processTimeline": { "name": "Prozess & Zeitplan", "count": "2" },
-        "paymentsFees": { "name": "Zahlungen & Gebühren", "count": "2" },
+        "gettingStarted": {
+          "name": "Erste Schritte",
+          "count": "3"
+        },
+        "securitySafety": {
+          "name": "Sicherheit & Schutz",
+          "count": "2"
+        },
+        "processTimeline": {
+          "name": "Prozess & Zeitplan",
+          "count": "2"
+        },
+        "paymentsFees": {
+          "name": "Zahlungen & Gebühren",
+          "count": "2"
+        },
         "internationalTrade": {
           "name": "Internationaler Handel",
           "count": "2"

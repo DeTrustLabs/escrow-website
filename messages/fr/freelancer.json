@@ -258,7 +258,10 @@
         "submitButton": "S'abonner",
         "submittingButton": "Abonnement en cours..."
       },
-      "popup": { "thankYou": "Merci !", "close": "Fermer" }
+      "popup": {
+        "thankYou": "Merci !",
+        "close": "Fermer"
+      }
     },
     "faq": {
       "metadata": {
@@ -271,11 +274,26 @@
       },
       "categories": {
         "title": "Catégories FAQ",
-        "gettingStarted": { "name": "Commencer", "count": "3" },
-        "security": { "name": "Sécurité & Sécurité", "count": "2" },
-        "process": { "name": "Processus & Délais", "count": "2" },
-        "payments": { "name": "Paiements & Frais", "count": "2" },
-        "freelance": { "name": "Projets Freelance", "count": "2" }
+        "gettingStarted": {
+          "name": "Commencer",
+          "count": "3"
+        },
+        "security": {
+          "name": "Sécurité & Sécurité",
+          "count": "2"
+        },
+        "process": {
+          "name": "Processus & Délais",
+          "count": "2"
+        },
+        "payments": {
+          "name": "Paiements & Frais",
+          "count": "2"
+        },
+        "freelance": {
+          "name": "Projets Freelance",
+          "count": "2"
+        }
       },
       "sections": {
         "gettingStarted": {

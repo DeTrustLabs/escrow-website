@@ -446,7 +446,10 @@
         "submitButton": "S'abonner",
         "submittingButton": "Abonnement en cours..."
       },
-      "popup": { "thankYou": "Merci !", "close": "Fermer" }
+      "popup": {
+        "thankYou": "Merci !",
+        "close": "Fermer"
+      }
     },
     "contactsAdmin": {
       "newsletterSubscribers": {
@@ -767,10 +770,22 @@
       },
       "categories": {
         "title": "Catégories FAQ",
-        "gettingStarted": { "name": "Commencer", "count": "3" },
-        "securitySafety": { "name": "Sécurité & Sécurité", "count": "2" },
-        "processTimeline": { "name": "Processus & Délais", "count": "2" },
-        "paymentsFees": { "name": "Paiements & Frais", "count": "2" },
+        "gettingStarted": {
+          "name": "Commencer",
+          "count": "3"
+        },
+        "securitySafety": {
+          "name": "Sécurité & Sécurité",
+          "count": "2"
+        },
+        "processTimeline": {
+          "name": "Processus & Délais",
+          "count": "2"
+        },
+        "paymentsFees": {
+          "name": "Paiements & Frais",
+          "count": "2"
+        },
         "internationalTrade": {
           "name": "Commerce International",
           "count": "2"
