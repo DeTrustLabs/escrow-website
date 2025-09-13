@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { ClientRoleSelect, ClientTradeTypeSelect } from "./ContactForm.client"
 
 type BaseStrings = {
   contactForm: {
@@ -267,9 +268,3 @@ export default function ContactForm({
     </section>
   )
 }
-
-// Tiny client islands for Select UX (optional)
-// These are only rendered when useUISelect = true
-// They must be in a separate client module
-// @ts-expect-error - imported at runtime only when client side is needed
-import { ClientRoleSelect, ClientTradeTypeSelect } from "./ContactForm.client"
