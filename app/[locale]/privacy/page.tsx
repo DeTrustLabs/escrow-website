@@ -1,5 +1,5 @@
-import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -7,7 +7,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "privacy.metadata" })
+  const t = await getSSRMetadataTranslations(locale, "privacy.metadata")
 
   return {
     title: t("title"),
@@ -16,7 +16,7 @@ export async function generateMetadata({
 }
 
 export default async function PrivacyPolicy() {
-  const t = await getTranslations("privacy")
+  const { t } = await getSSRTranslations("privacy")
 
   return (
     <>

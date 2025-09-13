@@ -1,5 +1,5 @@
-import { getTranslations } from "next-intl/server"
 import { WorkflowClient } from "./WorkflowClient"
+import { getSSRMetadataTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -7,10 +7,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations({
-    locale,
-    namespace: "trade.workflow.metadata",
-  })
+  const t = await getSSRMetadataTranslations(locale, "trade.workflow.metadata")
 
   return {
     title: t("title"),

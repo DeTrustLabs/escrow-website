@@ -2,14 +2,13 @@ import type React from "react"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import {
-  getMessages,
-  getTranslations,
   setRequestLocale,
 } from "next-intl/server"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { LANGUAGES } from "@/i18n/request"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 // Generate per-locale metadata
 export async function generateMetadata({
@@ -18,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "metadata" })
+  const t = await getSSRMetadataTranslations(locale, "metadata")
   return {
     title: t("title"),
     description: t("description"),
@@ -40,7 +39,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params
   setRequestLocale(locale)
-  const messages = await getMessages({ locale })
+  const { messages } = await getSSRTranslations(undefined, locale)
 
   return (
     <NextIntlClientProvider key={locale} locale={locale} messages={messages}>

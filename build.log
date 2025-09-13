@@ -1,0 +1,523 @@
+
+> escrow-protocol-website@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.3
+   - Experiments (use with caution):
+     ✓ optimizeCss
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.5s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/101) ...
+   Generating static pages (25/101) 
+Error: MISSING_MESSAGE: freelancer.contacts.contactForm.role (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at u (.next/server/app/[locale]/freelancer/contacts/page.js:2:10466) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.contacts.contactForm.role (es)'
+}
+Error: MISSING_MESSAGE: freelancer.contacts.contactForm.rolePlaceholder (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at u (.next/server/app/[locale]/freelancer/contacts/page.js:2:10642) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.contacts.contactForm.rolePlaceholder (es)'
+}
+Error: MISSING_MESSAGE: freelancer.contacts.contactForm.roles.freelancer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at u (.next/server/app/[locale]/freelancer/contacts/page.js:2:10769) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.contacts.contactForm.roles.freelancer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.contacts.contactForm.roles.client (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at u (.next/server/app/[locale]/freelancer/contacts/page.js:2:10853) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.contacts.contactForm.roles.client (es)'
+}
+Error: MISSING_MESSAGE: freelancer.contacts.contactForm.roles.both (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at u (.next/server/app/[locale]/freelancer/contacts/page.js:2:10931) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.contacts.contactForm.roles.both (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.security.name (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1256) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.security.name (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.security.count (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1301) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.security.count (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.process.name (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1339) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.process.name (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.process.count (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1383) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.process.count (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.payments.name (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1420) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.payments.name (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.payments.count (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1465) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.payments.count (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.freelance.name (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1503) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.freelance.name (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.categories.freelance.count (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:1549) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.categories.freelance.count (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q1.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:2587) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q1.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q1.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:2679) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q1.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q2.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:2882) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q2.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q2.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:2974) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q2.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q3.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:3177) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q3.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.gettingStarted.questions.q3.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:3269) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.gettingStarted.questions.q3.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.security.title (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:3525) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.security.title (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.security.questions.q1.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:3797) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.security.questions.q1.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.security.questions.q1.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:3883) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.security.questions.q1.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.security.questions.q2.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4084) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.security.questions.q2.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.security.questions.q2.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4170) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.security.questions.q2.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.process.title (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4420) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.process.title (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.process.questions.q1.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4690) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.process.questions.q1.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.process.questions.q1.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4775) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.process.questions.q1.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.process.questions.q2.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:4974) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.process.questions.q2.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.process.questions.q2.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5059) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.process.questions.q2.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.payments.title (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5308) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.payments.title (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.payments.questions.q1.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5579) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.payments.questions.q1.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.payments.questions.q1.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5665) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.payments.questions.q1.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.payments.questions.q2.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5865) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.payments.questions.q2.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.payments.questions.q2.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:5951) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.payments.questions.q2.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.freelance.title (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:6201) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.freelance.title (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.freelance.questions.q1.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:6475) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.freelance.questions.q1.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.freelance.questions.q1.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:6562) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.freelance.questions.q1.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.freelance.questions.q2.question (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:6765) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.freelance.questions.q2.question (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.sections.freelance.questions.q2.answer (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:6852) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.sections.freelance.questions.q2.answer (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.cta.contactButton (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:7001) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.cta.contactButton (es)'
+}
+Error: MISSING_MESSAGE: freelancer.faq.cta.startProjectButton (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at p (.next/server/app/[locale]/freelancer/faq/page.js:1:7070) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.faq.cta.startProjectButton (es)'
+}
+   Generating static pages (50/101) 
+Error: MISSING_MESSAGE: freelancer.blog.articles.comingSoon.digitalEscrow.title (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at s (.next/server/app/[locale]/freelancer/blog/page.js:1:5471) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.blog.articles.comingSoon.digitalEscrow.title (es)'
+}
+Error: MISSING_MESSAGE: freelancer.blog.articles.comingSoon.digitalEscrow.excerpt (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at s (.next/server/app/[locale]/freelancer/blog/page.js:1:5524) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.blog.articles.comingSoon.digitalEscrow.excerpt (es)'
+}
+Error: MISSING_MESSAGE: freelancer.blog.articles.comingSoon.digitalEscrow.category (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at s (.next/server/app/[locale]/freelancer/blog/page.js:1:5580) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.blog.articles.comingSoon.digitalEscrow.category (es)'
+}
+Error: MISSING_MESSAGE: freelancer.blog.articles.comingSoon.digitalEscrow.date (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at s (.next/server/app/[locale]/freelancer/blog/page.js:1:5633) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.blog.articles.comingSoon.digitalEscrow.date (es)'
+}
+Error: MISSING_MESSAGE: freelancer.blog.articles.comingSoon.digitalEscrow.readTime (es)
+    at l (.next/server/chunks/3540.js:1:53341)
+    at m (.next/server/chunks/3540.js:1:53505)
+    at n (.next/server/chunks/3540.js:1:54653)
+    at s (.next/server/app/[locale]/freelancer/blog/page.js:1:5686) {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'freelancer.blog.articles.comingSoon.digitalEscrow.readTime (es)'
+}
+   Generating static pages (75/101) 
+ ✓ Generating static pages (101/101)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /_not-found                            142 B         103 kB
+├ ● /[locale]                            2.44 kB         132 kB
+├   ├ /en
+├   ├ /fr
+├   ├ /es
+├   └ /de
+├ ● /[locale]/community                  4.55 kB         134 kB
+├   ├ /en/community
+├   ├ /fr/community
+├   ├ /es/community
+├   └ /de/community
+├ ● /[locale]/freelancer                   136 B         138 kB
+├   ├ /en/freelancer
+├   ├ /fr/freelancer
+├   ├ /es/freelancer
+├   └ /de/freelancer
+├ ● /[locale]/freelancer/blog            4.08 kB         134 kB
+├   ├ /en/freelancer/blog
+├   ├ /fr/freelancer/blog
+├   ├ /es/freelancer/blog
+├   └ /de/freelancer/blog
+├ ● /[locale]/freelancer/contacts        1.53 kB         162 kB
+├   ├ /en/freelancer/contacts
+├   ├ /fr/freelancer/contacts
+├   ├ /es/freelancer/contacts
+├   └ /de/freelancer/contacts
+├ ● /[locale]/freelancer/faq             4.27 kB         141 kB
+├   ├ /en/freelancer/faq
+├   ├ /fr/freelancer/faq
+├   ├ /es/freelancer/faq
+├   └ /de/freelancer/faq
+├ ● /[locale]/freelancer/freelancer      3.71 kB         149 kB
+├   ├ /en/freelancer/freelancer
+├   ├ /fr/freelancer/freelancer
+├   ├ /es/freelancer/freelancer
+├   └ /de/freelancer/freelancer
+├ ● /[locale]/freelancer/guides          3.62 kB         133 kB
+├   ├ /en/freelancer/guides
+├   ├ /fr/freelancer/guides
+├   ├ /es/freelancer/guides
+├   └ /de/freelancer/guides
+├ ● /[locale]/freelancer/project-owner   3.68 kB         148 kB
+├   ├ /en/freelancer/project-owner
+├   ├ /fr/freelancer/project-owner
+├   ├ /es/freelancer/project-owner
+├   └ /de/freelancer/project-owner
+├ ● /[locale]/freelancer/workflow        2.87 kB         138 kB
+├   ├ /en/freelancer/workflow
+├   ├ /fr/freelancer/workflow
+├   ├ /es/freelancer/workflow
+├   └ /de/freelancer/workflow
+├ ● /[locale]/integrations               2.44 kB         132 kB
+├   ├ /en/integrations
+├   ├ /fr/integrations
+├   ├ /es/integrations
+├   └ /de/integrations
+├ ● /[locale]/privacy                      142 B         103 kB
+├   ├ /en/privacy
+├   ├ /fr/privacy
+├   ├ /es/privacy
+├   └ /de/privacy
+├ ● /[locale]/protocol                   5.72 kB         139 kB
+├   ├ /en/protocol
+├   ├ /fr/protocol
+├   ├ /es/protocol
+├   └ /de/protocol
+├ ● /[locale]/support                    3.15 kB         160 kB
+├   ├ /en/support
+├   ├ /fr/support
+├   ├ /es/support
+├   └ /de/support
+├ ● /[locale]/terms                        142 B         103 kB
+├   ├ /en/terms
+├   ├ /fr/terms
+├   ├ /es/terms
+├   └ /de/terms
+├ ● /[locale]/trade                        135 B         138 kB
+├   ├ /en/trade
+├   ├ /fr/trade
+├   ├ /es/trade
+├   └ /de/trade
+├ ● /[locale]/trade/blog                 2.44 kB         132 kB
+├   ├ /en/trade/blog
+├   ├ /fr/trade/blog
+├   ├ /es/trade/blog
+├   └ /de/trade/blog
+├ ● /[locale]/trade/contacts             1.56 kB         162 kB
+├   ├ /en/trade/contacts
+├   ├ /fr/trade/contacts
+├   ├ /es/trade/contacts
+├   └ /de/trade/contacts
+├ ● /[locale]/trade/contacts/admin         142 B         103 kB
+├   ├ /en/trade/contacts/admin
+├   ├ /fr/trade/contacts/admin
+├   ├ /es/trade/contacts/admin
+├   └ /de/trade/contacts/admin
+├ ● /[locale]/trade/exporter             3.91 kB         149 kB
+├   ├ /en/trade/exporter
+├   ├ /fr/trade/exporter
+├   ├ /es/trade/exporter
+├   └ /de/trade/exporter
+├ ● /[locale]/trade/faq                  2.55 kB         139 kB
+├   ├ /en/trade/faq
+├   ├ /fr/trade/faq
+├   ├ /es/trade/faq
+├   └ /de/trade/faq
+├ ● /[locale]/trade/guides               2.44 kB         132 kB
+├   ├ /en/trade/guides
+├   ├ /fr/trade/guides
+├   ├ /es/trade/guides
+├   └ /de/trade/guides
+├ ● /[locale]/trade/importer             3.64 kB         148 kB
+├   ├ /en/trade/importer
+├   ├ /fr/trade/importer
+├   ├ /es/trade/importer
+├   └ /de/trade/importer
+├ ● /[locale]/trade/workflow              3.8 kB         142 kB
+├   ├ /en/trade/workflow
+├   ├ /fr/trade/workflow
+├   ├ /es/trade/workflow
+├   └ /de/trade/workflow
+└ ○ /sitemap.xml                           142 B         103 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/1255-1ba95d892eb26910.js      45.7 kB
+  ├ chunks/4bd1b696-f785427dddbba9fb.js  54.2 kB
+  └ other shared chunks (total)          2.84 kB
+
+
+ƒ Middleware                              192 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

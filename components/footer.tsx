@@ -4,11 +4,10 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
-import { getLocale, getTranslations } from "next-intl/server"
+import { getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function Footer() {
-  const locale = await getLocale()
-  const t = await getTranslations("footer")
+  const { t, locale } = await getSSRTranslations("footer")
   return (
     <footer className="bg-gray-50 border-t">
       <div className="max-w-7xl mx-auto p-8">

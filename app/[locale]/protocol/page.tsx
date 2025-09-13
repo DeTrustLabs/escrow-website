@@ -9,9 +9,7 @@ import {
 import { Hero } from "@/components/ui/hero"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import CTASection from "@/components/ui/cta"
-import { getTranslations, getMessages, getLocale } from "next-intl/server"
 import { Metadata } from "next"
-import { getMessageArray } from "@/lib/i18n-arrays"
 import {
   Code,
   Users,
@@ -25,6 +23,7 @@ import {
   Cpu,
 } from "lucide-react"
 import SectionGroup from "@/components/ui/section-group"
+import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -32,7 +31,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "protocol.metadata" })
+  const t = await getSSRMetadataTranslations(locale, "protocol.metadata")
 
   return {
     title: t("title"),
@@ -61,30 +60,22 @@ export async function generateMetadata({
 }
 
 export default async function ProtocolPage() {
-  // Load translator + full messages object for safe array extraction
-  const locale = await getLocale()
-  const [t, messages] = await Promise.all([
-    getTranslations({ locale, namespace: "protocol" }),
-    getMessages({ locale }),
-  ])
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "protocol",
+    [
+      { path: "protocol.protocolTab.mechanisms.automated.features", key: "automatedFeatures" },
+      { path: "protocol.protocolTab.mechanisms.advanced.features", key: "advancedFeatures" },
+      { path: "protocol.developersTab.integration.widget.features", key: "widgetIntegrationFeatures" },
+      { path: "protocol.developersTab.integration.custom.features", key: "customIntegrationFeatures" }
+    ]
+  )
 
-  // Pre-extract arrays used in the UI (empty array fallback)
-  const automatedFeatures = getMessageArray(
-    messages,
-    "protocol.protocolTab.mechanisms.automated.features"
-  )
-  const advancedFeatures = getMessageArray(
-    messages,
-    "protocol.protocolTab.mechanisms.advanced.features"
-  )
-  const widgetIntegrationFeatures = getMessageArray(
-    messages,
-    "protocol.developersTab.integration.widget.features"
-  )
-  const customIntegrationFeatures = getMessageArray(
-    messages,
-    "protocol.developersTab.integration.custom.features"
-  )
+  const { 
+    automatedFeatures = [], 
+    advancedFeatures = [], 
+    widgetIntegrationFeatures = [], 
+    customIntegrationFeatures = [] 
+  } = arrays
 
   return (
     <SectionGroup>

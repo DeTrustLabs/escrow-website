@@ -1,5 +1,5 @@
-import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -7,7 +7,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "terms" })
+  const t = await getSSRMetadataTranslations(locale, "terms")
 
   return {
     title: t("metadata.title"),
@@ -16,7 +16,7 @@ export async function generateMetadata({
 }
 
 export default async function TermsPage() {
-  const t = await getTranslations("terms")
+  const { t } = await getSSRTranslations("terms")
 
   return (
     <>

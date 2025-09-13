@@ -26,7 +26,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { APP_URL, ROUTES, withLocale } from "@/lib/urls"
-import { getTranslations, getMessages, getLocale } from "next-intl/server"
+import { getSSRMetadataTranslations, getSSRTranslationsWithArrays } from "@/lib/i18n-ssr"
 import type { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
 import CTASection from "@/components/ui/cta"
@@ -37,7 +37,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "home" })
+  const t = await getSSRMetadataTranslations(locale, "home")
 
   return {
     title: t("hero.title"),
@@ -69,29 +69,23 @@ export async function generateMetadata({
 }
 
 export default async function HomePage() {
-  const locale = await getLocale()
-  const t = await getTranslations({ locale, namespace: "home" })
-  const messages = await getMessages({ locale })
-  // Safely extract arrays (next-intl t() doesn't return arrays/objects reliably)
-  const home = messages.home
-  const tradeFeatures: string[] = Array.isArray(home?.business?.trade?.features)
-    ? home.business.trade.features
-    : []
-  const freelancerFeatures: string[] = Array.isArray(
-    home?.business?.freelancer?.features
+  const { t, locale, arrays } = await getSSRTranslationsWithArrays(
+    "home",
+    [
+      { path: "home.business.trade.features", key: "tradeFeatures" },
+      { path: "home.business.freelancer.features", key: "freelancerFeatures" },
+      { path: "home.build.integrators.features", key: "integratorFeatures" },
+      { path: "home.build.community.features", key: "communityFeatures" }
+    ]
   )
-    ? home.business.freelancer.features
-    : []
-  const integratorFeatures: string[] = Array.isArray(
-    home?.build?.integrators?.features
-  )
-    ? home.build.integrators.features
-    : []
-  const communityFeatures: string[] = Array.isArray(
-    home?.build?.community?.features
-  )
-    ? home.build.community.features
-    : []
+  
+  // Extract arrays using the helper
+  const {
+    tradeFeatures = [],
+    freelancerFeatures = [],
+    integratorFeatures = [],
+    communityFeatures = []
+  } = arrays
 
   return (
     <SectionGroup>
