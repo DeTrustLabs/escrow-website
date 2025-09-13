@@ -33,11 +33,8 @@ import {
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "integrations.metadata")
+}: PageProps<"/[locale]/integrations">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "integrations.metadata")
 
   return {
     title: t("title"),
@@ -67,10 +64,7 @@ export async function generateMetadata({
 
 export default async function IntegrationsPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale: routeLocale } = await params
+}: PageProps<"/[locale]/integrations">) {
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "integrations",
     [
@@ -84,7 +78,7 @@ export default async function IntegrationsPage({
         key: "techCompanyBenefits",
       },
     ],
-    routeLocale
+    params
   )
 
   const {

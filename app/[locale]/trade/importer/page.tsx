@@ -9,11 +9,8 @@ import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "trade.importer.metadata")
+}: PageProps<"/[locale]/trade/importer">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "trade.importer.metadata")
 
   return {
     title: t("title"),
@@ -26,9 +23,7 @@ export async function generateMetadata({
 
 export default async function ImporterBenefitsPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/trade/importer">) {
   const { locale } = await getSSRTranslationsWithArrays(
     "trade.importer",
     [

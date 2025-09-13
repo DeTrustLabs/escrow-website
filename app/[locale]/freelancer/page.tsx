@@ -33,8 +33,7 @@ import {
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/freelancer">): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "freelancer.metadata")
+  const t = await getSSRMetadataTranslations(params, "freelancer.metadata")
 
   return {
     title: t("title"),
@@ -65,7 +64,6 @@ export async function generateMetadata({
 export default async function FreelancerPage({
   params,
 }: PageProps<"/[locale]/freelancer">) {
-  const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "freelancer",
     [
@@ -78,7 +76,7 @@ export default async function FreelancerPage({
         key: "projectOwnerBenefits",
       },
     ],
-    routeLocale
+    params
   )
 
   const { freelancerBenefits = [], projectOwnerBenefits = [] } = arrays

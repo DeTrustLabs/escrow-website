@@ -30,11 +30,8 @@ import {
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "protocol.metadata")
+}: PageProps<"/[locale]/protocol">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "protocol.metadata")
 
   return {
     title: t("title"),
@@ -64,10 +61,7 @@ export async function generateMetadata({
 
 export default async function ProtocolPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale: routeLocale } = await params
+}: PageProps<"/[locale]/protocol">) {
   const { t, arrays } = await getSSRTranslationsWithArrays(
     "protocol",
     [
@@ -88,7 +82,7 @@ export default async function ProtocolPage({
         key: "customIntegrationFeatures",
       },
     ],
-    routeLocale
+    params
   )
 
   const {

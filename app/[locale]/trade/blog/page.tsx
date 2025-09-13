@@ -24,11 +24,11 @@ import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "trade.blog" })
+}: PageProps<"/[locale]/trade/blog">): Promise<Metadata> {
+  const t = await getTranslations({
+    locale: (await params).locale,
+    namespace: "trade.blog",
+  })
 
   return {
     title: t("metadata.title"),
@@ -38,11 +38,11 @@ export async function generateMetadata({
 
 export default async function BlogPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "trade.blog" })
+}: PageProps<"/[locale]/trade/blog">) {
+  const t = await getTranslations({
+    locale: (await params).locale,
+    namespace: "trade.blog",
+  })
 
   const articles = [
     {

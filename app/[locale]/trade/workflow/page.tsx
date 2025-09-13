@@ -4,11 +4,8 @@ import SectionGroup from "@/components/ui/section-group"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "trade.workflow.metadata")
+}: PageProps<"/[locale]/trade/workflow">) {
+  const t = await getSSRMetadataTranslations(params, "trade.workflow.metadata")
 
   return {
     title: t("title"),
@@ -18,9 +15,7 @@ export async function generateMetadata({
 
 export default async function WorkflowPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/trade/workflow">) {
   const { locale } = await getSSRTranslations("trade.workflow", params)
   return (
     <SectionGroup>

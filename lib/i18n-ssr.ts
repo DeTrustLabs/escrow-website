@@ -82,7 +82,7 @@ export async function getSSRTranslations(
  * @returns Translation function for metadata
  */
 export async function getSSRMetadataTranslations(
-  localeOrParams: string | RouteParams | Promise<RouteParams>,
+  localeOrParams: Promise<RouteParams>,
   namespace: string = "metadata"
 ) {
   try {

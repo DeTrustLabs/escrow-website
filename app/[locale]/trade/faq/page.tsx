@@ -14,11 +14,11 @@ import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "trade.faq.metadata" })
+}: PageProps<"/[locale]/trade/faq">): Promise<Metadata> {
+  const t = await getTranslations({
+    locale: (await params).locale,
+    namespace: "trade.faq.metadata",
+  })
 
   return {
     title: t("title"),
@@ -28,11 +28,11 @@ export async function generateMetadata({
 
 export default async function FAQPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "trade.faq" })
+}: PageProps<"/[locale]/trade/faq">) {
+  const t = await getTranslations({
+    locale: (await params).locale,
+    namespace: "trade.faq",
+  })
 
   return (
     <SectionGroup>

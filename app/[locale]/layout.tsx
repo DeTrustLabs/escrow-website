@@ -13,11 +13,8 @@ export const dynamic = "force-dynamic"
 // Generate per-locale metadata
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "metadata")
+}: LayoutProps<"/[locale]">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "metadata")
   return {
     title: t("title"),
     description: t("description"),
@@ -33,13 +30,10 @@ export function generateStaticParams() {
 export default async function LocaleLayout({
   children,
   params,
-}: {
-  children: React.ReactNode
-  params: Promise<{ locale: string }>
-}) {
+}: LayoutProps<"/[locale]">) {
   const { locale } = await params
   setRequestLocale(locale)
-  const { messages } = await getSSRTranslations(undefined, locale)
+  const { messages } = await getSSRTranslations(undefined, params)
 
   return (
     <NextIntlClientProvider key={locale} locale={locale} messages={messages}>

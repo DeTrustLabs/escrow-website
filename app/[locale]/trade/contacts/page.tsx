@@ -1,19 +1,19 @@
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import { getSSRTranslations } from "@/lib/i18n-ssr"
-import {
-  TradeContactsClient,
-  type TradeContactsStrings,
-} from "./TradeContactsClient"
+import ContactForm from "@/components/contact/ContactForm"
+import { sendContactMessage, subscribeToNewsletter } from "../../../actions"
 
 export default async function ContactsPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
+  searchParams,
+}: PageProps<"/[locale]/trade/contacts"> & {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
 }) {
   const { t } = await getSSRTranslations("trade.contacts", params)
+  const sp = (await searchParams) || {}
 
-  const strings: TradeContactsStrings = {
+  const strings = {
     popup: {
       close: t("popup.close"),
       thankYou: t("popup.thankYou"),
@@ -28,6 +28,8 @@ export default async function ContactsPage({
       emailPlaceholder: t("contactForm.emailPlaceholder"),
       company: t("contactForm.company"),
       companyPlaceholder: t("contactForm.companyPlaceholder"),
+      message: t("contactForm.message"),
+      messagePlaceholder: t("contactForm.messagePlaceholder"),
       tradeType: t("contactForm.tradeType"),
       tradeTypePlaceholder: t("contactForm.tradeTypePlaceholder"),
       tradeTypes: {
@@ -35,8 +37,6 @@ export default async function ContactsPage({
         import: t("contactForm.tradeTypes.import"),
         both: t("contactForm.tradeTypes.both"),
       },
-      message: t("contactForm.message"),
-      messagePlaceholder: t("contactForm.messagePlaceholder"),
       submittingButton: t("contactForm.submittingButton"),
       submitButton: t("contactForm.submitButton"),
     },
@@ -58,7 +58,22 @@ export default async function ContactsPage({
   return (
     <SectionGroup>
       <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-      <TradeContactsClient strings={strings} />
+      <ContactForm
+        strings={strings}
+        selectMode="tradeType"
+        useUISelect
+        success={{
+          submitted: sp.submitted as "contact" | "newsletter" | undefined,
+        }}
+        onContactSubmit={async (formData: FormData) => {
+          "use server"
+          await sendContactMessage(formData)
+        }}
+        onNewsletterSubmit={async (formData: FormData) => {
+          "use server"
+          await subscribeToNewsletter(formData)
+        }}
+      />
     </SectionGroup>
   )
 }

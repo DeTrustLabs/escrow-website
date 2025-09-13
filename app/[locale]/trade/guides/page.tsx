@@ -13,11 +13,8 @@ import { withLocale } from "@/lib/urls"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "trade.guides.metadata")
+}: PageProps<"/[locale]/trade/guides">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "trade.guides.metadata")
 
   return {
     title: t("title"),
@@ -27,9 +24,7 @@ export async function generateMetadata({
 
 export default async function GuidesPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/trade/guides">) {
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "trade.guides",
     [

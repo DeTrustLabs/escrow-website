@@ -32,11 +32,8 @@ import {
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "trade.metadata")
+}: PageProps<"/[locale]/trade">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "trade.metadata")
 
   return {
     title: t("title"),
@@ -67,17 +64,14 @@ export async function generateMetadata({
 
 export default async function HomePage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale: routeLocale } = await params
+}: PageProps<"/[locale]/trade">) {
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "trade",
     [
       { path: "trade.chooseRole.exporters.benefits", key: "exporterBenefits" },
       { path: "trade.chooseRole.importers.benefits", key: "importerBenefits" },
     ],
-    routeLocale
+    params
   )
 
   const { exporterBenefits = [], importerBenefits = [] } = arrays

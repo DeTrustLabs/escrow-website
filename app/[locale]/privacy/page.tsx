@@ -3,11 +3,8 @@ import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "privacy.metadata")
+}: PageProps<"/[locale]/privacy">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "privacy.metadata")
 
   return {
     title: t("title"),
@@ -17,11 +14,8 @@ export async function generateMetadata({
 
 export default async function PrivacyPolicy({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale } = await params
-  const { t } = await getSSRTranslations("privacy", locale)
+}: PageProps<"/[locale]/privacy">) {
+  const { t } = await getSSRTranslations("privacy", params)
 
   return (
     <>

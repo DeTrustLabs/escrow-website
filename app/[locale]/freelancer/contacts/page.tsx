@@ -1,17 +1,19 @@
 import { Hero } from "@/components/ui/hero"
 import SectionGroup from "@/components/ui/section-group"
 import { getSSRTranslations } from "@/lib/i18n-ssr"
-import {
-  FreelancerContactsClient,
-  type FreelancerContactsStrings,
-} from "./FreelancerContactsClient"
+import ContactForm from "@/components/contact/ContactForm"
+import { sendContactMessage, subscribeToNewsletter } from "../../../actions"
 
 export default async function FreelancerContactsPage({
   params,
-}: PageProps<"/[locale]/freelancer/contacts">) {
+  searchParams,
+}: PageProps<"/[locale]/freelancer/contacts"> & {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>
+}) {
   const { t } = await getSSRTranslations("freelancer.contacts", params)
+  const sp = (await searchParams) || {}
 
-  const strings: FreelancerContactsStrings = {
+  const strings = {
     popup: { thankYou: t("popup.thankYou") },
     contactForm: {
       title: t("contactForm.title"),
@@ -53,7 +55,22 @@ export default async function FreelancerContactsPage({
   return (
     <SectionGroup>
       <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-      <FreelancerContactsClient strings={strings} />
+      <ContactForm
+        strings={strings}
+        selectMode="role"
+        useUISelect
+        success={{
+          submitted: sp.submitted as "contact" | "newsletter" | undefined,
+        }}
+        onContactSubmit={async (formData: FormData) => {
+          "use server"
+          await sendContactMessage(formData)
+        }}
+        onNewsletterSubmit={async (formData: FormData) => {
+          "use server"
+          await subscribeToNewsletter(formData)
+        }}
+      />
     </SectionGroup>
   )
 }

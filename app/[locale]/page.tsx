@@ -36,11 +36,8 @@ import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getSSRMetadataTranslations(locale, "home")
+}: PageProps<"/[locale]">): Promise<Metadata> {
+  const t = await getSSRMetadataTranslations(params, "home")
 
   return {
     title: t("hero.title"),
@@ -71,12 +68,7 @@ export async function generateMetadata({
   }
 }
 
-export default async function HomePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
-  const { locale: routeLocale } = await params
+export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "home",
     [
@@ -85,7 +77,7 @@ export default async function HomePage({
       { path: "home.build.integrators.features", key: "integratorFeatures" },
       { path: "home.build.community.features", key: "communityFeatures" },
     ],
-    routeLocale
+    params
   )
 
   // Extract arrays using the helper

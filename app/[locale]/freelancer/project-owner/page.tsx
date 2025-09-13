@@ -6,9 +6,8 @@ import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 export async function generateMetadata({
   params,
 }: PageProps<"/[locale]/freelancer/project-owner">): Promise<Metadata> {
-  const { locale } = await params
   const t = await getSSRMetadataTranslations(
-    locale,
+    params,
     "freelancer.projectOwner.metadata"
   )
   return {
@@ -21,9 +20,7 @@ export async function generateMetadata({
 
 export default async function ProjectOwnerPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/freelancer/project-owner">) {
   const { locale } = await getSSRTranslations("freelancer.projectOwner", params)
   return (
     <SectionGroup>
