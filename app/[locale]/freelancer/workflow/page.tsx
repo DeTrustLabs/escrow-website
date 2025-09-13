@@ -36,9 +36,7 @@ import CTASection from "@/components/ui/cta"
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
+}: PageProps<"/[locale]/freelancer/workflow">): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({
     locale,

@@ -13,9 +13,7 @@ import { getSSRTranslations } from "@/lib/i18n-ssr"
 
 export default async function FreelancerFAQPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/freelancer/faq">) {
   const { t } = await getSSRTranslations("freelancer.faq", params)
 
   return (

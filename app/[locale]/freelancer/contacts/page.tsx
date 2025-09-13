@@ -8,9 +8,7 @@ import {
 
 export default async function FreelancerContactsPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/freelancer/contacts">) {
   const { t } = await getSSRTranslations("freelancer.contacts", params)
 
   const strings: FreelancerContactsStrings = {

@@ -25,9 +25,7 @@ import CTASection from "@/components/ui/cta"
 
 export default async function CommunityPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/community">) {
   const { t, arrays } = await getSSRTranslationsWithArrays(
     "community",
     [

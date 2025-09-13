@@ -23,9 +23,7 @@ import { getSSRTranslations } from "@/lib/i18n-ssr"
 
 export default async function FreelancerBlogPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/freelancer/blog">) {
   const { t } = await getSSRTranslations("freelancer.blog", params)
 
   return (

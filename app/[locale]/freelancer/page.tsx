@@ -32,9 +32,7 @@ import {
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}): Promise<Metadata> {
+}: PageProps<"/[locale]/freelancer">): Promise<Metadata> {
   const { locale } = await params
   const t = await getSSRMetadataTranslations(locale, "freelancer.metadata")
 
@@ -66,9 +64,7 @@ export async function generateMetadata({
 
 export default async function FreelancerPage({
   params,
-}: {
-  params: Promise<{ locale: string }>
-}) {
+}: PageProps<"/[locale]/freelancer">) {
   const { locale: routeLocale } = await params
   const { t, locale, arrays } = await getSSRTranslationsWithArrays(
     "freelancer",
