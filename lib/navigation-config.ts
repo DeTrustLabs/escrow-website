@@ -9,14 +9,12 @@ export type NavVariant = "global" | "trade" | "freelancer"
 export interface NavLink {
   href: string
   key: string
-  description?: string // Only used for global variant cards / mobile sheet
 }
 
 export interface VariantConfig {
   logoHref: string
   main: NavLink[]
   resources: NavLink[]
-  // Path detection: any pathname starting with one of these (exact or prefix) maps to this variant.
   matchPrefixes: string[]
 }
 
@@ -24,7 +22,6 @@ export interface VariantConfig {
 const GLOBAL_MAIN: NavLink[] = SECTION_ROUTES.map((r) => ({
   href: r.href,
   key: r.key,
-  description: r.description,
 }))
 
 export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
@@ -32,7 +29,7 @@ export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
     logoHref: "/",
     main: GLOBAL_MAIN,
     resources: [],
-    matchPrefixes: ["/"], // fallback; explicit matches handled by other variants first
+    matchPrefixes: ["/"],
   },
   trade: {
     logoHref: "/trade",

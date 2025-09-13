@@ -27,37 +27,31 @@ export const SECTION_ROUTES = [
   {
     key: "home",
     label: "Home",
-    description: "Overview and Features",
     href: ROUTES.home,
   },
   {
     key: "trade",
     label: "Global Trade",
-    description: "For exporters and importers",
     href: ROUTES.trade,
   },
   {
     key: "freelancer",
     label: "Freelancer",
-    description: "For service providers",
     href: ROUTES.freelancer,
   },
   {
     key: "integrations",
     label: "Integrations",
-    description: "Build with the protocol",
     href: ROUTES.integrations,
   },
   {
     key: "community",
     label: "Protocol & Community",
-    description: "Technical docs and community",
     href: ROUTES.community,
   },
   {
     key: "support",
     label: "Support and Contact",
-    description: "Help and documentation",
     href: ROUTES.support,
   },
 ]
