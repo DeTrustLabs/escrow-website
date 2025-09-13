@@ -15,7 +15,7 @@ export async function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/logo-main.png"
+              src="/images/logo/logo-vertical.png"
               alt="Escrow Protocol"
               width={205}
               height={48}
