@@ -1,7 +1,7 @@
 "use client"
 
 import { useLocale, useTranslations } from "next-intl"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter, usePathname } from "@/lib/locale-navigation"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -26,19 +26,8 @@ export function LanguageSwitcher() {
 
   const switchLanguage = (newLocale: string) => {
     if (newLocale === locale) return
-    const segments = pathname.split("/").filter(Boolean)
-    if (segments.length === 0) {
-      router.push(`/${newLocale}`)
-      router.refresh()
-      return
-    }
-    if (languages.some((l) => l.code === segments[0])) {
-      segments[0] = newLocale
-    } else {
-      segments.unshift(newLocale)
-    }
-    router.push(`/${segments.join("/")}`)
-    router.refresh()
+    // Let next-intl handle locale-aware navigation for us
+    router.replace(pathname, { locale: newLocale })
   }
 
   return (
@@ -46,7 +35,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="ring-none">
           <Languages className="h-4 w-4 mr-2" />
-          {t(`languages.${locale}`)}
+          <span className="hidden md:block">{t(`languages.${locale}`)}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
