@@ -17,9 +17,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
 import SectionGroup from "@/components/ui/section-group"
+import { getSSRMetadataTranslations, getSSRTranslations } from "@/lib/i18n-ssr"
 
 export async function generateMetadata({
   params,
@@ -27,7 +27,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: "support" })
+  const t = await getSSRMetadataTranslations(locale, "support")
 
   return {
     title: t("metadata.title"),
@@ -55,7 +55,7 @@ export async function generateMetadata({
 }
 
 export default async function SupportPage() {
-  const t = await getTranslations("support")
+  const { t } = await getSSRTranslations("support")
 
   return (
     <>
