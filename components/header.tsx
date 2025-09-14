@@ -1,206 +1,206 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { useState, useEffect, useMemo } from "react"
-import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Menu, ChevronDown, X } from "lucide-react"
-import { APP_URL } from "@/lib/urls"
-import { useTranslations, useLocale } from "next-intl"
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect, useMemo } from "react";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Menu, ChevronDown, X } from "lucide-react";
+import { APP_URL } from "@/lib/urls";
+import { useTranslations, useLocale } from "next-intl";
 import {
-  detectNavVariant,
-  getNavData,
-  NavVariant,
-} from "@/lib/navigation-config"
+	detectNavVariant,
+	getNavData,
+	NavVariant,
+} from "@/lib/navigation-config";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { LanguageSwitcher } from "@/components/language-switcher"
-import { cn } from "@/lib/utils"
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { cn } from "@/lib/utils";
 
 interface NavigationProps {
-  /** Force a variant (primarily for legacy wrappers). If omitted, path-based detection is used. */
-  forceVariant?: NavVariant
+	/** Force a variant (primarily for legacy wrappers). If omitted, path-based detection is used. */
+	forceVariant?: NavVariant;
 }
 
 export function Header({ forceVariant }: NavigationProps) {
-  const pathname = usePathname() || ""
-  const locale = useLocale()
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileOpen, setMobileOpen] = useState(false)
-  const t = useTranslations("navigation")
+	const pathname = usePathname() || "";
+	const locale = useLocale();
+	const [scrolled, setScrolled] = useState(false);
+	const [mobileOpen, setMobileOpen] = useState(false);
+	const t = useTranslations("navigation");
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener("scroll", onScroll)
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+	useEffect(() => {
+		const onScroll = () => setScrolled(window.scrollY > 20);
+		window.addEventListener("scroll", onScroll);
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
 
-  const variant = detectNavVariant(pathname, forceVariant)
-  const { mainLinks, resources, logoHref } = useMemo(
-    () => getNavData(variant, locale),
-    [variant, locale]
-  )
-  const isGlobal = variant === "global"
+	const variant = detectNavVariant(pathname, forceVariant);
+	const { mainLinks, resources, logoHref } = useMemo(
+		() => getNavData(variant, locale),
+		[variant, locale]
+	);
+	const isGlobal = variant === "global";
 
-  const handleNavClick = () => {
-    setMobileOpen(false)
-    setTimeout(() => window.scrollTo(0, 0), 100)
-  }
+	const handleNavClick = () => {
+		setMobileOpen(false);
+		setTimeout(() => window.scrollTo(0, 0), 100);
+	};
 
-  return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 w-full border-b transition-all duration-300",
-        scrolled
-          ? "bg-white/60 backdrop-blur-xl border-white/30"
-          : "bg-white/40 backdrop-blur-lg border-white/20"
-      )}
-      style={{
-        boxShadow: "0 2px 4px 0 rgba(31, 38, 135, 0.15)",
-        borderBottom: "1px solid rgba(255,255,255,0.25)",
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-2 flex h-16 items-center justify-between">
-        {/* Left: Logo (stable) */}
-        <Link
-          href={logoHref}
-          className="flex items-center space-x-2 group"
-          onClick={handleNavClick}
-        >
-          <Image
-            src="/images/logo/logo.png"
-            alt="Escrow Protocol"
-            width={50}
-            height={50}
-            className="h-12 cursor-pointer sm:hidden"
-            priority
-          />
-          <Image
-            src="/images/logo/logo-horizontal.png"
-            alt="Escrow Protocol"
-            width={115}
-            height={50}
-            className="h-12 cursor-pointer hidden sm:block xl:hidden"
-            priority
-          />
-          <Image
-            src="/images/logo/logo-vertical.png"
-            alt="Escrow Protocol"
-            width={200}
-            height={50}
-            className="h-12 w- cursor-pointer hidden xl:block"
-            priority
-          />
-        </Link>
+	return (
+		<header
+			className={cn(
+				"sticky top-0 z-50 w-full border-b transition-all duration-300",
+				scrolled
+					? "bg-white/60 backdrop-blur-xl border-white/30"
+					: "bg-white/40 backdrop-blur-lg border-white/20"
+			)}
+			style={{
+				boxShadow: "0 2px 4px 0 rgba(31, 38, 135, 0.15)",
+				borderBottom: "1px solid rgba(255,255,255,0.25)",
+			}}
+		>
+			<div className="max-w-7xl mx-auto px-2 flex h-16 items-center justify-between">
+				{/* Left: Logo (stable) */}
+				<Link
+					href={logoHref}
+					className="flex items-center space-x-2 group"
+					onClick={handleNavClick}
+				>
+					<Image
+						src="/images/logo/logo.png"
+						alt="Escrow Protocol"
+						width={51}
+						height={51}
+						className="h-12 cursor-pointer sm:hidden"
+						priority
+					/>
+					<Image
+						src="/images/logo/logo-horizontal.png"
+						alt="Escrow Protocol"
+						width={116}
+						height={51}
+						className="h-12 cursor-pointer hidden sm:block xl:hidden"
+						priority
+					/>
+					<Image
+						src="/images/logo/logo-vertical.png"
+						alt="Escrow Protocol"
+						width={200}
+						height={51}
+						className="h-12 w- cursor-pointer hidden xl:block"
+						priority
+					/>
+				</Link>
 
-        {/* Center: Desktop navigation (links vary by variant) */}
-        <nav className="hidden lg:flex items-center space-x-6">
-          {mainLinks.map((item) => (
-            <Button
-              key={item.href}
-              variant="ghost"
-              className="text-sm font-medium h-auto px-3 py-2 hover:bg-primary/5"
-              asChild
-            >
-              <Link href={item.href} onClick={handleNavClick}>
-                {t(item.key)}
-              </Link>
-            </Button>
-          ))}
-          {!isGlobal && resources.length > 0 && (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-sm font-medium">
-                  {t("resources")}
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
-                {resources.map((r) => (
-                  <DropdownMenuItem key={r.href} asChild>
-                    <Link href={r.href} onClick={handleNavClick}>
-                      {t(r.key)}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          )}
-        </nav>
+				{/* Center: Desktop navigation (links vary by variant) */}
+				<nav className="hidden lg:flex items-center space-x-6">
+					{mainLinks.map((item) => (
+						<Button
+							key={item.href}
+							variant="ghost"
+							className="text-sm font-medium h-auto px-3 py-2 hover:bg-primary/5"
+							asChild
+						>
+							<Link href={item.href} onClick={handleNavClick}>
+								{t(`${item.key}.label`)}
+							</Link>
+						</Button>
+					))}
+					{!isGlobal && resources.length > 0 && (
+						<DropdownMenu>
+							<DropdownMenuTrigger asChild>
+								<Button variant="ghost" className="text-sm font-medium">
+									{t("resources")}
+									<ChevronDown className="ml-1 h-4 w-4" />
+								</Button>
+							</DropdownMenuTrigger>
+							<DropdownMenuContent align="start">
+								{resources.map((r) => (
+									<DropdownMenuItem key={r.href} asChild>
+										<Link href={r.href} onClick={handleNavClick}>
+											{t(`${r.key}.label`)}
+										</Link>
+									</DropdownMenuItem>
+								))}
+							</DropdownMenuContent>
+						</DropdownMenu>
+					)}
+				</nav>
 
-        {/* Right: CTA & Mobile toggle (stable) */}
-        <div className="flex items-center space-x-2">
-          <LanguageSwitcher />
-          <Link href={APP_URL} target="_blank" rel="noopener noreferrer">
-            <Button
-              size="sm"
-              className="bg-primary hover:bg-primary/90 text-white font-bold"
-            >
-              {t("startEscrow")}
-            </Button>
-          </Link>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="p-2 lg:hidden"
-            aria-label="Toggle navigation"
-          >
-            {mobileOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </Button>
-        </div>
-      </div>
+				{/* Right: CTA & Mobile toggle (stable) */}
+				<div className="flex items-center space-x-2">
+					<LanguageSwitcher />
+					<Link href={APP_URL} target="_blank" rel="noopener noreferrer">
+						<Button
+							size="sm"
+							className="bg-primary hover:bg-primary/90 text-white font-bold"
+						>
+							{t("startEscrow")}
+						</Button>
+					</Link>
+					<Button
+						variant="ghost"
+						size="icon"
+						onClick={() => setMobileOpen(!mobileOpen)}
+						className="p-2 lg:hidden"
+						aria-label="Toggle navigation"
+					>
+						{mobileOpen ? (
+							<X className="h-6 w-6" />
+						) : (
+							<Menu className="h-6 w-6" />
+						)}
+					</Button>
+				</div>
+			</div>
 
-      {/* Mobile drawer */}
-      {mobileOpen && (
-        <div className="sm:hidden border-t bg-white shadow-md">
-          <div className="container mx-auto px-8 py-4">
-            <nav className="flex flex-col space-y-2">
-              {mainLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={handleNavClick}
-                  className="flex flex-col rounded-md px-3 py-2 hover:bg-primary/5"
-                >
-                  <span className="text-sm font-medium">
-                    {t(`${item.key}.label`)}
-                  </span>
-                  <span className="text-xs text-muted-foreground">
-                    {t(`${item.key}.description`)}
-                  </span>
-                </Link>
-              ))}
-              {resources.length > 0 && (
-                <div className="pt-4 mt-2 border-t">
-                  <p className="text-xs font-semibold text-gray-500 mb-2">
-                    {t("resources")}
-                  </p>
-                  {resources.map((r) => (
-                    <Link
-                      key={r.href}
-                      href={r.href}
-                      onClick={handleNavClick}
-                      className="block text-sm font-medium rounded-md px-3 py-2 hover:bg-primary/5"
-                    >
-                      {t(`${r.key}.label`)}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </nav>
-          </div>
-        </div>
-      )}
-    </header>
-  )
+			{/* Mobile drawer */}
+			{mobileOpen && (
+				<div className="lg:hidden border-t bg-white shadow-md">
+					<div className="container mx-auto px-8 py-4">
+						<nav className="flex flex-col space-y-2">
+							{mainLinks.map((item) => (
+								<Link
+									key={item.href}
+									href={item.href}
+									onClick={handleNavClick}
+									className="flex flex-col rounded-md px-3 py-2 hover:bg-primary/5"
+								>
+									<span className="text-sm font-medium">
+										{t(`${item.key}.label`)}
+									</span>
+									<span className="text-xs text-muted-foreground">
+										{t(`${item.key}.description`)}
+									</span>
+								</Link>
+							))}
+							{resources.length > 0 && (
+								<div className="pt-4 mt-2 border-t">
+									<p className="text-xs font-semibold text-gray-500 mb-2">
+										{t("resources")}
+									</p>
+									{resources.map((r) => (
+										<Link
+											key={r.href}
+											href={r.href}
+											onClick={handleNavClick}
+											className="block text-sm font-medium rounded-md px-3 py-2 hover:bg-primary/5"
+										>
+											{t(`${r.key}.label`)}
+										</Link>
+									))}
+								</div>
+							)}
+						</nav>
+					</div>
+				</div>
+			)}
+		</header>
+	);
 }
