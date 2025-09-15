@@ -21,8 +21,8 @@ export async function Footer({ locale: forcedLocale }: FooterProps) {
             <Image
               src="/images/logo/logo-vertical.png"
               alt="Escrow Protocol"
-              width={205}
-              height={48}
+              width={200}
+              height={51}
               className="h-12 mb-4"
             />
             <p className="text-sm text-muted-foreground max-w-xs">
