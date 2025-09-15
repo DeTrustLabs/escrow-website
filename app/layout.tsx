@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { LANGUAGES } from "@/i18n/request"
 import { headers } from "next/headers"
@@ -30,6 +31,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning>
       <body className="antialiased font-sans">{children}</body>
+      <Analytics />
     </html>
   )
 }
