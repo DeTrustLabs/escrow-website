@@ -392,7 +392,6 @@
         "title": "Digital Escrow Workflow for Freelancers - Secure Project Payments | Escrow Protocol",
         "description": "Learn how digital escrow works for freelance projects. Step-by-step guide to secure payments, milestone verification, and dispute resolution for freelancers and clients.",
         "keywords": "digital escrow for freelancers, secure freelance payments, escrow workflow for projects, freelance payment protection, secure project workflow",
-        "canonical": "/freelancer/workflow",
         "ogTitle": "Digital Escrow Workflow for Freelancers - Secure Project Payments",
         "ogDescription": "Complete guide to digital escrow for freelance projects. Secure payments, milestone verification, and dispute resolution."
       },
@@ -690,6 +689,14 @@
       }
     },
     "freelancerPage": {
+      "metadata": {
+        "title": "Freelance Escrow - Secure Payments for Freelancers | Escrow Protocol",
+        "description": "Protect your freelance projects with digital escrow. Ensure secure payments, milestone-based releases, and fair dispute resolution for freelancers worldwide.",
+        "keywords": "freelance escrow, secure payments for freelancers, freelance project protection, milestone payments, dispute resolution for freelancers",
+        "canonical": "/freelancer",
+        "ogTitle": "Freelance Escrow - Secure Payments for Freelancers",
+        "ogDescription": "Protect your freelance projects with digital escrow. Ensure secure payments, milestone-based releases, and fair dispute resolution."
+      },
       "hero": {
         "badge": "For Freelancers",
         "title": "Get Paid Securely, ",

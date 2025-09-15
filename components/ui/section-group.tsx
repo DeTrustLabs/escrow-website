@@ -13,7 +13,7 @@ export default function SectionGroup({
       className={cn(
         "[&_section>*]:max-w-7xl [&_section>*]:mx-auto [&_section>*]:w-full [&_section>*]:px-4",
         "[&_section:nth-of-type(even)]:bg-primary/8",
-        "[&_section:nth-of-type(odd)]:bg-white",
+        "[&_section:nth-of-type(odd)]:bg-background",
         "[&_section]:p-8 [&_section]:md:p-16 [&_section]:lg:p-20 [&_section]:xl:p-24",
         className
       )}

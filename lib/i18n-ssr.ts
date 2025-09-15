@@ -82,11 +82,11 @@ export async function getSSRTranslations(
  * @returns Translation function for metadata
  */
 export async function getSSRMetadataTranslations(
-  localeOrParams: Promise<RouteParams>,
+  params: Promise<RouteParams>,
   namespace: string = "metadata"
 ) {
   try {
-    const locale = await resolveLocale(localeOrParams)
+    const locale = await resolveLocale(params)
     const validLocale = LANGUAGES.includes(locale) ? locale : "en"
 
     return await getTranslations({

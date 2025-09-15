@@ -58,7 +58,7 @@ export function CTASection({
   }
 
   return (
-    <section className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/70 text-center text-background overflow-hidden">
+    <section className="relative bg-gradient-to-r from-primary via-primary/90 to-primary/60 text-center text-background overflow-hidden">
       <div className="relative">
         <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
           {title}

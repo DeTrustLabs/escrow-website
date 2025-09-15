@@ -44,8 +44,12 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    keywords:
-      "freelancer benefits, non-payment risk freelancers, trust issues freelance work, payment delays freelancing, secure freelance payments",
+    keywords: t("keywords"),
+    openGraph: {
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      url: t("canonical"),
+    },
   }
 }
 
