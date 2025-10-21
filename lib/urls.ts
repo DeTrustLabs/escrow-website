@@ -9,7 +9,6 @@ export const SITE_URL =
 
 // Maps former subdomain sections to local Next.js routed pages for local development.
 export const ROUTES = {
-  home: "/",
   trade: "/trade",
   freelancer: "/freelancer",
   integrations: "/integrations",
@@ -22,30 +21,3 @@ export const ROUTES = {
 export function withLocale(locale: string, path: string) {
   return `/${locale}${path}`.replace(/\/+/, "/")
 }
-
-export const SECTION_ROUTES = [
-  {
-    key: "home",
-    href: ROUTES.home,
-  },
-  {
-    key: "trade",
-    href: ROUTES.trade,
-  },
-  {
-    key: "freelancer",
-    href: ROUTES.freelancer,
-  },
-  {
-    key: "integrations",
-    href: ROUTES.integrations,
-  },
-  {
-    key: "community",
-    href: ROUTES.community,
-  },
-  {
-    key: "support",
-    href: ROUTES.support,
-  },
-]
