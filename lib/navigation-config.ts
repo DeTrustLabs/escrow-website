@@ -1,8 +1,7 @@
 // Central navigation configuration to manage all navigation variants in one place.
 // Extend or modify this file to adjust navigation without touching component logic.
-
-import { SECTION_ROUTES } from "./urls"
 import { LANGUAGES } from "@/i18n/request"
+import { ROUTES } from "./urls"
 
 export type NavVariant = "global" | "trade" | "freelancer"
 
@@ -19,23 +18,38 @@ export interface VariantConfig {
   matchPrefixes: string[]
 }
 
-// Global sections derive from SECTION_ROUTES
-const GLOBAL_MAIN: NavLink[] = SECTION_ROUTES.map((r) => ({
-  href: r.href,
-  key: r.key,
-}))
-
+// Global sections derive from MAIN_ROUTES
 export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
   global: {
     logoHref: "/",
-    main: GLOBAL_MAIN,
+    main: [
+      {
+        key: "trade",
+        href: ROUTES.trade,
+      },
+      {
+        key: "freelancer",
+        href: ROUTES.freelancer,
+      },
+      {
+        key: "integrations",
+        href: ROUTES.integrations,
+      },
+      {
+        key: "community",
+        href: ROUTES.community,
+      },
+      {
+        key: "support",
+        href: ROUTES.support,
+      },
+    ],
     resources: [],
     matchPrefixes: ["/"],
   },
   trade: {
     logoHref: "/trade",
     main: [
-      { href: "/trade", key: "home" },
       { href: "/trade/exporter", key: "exporter" },
       { href: "/trade/importer", key: "importer" },
       { href: "/trade/workflow", key: "workflow" },
@@ -51,7 +65,6 @@ export const NAV_VARIANTS: Record<NavVariant, VariantConfig> = {
   freelancer: {
     logoHref: "/freelancer",
     main: [
-      { href: "/freelancer", key: "home" },
       {
         href: "/freelancer/freelancer",
 
