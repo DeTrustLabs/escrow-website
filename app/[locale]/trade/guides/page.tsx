@@ -102,7 +102,7 @@ export default async function GuidesPage({
         }}
         secondary={{
           label: t("cta.startTrade"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          href: "https://app.escrow-protocol.com/login",
           newTab: true,
         }}
       />
