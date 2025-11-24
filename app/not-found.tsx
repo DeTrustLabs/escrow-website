@@ -91,7 +91,7 @@ export default async function NotFound() {
               {t("popularPages.faq")}
             </Link>
             <a
-              href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login"
+              href="https://app.escrow-protocol.com/login"
               className="hover:text-primary"
               target="_blank"
               rel="noopener noreferrer"
