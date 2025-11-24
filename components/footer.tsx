@@ -28,22 +28,49 @@ export async function Footer({ locale: forcedLocale }: FooterProps) {
             <p className="text-sm text-muted-foreground max-w-xs">
               {t("description")}
             </p>
-            <div className="flex space-x-2 mt-2">
+            <div className="flex justify-between items-center space-x-2 mt-2">
               <Link
-                href="https://twitter.com/EscrowProtocol_"
+                href="https://internetcomputer.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="ghost" size="sm">
-                  <Twitter className="h-4 w-4" />
-                </Button>
+                <Image
+                  src="/images/hundred-percent-on-chain-badge.svg"
+                  alt="Built on ICP"
+                  width={128}
+                  height={128}
+                  className="h-12 w-auto"
+                />
               </Link>
-              <Button variant="ghost" size="sm">
-                <Github className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" size="sm">
-                <Linkedin className="h-4 w-4" />
-              </Button>
+              <div className="flex space-x-2 mt-2">
+                <Button variant="ghost" size="sm" asChild>
+                  <Link
+                    href="https://twitter.com/EscrowProtocol_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <Link
+                    href="https://github.com/DeTrustLabs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button variant="ghost" size="sm" asChild>
+                  <Link
+                    href="https://www.linkedin.com/in/escrow-protocol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
 
