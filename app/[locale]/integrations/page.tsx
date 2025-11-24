@@ -95,7 +95,7 @@ export default async function IntegrationsPage({
         badge={t("hero.badge")}
         primaryButton={{
           label: t("hero.primaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+          href: "https://app.escrow-protocol.com/",
         }}
         secondaryButton={{
           label: t("hero.secondaryButton"),
@@ -107,6 +107,7 @@ export default async function IntegrationsPage({
           { text: t("hero.trustIndicators.audited") },
           { text: t("hero.trustIndicators.availability") },
         ]}
+        withBadge
       />
 
       {/* Open Ecosystem Section */}
@@ -405,7 +406,7 @@ export default async function IntegrationsPage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.primaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+          href: "https://app.escrow-protocol.com/",
           newTab: true,
         }}
         secondary={{
