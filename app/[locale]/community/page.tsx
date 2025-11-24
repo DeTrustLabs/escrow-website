@@ -49,7 +49,7 @@ export default async function CommunityPage({
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.primaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+          href: "https://app.escrow-protocol.com/",
         }}
         secondaryButton={{
           label: t("hero.secondaryButton"),
@@ -62,6 +62,7 @@ export default async function CommunityPage({
           { text: t("hero.trustIndicators.audited") },
           { text: t("hero.trustIndicators.availability") },
         ]}
+        withBadge
       />
 
       {/* Sections */}
@@ -199,7 +200,7 @@ export default async function CommunityPage({
                   <span>{benefit}</span>
                 </div>
               ))}
-              <Link href="https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/">
+              <Link href="https://app.escrow-protocol.com/">
                 <Button className="w-full mt-4">
                   {t("gettingStarted.users.button")}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -243,7 +244,7 @@ export default async function CommunityPage({
         }}
         secondary={{
           label: t("cta.secondaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/",
+          href: "https://app.escrow-protocol.com/",
           newTab: true,
         }}
       />
