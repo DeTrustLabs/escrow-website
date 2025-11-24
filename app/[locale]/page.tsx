@@ -109,6 +109,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           { text: t("hero.trustIndicators.audited") },
           { text: t("hero.trustIndicators.availability") },
         ]}
+        withBadge
       />
 
       {/* Landing Cards - Explore the Escrow Protocol */}
