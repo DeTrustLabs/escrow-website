@@ -163,7 +163,7 @@ export default async function FreelancerPage({
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           target: "_blank",
           rel: "noopener noreferrer",
         }}
@@ -178,6 +178,7 @@ export default async function FreelancerPage({
           { text: t("hero.trustIndicators.2") },
           { text: t("hero.trustIndicators.3") },
         ]}
+        withBadge
       />
 
       {/* Sections */}
@@ -482,7 +483,7 @@ export default async function FreelancerPage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           newTab: true,
         }}
         secondary={{
