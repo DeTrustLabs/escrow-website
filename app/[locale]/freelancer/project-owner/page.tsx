@@ -413,7 +413,7 @@ export default async function TradeProjectOwnerPage({
         subtitle={t("callToAction.subtitle")}
         primary={{
           label: t("callToAction.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           newTab: true,
         }}
         secondary={{
