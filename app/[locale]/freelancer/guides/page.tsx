@@ -82,7 +82,7 @@ export default async function FreelancerGuidesPage({
         }}
         secondary={{
           label: t("cta.startProjectButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           newTab: true,
         }}
       />
