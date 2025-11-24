@@ -697,7 +697,7 @@ export default async function TradeWorkflowPage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          href: "https://app.escrow-protocol.com/login",
           newTab: true,
         }}
         secondary={{
