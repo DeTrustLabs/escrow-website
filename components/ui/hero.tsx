@@ -7,6 +7,7 @@ import Link from "next/link"
 import { ReactNode } from "react"
 import { cn } from "@/lib/utils"
 import { useLocale } from "next-intl"
+import Image from "next/image"
 
 interface HeroButton {
   label: string
@@ -31,6 +32,7 @@ interface HeroProps {
   trustIndicators?: TrustIndicator[]
   className?: string
   titleHighlight?: string
+  withBadge?: boolean
 }
 
 export function Hero({
@@ -42,6 +44,7 @@ export function Hero({
   trustIndicators,
   className = "",
   titleHighlight,
+  withBadge = false,
 }: HeroProps) {
   const locale = useLocale()
   const prefixHref = (href?: string) => {
@@ -60,18 +63,15 @@ export function Hero({
           </Badge>
         </div>
       )}
-
       <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-6">
         {title}
         <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
           {titleHighlight}
         </span>
       </h1>
-
       <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
         {subtitle}
       </p>
-
       {(primaryButton || secondaryButton) && (
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           {primaryButton &&
@@ -152,6 +152,16 @@ export function Hero({
             </div>
           ))}
         </div>
+      )}
+
+      {withBadge && (
+        <Image
+          src="/images/built-on-icp.svg"
+          alt="Built on ICP"
+          width={1024}
+          height={128}
+          className="mx-auto mt-4 h-4 w-auto"
+        />
       )}
     </section>
   )
