@@ -76,7 +76,7 @@ export default async function TradeExporterPage({
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          href: "https://app.escrow-protocol.com/login",
           target: "_blank",
           rel: "noopener noreferrer",
         }}
@@ -459,7 +459,7 @@ export default async function TradeExporterPage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.primaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io/login",
+          href: "https://app.escrow-protocol.com/login",
           newTab: true,
         }}
         secondary={{
