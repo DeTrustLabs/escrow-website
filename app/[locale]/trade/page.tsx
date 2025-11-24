@@ -84,7 +84,7 @@ export default async function HomePage({
         subtitle={t("hero.subtitle")}
         primaryButton={{
           label: t("hero.startEscrow"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           target: "_blank",
           rel: "noopener noreferrer",
         }}
@@ -99,6 +99,7 @@ export default async function HomePage({
           { text: t("hero.trustIndicators.audited") },
           { text: t("hero.trustIndicators.availability") },
         ]}
+        withBadge
       />
 
       {/* Sections */}
@@ -508,7 +509,7 @@ export default async function HomePage({
         subtitle={t("cta.subtitle")}
         primary={{
           label: t("cta.primaryButton"),
-          href: "https://qhsea-iaaaa-aaaaj-qa6kq-cai.icp0.io",
+          href: "https://app.escrow-protocol.com",
           newTab: true,
         }}
         secondary={{
