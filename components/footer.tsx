@@ -29,19 +29,6 @@ export async function Footer({ locale: forcedLocale }: FooterProps) {
               {t("description")}
             </p>
             <div className="flex justify-between items-center space-x-2 mt-2">
-              <Link
-                href="https://internetcomputer.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/images/hundred-percent-on-chain-badge.svg"
-                  alt="Built on ICP"
-                  width={128}
-                  height={128}
-                  className="h-12 w-auto"
-                />
-              </Link>
               <div className="flex space-x-2 mt-2">
                 <Button variant="ghost" size="sm" asChild>
                   <Link

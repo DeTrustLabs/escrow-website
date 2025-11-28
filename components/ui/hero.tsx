@@ -155,13 +155,19 @@ export function Hero({
       )}
 
       {withBadge && (
-        <Image
-          src="/images/built-on-icp.svg"
-          alt="Built on ICP"
-          width={1024}
-          height={128}
-          className="mx-auto mt-4 h-4 w-auto"
-        />
+        <Link
+          href="https://internetcomputer.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/built-on-icp.svg"
+            alt="Built on ICP"
+            width={1024}
+            height={128}
+            className="mx-auto mt-8 h-6 w-auto"
+          />
+        </Link>
       )}
     </section>
   )
