@@ -131,7 +131,7 @@ export async function Footer({ locale: forcedLocale }: FooterProps) {
               {t("newsletterText")}
             </p>
             <form
-              action="mailto:info@escrow-protocol.com"
+              action="mailto:contact@escrow-protocol.com"
               method="post"
               encType="text/plain"
               className="flex space-x-2"

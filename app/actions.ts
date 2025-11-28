@@ -36,7 +36,7 @@ export async function sendContactMessage(formData: FormData) {
   messages.push(messageData)
 
   console.log(
-    "Sending contact message to info@escrow-protocol.com:",
+    "Sending contact message to contact@escrow-protocol.com:",
     messageData
   )
 
